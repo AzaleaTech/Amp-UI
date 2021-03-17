@@ -1,0 +1,25 @@
+// Text truncation
+.text-truncate() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// Force no line break
+.word-nowrap() {
+  white-space: nowrap;
+  word-wrap: normal;
+}
+
+// Force line break
+.break-all() {
+  white-space: normal;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+// Prohibit selection
+.unselect() {
+  cursor: pointer;
+  user-select: none;
+}

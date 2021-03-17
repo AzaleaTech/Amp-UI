@@ -1,0 +1,99 @@
+.card {
+  padding: 30rpx 30rpx;
+  background-color: #ffffff;
+}
+.card-body {
+  display: flex;
+  padding-bottom: 30rpx;
+}
+.card-body .card-img {
+  margin-right: 30rpx;
+  border: 1rpx solid #e6e7e8;
+  border-radius: 12rpx;
+  width: 204rpx;
+  height: 204rpx;
+}
+.card-body .card-container {
+  width: calc(100% - 234rpx);
+}
+.card-body .card-container .card-title {
+  margin-bottom: 28rpx;
+  color: #2f2f2f;
+  font-weight: 700;
+  font-size: 32rpx;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.card-body .card-container .card-contents {
+  color: #525252;
+  font-size: 26rpx;
+}
+.card-body .card-container .card-contents .card-content {
+  margin-bottom: 12rpx;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.card-body-full {
+  padding-bottom: 0;
+}
+.card-body-full .card-container {
+  width: 100%;
+}
+.card-body-full .card-container .card-title {
+  margin-bottom: 10rpx;
+}
+.card-body-full .card-container .card-contents {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 22rpx;
+}
+.card-body-full .card-container .card-contents .card-content {
+  margin-right: 60rpx;
+}
+.card-spec {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  color: #525252;
+}
+.card-spec .card-spec-line {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.card-spec .card-spec-line span {
+  margin-bottom: 2px;
+}
+.card-spec .card-spec-likes {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 42rpx;
+}
+.card-spec .card-spec-likes .card-spec-likes-icon {
+  width: 26rpx;
+  height: 30rpx;
+}
+.card-spec .card-spec-tag {
+  margin-left: 8rpx;
+  padding: 2rpx 16rpx;
+  border: 2rpx solid #e52323;
+  border-radius: 32rpx;
+  color: #e52323;
+}
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding-top: 30rpx;
+  border-top: 2rpx solid #ffe3bb;
+}
+.card-footer .card-footer-content {
+  color: #525252;
+  font-size: 24rpx;
+}

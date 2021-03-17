@@ -15,3 +15,6 @@ node_modules/
 package-lock.json
 project.config.json
 yarn.lock
+
+project.private.config.json
+test/
