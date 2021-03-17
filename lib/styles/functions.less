@@ -1,0 +1,13 @@
+// Suitable for webkit core and mobile
+.ellipsis-multiple(@num: 1) {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: @num;
+}
+
+// Set width && height
+.set-size(@width, @height: @width) {
+  width: @width;
+  height: @height;
+}
