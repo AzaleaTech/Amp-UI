@@ -27,7 +27,7 @@
   -webkit-line-clamp: 2;
 }
 .card-body .card-container .card-contents {
-  color: #525252;
+  color: #868686;
   font-size: 26rpx;
 }
 .card-body .card-container .card-contents .card-content {
@@ -95,5 +95,5 @@
 }
 .card-footer .card-footer-content {
   color: #525252;
-  font-size: 24rpx;
+  font-size: 26rpx;
 }

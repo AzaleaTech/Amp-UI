@@ -1,0 +1,73 @@
+@import '../styles/index.less';
+
+.tabbar-container {
+  position: relative;
+
+  &-fixed-top {
+    position: fixed;
+    top: 0;
+  }
+}
+
+.tabbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: @bg-color;
+
+  .tab {
+    display: inline-flex;
+    justify-content: center;
+    padding: 24rpx 0;
+    color: @text-color-tertiary;
+    text-align: center;
+    font-size: 30rpx;
+    line-height: 42rpx;
+    flex: 1;
+
+    .word-nowrap();
+
+    &-active {
+      position: relative;
+      box-sizing: border-box;
+      color: @primary-color;
+      font-size: 34rpx;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 84rpx;
+        width: 60rpx;
+        border-bottom: 6rpx solid @primary-color;
+      }
+    }
+  }
+
+  &-scroll {
+    display: inline-flex;
+    padding: 0 30rpx;
+
+    .tab {
+      flex: 0;
+      margin-right: 64rpx;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.gradient {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), @bg-color, @bg-color);
+
+  .set-size(30rpx, 90rpx);
+}
+
+.tab-panel-fixed {
+  padding-top: 90rpx;
+}
