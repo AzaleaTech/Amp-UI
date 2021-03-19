@@ -1,0 +1,21 @@
+<view class="tabbar-container {{ isCeiling ? 'tabbar-container-fixed-top' : ''}}">
+  <scroll-view scroll-x="{{ scroll }}">
+    <view class="tabbar {{ scroll ? 'tabbar-scroll' : '' }}">
+      <view
+            wx:for="{{ tabs }}"
+            wx:key="index"
+            data-current="{{ index }}"
+            class="tab {{ index === currentIndex ? 'tab-active' : '' }}"
+            catchtap="switchTab">
+        <span class="tab-{{ index }}">{{ item }}</span>
+      </view>
+    </view>
+  </scroll-view>
+  <view
+        wx:if="{{ scroll }}"
+        class="gradient"></view>
+</view>
+<view class="{{ isCeiling ? 'tab-panel-fixed' : ''}}">
+  <slot></slot>
+</view>
+

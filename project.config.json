@@ -27,7 +27,7 @@
     "coverView": true,
     "nodeModules": true,
     "autoAudits": false,
-    "showShadowRootInWxmlPanel": true,
+    "showShadowRootInWxmlPanel": false,
     "scopeDataCheck": false,
     "uglifyFileName": false,
     "checkInvalidKey": true,
@@ -55,7 +55,7 @@
   "compileType": "miniprogram",
   "libVersion": "2.16.0",
   "appid": "wx6ed522217ab33735",
-  "projectname": "miniprogram-1",
+  "projectname": "WXCOM",
   "debugOptions": {
     "hidedInDevtools": []
   },
