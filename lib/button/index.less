@@ -1,0 +1,90 @@
+@import '../styles/index.less';
+
+.icon-btn {
+  color: @text-color-tertiary;
+  font-size: 22rpx;
+  line-height: 32rpx;
+  height: 90rpx;
+  text-align: center;
+  .flex-center();
+
+  &-content {
+    .word-nowrap();
+  }
+
+  .icon {
+    .set-size(42rpx);
+  }
+}
+
+.btn {
+  position: relative;
+  padding: 20rpx;
+  box-sizing: border-box;
+  .flex-center();
+
+  &-normal {
+    height: 90rpx;
+    font-size: 32rpx;
+    line-height: 44rpx;
+    border-radius: 50rpx;
+
+    .icon {
+      margin-right: 10rpx;
+      .set-size(32rpx);
+    }
+  }
+
+  &-mini {
+    height: 56rpx;
+    font-size: 26rpx;
+    line-height: 36rpx;
+    border-radius: 40rpx;
+    padding: 10rpx 20rpx;
+
+    .icon {
+      margin-right: 10rpx;
+      .set-size(26rpx);
+    }
+  }
+
+  &-default {
+    background-color: @white-color;
+    color: @primary-color;
+    border: 2px solid @primary-color;
+
+    &-active {
+      border: 0;
+      background-color: @deep-primary-color;
+      color: @white-color;
+    }
+  }
+
+  &-primary {
+    background-color: @primary-color;
+    color: @white-color;
+  }
+}
+
+.btn-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  .set-size(100%);
+
+  &-normal {
+    border-radius: 50rpx;
+  }
+
+  &-mini {
+    border-radius: 40rpx;
+  }
+
+  &-active {
+    background-color: @active-hover;
+  }
+
+  &-disabled {
+    background-color: @disabled-hover;
+  }
+}

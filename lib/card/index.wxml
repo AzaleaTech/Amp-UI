@@ -20,10 +20,10 @@
       <view
             wx:if="{{spec && imgUrl}}"
             class="card-spec"
-            style="font-size:{{spec.size}}rpx">
+            style="{{ spec.size ? 'font-size:' + spec.size + 'rpx;' : '' }}">
         <view class="card-spec-line">
           <span>{{ spec.label + ': ' }}</span>
-          <span style="color: {{ spec.color }};">{{ spec.content }}</span>
+          <span style="{{ spec.color ? 'color:' + spec.color : '' }}">{{ spec.content }}</span>
           <block
                  wx:for="{{ spec.tags }}"
                  wx:for-index="tagIndex"
@@ -31,7 +31,8 @@
                  wx:key="tagIndex">
             <span
                   class="card-spec-tag"
-                  style="border-color:{{ tag.color }};color:{{ tag.color }}">{{ tag.content }}
+                  style="{{ tag.color ? 'border-color:' + tag.color + ';color:' +  tag.color : '' }}">
+              {{ tag.content }}
             </span>
           </block>
         </view>
