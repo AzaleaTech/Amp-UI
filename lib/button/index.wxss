@@ -1,0 +1,82 @@
+.icon-btn {
+  color: #868686;
+  font-size: 22rpx;
+  line-height: 32rpx;
+  height: 90rpx;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-btn-content {
+  white-space: nowrap;
+  word-wrap: normal;
+}
+.icon-btn .icon {
+  width: 42rpx;
+  height: 42rpx;
+}
+.btn {
+  position: relative;
+  padding: 20rpx;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-normal {
+  height: 90rpx;
+  font-size: 32rpx;
+  line-height: 44rpx;
+  border-radius: 50rpx;
+}
+.btn-normal .icon {
+  margin-right: 10rpx;
+  width: 32rpx;
+  height: 32rpx;
+}
+.btn-mini {
+  height: 56rpx;
+  font-size: 26rpx;
+  line-height: 36rpx;
+  border-radius: 40rpx;
+  padding: 10rpx 20rpx;
+}
+.btn-mini .icon {
+  margin-right: 10rpx;
+  width: 26rpx;
+  height: 26rpx;
+}
+.btn-default {
+  background-color: #ffffff;
+  color: #e9a32d;
+  border: 2px solid #e9a32d;
+}
+.btn-default-active {
+  border: 0;
+  background-color: #e48e00;
+  color: #ffffff;
+}
+.btn-primary {
+  background-color: #e9a32d;
+  color: #ffffff;
+}
+.btn-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.btn-mask-normal {
+  border-radius: 50rpx;
+}
+.btn-mask-mini {
+  border-radius: 40rpx;
+}
+.btn-mask-active {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.btn-mask-disabled {
+  background-color: rgba(255, 255, 255, 0.35);
+}
