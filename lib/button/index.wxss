@@ -61,6 +61,20 @@
   background-color: #e9a32d;
   color: #ffffff;
 }
+.child-first .btn,
+.child-first .btn-mask {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.child-middle .btn,
+.child-middle .btn-mask {
+  border-radius: 0;
+}
+.child-last .btn,
+.child-last .btn-mask {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
 .btn-mask {
   position: absolute;
   top: 0;

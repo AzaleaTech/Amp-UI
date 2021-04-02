@@ -66,6 +66,34 @@
   }
 }
 
+.child {
+  &-first {
+
+    .btn,
+    .btn-mask {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
+
+  &-middle {
+
+    .btn,
+    .btn-mask {
+      border-radius: 0;
+    }
+  }
+
+  &-last {
+
+    .btn,
+    .btn-mask {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
+}
+
 .btn-mask {
   position: absolute;
   top: 0;

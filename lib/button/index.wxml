@@ -1,4 +1,5 @@
 <view
+      class="{{ childType ? 'child-' + childType : '' }}"
       catch:tap="handleTap"
       catch:touchstart="handleTouchStart"
       catch:touchend="handleTouchEnd">
