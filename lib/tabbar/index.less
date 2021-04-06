@@ -1,6 +1,7 @@
 @import '../styles/index.less';
 
 .tabbar-container {
+  z-index: @z-index-tabbar;
   position: relative;
 
   &-fixed-top {
@@ -62,7 +63,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 100;
+  z-index: @z-index-mask;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), @bg-color, @bg-color);
 
   .set-size(30rpx, 90rpx);
