@@ -1,0 +1,15 @@
+<view class="example-box">
+  <view class="example-box-title">顶部吸附</view>
+  <a-tabbar
+            tabs="{{ staticTabs }}"
+            current="{{ currentTab }}"
+            isCeiling="{{ isCeiling }}">
+    <a-card
+            wx:for="{{ [0,0,0,0,0,0] }}"
+            wx:key="index"
+            title="{{ card.title }}"
+            contents="{{ card.contents }}"
+            imgUrl="{{ card.imgUrl }}"></a-card>
+  </a-tabbar>
+</view>
+

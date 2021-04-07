@@ -1,0 +1,7 @@
+<view class="example-box">
+  <view class="example-box-title">验证码按钮(全局计时器)</view>
+  <view class="example-box-content">
+    <a-verification bind:clickVerification="handleClickVerification"></a-verification>
+  </view>
+</view>
+

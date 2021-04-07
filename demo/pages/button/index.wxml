@@ -1,0 +1,75 @@
+<view class="example-box">
+  <view class="example-box-title">按钮类型</view>
+  <view class="example-box-content">
+    <a-button
+              type="default"
+              width="240">default
+    </a-button>
+    <a-button
+              type="primary"
+              width="240">primary
+    </a-button>
+    <a-button
+              type="icon"
+              iconUrl="/demo/assets/images/likes-list-icon.png">icon
+    </a-button>
+  </view>
+</view>
+<view class="example-box">
+  <view class="example-box-title">按钮大小</view>
+  <view class="example-box-content">
+    <a-button
+              type="primary"
+              size="normal"
+              width="240">normal
+    </a-button>
+    <a-button
+              type="primary"
+              size="mini"
+              width="180">mini
+    </a-button>
+  </view>
+</view>
+<view class="example-box">
+  <view class="example-box-title">禁用按钮</view>
+  <view class="example-box-content">
+    <a-button
+              type="primary"
+              disabled="true"
+              width="240">disabled
+    </a-button>
+  </view>
+</view>
+<view class="example-box">
+  <view class="example-box-title">点击事件</view>
+  <view class="example-box-content">
+    <a-button
+              type="primary"
+              width="240"
+              bind:clickButton="handleClickButton">clickEvent
+    </a-button>
+  </view>
+</view>
+<view class="example-box">
+  <view class="example-box-title">带图标按钮</view>
+  <view class="example-box-content">
+    <a-button
+              type="primary"
+              width="360"
+              iconUrl="/demo/assets/images/download-icon.png">
+      button with icon
+    </a-button>
+  </view>
+</view>
+<view class="example-box">
+  <view class="example-box-title">按钮组</view>
+  <view class="example-box-content">
+    <a-button-group
+                    width="200"
+                    size="mini">
+      <a-button type="default">last</a-button>
+      <a-button type="primary">next</a-button>
+    </a-button-group>
+  </view>
+</view>
+

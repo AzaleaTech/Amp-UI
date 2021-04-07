@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "a-tabbar": "/lib/Tabbar/index",
+    "a-card": "/lib/Card/index",
+    "a-button": "/lib/Button/index"
+  }
+}

@@ -1,0 +1,58 @@
+<view class="example-box">
+  <view class="example-box-title">无icon</view>
+  <a-card
+          title="{{ card.complexTitle }}"
+          contents="{{ card.complexContents }}">
+    <a-button>test</a-button>
+  </a-card>
+</view>
+<view class="example-box">
+  <view class="example-box-title">有icon</view>
+  <a-card
+          class="example-box"
+          title="{{ card.complexTitle }}"
+          contents="{{ card.complexContents }}"
+          imgUrl="{{ card.imgUrl }}">
+    <a-button>test</a-button>
+  </a-card>
+</view>
+<view class="example-box">
+  <view class="example-box-title">footer及footer按钮</view>
+  <a-card
+          class="example-box"
+          title="{{ card.title }}"
+          contents="{{ card.contents }}"
+          imgUrl="{{ card.imgUrl }}"
+          footer="{{ card.footer }}">
+    <a-button
+              type="primary"
+              size="mini">测试按钮
+    </a-button>
+  </a-card>
+</view>
+<view class="example-box">
+  <view class="example-box-title">spec文本行(标准文本 + tag + 点赞按钮)</view>
+  <a-card
+          class="example-box"
+          title="{{ card.title }}"
+          contents="{{ card.contents }}"
+          imgUrl="{{ card.imgUrl }}"
+          spec="{{ card.spec }}"></a-card>
+</view>
+<view class="example-box">
+  <view class="example-box-title">复合card(包括点击卡片功能)</view>
+  <a-card
+          class="example-box"
+          title="{{ card.title }}"
+          contents="{{ card.contents }}"
+          imgUrl="{{ card.imgUrl }}"
+          footer="{{ card.footer }}"
+          spec="{{ card.spec }}"
+          bind:clickCard="handleClickCard">
+    <a-button
+              type="primary"
+              size="mini">测试按钮
+    </a-button>
+  </a-card>
+</view>
+

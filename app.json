@@ -1,6 +1,13 @@
 {
   "pages": [
-    "lib/index/index"
+    "demo/pages/category/index",
+    "demo/pages/card/index",
+    "demo/pages/tabbar/index/index",
+    "demo/pages/tabbar/ceiling/index",
+    "demo/pages/button/index",
+    "demo/pages/form/index",
+    "demo/pages/verification/index",
+    "demo/pages/collapse/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

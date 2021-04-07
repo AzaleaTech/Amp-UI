@@ -8,20 +8,16 @@
   color: #e07477;
 }
 .form-item {
-  padding-bottom: 24rpx;
-  border-bottom: 3rpx solid #eeeeee;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-}
-.form-item-warning {
-  border-bottom: 3rpx solid #e07477;
 }
 .form-item-warning-icon {
   color: #e07477;
   margin-right: 10rpx;
 }
 .form-item-icon {
+  padding-bottom: 24rpx;
   margin-right: 22rpx;
   width: 48rpx;
   height: 48rpx;
@@ -33,10 +29,15 @@
   display: inline;
 }
 .form-item-panel {
+  padding-bottom: 24rpx;
+  border-bottom: 3rpx solid #eeeeee;
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: flex-start;
+}
+.form-item-panel-warning {
+  border-bottom: 3rpx solid #e07477;
 }
 .form-item-slot {
   flex: 1;

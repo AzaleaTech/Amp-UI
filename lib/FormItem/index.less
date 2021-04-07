@@ -12,20 +12,15 @@
 }
 
 .form-item {
-  padding-bottom: 24rpx;
-  border-bottom: 3rpx solid @shadow-color;
   .flex-start();
 
-  &-warning {
-    border-bottom: 3rpx solid @warning-color;
-
-    &-icon {
-      color: @warning-color;
-      margin-right: 10rpx;
-    }
+  &-warning-icon {
+    color: @warning-color;
+    margin-right: 10rpx;
   }
 
   &-icon {
+    padding-bottom: 24rpx;
     margin-right: 22rpx;
     .set-size(48rpx);
   }
@@ -38,8 +33,14 @@
   }
 
   &-panel {
+    padding-bottom: 24rpx;
+    border-bottom: 3rpx solid @shadow-color;
     flex: 1;
     .flex-start();
+
+    &-warning {
+      border-bottom: 3rpx solid @warning-color;
+    }
   }
 
   &-slot {

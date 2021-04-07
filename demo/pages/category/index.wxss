@@ -1,0 +1,9 @@
+page {
+  background-color: #ffffff;
+}
+.category-title {
+  color: #e9a32d;
+  text-align: center;
+  font-size: 50rpx;
+  margin: 80rpx 0 160rpx 0;
+}
