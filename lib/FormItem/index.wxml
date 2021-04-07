@@ -5,16 +5,16 @@
         wx:if="{{ warningMessage }}"
         class="form-warning-message">{{ warningMessage }}
   </view>
-  <view class="form-item form-item-{{ warningMessage ? 'warning' : '' }}">
-    <view
-          wx:if="{{ required }}"
-          class="form-item-warning-icon">*
-    </view>
+  <view class="form-item">
     <image
            wx:if="{{ iconUrl }}"
            class="form-item-icon"
            src="{{ iconUrl }}"></image>
-    <view class="form-item-panel">
+    <view class="form-item-panel {{ warningMessage ? 'form-item-panel-warning' : '' }}">
+      <view
+            wx:if="{{ required }}"
+            class="form-item-warning-icon">*
+      </view>
       <view
             wx:if="{{ label }}"
             class="form-item-label"

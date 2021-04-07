@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "a-button": "/lib/Button/index",
+    "a-button-group": "/lib/ButtonGroup/index"
+  }
+}

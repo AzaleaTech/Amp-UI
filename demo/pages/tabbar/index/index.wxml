@@ -1,0 +1,47 @@
+<view class="example-box">
+  <view class="example-box-title">顶部吸附</view>
+  <view class="example-box-content">
+    <a-button
+              type="primary"
+              size="mini"
+              width="280"
+              bind:clickButton="handleCeiling">
+      顶部吸附演示
+    </a-button>
+  </view>
+</view>
+<view class="example-box">
+  <view class="example-box-title">标签宽度不超过页面</view>
+  <a-tabbar tabs="{{ staticTabs }}"></a-tabbar>
+</view>
+<view class="example-box">
+  <view class="example-box-title">标签宽度超过页面</view>
+  <a-tabbar tabs="{{ overflowTabs }}"></a-tabbar>
+</view>
+<view class="example-box">
+  <view class="example-box-title">初始化索引及切换标签</view>
+  <a-tabbar
+            tabs="{{ staticTabs }}"
+            current="{{ currentTab }}"
+            bind:switchTab="handleSwitchTab">
+    <view wx:if="{{ currentTab === 0 }}">
+      <a-card
+              title="{{ card.title + 1 }}"
+              contents="{{ card.contents }}"
+              imgUrl="{{ card.imgUrl }}"></a-card>
+    </view>
+    <view wx:if="{{ currentTab === 1 }}">
+      <a-card
+              title="{{ card.title + 2 }}"
+              contents="{{ card.contents }}"
+              imgUrl="{{ card.imgUrl }}"></a-card>
+    </view>
+    <view wx:if="{{ currentTab === 2 }}">
+      <a-card
+              title="{{ card.title + 3 }}"
+              contents="{{ card.contents }}"
+              imgUrl="{{ card.imgUrl }}"></a-card>
+    </view>
+  </a-tabbar>
+</view>
+

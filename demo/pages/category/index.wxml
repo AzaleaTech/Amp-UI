@@ -1,0 +1,15 @@
+<view class="category">
+  <view class="category-title">WXCOM组件库DEMO</view>
+  <a-form
+          class="category-form"
+          label-width="600">
+    <a-form-item
+                 wx:for="{{ components }}"
+                 wx:key="index"
+                 label="{{ item.label }}"
+                 footerArrow
+                 data-url="{{ item.url }}"
+                 bind:clickFormItem="handleClickFormItem"></a-form-item>
+  </a-form>
+</view>
+

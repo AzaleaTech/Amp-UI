@@ -1,0 +1,15 @@
+<view class="example-box">
+  <view class="example-box-title">单层列表</view>
+  <a-collapse options="{{ singleList }}"></a-collapse>
+</view>
+<view class="example-box">
+  <view class="example-box-title">双层列表</view>
+  <a-collapse options="{{ doubleList }}"></a-collapse>
+</view>
+<view class="example-box">
+  <view class="example-box-title">子项点击事件</view>
+  <a-collapse
+              options="{{ clickList }}"
+              bind:collapse="handleCollapse"></a-collapse>
+</view>
+

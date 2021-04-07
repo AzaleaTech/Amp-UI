@@ -1,0 +1,26 @@
+page {
+  background-color: #f4f5f6;
+}
+.example-box {
+  margin-bottom: 20rpx;
+}
+.example-box-title {
+  font-weight: 700;
+  margin: 20rpx 0 20rpx 30rpx;
+  color: #e9a32d;
+}
+.example-box-content {
+  padding: 20rpx 30rpx;
+  background-color: #ffffff;
+}
+.example-box-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+a-button {
+  margin-right: 30rpx;
+}
+a-button-group a-button {
+  margin-right: 0;
+}
