@@ -1,5 +1,7 @@
 {
   "usingComponents": {
-    "a-verification": "/lib/Verification/index"
+    "a-verification": "/lib/Verification/index",
+    "a-form-item": "/lib/FormItem/index",
+    "a-button": "/lib/Button/index"
   }
 }
