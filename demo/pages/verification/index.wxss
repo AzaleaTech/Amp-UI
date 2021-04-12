@@ -14,3 +14,15 @@ page {
   padding: 20rpx 30rpx;
   background-color: #ffffff;
 }
+.input-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.button-box {
+  background-color: #ffffff;
+  padding: 20rpx 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

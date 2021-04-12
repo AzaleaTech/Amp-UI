@@ -1,7 +1,33 @@
 <view class="example-box">
   <view class="example-box-title">验证码按钮(全局计时器)</view>
+  <a-form-item>
+    <input
+           value="{{ phoneNumber }}"
+           placeholder="请输入手机号"
+           bind:input="handlePhoneNumberInput" />
+  </a-form-item>
+  <a-form-item>
+    <view class="input-box">
+      <input placeholder="请输入验证码" />
+      <a-verification
+                      startCount="{{ startCount }}"
+                      bind:clickVerification="handleClickVerification"></a-verification>
+    </view>
+  </a-form-item>
+  <view class="button-box">
+    <a-button
+              type="primary"
+              size="mini"
+              width="200">注册账号
+    </a-button>
+  </view>
+</view>
+<view class="example-box">
+  <view class="example-box-title">禁用验证码</view>
   <view class="example-box-content">
-    <a-verification bind:clickVerification="handleClickVerification"></a-verification>
+    <a-verification
+                    disabled="true"
+                    bind:clickVerification="handleClickVerification"></a-verification>
   </view>
 </view>
 
