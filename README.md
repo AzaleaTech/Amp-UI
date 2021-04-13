@@ -10,3 +10,7 @@
 - Collapse
 - Poster
 - Verifice
+
+## 版本控制
+
+更新 package.json 中 version 到指定版本
