@@ -8,7 +8,8 @@
     "demo/pages/form/index",
     "demo/pages/verification/index",
     "demo/pages/collapse/index",
-    "demo/pages/modal/index"
+    "demo/pages/modal/index",
+    "demo/pages/cropper/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
