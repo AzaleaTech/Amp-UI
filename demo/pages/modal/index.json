@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "modal": "/lib/Modal/index/index",
+    "a-dialog": "/lib/Modal/Dialog/index",
+    "a-toast": "/lib/Modal/Toast/index"
+  }
+}

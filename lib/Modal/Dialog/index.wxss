@@ -1,0 +1,27 @@
+.dialog-body {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 566rpx;
+  min-height: 220rpx;
+  border-radius: 24rpx;
+  font-size: 32rpx;
+  background: #ffffff;
+  padding: 60rpx 40rpx 32rpx 40rpx;
+  text-align: center;
+  z-index: 10001;
+}
+.dialog-title {
+  font-size: 32rpx;
+  margin-bottom: 40rpx;
+}
+.dialog-content {
+  max-height: 466rpx;
+}
+.dialog-btn {
+  margin-top: 70rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

@@ -7,6 +7,7 @@ Page({
       { label: 'Form & FormItem 表单及表单项', url: '../form/index' },
       { label: 'Verification 验证码按钮', url: '../verification/index' },
       { label: 'Collapse 可折叠列表', url: '../collapse/index' },
+      { label: 'Modal 遮罩层（含Toast,Dialog）', url: '../modal/index' },
     ],
   },
 

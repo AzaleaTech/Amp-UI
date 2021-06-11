@@ -18,6 +18,11 @@
 @white-color: rgba(255, 255, 255, 1); // 白色
 
 // 各层次组件高度
+@background-z-index: -1; // 背景图片z轴高度 
 @z-index-base: 1; // 基本高度
 @z-index-tabbar: 10; // 导航栏高度
 @z-index-mask: 100; // 遮罩层高度
+@content-z-index: 1000; // 实际内容高度
+@tab-bar-z-index: 9999; // 底部导航栏默认高度
+@overlay-z-index: 10000; // 遮罩层高度(遮住导航栏)
+@dialog-z-index: 10001; // 遮罩层内容高度(遮住导航栏)
