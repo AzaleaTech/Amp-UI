@@ -1,0 +1,26 @@
+<view class="header-container">
+  <view
+        class="header-fixed"
+        style="background: {{ background }}">
+    <view
+          class="status-bar"
+          style="height: {{ statusBarHeight }}px" />
+    <view
+          class="title-bar"
+          style="height:44px;">
+      <view bindtap="handleReturn">
+        <image
+               wx:if="{{ hasReturn }}"
+               src="/lib/Header/images/return.png" />
+      </view>
+      <view
+            style="color: {{ color }}"
+            class="title">{{ title }}
+      </view>
+    </view>
+  </view>
+  <view
+        class="status-bar"
+        style="height: {{ statusBarHeight + 44 }}px" />
+</view>
+
