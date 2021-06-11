@@ -1,0 +1,40 @@
+@import '../styles/index.less';
+
+.cropper-box {
+  padding: 80rpx 30rpx 0 30rpx;
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.show {
+  position: relative;
+  overflow: hidden;
+}
+
+.img {
+  overflow: scroll;
+}
+
+canvas {
+  position: fixed;
+  top: -9999rpx;
+  left: 0;
+}
+
+.bottom {
+  box-sizing: border-box;
+  position: fixed;
+  width: 100%;
+  padding: 0 60rpx;
+  bottom: 84rpx;
+
+  a-button {
+    display: block;
+
+    &:not(:first-child) {
+      padding-top: 32rpx;
+    }
+  }
+}

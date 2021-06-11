@@ -8,6 +8,7 @@
                  wx:key="index"
                  label="{{ item.label }}"
                  footerArrow
+                 data-label="{{ item.label }}"
                  data-url="{{ item.url }}"
                  bind:clickFormItem="handleClickFormItem"></a-form-item>
   </a-form>
