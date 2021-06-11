@@ -9,7 +9,8 @@
     "demo/pages/verification/index",
     "demo/pages/collapse/index",
     "demo/pages/modal/index",
-    "demo/pages/cropper/index"
+    "demo/pages/cropper/index",
+    "demo/pages/header/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
