@@ -1,0 +1,24 @@
+<modal
+       wx:if="{{show}}"
+       catch:tap="closeDialog">
+  <view class="dialog-body">
+    <view
+          wx:if="{{dialogData.title}}"
+          class="dialog-title">{{dialogData.title}}
+    </view>
+    <view class="dialog-contant">{{dialogData.content}}</view>
+    <view class="dialog-btn">
+      <a-button
+                wx:if="{{dialogData.cancelText}}"
+                width="{{248}}"
+                catch:clickButton="cancel">{{dialogData.cancelText}}
+      </a-button>
+      <a-button
+                type="primary"
+                width="{{dialogData.cancelText ? 248 : 566}}"
+                catch:clickButton="confirm">{{dialogData.confirmText || '确认'}}
+      </a-button>
+    </view>
+  </view>
+</modal>
+

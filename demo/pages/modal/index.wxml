@@ -1,0 +1,32 @@
+<view class="modal-box">
+  <button bindtap="handleModal">显示遮罩层</button>
+  <button bindtap="handleDialog">显示dialog弹窗</button>
+  <button bindtap="handleSuccessToast">显示success提示信息</button>
+  <button bindtap="handleErrorToast">显示error提示信息</button>
+  <button bindtap="handleWarningToast">显示waring提示信息</button>
+  <!-- 显示遮罩层 -->
+  <view wx:if="{{showModal}}">
+    <modal>modal</modal>
+  </view>
+  <!-- 显示dialog弹窗 -->
+  <view wx:if="{{showDialog}}">
+    <a-dialog dialogData="{{ dialogData }}" />
+  </view>
+  <!-- 显示success提示信息,2s后消失 -->
+  <view>
+    <a-toast
+             time="{{2000}}"
+             toastData="{{ toastData }}"></a-toast>
+  </view>
+  <!-- 显示error提示信息,3s后消失 -->
+  <view>
+    <a-toast
+             time="{{3000}}"
+             toastData="{{ toastData }}"></a-toast>
+  </view>
+  <!-- 显示warning提示信息，默认1.5s后消失 -->
+  <view>
+    <a-toast toastData="{{ toastData }}"></a-toast>
+  </view>
+</view>
+

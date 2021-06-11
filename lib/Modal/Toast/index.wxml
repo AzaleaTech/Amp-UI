@@ -1,0 +1,9 @@
+<modal wx:if="{{show}}">
+  <view class="toast-modal-body">
+    <image
+           src="./images/{{toastData.type}}.png"
+           class="toast-modal-img" />
+    <view class="toast-modal-content">{{toastData.content}}</view>
+  </view>
+</modal>
+

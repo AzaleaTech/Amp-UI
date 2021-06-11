@@ -1,0 +1,32 @@
+@import '../../styles/index.less';
+
+.dialog {
+  &-body {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 566rpx;
+    min-height: 220rpx;
+    border-radius: 24rpx;
+    font-size: 32rpx;
+    background: @white-color;
+    padding: 60rpx 40rpx 32rpx 40rpx;
+    text-align: center;
+    z-index: @dialog-z-index;
+  }
+
+  &-title {
+    font-size: 32rpx;
+    margin-bottom: 40rpx;
+  }
+
+  &-content {
+    max-height: 466rpx;
+  }
+
+  &-btn {
+    margin-top: 70rpx;
+    .flex-between()
+  }
+}
