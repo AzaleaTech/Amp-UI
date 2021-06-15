@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "a-record": "/lib/Record/index"
+  }
+}

@@ -10,6 +10,7 @@ Page({
       { label: 'Modal 遮罩层（包括Dialog和Toast）', url: '../modal/index' },
       { label: 'Cropper 图片剪裁', url: '../cropper/index' },
       { label: 'Header 页面header', url: '../header/index' },
+      { label: 'Record 录音组件', url: '../record/index' },
     ],
     //用于图片剪裁
     imgs: '/demo/assets/images/test-avatar.jpg'
