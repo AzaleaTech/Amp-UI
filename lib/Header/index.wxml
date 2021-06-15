@@ -8,14 +8,15 @@
     <view
           class="title-bar"
           style="height:44px;">
-      <view bindtap="handleReturn">
+      <view bind:tap="handleReturn">
         <image
                wx:if="{{ hasReturn }}"
                src="/lib/Header/images/return.png" />
       </view>
       <view
             style="color: {{ color }}"
-            class="title">{{ title }}
+            class="title">
+        <text>{{ title }}</text>
       </view>
     </view>
   </view>

@@ -1,0 +1,8 @@
+<view>1.tips="长按发表意见"</view>
+<a-record
+          tips="长按发表意见"
+          bind:change="handleRecord" />
+<view>2.不传tips</view>
+<!-- 不传tips，默认为“长按录入详细信息” -->
+<a-record bind:change="handleRecord" />
+

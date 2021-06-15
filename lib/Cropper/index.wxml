@@ -15,10 +15,10 @@
                    scroll-x
                    scroll-y
                    style="width: {{ screenWidth }}px; height: {{ screenWidth / cutScale }}px"
-                   bindscroll="handleScroll">
+                   bind:scroll="handleScroll">
         <image
                src="{{ imgUrl }}"
-               style=" width: {{ width }}px; height: {{ height }}px" />
+               style="width: {{ width }}px; height: {{ height }}px" />
       </scroll-view>
       <canvas
               canvas-id="canvas"
@@ -29,14 +29,16 @@
     <block wx:if="{{ croppedPic }}">
       <a-button
                 type="primary"
-                bind:clickButton="handleSave">保存图片
+                bind:clickButton="handleSave">
+        <text>保存图片</text>
       </a-button>
       <a-button bind:clickButton="handleResetImage">重新裁剪</a-button>
     </block>
     <block wx:else>
       <a-button
                 type="primary"
-                bind:clickButton="handleCrop">裁切图片
+                bind:clickButton="handleCrop">
+        <text>裁切图片</text>
       </a-button>
       <a-button bind:clickButton="handleCancel">取消</a-button>
     </block>
