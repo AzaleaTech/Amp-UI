@@ -1,2 +1,20 @@
-<a-header title="Header" />
+<a-header
+          background="{{ background }}"
+          color="{{ color }}"
+          has-return="{{ hasReturn }}"
+          title="{{ title }}" />
+<view class="example-box">
+  <view class="example-box-content">
+    <button bind:tap="handleBackground">点击改变背景颜色</button>
+  </view>
+  <view class="example-box-content">
+    <button bind:tap="handleColor">点击改变字体颜色</button>
+  </view>
+  <view class="example-box-content">
+    <button bind:tap="handleReturn">是否有返回按钮</button>
+  </view>
+  <view class="example-box-content">
+    <button bind:tap="handleTitle">点击改变标题</button>
+  </view>
+</view>
 

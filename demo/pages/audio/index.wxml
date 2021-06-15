@@ -1,0 +1,14 @@
+<view class="example-box">
+  <view class="example-box-title">音频播放组件</view>
+  <view class="example-box-content">
+    <a-player url="{{ audioUrl1 }}" />
+  </view>
+  <view class="example-box-title">录音组件</view>
+  <view class="example-box-title">1.tips="长按发表意见"</view>
+  <a-record
+            tips="长按发表意见"
+            bind:change="handleRecord" />
+  <view class="example-box-title">2.不传tips,默认为“长按录入详细信息”</view>
+  <a-record bind:change="handleRecord" />
+</view>
+

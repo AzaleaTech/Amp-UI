@@ -1,0 +1,33 @@
+@import '../../styles/index.less';
+
+.video {
+  width: 100%;
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+
+  &-box {
+    position: relative;
+    border-radius: 8rpx;
+    margin: 30rpx 30rpx 0 0;
+    .set-size(140rpx);
+    
+    video {
+      .set-size(100%)
+    }
+
+    image:first-child{
+      .set-size(100%)
+    }
+
+    cover-image {
+      z-index: 2;
+      position: absolute;
+      padding: 12rpx;
+      top: 0;
+      right: 0;
+      transform: translate(40%, -40%);
+      .set-size(36rpx);
+    }
+  }
+}

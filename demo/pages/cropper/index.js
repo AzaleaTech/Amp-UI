@@ -1,20 +1,13 @@
 Page({
   data: {
-    imgs: '',
-    imgParam: 'imgs',
+    image: '',
   },
 
   onLoad(e) {
-    this.setData({ imgs: e.imgs, imgParam: e.imgParam || 'imgs' });
+    this.setData({ image: e.image });
   },
 
-  handleSave(e) {
-    const { item, fileName } = e.detail;
-    wx.showLoading({ title: '保存中' });
-    // 保存图片后的操作
-  },
+  handleSave(e) {},
 
-  handleCancel() {
-    wx.navigateBack();
-  },
+  handleCancel() {},
 });

@@ -1,7 +1,7 @@
 <cropper
-         imgUrl="{{ imgs }}"
          cutScale="{{ 690 / 400 }}"
+         imgUrl="{{ image }}"
          type="uploadImage"
-         bind:save="handleSave"
-         bind:cancel="handleCancel" />
+         bind:cancel="handleCancel"
+         bind:save="handleSave" />
 

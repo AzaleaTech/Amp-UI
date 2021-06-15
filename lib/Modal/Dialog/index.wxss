@@ -17,7 +17,7 @@
   margin-bottom: 40rpx;
 }
 .dialog-content {
-  max-height: 466rpx;
+  max-height: 1000rpx;
 }
 .dialog-btn {
   margin-top: 70rpx;

@@ -1,47 +1,51 @@
-<view>
-  <view class="cropper-box">
-    <image
-           wx:if="{{ croppedPic }}"
-           src="{{ croppedPic }}"
-           class="show"
-           style="width: {{ cutWidth }}px; height: {{ cutWidth / cutScale }}px; {{ type === 'avatar' ? 'border-radius: 50%' : '' }}" />
-    <view
-          wx:else
-          class="show"
-          style="width: {{ screenWidth }}px; height: {{ screenWidth / cutScale }}px; {{ type === 'avatar' ? 'border-radius: 50%' : '' }}"
-          bind:touchstart="handleStart"
-          bind:touchmove="handleMove">
-      <scroll-view
-                   scroll-x
-                   scroll-y
-                   style="width: {{ screenWidth }}px; height: {{ screenWidth / cutScale }}px"
-                   bind:scroll="handleScroll">
+<modal>
+  <view class="container">
+    <view class="cropper">
+      <view class="cropper-box">
         <image
-               src="{{ imgUrl }}"
-               style="width: {{ width }}px; height: {{ height }}px" />
-      </scroll-view>
-      <canvas
-              canvas-id="canvas"
-              style="width: {{ width }}px; height: {{ height }}px" />
+               wx:if="{{ croppedPic }}"
+               src="{{ croppedPic }}"
+               class="show"
+               style="width: {{ cutWidth }}px; height: {{ cutWidth / cutScale }}px; {{ type === 'avatar' ? 'border-radius: 50%' : '' }}" />
+        <view
+              wx:else
+              class="show"
+              style="width: {{ screenWidth }}px; height: {{ screenWidth / cutScale }}px; {{ type === 'avatar' ? 'border-radius: 50%' : '' }}"
+              bind:touchstart="handleStart"
+              bind:touchmove="handleMove">
+          <scroll-view
+                       scroll-x
+                       scroll-y
+                       style="width: {{ screenWidth }}px; height: {{ screenWidth / cutScale }}px"
+                       bind:scroll="handleScroll">
+            <image
+                   src="{{ imgUrl }}"
+                   style="width: {{ width }}px; height: {{ height }}px" />
+          </scroll-view>
+          <canvas
+                  canvas-id="canvas"
+                  style="width: {{ width }}px; height: {{ height }}px" />
+        </view>
+      </view>
+      <view class="bottom">
+        <block wx:if="{{ croppedPic }}">
+          <a-button
+                    type="primary"
+                    bind:clickButton="handleSave">
+            <text>保存图片</text>
+          </a-button>
+          <a-button bind:clickButton="handleResetImage">重新裁剪</a-button>
+        </block>
+        <block wx:else>
+          <a-button
+                    type="primary"
+                    bind:clickButton="handleCrop">
+            <text>裁切图片</text>
+          </a-button>
+          <a-button bind:clickButton="handleCancel">取消</a-button>
+        </block>
+      </view>
     </view>
   </view>
-  <view class="bottom">
-    <block wx:if="{{ croppedPic }}">
-      <a-button
-                type="primary"
-                bind:clickButton="handleSave">
-        <text>保存图片</text>
-      </a-button>
-      <a-button bind:clickButton="handleResetImage">重新裁剪</a-button>
-    </block>
-    <block wx:else>
-      <a-button
-                type="primary"
-                bind:clickButton="handleCrop">
-        <text>裁切图片</text>
-      </a-button>
-      <a-button bind:clickButton="handleCancel">取消</a-button>
-    </block>
-  </view>
-</view>
+</modal>
 

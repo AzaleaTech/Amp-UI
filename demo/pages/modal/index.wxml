@@ -1,12 +1,27 @@
-<view class="modal-box">
-  <button bindtap="handleModal">显示遮罩层</button>
-  <button bindtap="handleDialog">显示dialog弹窗</button>
-  <button bindtap="handleSuccessToast">显示success提示信息</button>
-  <button bindtap="handleErrorToast">显示error提示信息</button>
-  <button bindtap="handleWarningToast">显示waring提示信息</button>
+<view class="example-box">
+  <view class="example-box-title">显示遮罩层</view>
+  <view class="example-box-content">
+    <button bindtap="handleModal">显示遮罩层</button>
+  </view>
+  <view class="example-box-title">显示dialog弹窗</view>
+  <view class="example-box-content">
+    <button bindtap="handleDialog">显示dialog弹窗</button>
+  </view>
+  <view class="example-box-title">显示success提示信息</view>
+  <view class="example-box-content">
+    <button bindtap="handleSuccessToast">显示success提示信息</button>
+  </view>
+  <view class="example-box-title">显示error提示信息</view>
+  <view class="example-box-content">
+    <button bindtap="handleErrorToast">显示error提示信息</button>
+  </view>
+  <view class="example-box-title">显示waring提示信息</view>
+  <view class="example-box-content">
+    <button bindtap="handleWarningToast">显示waring提示信息</button>
+  </view>
   <!-- 显示遮罩层 -->
   <view wx:if="{{ showModal }}">
-    <modal>modal</modal>
+    <modal></modal>
   </view>
   <!-- 显示dialog弹窗 -->
   <view wx:if="{{ showDialog }}">
