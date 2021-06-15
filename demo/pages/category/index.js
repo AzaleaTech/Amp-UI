@@ -11,6 +11,7 @@ Page({
       { label: 'Cropper 图片剪裁', url: '../cropper/index' },
       { label: 'Header 页面header', url: '../header/index' },
       { label: 'Record 录音组件', url: '../record/index' },
+      { label: 'Player 音频组件', url: '../player/index' },
     ],
     //用于图片剪裁
     imgs: '/demo/assets/images/test-avatar.jpg'
