@@ -8,20 +8,20 @@ Page({
       { label: 'Verification 验证码按钮', url: '../verification/index' },
       { label: 'Collapse 可折叠列表', url: '../collapse/index' },
       { label: 'Modal 遮罩层（包括Dialog和Toast）', url: '../modal/index' },
-      { label: 'Cropper 图片剪裁', url: '../cropper/index' },
       { label: 'Header 页面header', url: '../header/index' },
-      { label: 'Record 录音组件', url: '../record/index' },
-      { label: 'Player 音频组件', url: '../player/index' },
       { label: 'Rate 评分组件', url: '../rate/index' },
+      { label: 'Audio 音频和录音组件', url: '../audio/index' },
+      { label: 'Cropper 图片裁剪组件', url: '../cropper/index' },
+      { label: 'Upload 上传图片或视频组件', url: '../upload/index' },
     ],
     //用于图片剪裁
-    imgs: '/demo/assets/images/test-avatar.jpg'
+    img: '/demo/assets/images/test-avatar.jpg'
   },
 
   handleClickFormItem(e) {
-    if(e.currentTarget.dataset.label ==  'Cropper 图片剪裁') {
+    if(e.currentTarget.dataset.label ==  'Cropper 图片裁剪组件') {
       wx.navigateTo({
-        url: e.currentTarget.dataset.url + `?imgs=${this.data.imgs}`,
+        url: e.currentTarget.dataset.url + `?image=${this.data.img}`,
       });
     }
     wx.navigateTo({ url: e.currentTarget.dataset.url });

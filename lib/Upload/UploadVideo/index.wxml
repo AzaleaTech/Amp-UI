@@ -1,0 +1,23 @@
+<view class="video">
+  <view
+        wx:for="{{ videos }}"
+        wx:key="id"
+        class="video-box"
+        style="width: {{ width }}rpx; height: {{ height }}rpx">
+    <video
+           show-center-play-btn="{{ false }}"
+           src="{{ item }}" />
+    <cover-image
+                 data-index="{{ index }}"
+                 hidden="{{ disabled }}"
+                 src="../images/remove.png"
+                 bind:tap="removeVideo" />
+  </view>
+  <view
+        class="video-box"
+        style="width: {{ width }}rpx; height: {{ height }}rpx"
+        bind:tap="chooseVideo">
+    <image src="../images/default-video.png" />
+  </view>
+</view>
+

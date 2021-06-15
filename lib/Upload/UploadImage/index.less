@@ -1,0 +1,27 @@
+@import '../../styles/index.less';
+
+.img {
+  width: 100%;
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+
+  &-box {
+    position: relative;
+    border-radius: 8rpx;
+    margin: 30rpx 30rpx 0 0;
+    .set-size(140rpx);
+
+    image:first-child {
+      .set-size(100%)
+    }
+
+    .del-img {
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(40%, -40%);
+      .set-size(36rpx);
+    }
+  }
+}

@@ -11,9 +11,11 @@
       <a-button
                 wx:if="{{ dialogData.cancelText }}"
                 width="{{ 248 }}"
-                catch:clickButton="cancel">{{ dialogData.cancelText }}
+                catch:clickButton="cancel">
+        <text>{{ dialogData.cancelText }}</text>
       </a-button>
       <a-button
+                wx:if="{{ dialogData.confirmText }}"
                 type="primary"
                 width="{{ dialogData.cancelText ? 248 : 566 }}"
                 catch:clickButton="confirm">

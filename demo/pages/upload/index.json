@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "upload-image": "/lib/Upload/UploadImage/index",
+    "upload-video": "/lib/Upload/UploadVideo/index"
+  }
+}

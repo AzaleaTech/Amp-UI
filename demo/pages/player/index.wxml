@@ -1,3 +1,0 @@
-<view>音频播放组件</view>
-<a-player url="{{ videoUrl }}" />
-

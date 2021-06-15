@@ -1,7 +1,19 @@
 @import '../styles/index.less';
 
+.container {
+  .set-size(100%);
+  .flex-center();
+
+  .cropper{
+    border-radius: 16rpx;
+    background-color: @white-color;
+    .set-size(96%, 70%);
+  }
+}
+
 .cropper-box {
   padding: 80rpx 30rpx 0 30rpx;
+  .flex-center();
 
   ::-webkit-scrollbar {
     display: none;
@@ -25,7 +37,8 @@ canvas {
 
 .bottom {
   box-sizing: border-box;
-  position: fixed;
+  margin-top: 300rpx;
+  position: relative;
   width: 100%;
   padding: 0 60rpx;
   bottom: 84rpx;

@@ -11,9 +11,9 @@
     "demo/pages/modal/index",
     "demo/pages/cropper/index",
     "demo/pages/header/index",
-    "demo/pages/record/index",
-    "demo/pages/player/index",
-    "demo/pages/rate/index"
+    "demo/pages/rate/index",
+    "demo/pages/audio/index",
+    "demo/pages/upload/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
