@@ -1,0 +1,48 @@
+<view class="example-box">
+  <view class="example-box-title">图标宽高默认为80rpx,默认为5个图标，默认disabled为fasle，不禁用可以打分</view>
+  <view class="example-box-content">
+    <rate value="{{ score / 10 }}">{{ score }}</rate>
+  </view>
+  <view class="example-box-title">设置图标宽高为70rpx，默认为80rpx,disabled为false，不禁用则可以点击打分</view>
+  <view class="example-box-content">
+    <rate
+          height="70"
+          value="{{ score / 10 }}"
+          width="70">
+      <text>{{ score }}</text>
+    </rate>
+  </view>
+  <view class="example-box-title">设置图标宽高为56rpx，disabled为true，不可以点击打分</view>
+  <view class="example-box-content">
+    <rate
+          disabled
+          height="56"
+          value="{{ score1 / 10 }}"
+          width="56">
+      <text>{{ score1 }}</text>
+    </rate>
+  </view>
+  <view class="example-box-title">设置最高为80分，即count为8，8个图标</view>
+  <view class="example-box-content">
+    <rate
+          count="{{ 8 }}"
+          disabled
+          height="56"
+          value="{{ score2 / 10 }}"
+          width="56">
+      <text>{{ score2 }}</text>
+    </rate>
+  </view>
+  <view class="example-box-title">设置最高为100分，即count为10，10个图标</view>
+  <view class="example-box-content">
+    <rate
+          count="{{ 10 }}"
+          disabled
+          height="56"
+          value="{{ score3 / 10 }}"
+          width="56">
+      <text>{{ score3 }}</text>
+    </rate>
+  </view>
+</view>
+

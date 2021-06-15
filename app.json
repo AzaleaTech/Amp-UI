@@ -10,7 +10,10 @@
     "demo/pages/collapse/index",
     "demo/pages/modal/index",
     "demo/pages/cropper/index",
-    "demo/pages/header/index"
+    "demo/pages/header/index",
+    "demo/pages/record/index",
+    "demo/pages/player/index",
+    "demo/pages/rate/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
