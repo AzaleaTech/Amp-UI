@@ -9,10 +9,6 @@
       {
         "type": "suffix",
         "value": ".less"
-      },
-      {
-        "type": "prefix",
-        "value": "app."
       }
     ]
   },
