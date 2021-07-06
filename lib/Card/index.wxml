@@ -1,6 +1,6 @@
 <view
       class="card"
-      catchtap="handleTap">
+      catch:tap="handleTap">
   <view class="card-body {{ imgUrl ? '' : 'card-body-full' }}">
     <image
            wx:if="{{ imgUrl }}"
@@ -38,7 +38,8 @@
         </view>
         <view
               wx:if="{{ spec.likes }}"
-              class="card-spec-likes">
+              class="card-spec-likes"
+              catch:tap="handleLike">
           <image
                  class="card-spec-likes-icon"
                  src="{{ spec.likes.url }}" />

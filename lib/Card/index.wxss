@@ -14,6 +14,7 @@
   height: 204rpx;
 }
 .card-body .card-container {
+  position: relative;
   width: calc(100% - 234rpx);
 }
 .card-body .card-container .card-title {
@@ -69,6 +70,9 @@
   margin-bottom: 2px;
 }
 .card-spec .card-spec-likes {
+  position: absolute;
+  right: 0;
+  bottom: 8rpx;
   display: flex;
   justify-content: flex-start;
   align-items: center;
