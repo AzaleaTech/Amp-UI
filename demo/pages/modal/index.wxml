@@ -7,6 +7,14 @@
   <view class="example-box-content">
     <button bindtap="handleDialog">显示dialog弹窗</button>
   </view>
+  <view class="example-box-title">显示带有按钮的dialog弹窗</view>
+  <view class="example-box-content">
+    <button bindtap="handleButtonDialog">显示带有按钮的dialog弹窗</button>
+  </view>
+  <view class="example-box-title">显示最大高度的dialog弹窗</view>
+  <view class="example-box-content">
+    <button bindtap="handleMaxHeightDialog">显示最大高度的dialog弹窗</button>
+  </view>
   <view class="example-box-title">显示success提示信息</view>
   <view class="example-box-content">
     <button bindtap="handleSuccessToast">显示success提示信息</button>

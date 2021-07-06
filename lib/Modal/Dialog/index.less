@@ -5,28 +5,32 @@
     position: absolute;
     top: 45%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    width: 566rpx;
-    min-height: 220rpx;
-    border-radius: 24rpx;
-    font-size: 32rpx;
-    background: @white-color;
-    padding: 60rpx 40rpx 32rpx 40rpx;
-    text-align: center;
     z-index: @dialog-z-index;
+    min-height: 262rpx;
+    width: 646rpx;
+    border-radius: 24rpx;
+    background: @white-color;
+    text-align: center;
+    font-size: 32rpx;
+    transform: translate(-50%, -50%);
   }
 
   &-title {
+    padding: 60rpx 40rpx 40rpx 40rpx;
+    font-weight: 700;
     font-size: 32rpx;
-    margin-bottom: 40rpx;
   }
 
   &-content {
-    max-height: 1000rpx;
+    overflow: auto;
+    padding: 0 40rpx;
+    max-height: 800rpx;
   }
 
   &-btn {
     margin-top: 70rpx;
-    .flex-between()
+    padding: 0 40rpx 32rpx 40rpx;
+
+    .flex-between();
   }
 }
