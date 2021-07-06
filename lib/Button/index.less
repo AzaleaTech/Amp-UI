@@ -1,11 +1,11 @@
 @import '../styles/index.less';
 
 .icon-btn {
+  height: 90rpx;
   color: @text-color-tertiary;
+  text-align: center;
   font-size: 22rpx;
   line-height: 32rpx;
-  height: 90rpx;
-  text-align: center;
   .flex-center();
 
   &-content {
@@ -19,15 +19,15 @@
 
 .btn {
   position: relative;
-  padding: 20rpx;
   box-sizing: border-box;
+  padding: 20rpx;
   .flex-center();
 
   &-normal {
     height: 90rpx;
+    border-radius: 50rpx;
     font-size: 32rpx;
     line-height: 44rpx;
-    border-radius: 50rpx;
 
     .icon {
       margin-right: 10rpx;
@@ -35,12 +35,24 @@
     }
   }
 
+  &-small {
+    height: 72rpx;
+    border-radius: 46rpx;
+    font-size: 30rpx;
+    line-height: 40rpx;
+
+    .icon {
+      margin-right: 10rpx;
+      .set-size(30rpx);
+    }
+  }
+
   &-mini {
+    padding: 10rpx 20rpx;
     height: 56rpx;
+    border-radius: 40rpx;
     font-size: 26rpx;
     line-height: 36rpx;
-    border-radius: 40rpx;
-    padding: 10rpx 20rpx;
 
     .icon {
       margin-right: 10rpx;
@@ -49,9 +61,9 @@
   }
 
   &-default {
+    border: 2px solid @primary-color;
     background-color: @white-color;
     color: @primary-color;
-    border: 2px solid @primary-color;
 
     &-active {
       border: 0;
@@ -68,7 +80,6 @@
 
 .child {
   &-first {
-
     .btn,
     .btn-mask {
       border-top-right-radius: 0;
@@ -77,7 +88,6 @@
   }
 
   &-middle {
-
     .btn,
     .btn-mask {
       border-radius: 0;
@@ -85,7 +95,6 @@
   }
 
   &-last {
-
     .btn,
     .btn-mask {
       border-top-left-radius: 0;
@@ -102,6 +111,10 @@
 
   &-normal {
     border-radius: 50rpx;
+  }
+
+  &-small {
+    border-radius: 46rpx;
   }
 
   &-mini {

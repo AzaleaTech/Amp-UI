@@ -1,9 +1,9 @@
 .icon-btn {
+  height: 90rpx;
   color: #868686;
+  text-align: center;
   font-size: 22rpx;
   line-height: 32rpx;
-  height: 90rpx;
-  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,29 +18,40 @@
 }
 .btn {
   position: relative;
-  padding: 20rpx;
   box-sizing: border-box;
+  padding: 20rpx;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .btn-normal {
   height: 90rpx;
+  border-radius: 50rpx;
   font-size: 32rpx;
   line-height: 44rpx;
-  border-radius: 50rpx;
 }
 .btn-normal .icon {
   margin-right: 10rpx;
   width: 32rpx;
   height: 32rpx;
 }
+.btn-small {
+  height: 72rpx;
+  border-radius: 46rpx;
+  font-size: 30rpx;
+  line-height: 40rpx;
+}
+.btn-small .icon {
+  margin-right: 10rpx;
+  width: 30rpx;
+  height: 30rpx;
+}
 .btn-mini {
+  padding: 10rpx 20rpx;
   height: 56rpx;
+  border-radius: 40rpx;
   font-size: 26rpx;
   line-height: 36rpx;
-  border-radius: 40rpx;
-  padding: 10rpx 20rpx;
 }
 .btn-mini .icon {
   margin-right: 10rpx;
@@ -48,9 +59,9 @@
   height: 26rpx;
 }
 .btn-default {
+  border: 2px solid #e9a32d;
   background-color: #ffffff;
   color: #e9a32d;
-  border: 2px solid #e9a32d;
 }
 .btn-default-active {
   border: 0;
@@ -84,6 +95,9 @@
 }
 .btn-mask-normal {
   border-radius: 50rpx;
+}
+.btn-mask-small {
+  border-radius: 46rpx;
 }
 .btn-mask-mini {
   border-radius: 40rpx;
