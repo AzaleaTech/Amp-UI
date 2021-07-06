@@ -8,10 +8,11 @@
     <view
           class="title-bar"
           style="height:44px;">
-      <view bind:tap="handleReturn">
-        <image
-               wx:if="{{ hasReturn }}"
-               src="/lib/Header/images/return.png" />
+      <view
+            wx:if="{{ hasReturn }}"
+            class="back-button"
+            bind:tap="handleReturn">
+        <image src="./images/return.png" />
       </view>
       <view
             style="color: {{ color }}"
