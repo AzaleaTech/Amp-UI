@@ -14,6 +14,7 @@
                  bind:tap="removeVideo" />
   </view>
   <view
+        wx:if="{{ limit < 0 || videos.length < limit }}"
         class="video-box"
         style="width: {{ width }}rpx; height: {{ height }}rpx"
         bind:tap="chooseVideo">
