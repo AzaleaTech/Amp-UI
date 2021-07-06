@@ -2,25 +2,28 @@
   position: absolute;
   top: 45%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  width: 566rpx;
-  min-height: 220rpx;
-  border-radius: 24rpx;
-  font-size: 32rpx;
-  background: #ffffff;
-  padding: 60rpx 40rpx 32rpx 40rpx;
-  text-align: center;
   z-index: 10001;
+  min-height: 262rpx;
+  width: 646rpx;
+  border-radius: 24rpx;
+  background: #ffffff;
+  text-align: center;
+  font-size: 32rpx;
+  transform: translate(-50%, -50%);
 }
 .dialog-title {
+  padding: 60rpx 40rpx 40rpx 40rpx;
+  font-weight: 700;
   font-size: 32rpx;
-  margin-bottom: 40rpx;
 }
 .dialog-content {
-  max-height: 1000rpx;
+  overflow: auto;
+  padding: 0 40rpx;
+  max-height: 800rpx;
 }
 .dialog-btn {
   margin-top: 70rpx;
+  padding: 0 40rpx 32rpx 40rpx;
   display: flex;
   align-items: center;
   justify-content: space-between;
