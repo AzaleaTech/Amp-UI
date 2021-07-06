@@ -28,7 +28,7 @@
                   bind:choose="handleChooseVideo"
                   bind:remove="handleRemoveVideo" />
   </view>
-  <view class="example-box-title">上传视频,压缩，设置宽高140rpx，不设置则宽度为200rpx,高度为150rpx</view>
+  <view class="example-box-title">上传视频,压缩，设置宽高140rpx，不设置则宽度为200rpx,高度为150rpx,限制只能上传一个视频</view>
   <view class="example-box-content">
     <upload-video
                   compressed="{{ true }}"
@@ -36,6 +36,7 @@
                   sourceType="{{ ['camera'] }}"
                   videos="{{ videos1 }}"
                   width="{{ width1 }}"
+                  limit="{{ 1 }}"
                   bind:choose="handleChooseVideo1"
                   bind:remove="handleRemoveVideo1" />
   </view>
