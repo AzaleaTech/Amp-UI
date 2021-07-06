@@ -4,6 +4,6 @@
           width="184"
           disabled="{{ remainingTime > 0 || disabled }}"
           bind:clickButton="handleClickButton">
-  {{ content }}{{ remainingTime ? remainingTime : '' }}
+  {{ content }}{{ remainingTime ? remainingTime + 's' : '' }}
 </a-button>
 
