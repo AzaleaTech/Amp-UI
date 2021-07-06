@@ -24,14 +24,18 @@ Page({
         size: 26,
         tags: [{ content: '测试tag', color: 'rgba(255, 0, 0, 1)' }],
         likes: {
-          url: '/demo/assets/images/likes-list-icon.png',
+          url: './images/likes-list-icon.png',
           value: 15,
         },
       },
     },
   },
 
-  handleClickCard() {
+  handleClick() {
     wx.showToast({ title: '点击卡片' });
+  },
+
+  handleLike() {
+    wx.showToast({ title: '点赞成功' });
   },
 });

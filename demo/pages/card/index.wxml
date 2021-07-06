@@ -37,7 +37,8 @@
           title="{{ card.title }}"
           contents="{{ card.contents }}"
           imgUrl="{{ card.imgUrl }}"
-          spec="{{ card.spec }}"></a-card>
+          spec="{{ card.spec }}"
+          bind:like="handleLike"></a-card>
 </view>
 <view class="example-box">
   <view class="example-box-title">复合card(包括点击卡片功能)</view>
@@ -48,7 +49,8 @@
           imgUrl="{{ card.imgUrl }}"
           footer="{{ card.footer }}"
           spec="{{ card.spec }}"
-          bind:clickCard="handleClickCard">
+          bind:click="handleClick"
+          bind:like="handleLike">
     <a-button
               type="primary"
               size="mini">测试按钮
