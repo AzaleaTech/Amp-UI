@@ -1,6 +1,7 @@
 {
   "usingComponents": {
     "upload-image": "/lib/Upload/UploadImage/index",
-    "upload-video": "/lib/Upload/UploadVideo/index"
+    "upload-video": "/lib/Upload/UploadVideo/index",
+    "a-toast": "/lib/Modal/Toast/index"
   }
 }
