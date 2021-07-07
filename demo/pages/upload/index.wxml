@@ -5,20 +5,20 @@
                   imgs="{{ image1 }}"
                   isCropper="{{ isCropper1 }}"
                   limit="{{ 2 }}"
-                  size="{{ 200 }}"
+                  width="{{ 200 }}"
+                  height="{{ 200 }}"
                   sourceType="{{ ['camera'] }}"
-                  bind:choose="handleChooseImage1"
-                  bind:remove="handleRemoveImage1" />
+                  bind:change="handleChange1" />
   </view>
-  <view class="example-box-title">上传相册图片,限制上传图片为1张,可裁剪</view>
+  <view class="example-box-title">上传相册图片,限制上传图片为1张,上传图片大小为500KB,可裁剪</view>
   <view class="example-box-content">
     <upload-image
                   imgs="{{ image2 }}"
                   isCropper="{{ isCropper2 }}"
                   limit="{{ 1 }}"
+                  size="{{ 500 }}"
                   sourceType="{{ ['album'] }}"
-                  bind:choose="handleChooseImage2"
-                  bind:remove="handleRemoveImage2" />
+                  bind:change="handleChange2" />
   </view>
   <view class="example-box-title">上传相册视频,默认不压缩，不设置size则宽度为200rpx,高度为150rpx</view>
   <view class="example-box-content">
@@ -51,4 +51,7 @@
                   bind:remove="handleRemoveVideo2" />
   </view>
 </view>
+<a-toast
+         toastData="{{ toastData }}"
+         time="{{ 1500 }}" />
 

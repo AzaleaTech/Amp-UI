@@ -1,9 +1,9 @@
 <view class="img">
   <view
-        wx:for="{{ imgs }}"
+        wx:for="{{ imgList }}"
         wx:key="id"
         class="img-box"
-        style="width: {{ size }}rpx; height: {{ size }}rpx">
+        style="width: {{ width }}rpx; height: {{ height }}rpx">
     <image
            src="{{ item }}"
            data-index="{{ index }}"
@@ -16,9 +16,9 @@
            bind:tap="removeImage" />
   </view>
   <view
-        wx:if="{{ (limit > imgs.length || !limit) && !disabled }}"
+        wx:if="{{ (limit > imgList.length || !limit) && !disabled }}"
         class="img-box"
-        style="width: {{ size }}rpx; height: {{ size }}rpx"
+        style="width: {{ width }}rpx; height: {{ height }}rpx"
         bind:tap="chooseImage">
     <image src="../images/default-image.png" />
   </view>
