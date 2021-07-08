@@ -4,47 +4,49 @@ Page({
     showDialog: false,
   },
 
-  handleModal(){
+  handleModal() {
     this.setData({
       showModal: true,
-    })
+    });
   },
 
-  handleDialog(){
+  handleDialog() {
     this.setData({
       showDialog: true,
-      dialogData:{
+      dialogData: {
         title: '弹窗标题',
-        content:'弹窗内容',
+        content: '弹窗内容',
       },
-    })
+    });
   },
 
-  handleSuccessToast(){
+  handleSuccessToast() {
     this.setData({
       toastData: {
         content: '成功提示',
         type: 'success',
-      }
-    })
+      },
+      time: 2000,
+    });
   },
 
-  handleErrorToast(){
+  handleErrorToast() {
     this.setData({
       toastData: {
         content: '错误提示',
         type: 'error',
-      }
-    })
+      },
+      time: 1500,
+    });
   },
 
-  handleWarningToast(){
+  handleWarningToast() {
     this.setData({
       toastData: {
         content: '警告提示',
         type: 'warning',
-      }
-    })
+      },
+      time: 3000,
+    });
   },
-
 });
