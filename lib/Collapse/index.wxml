@@ -14,11 +14,11 @@
             class="collapse-icon">
         <image
                wx:if="{{ item.opened }}"
-               src="../assets/images/caret-down-icon.png"
+               src="./images/caret-down-icon.png"
                class="collapse-icon-fold" />
         <image
                wx:else
-               src="../assets/images/caret-up-icon.png"
+               src="./images/caret-up-icon.png"
                class="collapse-icon-fold" />
       </view>
     </view>
@@ -37,7 +37,7 @@
         <view wx:if="{{ childItem.detail }}">{{ childItem.detail }}</view>
         <view class="collapse-icon">
           <image
-                 src="../assets/images/arrow-right-icon.png"
+                 src="./images/arrow-right-icon.png"
                  class="collapse-icon-arrow" />
         </view>
       </view>

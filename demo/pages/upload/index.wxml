@@ -2,23 +2,22 @@
   <view class="example-box-title">上传拍摄图片,限制上传图片为2张,不可裁剪,宽高设为200rpx</view>
   <view class="example-box-content">
     <upload-image
-                  imgs="{{ image1 }}"
-                  isCropper="{{ isCropper1 }}"
+                  imgs="{{ images }}"
                   limit="{{ 2 }}"
                   width="{{ 200 }}"
                   height="{{ 200 }}"
                   sourceType="{{ ['camera'] }}"
-                  bind:change="handleChange1" />
+                  bind:change="handleImageChange" />
   </view>
   <view class="example-box-title">上传相册图片,限制上传图片为1张,上传图片大小为500KB,可裁剪</view>
   <view class="example-box-content">
     <upload-image
-                  imgs="{{ image2 }}"
-                  isCropper="{{ isCropper2 }}"
+                  imgs="{{ cropperImages }}"
+                  isCropper="{{ isCropper }}"
                   limit="{{ 1 }}"
                   size="{{ 500 }}"
                   sourceType="{{ ['album'] }}"
-                  bind:change="handleChange2" />
+                  bind:change="handleCropperImageChange" />
   </view>
   <view class="example-box-title">上传相册视频,默认不压缩，不设置size则宽度为200rpx,高度为150rpx</view>
   <view class="example-box-content">
@@ -32,23 +31,23 @@
   <view class="example-box-content">
     <upload-video
                   compressed="{{ true }}"
-                  height="{{ height1 }}"
+                  height="{{ minHeight }}"
                   sourceType="{{ ['camera'] }}"
-                  videos="{{ videos1 }}"
-                  width="{{ width1 }}"
+                  videos="{{ compressVideos }}"
+                  width="{{ minWidth }}"
                   limit="{{ 1 }}"
-                  bind:choose="handleChooseVideo1"
-                  bind:remove="handleRemoveVideo1" />
+                  bind:choose="handleChooseCompressVideo"
+                  bind:remove="handleRemoveCompressVideo" />
   </view>
   <view class="example-box-title">上传视频,默认不压缩，设置宽400rpx,高300rpx，不设置则宽度为200rpx,高度为150rpx</view>
   <view class="example-box-content">
     <upload-video
-                  height="{{ height2 }}"
+                  height="{{ largeHeight }}"
                   sourceType="{{ ['camera'] }}"
-                  videos="{{ videos2 }}"
-                  width="{{ width2 }}"
-                  bind:choose="handleChooseVideo2"
-                  bind:remove="handleRemoveVideo2" />
+                  videos="{{ largeVideos }}"
+                  width="{{ largeWidth }}"
+                  bind:choose="handleChooseLargeVideo"
+                  bind:remove="handleRemoveLargeVideo" />
   </view>
 </view>
 <a-toast

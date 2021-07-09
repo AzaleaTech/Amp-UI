@@ -31,7 +31,7 @@
       <image
              wx:if="{{ footerArrow }}"
              class="form-item-footer-icon"
-             src="../assets/images/arrow-right-icon.png" />
+             src="./images/arrow-right-icon.png" />
     </view>
   </view>
 </view>

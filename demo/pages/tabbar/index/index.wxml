@@ -5,7 +5,7 @@
               type="primary"
               size="mini"
               width="280"
-              bind:clickButton="handleCeiling">
+              bind:click="handleCeiling">
       顶部吸附演示
     </a-button>
   </view>
@@ -23,7 +23,7 @@
   <a-tabbar
             tabs="{{ staticTabs }}"
             current="{{ currentTab }}"
-            bind:switchTab="handleSwitchTab">
+            bind:change="handleSwitchTab">
     <view wx:if="{{ currentTab === 0 }}">
       <a-card
               title="{{ card.title + 1 }}"

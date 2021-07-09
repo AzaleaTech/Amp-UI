@@ -31,18 +31,18 @@
         <block wx:if="{{ croppedPic }}">
           <a-button
                     type="primary"
-                    bind:clickButton="handleSave">
+                    bind:click="handleSave">
             <text>保存图片</text>
           </a-button>
-          <a-button bind:clickButton="handleResetImage">重新裁剪</a-button>
+          <a-button bind:click="handleResetImage">重新裁剪</a-button>
         </block>
         <block wx:else>
           <a-button
                     type="primary"
-                    bind:clickButton="handleCrop">
+                    bind:click="handleCrop">
             <text>裁切图片</text>
           </a-button>
-          <a-button bind:clickButton="handleCancel">取消</a-button>
+          <a-button bind:click="handleCancel">取消</a-button>
         </block>
       </view>
     </view>

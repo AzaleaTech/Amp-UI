@@ -31,7 +31,7 @@ Page({
     },
   },
 
-  handleClick() {
+  handleClickCard() {
     wx.showToast({ title: '点击卡片' });
   },
 

@@ -26,7 +26,8 @@
           footer="{{ card.footer }}">
     <a-button
               type="primary"
-              size="mini">测试按钮
+              size="mini">
+      测试按钮
     </a-button>
   </a-card>
 </view>
@@ -49,11 +50,12 @@
           imgUrl="{{ card.imgUrl }}"
           footer="{{ card.footer }}"
           spec="{{ card.spec }}"
-          bind:click="handleClick"
+          bind:click="handleClickCard"
           bind:like="handleLike">
     <a-button
               type="primary"
-              size="mini">测试按钮
+              size="mini">
+      测试按钮
     </a-button>
   </a-card>
 </view>

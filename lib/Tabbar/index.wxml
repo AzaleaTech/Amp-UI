@@ -6,7 +6,7 @@
             wx:key="index"
             data-current="{{ index }}"
             class="tab {{ index === currentIndex ? 'tab-active' : '' }}"
-            catchtap="switchTab">
+            catch:tap="switchTab">
         <span class="tab-{{ index }}">{{ item }}</span>
       </view>
     </view>

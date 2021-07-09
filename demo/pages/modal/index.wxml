@@ -1,31 +1,31 @@
 <view class="example-box">
   <view class="example-box-title">显示遮罩层</view>
   <view class="example-box-content">
-    <button bindtap="handleModal">显示遮罩层</button>
+    <button bind:tap="handleModal">显示遮罩层</button>
   </view>
   <view class="example-box-title">显示dialog弹窗</view>
   <view class="example-box-content">
-    <button bindtap="handleDialog">显示dialog弹窗</button>
+    <button bind:tap="handleDialog">显示dialog弹窗</button>
   </view>
   <view class="example-box-title">显示带有按钮的dialog弹窗</view>
   <view class="example-box-content">
-    <button bindtap="handleButtonDialog">显示带有按钮的dialog弹窗</button>
+    <button bind:tap="handleButtonDialog">显示带有按钮的dialog弹窗</button>
   </view>
   <view class="example-box-title">显示最大高度的dialog弹窗</view>
   <view class="example-box-content">
-    <button bindtap="handleMaxHeightDialog">显示最大高度的dialog弹窗</button>
+    <button bind:tap="handleMaxHeightDialog">显示最大高度的dialog弹窗</button>
   </view>
   <view class="example-box-title">显示success提示信息</view>
   <view class="example-box-content">
-    <button bindtap="handleSuccessToast">显示success提示信息</button>
+    <button bind:tap="handleSuccessToast">显示success提示信息</button>
   </view>
   <view class="example-box-title">显示error提示信息</view>
   <view class="example-box-content">
-    <button bindtap="handleErrorToast">显示error提示信息</button>
+    <button bind:tap="handleErrorToast">显示error提示信息</button>
   </view>
   <view class="example-box-title">显示waring提示信息</view>
   <view class="example-box-content">
-    <button bindtap="handleWarningToast">显示waring提示信息</button>
+    <button bind:tap="handleWarningToast">显示waring提示信息</button>
   </view>
   <!-- 显示遮罩层 -->
   <view wx:if="{{ showModal }}">
