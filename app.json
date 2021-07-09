@@ -13,7 +13,8 @@
     "demo/pages/header/index",
     "demo/pages/rate/index",
     "demo/pages/audio/index",
-    "demo/pages/upload/index"
+    "demo/pages/upload/index",
+    "demo/pages/echarts/map/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

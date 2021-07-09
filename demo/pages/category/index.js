@@ -13,13 +13,14 @@ Page({
       { label: 'Audio 音频和录音组件', url: '../audio/index' },
       { label: 'Cropper 图片裁剪组件', url: '../cropper/index' },
       { label: 'Upload 上传图片或视频组件', url: '../upload/index' },
+      { label: 'Echarts 图表', url: '../echarts/map/index' },
     ],
     //用于图片剪裁
-    img: '/demo/assets/images/test-avatar.jpg'
+    img: '/demo/assets/images/test-avatar.jpg',
   },
 
   handleClickFormItem(e) {
-    if(e.currentTarget.dataset.label ==  'Cropper 图片裁剪组件') {
+    if (e.currentTarget.dataset.label == 'Cropper 图片裁剪组件') {
       wx.navigateTo({
         url: e.currentTarget.dataset.url + `?image=${this.data.img}`,
       });
