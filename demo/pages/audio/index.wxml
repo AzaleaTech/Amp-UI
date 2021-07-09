@@ -1,7 +1,7 @@
 <view class="example-box">
   <view class="example-box-title">音频播放组件</view>
   <view class="example-box-content">
-    <a-player url="{{ audioUrl1 }}" />
+    <a-player url="{{ audioUrl }}" />
   </view>
   <view class="example-box-title">录音组件</view>
   <view class="example-box-title">1.tips="长按发表意见"</view>

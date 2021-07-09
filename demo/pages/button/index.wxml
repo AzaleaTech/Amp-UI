@@ -58,7 +58,7 @@
     <a-button
               type="primary"
               width="240"
-              bind:clickButton="handleClickButton">
+              bind:click="handleClickButton">
       clickEvent
     </a-button>
   </view>

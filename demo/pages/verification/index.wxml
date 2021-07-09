@@ -11,7 +11,7 @@
       <input placeholder="请输入验证码" />
       <a-verification
                       startCount="{{ startCount }}"
-                      bind:clickVerification="handleClickVerification"></a-verification>
+                      bind:click="handleClickVerification"></a-verification>
     </view>
   </a-form-item>
   <view class="button-box">
@@ -27,7 +27,7 @@
   <view class="example-box-content">
     <a-verification
                     disabled="true"
-                    bind:clickVerification="handleClickVerification"></a-verification>
+                    bind:click="handleClickVerification"></a-verification>
   </view>
 </view>
 

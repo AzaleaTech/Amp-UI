@@ -10,7 +10,7 @@
                  footerArrow
                  data-label="{{ item.label }}"
                  data-url="{{ item.url }}"
-                 bind:clickFormItem="handleClickFormItem"></a-form-item>
+                 bind:click="handleClickFormItem"></a-form-item>
   </a-form>
 </view>
 

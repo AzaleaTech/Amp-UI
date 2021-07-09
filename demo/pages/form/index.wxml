@@ -33,7 +33,7 @@
   <a-form-item
                label="点击事件"
                footerArrow
-               bind:clickFormItem="handleClickFormItem"></a-form-item>
+               bind:click="handleClickFormItem"></a-form-item>
 </view>
 <view class="example-box">
   <view class="example-box-title">表单统一设置</view>
