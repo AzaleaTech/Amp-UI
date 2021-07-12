@@ -1,6 +1,6 @@
 {
   "component": true,
   "usingComponents": {
-    "cropper": "/lib/Cropper/index"
+    "cropper": "../../Cropper/index"
   }
 }
