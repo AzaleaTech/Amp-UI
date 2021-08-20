@@ -1,16 +1,35 @@
-### 小程序组件库 (v0.1.0)
+### 微信小程序组件库
 
-## in process
+## Done
 
-- Card
-- Tabbar
 - Button
 - ButtonGroup
-- Form
+- Card
 - Collapse
-- Poster
-- Verifice
+- Cropper
+- Echarts
+- Form
+- FormItem
+- Header
+- Input (clearable)
+- Modal (Toast&&Dialog)
+- Player
+- Rate
+- Record
+- Tabbar
+- Upload
+- Verfication
 
-## 版本控制
+## In Progress
+- Avatar *
+- Badge *
+- Checkbox
+- Divider *
+- Icon
+- Radio
+- Steps *
+- Painter *
+- Progress
+- Pagination
+- WxParse *
 
-更新 package.json 中 version 到指定版本
