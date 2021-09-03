@@ -12,6 +12,13 @@
   height: @height;
 }
 
+// common flex type
+.flex-type(@justify-type: flex-start) {
+  display: flex;
+  align-items: center;
+  justify-content: @justify-type;
+}
+
 // set font size && color
 .font-style(@size, @color) {
   font-size: @size;
