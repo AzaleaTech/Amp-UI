@@ -37,9 +37,7 @@
   </view>
   <!-- 显示Toast提示信息 -->
   <view>
-    <a-toast
-             toastData="{{ toastData }}"
-             time="{{ time }}" />
+    <a-toast toastData="{{ toastData }}" />
   </view>
 </view>
 

@@ -47,9 +47,9 @@ Page({
     this.setData({
       toastData: {
         content: '成功提示',
-        type: 'success',
+        // type: 'success',
+        duration: 4000,
       },
-      time: 2000,
     });
   },
 
@@ -59,7 +59,6 @@ Page({
         content: '错误提示',
         type: 'error',
       },
-      time: 1500,
     });
   },
 
@@ -69,7 +68,6 @@ Page({
         content: '警告提示',
         type: 'warning',
       },
-      time: 3000,
     });
   },
 });
