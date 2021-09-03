@@ -18,3 +18,4 @@ yarn.lock
 
 project.private.config.json
 test/
+lib/styles/*.wxss
