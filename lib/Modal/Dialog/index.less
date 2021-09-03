@@ -12,19 +12,22 @@
     background: @white-color;
     text-align: center;
     font-size: 32rpx;
+    padding-top: 60rpx;
     transform: translate(-50%, -50%);
   }
 
   &-title {
-    padding: 60rpx 40rpx 40rpx 40rpx;
+    padding: 0 40rpx 40rpx 40rpx;
     font-weight: 700;
     font-size: 32rpx;
+    .text-truncate();
   }
 
   &-content {
     overflow: auto;
     padding: 0 40rpx;
     max-height: 800rpx;
+    word-wrap: break-word;
   }
 
   &-btn {
