@@ -1,10 +1,15 @@
 .record {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
+.record-container {
+  position: relative;
+  overflow: hidden;
+  width: 300rpx;
+  height: 300rpx;
+}
 .record-container image {
   position: absolute;
   top: 0;
@@ -12,22 +17,12 @@
   width: 300rpx;
   height: 300rpx;
 }
-
-.record-container {
-  position: relative;
-  overflow: hidden;
-  width: 300rpx;
-  height: 300rpx;
-
-}
-
 .record-box {
   overflow: hidden;
+  background: transparent;
   width: 300rpx;
   height: 300rpx;
-  background: transparent;
 }
-
 .record-main {
   position: absolute;
   top: 0;
@@ -37,53 +32,46 @@
   width: 300rpx;
   height: 300rpx;
 }
-
 .record-main image:first-child {
   z-index: 3;
 }
-
 .record-main image:nth-child(2) {
   z-index: 2;
 }
-
 .record-main image:nth-child(3) {
   z-index: 1;
 }
-
 .tips {
   position: absolute;
   bottom: 0;
   width: 100%;
-  color: rgba(146, 146, 146, 1);
+  color: #929292;
   text-align: center;
   font-size: 28rpx;
   line-height: 40rpx;
 }
-
 .tips-more {
   position: absolute;
   bottom: 20rpx;
   left: 50rpx;
-  width: 204rpx;
-  height: 48rpx;
-  color: rgba(255, 255, 255, 1);
+  color: #ffffff;
   text-align: center;
   font-weight: 700;
   font-size: 34rpx;
   line-height: 48rpx;
+  width: 204rpx;
+  height: 48rpx;
 }
-
-.del-btn image {
-  margin-right: 12rpx;
-  width: 38rpx;
-  height: 36rpx;
-}
-
 .del-btn {
   margin: 60rpx 0 40rpx;
   height: 50rpx;
-  color: rgba(249, 176, 0, 1);
+  color: #e9a32d;
   font-size: 28rpx;
   line-height: 40rpx;
   display: flex;
+}
+.del-btn image {
+  margin-right: 12rpx;
+  width: 38rpx 36rpx;
+  height: 38rpx 36rpx;
 }

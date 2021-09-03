@@ -1,0 +1,84 @@
+@import '../styles/index.less';
+
+.record {
+  flex-direction: column;
+  .flex-type(center);
+
+  &-container {
+    position: relative;
+    overflow: hidden;
+    .set-size(300rpx);
+
+    & image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      .set-size(300rpx);
+    }
+  }
+
+  &-box {
+    overflow: hidden;
+    background: transparent;
+    .set-size(300rpx);
+  }
+
+  &-main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    overflow: hidden;
+    .set-size(300rpx);
+
+    & image {
+      &:first-child {
+        z-index: 3;
+      }
+
+      &:nth-child(2) {
+        z-index: 2;
+      }
+
+      &:nth-child(3) {
+        z-index: 1;
+      }
+    }
+  }
+}
+
+.tips {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: rgba(146, 146, 146, 1);
+  text-align: center;
+  font-size: 28rpx;
+  line-height: 40rpx;
+
+  &-more {
+    position: absolute;
+    bottom: 20rpx;
+    left: 50rpx;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    font-weight: 700;
+    font-size: 34rpx;
+    line-height: 48rpx;
+    .set-size(204rpx, 48rpx)
+  }
+}
+
+.del-btn {
+  margin: 60rpx 0 40rpx;
+  height: 50rpx;
+  color: @primary-color;
+  font-size: 28rpx;
+  line-height: 40rpx;
+  display: flex;
+
+  & image {
+    margin-right: 12rpx;
+    .set-size(38rpx 36rpx);
+  }
+}
