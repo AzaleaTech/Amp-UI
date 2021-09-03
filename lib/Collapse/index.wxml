@@ -13,7 +13,7 @@
             wx:if="{{ item.children }}"
             class="collapse-icon">
         <image
-               wx:if="{{ item.opened }}"
+               wx:if="{{ !item.opened }}"
                src="./images/caret-down-icon.png"
                class="collapse-icon-fold" />
         <image
