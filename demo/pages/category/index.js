@@ -1,6 +1,7 @@
 Page({
   data: {
     components: [
+      { label: 'Icon 图标', url: '../icon/index' },
       { label: 'Card 卡片', url: '../card/index' },
       { label: 'Tabbar 导航栏', url: '../tabbar/index/index' },
       { label: 'Button & ButtonGroup 按钮及按钮组', url: '../button/index' },

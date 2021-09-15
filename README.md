@@ -21,15 +21,24 @@
 - Verfication
 
 ## In Progress
-- Avatar *
-- Badge *
+
+- Avatar \*
+- Badge \*
 - Checkbox
-- Divider *
-- Icon
+- Divider \*
 - Radio
-- Steps *
-- Painter *
+- Steps \*
+- Painter \*
 - Progress
 - Pagination
-- WxParse *
+- WxParse \*
 
+## Optimize
+
+- Icon (完善图标库)
+
+> ## Reference
+
+- Icon 组件使用 [Iconfont 图标库](https://www.iconfont.cn/) (Symbol)
+
+  1. 插件 `mini-program-iconfont-cli` [文档地址](https://www.npmjs.com/package/mini-program-iconfont-cli)

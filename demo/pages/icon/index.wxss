@@ -1,0 +1,16 @@
+.icons {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30rpx;
+}
+.icons-box {
+  flex-direction: column;
+  border: 1px solid #9e9e9e3b;
+  border-radius: 10rpx;
+  margin: 0 2rpx 2rpx;
+  width: 220rpx;
+  height: 200rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
