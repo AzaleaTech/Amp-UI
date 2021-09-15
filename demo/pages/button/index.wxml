@@ -3,18 +3,15 @@
   <view class="example-box-content">
     <a-button
               type="default"
-              width="240">
-      default
+              width="240">default
     </a-button>
     <a-button
               type="primary"
-              width="240">
-      primary
+              width="240">primary
     </a-button>
     <a-button
-              iconUrl="./images/likes-list-icon.png"
-              type="icon">
-      icon
+              iconUrl="/demo/pages/button/images/likes-list-icon.png"
+              type="icon">icon
     </a-button>
   </view>
 </view>
@@ -24,20 +21,17 @@
     <a-button
               size="normal"
               type="primary"
-              width="240">
-      normal
+              width="240">normal
     </a-button>
     <a-button
               size="small"
               type="primary"
-              width="210">
-      small
+              width="210">small
     </a-button>
     <a-button
               size="mini"
               type="primary"
-              width="180">
-      mini
+              width="180">mini
     </a-button>
   </view>
 </view>
@@ -47,8 +41,7 @@
     <a-button
               disabled="true"
               type="primary"
-              width="240">
-      disabled
+              width="240">disabled
     </a-button>
   </view>
 </view>
@@ -58,8 +51,7 @@
     <a-button
               type="primary"
               width="240"
-              bind:click="handleClickButton">
-      clickEvent
+              bind:click="handleClickButton">clickEvent
     </a-button>
   </view>
 </view>
@@ -67,7 +59,7 @@
   <view class="example-box-title">带图标按钮</view>
   <view class="example-box-content">
     <a-button
-              iconUrl="./images/download-icon.png"
+              iconUrl="/demo/pages/button/images/download-icon.png"
               type="primary"
               width="360">
       button with icon
