@@ -4,14 +4,27 @@
   "description": "微信组件库",
   "main": "app.js",
   "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "del": "^6.0.0",
     "eslint": "^7.22.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-prettier": "^3.3.1",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-less": "^5.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-util": "^3.0.8",
     "mini-program-iconfont-cli": "^0.6.1",
     "prettier": "^2.2.1"
   },
   "scripts": {
+    "dev": "gulp -f build/gulp-dev.js",
+    "build": "gulp -f build/gulp-prod.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "saxon",

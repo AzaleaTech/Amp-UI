@@ -1,0 +1,13 @@
+<view
+      class="player-container"
+      catch:tap="tapPlayer">
+  <image src="./images/player-base.png" />
+  <image
+         wx:if="{{ playIcon !== 0 }}"
+         src="./images/player-animation-1.png" />
+  <image
+         wx:if="{{ playIcon === 2 }}"
+         src="./images/player-animation-2.png" />
+  <view>{{ isPlaying ? '点击停止' : '点击播放' }}</view>
+</view>
+

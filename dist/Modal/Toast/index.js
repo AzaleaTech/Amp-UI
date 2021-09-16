@@ -1,0 +1,1 @@
+"use strict";Component({properties:{toastData:{type:Object,value:{}}},data:{show:!1},observers:{toastData:function(t){var a=this;t&&(this.setData({show:!0}),setTimeout(function(){a.setData({show:!1})},t.duration||1500))}}});
