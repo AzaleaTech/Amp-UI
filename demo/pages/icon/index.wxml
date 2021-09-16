@@ -1,7 +1,7 @@
 <view class="icons">
   <view
         wx:for="{{ icons }}"
-        :key="index"
+        wx:key="index"
         class="icons-box">
     <a-icon name="{{ item }}" />
     {{ item }}

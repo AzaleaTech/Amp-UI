@@ -1,0 +1,38 @@
+<view
+      class="form-container"
+      catch:tap="handleTap">
+  <view
+        wx:if="{{ warningMessage }}"
+        class="form-warning-message">{{ warningMessage }}
+  </view>
+  <view class="form-item">
+    <image
+           wx:if="{{ iconUrl }}"
+           class="form-item-icon"
+           src="{{ iconUrl }}"></image>
+    <view class="form-item-panel {{ warningMessage ? 'form-item-panel-warning' : '' }}">
+      <view
+            wx:if="{{ required }}"
+            class="form-item-warning-icon">*
+      </view>
+      <view
+            wx:if="{{ label }}"
+            class="form-item-label"
+            style="{{ labelWidth ? 'width: ' + labelWidth + 'rpx;' : '' }} {{ labelAlign ? 'text-align-last: ' + labelAlign + ';' : '' }} {{ labelColor ? 'color: ' + labelColor : '' }}">
+        {{ label }}
+      </view>
+      <view class="form-item-slot">
+        <slot></slot>
+      </view>
+      <view
+            wx:if="{{ footer }}"
+            class="form-item-footer">{{ footer }}
+      </view>
+      <image
+             wx:if="{{ footerArrow }}"
+             class="form-item-footer-icon"
+             src="./images/arrow-right-icon.png" />
+    </view>
+  </view>
+</view>
+

@@ -1,0 +1,1 @@
+.rate-wrap{flex-wrap:wrap;display:flex;align-items:center;justify-content:center}.rate-wrap .rate-item{margin-right:40rpx;position:relative}.rate-wrap .rate-item-selected{position:absolute;overflow:hidden}

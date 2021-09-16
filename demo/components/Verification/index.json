@@ -1,0 +1,6 @@
+{
+  "component":true,
+  "usingComponents": {
+    "a-button": "../Button/index"
+  }
+}

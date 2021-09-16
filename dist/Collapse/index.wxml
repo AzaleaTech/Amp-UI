@@ -1,0 +1,47 @@
+<view
+      wx:for="{{ options }}"
+      wx:key="index"
+      class="collapse">
+  <view
+        data-index="{{ index }}"
+        class="collapse-item"
+        catch:tap="handleCollapse">
+    <view>{{ item.content }}</view>
+    <view class="collapse-item-footer">
+      <view wx:if="{{ item.detail }}">{{ item.detail }}</view>
+      <view
+            wx:if="{{ item.children }}"
+            class="collapse-icon">
+        <image
+               wx:if="{{ !item.opened }}"
+               src="./images/caret-down-icon.png"
+               class="collapse-icon-fold" />
+        <image
+               wx:else
+               src="./images/caret-up-icon.png"
+               class="collapse-icon-fold" />
+      </view>
+    </view>
+  </view>
+  <view wx:if="{{ item.opened }}">
+    <view
+          wx:for="{{item.children}}"
+          wx:for-index="childIndex"
+          wx:for-item="childItem"
+          wx:key="childIndex"
+          data-item="{{ childItem }}"
+          class="collapse-item collapse-item-child"
+          catch:tap="handleCollapseChild">
+      <view>{{ childItem.content }}</view>
+      <view class="collapse-item-footer">
+        <view wx:if="{{ childItem.detail }}">{{ childItem.detail }}</view>
+        <view class="collapse-icon">
+          <image
+                 src="./images/arrow-right-icon.png"
+                 class="collapse-icon-arrow" />
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+

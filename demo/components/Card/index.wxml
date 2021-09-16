@@ -1,0 +1,58 @@
+<view
+      class="card"
+      catch:tap="handleTap">
+  <view class="card-body {{ imgUrl ? '' : 'card-body-full' }}">
+    <image
+           wx:if="{{ imgUrl }}"
+           class="card-img"
+           src="{{ imgUrl }}" />
+    <view class="card-container">
+      <view class="card-title">{{title}}</view>
+      <view class="card-contents">
+        <block
+               wx:for="{{contents}}"
+               wx:for-index="contentIndex"
+               wx:for-item="content"
+               wx:key="contentIndex">
+          <view class="card-content">{{ content.label + ': ' + content.content }}</view>
+        </block>
+      </view>
+      <view
+            wx:if="{{spec && imgUrl}}"
+            class="card-spec"
+            style="{{ spec.size ? 'font-size:' + spec.size + 'rpx;' : '' }}">
+        <view class="card-spec-line">
+          <span>{{ spec.label + ': ' }}</span>
+          <span style="{{ spec.color ? 'color:' + spec.color : '' }}">{{ spec.content }}</span>
+          <block
+                 wx:for="{{ spec.tags }}"
+                 wx:for-index="tagIndex"
+                 wx:for-item="tag"
+                 wx:key="tagIndex">
+            <span
+                  class="card-spec-tag"
+                  style="{{ tag.color ? 'border-color:' + tag.color + ';color:' +  tag.color : '' }}">
+              {{ tag.content }}
+            </span>
+          </block>
+        </view>
+        <view
+              wx:if="{{ spec.likes }}"
+              class="card-spec-likes"
+              catch:tap="handleLike">
+          <image
+                 class="card-spec-likes-icon"
+                 src="{{ spec.likes.url }}" />
+          <span>{{ spec.likes.value }}</span>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view
+        class="card-footer"
+        wx:if="{{ footer && imgUrl }}">
+    <view class="card-footer-content">{{ footer }}</view>
+    <slot></slot>
+  </view>
+</view>
+
