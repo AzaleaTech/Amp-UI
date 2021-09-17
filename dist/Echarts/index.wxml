@@ -1,10 +1,10 @@
 <!-- 新的：接口对其了H5 -->
 <canvas
-        wx:if="{{isUseNewCanvas}}"
+        wx:if="{{ isUseNewCanvas }}"
         type="2d"
-        class="ec-canvas"
         canvas-id="{{ canvasId }}"
         force-use-old-canvas="true"
+        class="ec-canvas"
         bind:init="init"
         bind:touchstart="{{ ec.disableTouch ? '' : 'touchStart' }}"
         bind:touchmove="{{ ec.disableTouch ? '' : 'touchMove' }}"
@@ -12,8 +12,8 @@
 <!-- 旧的 -->
 <canvas
         wx:else
-        class="ec-canvas"
         canvas-id="{{ canvasId }}"
+        class="ec-canvas"
         bind:init="init"
         bind:touchstart="{{ ec.disableTouch ? '' : 'touchStart' }}"
         bind:touchmove="{{ ec.disableTouch ? '' : 'touchMove' }}"

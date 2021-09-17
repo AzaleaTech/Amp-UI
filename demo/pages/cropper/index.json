@@ -1,5 +1,6 @@
 {
-  "usingComponents":{
-    "cropper": "/lib/Cropper/index"
+  "navigationBarTitleText": "Cropper",
+  "usingComponents": {
+    "cropper": "../../components/Cropper/index"
   }
 }

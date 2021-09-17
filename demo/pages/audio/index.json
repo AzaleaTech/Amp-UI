@@ -1,6 +1,7 @@
 {
+  "navigationBarTitleText": "Audio",
   "usingComponents": {
-    "a-player": "/lib/Player/index",
-    "a-record": "/lib/Record/index"
+    "a-player": "../../components/Player/index",
+    "a-record": "../../components/Record/index"
   }
 }

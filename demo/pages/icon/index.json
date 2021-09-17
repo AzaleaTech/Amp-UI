@@ -1,6 +1,6 @@
 {
   "navigationBarTitleText": "Icon",
   "usingComponents": {
-    "a-icon": "/lib/Icon/Icon"
+    "a-icon": "../../components/Icon/Icon"
   }
 }

@@ -1,12 +1,31 @@
 const gulp = require('gulp');
-const babel = require('gulp-babel');
-const less = require('gulp-less');
-const uglify = require('gulp-uglify');
 const cssmin = require('gulp-clean-css');
+const less = require('gulp-less');
 const rename = require('gulp-rename');
 const imagemin = require('gulp-imagemin');
+const babel = require('gulp-babel');
+const gulpif = require('gulp-if');
+const uglify = require('gulp-uglify');
+const del = require('del');
 
+// 输出目录
 const outputDir = '../demo/components/';
+// 以下文件不做处理, 按源文件输出
+const ignoreFiles = ['echarts.js', 'wx-canvas.js'];
+
+/**
+ * 文件是否压缩
+ * @param {File} f
+ */
+const condition = (f) => {
+  let flag = true;
+  ignoreFiles.forEach((item) => {
+    if (f.path.indexOf(item) > -1) {
+      flag = false;
+    }
+  });
+  return flag;
+};
 
 gulp.task('compile-css', () => {
   return gulp
@@ -37,11 +56,14 @@ gulp.task('compile-js', () => {
   return gulp
     .src(['../lib/**/*.js'])
     .pipe(
-      babel({
-        presets: ['@babel/env'],
-      }),
+      gulpif(
+        condition,
+        babel({
+          presets: ['@babel/env'],
+        }),
+      ),
     )
-    .pipe(uglify())
+    .pipe(gulpif(condition, uglify()))
     .pipe(gulp.dest(outputDir));
 });
 
@@ -53,21 +75,29 @@ gulp.task('compile-wxml', () => {
   return gulp.src(['../lib/**/*.wxml']).pipe(gulp.dest(outputDir));
 });
 
+gulp.task('compile-clean', async () => {
+  return del.sync(outputDir, { force: true });
+});
+
 gulp.task('auto', () => {
   gulp.watch('../lib/**/*.less', gulp.series('compile-css'));
   gulp.watch('../lib/**/*.js', gulp.series('compile-js'));
   gulp.watch('../lib/**/*.json', gulp.series('compile-json'));
   gulp.watch('../lib/**/*.wxml', gulp.series('compile-wxml'));
+  gulp.watch('.../lib/**/*.?(png|jpg|gif|jpeg|webp|svg)', gulp.series('compile-images'));
 });
 
 gulp.task(
   'default',
-  gulp.parallel(
-    'compile-css',
-    'compile-images',
-    'compile-js',
-    'compile-json',
-    'compile-wxml',
-    'auto',
+  gulp.series(
+    'compile-clean',
+    gulp.parallel(
+      'compile-css',
+      'compile-js',
+      'compile-json',
+      'compile-wxml',
+      'compile-images',
+      'auto',
+    ),
   ),
 );

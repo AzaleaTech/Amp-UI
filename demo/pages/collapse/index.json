@@ -1,5 +1,6 @@
 {
+  "navigationBarTitleText": "Collapse",
   "usingComponents": {
-    "a-collapse": "/lib/Collapse/index"
+    "a-collapse": "../../components/Collapse/index"
   }
 }

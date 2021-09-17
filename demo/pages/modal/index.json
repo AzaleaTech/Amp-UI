@@ -1,7 +1,8 @@
 {
+  "navigationBarTitleText": "Modal",
   "usingComponents": {
-    "modal": "/lib/Modal/index/index",
-    "a-dialog": "/lib/Modal/Dialog/index",
-    "a-toast": "/lib/Modal/Toast/index"
+    "modal": "../../components/Modal/index/index",
+    "a-dialog": "../../components/Modal/Dialog/index",
+    "a-toast": "../../components/Modal/Toast/index"
   }
 }
