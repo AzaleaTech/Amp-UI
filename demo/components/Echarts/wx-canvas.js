@@ -1,1 +1,128 @@
-"use strict";function _classCallCheck(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function _defineProperties(e,t){for(var n=0;n<t.length;n++){var a=t[n];a.enumerable=a.enumerable||!1,a.configurable=!0,"value"in a&&(a.writable=!0),Object.defineProperty(e,a.key,a)}}function _createClass(e,t,n){return t&&_defineProperties(e.prototype,t),n&&_defineProperties(e,n),e}Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=void 0;var WxCanvas=function(){function i(e,t,n,a){_classCallCheck(this,i),this.ctx=e,this.canvasId=t,this.chart=null,(this.isNew=n)?this.canvasNode=a:this._initStyle(e),this._initEvent()}return _createClass(i,[{key:"getContext",value:function(e){if("2d"===e)return this.ctx}},{key:"setChart",value:function(e){this.chart=e}},{key:"attachEvent",value:function(){}},{key:"detachEvent",value:function(){}},{key:"_initCanvas",value:function(e,n){e.util.getContext=function(){return n},e.util.$override("measureText",function(e,t){return n.font=t||"12px sans-serif",n.measureText(e)})}},{key:"_initStyle",value:function(n){var e=arguments;["fillStyle","strokeStyle","globalAlpha","textAlign","textBaseAlign","shadow","lineWidth","lineCap","lineJoin","lineDash","miterLimit","fontSize"].forEach(function(t){Object.defineProperty(n,t,{set:function(e){("fillStyle"!==t&&"strokeStyle"!==t||"none"!==e&&null!==e)&&n["set"+t.charAt(0).toUpperCase()+t.slice(1)](e)}})}),n.createRadialGradient=function(){return n.createCircularGradient(e)}}},{key:"_initEvent",value:function(){var n=this;this.event={};[{wxName:"touchStart",ecName:"mousedown"},{wxName:"touchMove",ecName:"mousemove"},{wxName:"touchEnd",ecName:"mouseup"},{wxName:"touchEnd",ecName:"click"}].forEach(function(t){n.event[t.wxName]=function(e){e=e.touches[0];n.chart.getZr().handler.dispatch(t.ecName,{zrX:"tap"===t.wxName?e.clientX:e.x,zrY:"tap"===t.wxName?e.clientY:e.y})}})}},{key:"width",get:function(){return this.canvasNode?this.canvasNode.width:0},set:function(e){this.canvasNode&&(this.canvasNode.width=e)}},{key:"height",get:function(){return this.canvasNode?this.canvasNode.height:0},set:function(e){this.canvasNode&&(this.canvasNode.height=e)}}]),i}();exports.default=WxCanvas;
+export default class WxCanvas {
+  constructor(ctx, canvasId, isNew, canvasNode) {
+    this.ctx = ctx;
+    this.canvasId = canvasId;
+    this.chart = null;
+    this.isNew = isNew;
+    if (isNew) {
+      this.canvasNode = canvasNode;
+    } else {
+      this._initStyle(ctx);
+    }
+
+    this._initEvent();
+  }
+
+  getContext(contextType) {
+    if (contextType === '2d') {
+      return this.ctx;
+    }
+  }
+
+  setChart(chart) {
+    this.chart = chart;
+  }
+
+  attachEvent() {
+    // noop
+  }
+
+  detachEvent() {
+    // noop
+  }
+
+  _initCanvas(zrender, ctx) {
+    zrender.util.getContext = function () {
+      return ctx;
+    };
+
+    zrender.util.$override('measureText', function (text, font) {
+      ctx.font = font || '12px sans-serif';
+      return ctx.measureText(text);
+    });
+  }
+
+  _initStyle(ctx) {
+    var styles = [
+      'fillStyle',
+      'strokeStyle',
+      'globalAlpha',
+      'textAlign',
+      'textBaseAlign',
+      'shadow',
+      'lineWidth',
+      'lineCap',
+      'lineJoin',
+      'lineDash',
+      'miterLimit',
+      'fontSize',
+    ];
+
+    styles.forEach((style) => {
+      Object.defineProperty(ctx, style, {
+        set: (value) => {
+          if (
+            (style !== 'fillStyle' && style !== 'strokeStyle') ||
+            (value !== 'none' && value !== null)
+          ) {
+            ctx['set' + style.charAt(0).toUpperCase() + style.slice(1)](value);
+          }
+        },
+      });
+    });
+
+    ctx.createRadialGradient = () => {
+      return ctx.createCircularGradient(arguments);
+    };
+  }
+
+  _initEvent() {
+    this.event = {};
+    const eventNames = [
+      {
+        wxName: 'touchStart',
+        ecName: 'mousedown',
+      },
+      {
+        wxName: 'touchMove',
+        ecName: 'mousemove',
+      },
+      {
+        wxName: 'touchEnd',
+        ecName: 'mouseup',
+      },
+      {
+        wxName: 'touchEnd',
+        ecName: 'click',
+      },
+    ];
+
+    eventNames.forEach((name) => {
+      this.event[name.wxName] = (e) => {
+        const touch = e.touches[0];
+        this.chart.getZr().handler.dispatch(name.ecName, {
+          zrX: name.wxName === 'tap' ? touch.clientX : touch.x,
+          zrY: name.wxName === 'tap' ? touch.clientY : touch.y,
+        });
+      };
+    });
+  }
+
+  set width(w) {
+    if (this.canvasNode) this.canvasNode.width = w;
+  }
+
+  set height(h) {
+    if (this.canvasNode) this.canvasNode.height = h;
+  }
+
+  get width() {
+    if (this.canvasNode) return this.canvasNode.width;
+    return 0;
+  }
+
+  get height() {
+    if (this.canvasNode) return this.canvasNode.height;
+    return 0;
+  }
+}

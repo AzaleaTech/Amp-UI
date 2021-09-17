@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "a-form": "../../components/Form/index",
+    "a-form-item": "../../components/FormItem/index"
+  }
+}

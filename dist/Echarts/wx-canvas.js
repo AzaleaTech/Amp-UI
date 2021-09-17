@@ -1,1 +1,136 @@
-"use strict";function _classCallCheck(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function _defineProperties(e,t){for(var n=0;n<t.length;n++){var a=t[n];a.enumerable=a.enumerable||!1,a.configurable=!0,"value"in a&&(a.writable=!0),Object.defineProperty(e,a.key,a)}}function _createClass(e,t,n){return t&&_defineProperties(e.prototype,t),n&&_defineProperties(e,n),e}Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=void 0;var WxCanvas=function(){function i(e,t,n,a){_classCallCheck(this,i),this.ctx=e,this.canvasId=t,this.chart=null,(this.isNew=n)?this.canvasNode=a:this._initStyle(e),this._initEvent()}return _createClass(i,[{key:"getContext",value:function(e){if("2d"===e)return this.ctx}},{key:"setChart",value:function(e){this.chart=e}},{key:"attachEvent",value:function(){}},{key:"detachEvent",value:function(){}},{key:"_initCanvas",value:function(e,n){e.util.getContext=function(){return n},e.util.$override("measureText",function(e,t){return n.font=t||"12px sans-serif",n.measureText(e)})}},{key:"_initStyle",value:function(n){var e=arguments;["fillStyle","strokeStyle","globalAlpha","textAlign","textBaseAlign","shadow","lineWidth","lineCap","lineJoin","lineDash","miterLimit","fontSize"].forEach(function(t){Object.defineProperty(n,t,{set:function(e){("fillStyle"!==t&&"strokeStyle"!==t||"none"!==e&&null!==e)&&n["set"+t.charAt(0).toUpperCase()+t.slice(1)](e)}})}),n.createRadialGradient=function(){return n.createCircularGradient(e)}}},{key:"_initEvent",value:function(){var n=this;this.event={};[{wxName:"touchStart",ecName:"mousedown"},{wxName:"touchMove",ecName:"mousemove"},{wxName:"touchEnd",ecName:"mouseup"},{wxName:"touchEnd",ecName:"click"}].forEach(function(t){n.event[t.wxName]=function(e){e=e.touches[0];n.chart.getZr().handler.dispatch(t.ecName,{zrX:"tap"===t.wxName?e.clientX:e.x,zrY:"tap"===t.wxName?e.clientY:e.y})}})}},{key:"width",get:function(){return this.canvasNode?this.canvasNode.width:0},set:function(e){this.canvasNode&&(this.canvasNode.width=e)}},{key:"height",get:function(){return this.canvasNode?this.canvasNode.height:0},set:function(e){this.canvasNode&&(this.canvasNode.height=e)}}]),i}();exports.default=WxCanvas;
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports["default"] = void 0;
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+var WxCanvas = /*#__PURE__*/function () {
+  function WxCanvas(ctx, canvasId, isNew, canvasNode) {
+    _classCallCheck(this, WxCanvas);
+
+    this.ctx = ctx;
+    this.canvasId = canvasId;
+    this.chart = null;
+    this.isNew = isNew;
+
+    if (isNew) {
+      this.canvasNode = canvasNode;
+    } else {
+      this._initStyle(ctx);
+    }
+
+    this._initEvent();
+  }
+
+  _createClass(WxCanvas, [{
+    key: "getContext",
+    value: function getContext(contextType) {
+      if (contextType === '2d') {
+        return this.ctx;
+      }
+    }
+  }, {
+    key: "setChart",
+    value: function setChart(chart) {
+      this.chart = chart;
+    }
+  }, {
+    key: "attachEvent",
+    value: function attachEvent() {// noop
+    }
+  }, {
+    key: "detachEvent",
+    value: function detachEvent() {// noop
+    }
+  }, {
+    key: "_initCanvas",
+    value: function _initCanvas(zrender, ctx) {
+      zrender.util.getContext = function () {
+        return ctx;
+      };
+
+      zrender.util.$override('measureText', function (text, font) {
+        ctx.font = font || '12px sans-serif';
+        return ctx.measureText(text);
+      });
+    }
+  }, {
+    key: "_initStyle",
+    value: function _initStyle(ctx) {
+      var _arguments = arguments;
+      var styles = ['fillStyle', 'strokeStyle', 'globalAlpha', 'textAlign', 'textBaseAlign', 'shadow', 'lineWidth', 'lineCap', 'lineJoin', 'lineDash', 'miterLimit', 'fontSize'];
+      styles.forEach(function (style) {
+        Object.defineProperty(ctx, style, {
+          set: function set(value) {
+            if (style !== 'fillStyle' && style !== 'strokeStyle' || value !== 'none' && value !== null) {
+              ctx['set' + style.charAt(0).toUpperCase() + style.slice(1)](value);
+            }
+          }
+        });
+      });
+
+      ctx.createRadialGradient = function () {
+        return ctx.createCircularGradient(_arguments);
+      };
+    }
+  }, {
+    key: "_initEvent",
+    value: function _initEvent() {
+      var _this = this;
+
+      this.event = {};
+      var eventNames = [{
+        wxName: 'touchStart',
+        ecName: 'mousedown'
+      }, {
+        wxName: 'touchMove',
+        ecName: 'mousemove'
+      }, {
+        wxName: 'touchEnd',
+        ecName: 'mouseup'
+      }, {
+        wxName: 'touchEnd',
+        ecName: 'click'
+      }];
+      eventNames.forEach(function (name) {
+        _this.event[name.wxName] = function (e) {
+          var touch = e.touches[0];
+
+          _this.chart.getZr().handler.dispatch(name.ecName, {
+            zrX: name.wxName === 'tap' ? touch.clientX : touch.x,
+            zrY: name.wxName === 'tap' ? touch.clientY : touch.y
+          });
+        };
+      });
+    }
+  }, {
+    key: "width",
+    get: function get() {
+      if (this.canvasNode) return this.canvasNode.width;
+      return 0;
+    },
+    set: function set(w) {
+      if (this.canvasNode) this.canvasNode.width = w;
+    }
+  }, {
+    key: "height",
+    get: function get() {
+      if (this.canvasNode) return this.canvasNode.height;
+      return 0;
+    },
+    set: function set(h) {
+      if (this.canvasNode) this.canvasNode.height = h;
+    }
+  }]);
+
+  return WxCanvas;
+}();
+
+exports["default"] = WxCanvas;

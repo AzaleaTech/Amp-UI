@@ -1,4 +1,4 @@
-import * as echarts from '../../../../lib/Echarts/echarts';
+import * as echarts from '../../../components/Echarts/echarts';
 import geoJson from './mapData.js';
 
 function initChart(canvas, width, height, dpr) {

@@ -1,6 +1,7 @@
 {
+  "navigationBarTitleText": "Card",
   "usingComponents": {
-    "a-card": "/lib/Card/index",
-    "a-button": "/lib/Button/index"
+    "a-card": "../../components/Card/index",
+    "a-button": "../../components/Button/index"
   }
 }

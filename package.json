@@ -14,7 +14,8 @@
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
-    "gulp-imagemin": "^8.0.0",
+    "gulp-if": "^3.0.0",
+    "gulp-imagemin": "7.1.0",
     "gulp-less": "^5.0.0",
     "gulp-rename": "^2.0.0",
     "gulp-uglify": "^3.0.2",
@@ -24,8 +25,7 @@
   },
   "scripts": {
     "dev": "gulp -f build/gulp-dev.js",
-    "build": "gulp -f build/gulp-prod.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "gulp -f build/gulp-prod.js"
   },
   "author": "saxon",
   "license": "ISC"

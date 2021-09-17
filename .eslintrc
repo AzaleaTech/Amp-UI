@@ -1,25 +1,23 @@
 {
-  "extends": ["prettier", "airbnb-base", "plugin:prettier/recommended"],
-
-  // 插件
-  "plugins": ["prettier"],
-
-  // 配置解析器
+  "extends": [
+    "prettier",
+    "airbnb-base",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": [
+    "prettier"
+  ],
   "parser": "babel-eslint",
   "parserOptions": {
     "ecmaVersion": 2020,
     "sourceType": "module"
   },
-
   "env": {
-    // 脚本目标的运行环境
     "browser": true,
     "node": true,
     "es6": true,
     "commonjs": true
   },
-
-  // 全局变量
   "globals": {
     "__DEV__": true,
     "__WECHAT__": true,
@@ -31,18 +29,30 @@
     "wx": true,
     "getApp": true
   },
-
-  // 规则，只用插件：插件名/规则
   "rules": {
     "prettier/prettier": "error",
     "no-console": 2,
-    "operator-linebreak": ["error", "after", { "overrides": { "?": "ignore", ":": "ignore" } }],
-    // 使用 ===
+    "operator-linebreak": [
+      "error",
+      "after",
+      {
+        "overrides": {
+          "?": "ignore",
+          ":": "ignore"
+        }
+      }
+    ],
     "eqeqeq": 2,
-    // 换行使用LF
-    "linebreak-style": ["error", "unix"],
-    "no-param-reassign": ["error", { "props": false }],
-    // 关闭for of/ for in 禁用规则
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "no-param-reassign": [
+      "error",
+      {
+        "props": false
+      }
+    ],
     "no-restricted-syntax": 0
   }
 }

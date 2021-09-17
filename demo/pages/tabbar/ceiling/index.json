@@ -1,6 +1,7 @@
 {
+  "navigationBarTitleText": "Tabbar-ceiling",
   "usingComponents": {
-    "a-tabbar": "/lib/Tabbar/index",
-    "a-card": "/lib/Card/index"
+    "a-tabbar": "../../../components/Tabbar/index",
+    "a-card": "../../../components/Card/index"
   }
 }

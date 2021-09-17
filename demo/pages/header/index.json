@@ -1,6 +1,6 @@
 {
-  "navigationStyle":"custom",
+  "navigationBarTitleText": "Header",
   "usingComponents": {
-    "a-header": "/lib/Header/index"
+    "a-header": "../../components/Header/index"
   }
 }

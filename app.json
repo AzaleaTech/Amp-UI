@@ -1,6 +1,6 @@
 {
   "pages": [
-    "demo/pages/category/index",
+    "demo/pages/index/index",
     "demo/pages/card/index",
     "demo/pages/tabbar/index/index",
     "demo/pages/tabbar/ceiling/index",
