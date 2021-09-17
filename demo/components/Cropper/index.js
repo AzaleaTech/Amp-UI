@@ -1,1 +1,192 @@
-"use strict";Component({properties:{imgUrl:{type:String,value:""},type:{type:String,value:"extra"},cutScale:{type:Number,value:1}},data:{screenWidth:"",width:"",height:"",distance:"",oldWidth:"",oldHeight:"",cutWidth:"",x:0,y:0,croppedPic:"",oldImagePath:""},lifetimes:{attached:function(){var e=this;wx.getSystemInfo({success:function(t){t=t.screenWidth-60*t.screenWidth/750;e.setData({screenWidth:t,cutWidth:t}),e.setImage()}})}},observers:{imgUrl:function(){this.data.oldImagePath=this.properties.imgUrl}},methods:{setImage:function(){var e=this,a=this.data.screenWidth,i=this.data.screenWidth/this.properties.cutScale,h=this.data.oldImagePath;wx.getImageInfo({src:h,success:function(t){t=t.width/t.height;t>e.properties.cutScale?e.setData({width:i*t,height:i,oldWidth:i*t,oldHeight:i,img:h}):e.setData({width:a,height:a/t,oldWidth:a,oldHeight:a/t,img:h})}})},handleResetImage:function(){this.setData({croppedPic:""}),this.setImage()},handleStart:function(t){var e;2===t.touches.length&&(e=t.touches[1].pageX-t.touches[0].pageX,t=t.touches[1].pageY-t.touches[0].pageY,t=Math.sqrt(Math.pow(e,2)+Math.pow(t,2)),this.setData({distance:t}))},handleMove:function(t){var e,a,i,h,s;2===t.touches.length&&(h=t.touches[1].pageX-t.touches[0].pageX,s=t.touches[1].pageY-t.touches[0].pageY,e=this.data.oldWidth,a=this.data.oldHeight,i=Math.sqrt(Math.pow(h,2)+Math.pow(s,2)),t=this.data.width,h=this.data.height,t*(s=1+.002*(i-this.data.distance))/e<1?this.setData({width:e,height:a}):this.setData({width:t*s,height:h*s,distance:i}))},handleScroll:function(t){var e=t.detail.scrollLeft,t=t.detail.scrollTop;this.setData({x:e,y:t})},handleCrop:function(){var e=this,t=this.properties.imgUrl,a=this.data.width,i=this.data.height,h=this.data.screenWidth,s=this.data.x,c=this.data.y;wx.showLoading({title:"裁剪中"});var d=wx.createCanvasContext("canvas",this);d.drawImage(t,0,0,a,i),d.draw(setTimeout(function(){wx.hideLoading(),wx.canvasToTempFilePath({x:s,y:c,width:h,height:h/e.properties.cutScale,canvasId:"canvas",success:function(t){e.setData({croppedPic:t.tempFilePath})}},e)},1e3))},handleSave:function(){var a=this;[this.data.croppedPic].forEach(function(t){var e=t.substr(t.lastIndexOf(".")+1),e="".concat(a.properties.type,"/").concat((new Date).valueOf()).concat(Math.random().toString(36).slice(-6),".").concat(e);a.triggerEvent("save",{item:t,fileName:e})})},handleCancel:function(){this.triggerEvent("cancel")}}});
+Component({
+  properties: {
+    /**
+     * 所选图片url
+     */
+    imgUrl: {
+      type: String,
+      value: '',
+    },
+    /**
+     * 保存路径类型
+     */
+    type: {
+      type: String,
+      value: 'extra',
+    },
+    /**
+     * 裁剪宽高比例
+     */
+    cutScale: {
+      type: Number,
+      value: 1,
+    },
+  },
+
+  data: {
+    screenWidth: '',
+    width: '',
+    height: '',
+    distance: '',
+    oldWidth: '',
+    oldHeight: '',
+    cutWidth: '',
+    x: 0,
+    y: 0,
+    croppedPic: '',
+    oldImagePath: '',
+  },
+
+  lifetimes: {
+    attached() {
+      //判断图片的宽高，短的那边变成固定，长的自适应。
+      wx.getSystemInfo({
+        success: (e) => {
+          const screenWidth = e.screenWidth - (e.screenWidth * 60) / 750;
+          const cutWidth = screenWidth;
+          this.setData({ screenWidth, cutWidth });
+          this.setImage();
+        },
+      });
+    },
+  },
+
+  observers: {
+    imgUrl() {
+      this.data.oldImagePath = this.properties.imgUrl;
+    },
+  },
+
+  methods: {
+    setImage() {
+      const width = this.data.screenWidth;
+      const height = this.data.screenWidth / this.properties.cutScale;
+      const tempFilePaths = this.data.oldImagePath;
+
+      wx.getImageInfo({
+        src: tempFilePaths,
+        success: (msg) => {
+          const imageWidth = msg.width;
+          const imageHeight = msg.height;
+          const scale = imageWidth / imageHeight;
+
+          //横向图片,高变成固定,宽度自适应
+          if (scale > this.properties.cutScale) {
+            this.setData({
+              width: height * scale,
+              height: height,
+              oldWidth: height * scale,
+              oldHeight: height,
+              img: tempFilePaths,
+            });
+          } else {
+            //纵向图片，短边是宽，宽变成系统固定，高自适应
+            this.setData({
+              width,
+              height: width / scale,
+              oldWidth: width,
+              oldHeight: width / scale,
+              img: tempFilePaths,
+            });
+          }
+        },
+      });
+    },
+
+    handleResetImage() {
+      this.setData({ croppedPic: '' });
+      this.setImage();
+    },
+
+    handleStart(e) {
+      if (e.touches.length === 2) {
+        const newX = e.touches[1].pageX - e.touches[0].pageX,
+          newY = e.touches[1].pageY - e.touches[0].pageY,
+          distance = Math.sqrt(Math.pow(newX, 2) + Math.pow(newY, 2));
+        this.setData({ distance });
+      }
+    },
+
+    handleMove(e) {
+      if (e.touches.length === 2) {
+        const newX = e.touches[1].pageX - e.touches[0].pageX,
+          newY = e.touches[1].pageY - e.touches[0].pageY,
+          oldWidth = this.data.oldWidth,
+          oldHeight = this.data.oldHeight,
+          newDistance = Math.sqrt(Math.pow(newX, 2) + Math.pow(newY, 2)),
+          width = this.data.width,
+          height = this.data.height,
+          distance = this.data.distance,
+          endDistance = newDistance - distance,
+          picScale = 1 + endDistance * 0.002;
+
+        // 设定缩小最小比例
+        const max = (width * picScale) / oldWidth;
+
+        if (max < 1) {
+          this.setData({
+            width: oldWidth,
+            height: oldHeight,
+          });
+        } else {
+          this.setData({
+            width: width * picScale,
+            height: height * picScale,
+            distance: newDistance,
+          });
+        }
+      }
+    },
+
+    handleScroll(e) {
+      const x = e.detail.scrollLeft;
+      const y = e.detail.scrollTop;
+      this.setData({ x, y });
+    },
+
+    handleCrop() {
+      let img = this.properties.imgUrl,
+        width = this.data.width,
+        height = this.data.height,
+        crop = this.data.screenWidth,
+        x = this.data.x,
+        y = this.data.y;
+      wx.showLoading({ title: '裁剪中' });
+      const canvas = wx.createCanvasContext('canvas', this);
+
+      canvas.drawImage(img, 0, 0, width, height);
+      canvas.draw(
+        setTimeout(() => {
+          wx.hideLoading();
+          wx.canvasToTempFilePath(
+            {
+              x,
+              y,
+              width: crop,
+              height: crop / this.properties.cutScale,
+              canvasId: 'canvas',
+              success: (res) => {
+                this.setData({ croppedPic: res.tempFilePath });
+              },
+            },
+            this,
+          );
+        }, 1000),
+      );
+    },
+
+    handleSave() {
+      [this.data.croppedPic].forEach((item) => {
+       const suffix = item.substr(item.lastIndexOf('.') + 1);
+        const fileName = `${this.properties.type}/${new Date().valueOf()}${Math.random()
+          .toString(36)
+          .slice(-6)}.${suffix}`;
+        this.triggerEvent('save', { item, fileName });
+      });
+    },
+
+    handleCancel() {
+      this.triggerEvent('cancel');
+    },
+  },
+});

@@ -1,1 +1,35 @@
-"use strict";Component({properties:{title:{type:String,value:""},hasReturn:{type:Boolean,value:!0},background:{type:String,value:""},color:{type:String,value:""}},lifetimes:{attached:function(){var e=this;wx.getSystemInfo({success:function(t){e.setData({statusBarHeight:t.statusBarHeight})}})}},methods:{handleReturn:function(){wx.navigateBack()}}});
+Component({
+  properties: {
+    title: {
+      type: String,
+      value: '',
+    },
+    hasReturn: {
+      type: Boolean,
+      value: true,
+    },
+    background: {
+      type: String,
+      value: '',
+    },
+    color: {
+      type: String,
+      value: '',
+    },
+  },
+
+  lifetimes: {
+    attached() {
+      wx.getSystemInfo({
+        success: (res) => {
+          this.setData({ statusBarHeight: res.statusBarHeight });
+        },
+      });
+    },
+  },
+  methods: {
+    handleReturn() {
+      wx.navigateBack();
+    },
+  },
+});

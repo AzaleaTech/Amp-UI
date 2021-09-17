@@ -1,1 +1,63 @@
-"use strict";Component({properties:{name:{type:String},color:{type:null,observer:function(t){this.setData({colors:this.fixColor(),isStr:"string"==typeof t})}},size:{type:Number,value:24,observer:function(t){this.setData({svgSize:t})}}},data:{colors:"",svgSize:24,quot:'"',isStr:!0},methods:{fixColor:function(){var t=this.data.color,e=this.hex2rgb;return"string"==typeof t?0===t.indexOf("#")?e(t):t:t.map(function(t){return 0===t.indexOf("#")?e(t):t})},hex2rgb:function(t){var e=[];return(t=3===(t=t.substr(1)).length?t.replace(/(.)/g,"$1$1"):t).replace(/../g,function(t){return e.push(parseInt(t,16)),t}),"rgb("+e.join(",")+")"}}});
+Component({
+  properties: {
+    // qiye | xuewei
+    name: {
+      type: String,
+    },
+    // string | string[]
+    color: {
+      type: null,
+      observer: function(color) {
+        this.setData({
+          colors: this.fixColor(),
+          isStr: typeof color === 'string',
+        });
+      }
+    },
+    size: {
+      type: Number,
+      value: 24,
+      observer: function(size) {
+        this.setData({
+          svgSize: size,
+        });
+      },
+    },
+  },
+  data: {
+    colors: '',
+    svgSize: 24,
+    quot: '"',
+    isStr: true,
+  },
+  methods: {
+    fixColor: function() {
+      var color = this.data.color;
+      var hex2rgb = this.hex2rgb;
+
+      if (typeof color === 'string') {
+        return color.indexOf('#') === 0 ? hex2rgb(color) : color;
+      }
+
+      return color.map(function (item) {
+        return item.indexOf('#') === 0 ? hex2rgb(item) : item;
+      });
+    },
+    hex2rgb: function(hex) {
+      var rgb = [];
+
+      hex = hex.substr(1);
+
+      if (hex.length === 3) {
+        hex = hex.replace(/(.)/g, '$1$1');
+      }
+
+      hex.replace(/../g, function(color) {
+        rgb.push(parseInt(color, 0x10));
+        return color;
+      });
+
+      return 'rgb(' + rgb.join(',') + ')';
+    }
+  }
+});

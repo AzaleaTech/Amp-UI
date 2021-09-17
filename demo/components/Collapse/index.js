@@ -1,1 +1,41 @@
-"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}Component({properties:{options:{type:Array,default:[]}},methods:{handleCollapse:function(e){e=e.currentTarget.dataset.index;this.properties.options[e].children&&this.setData(_defineProperty({},"options[".concat(e,"].opened"),!this.properties.options[e].opened))},handleCollapseChild:function(e){this.triggerEvent("collapse",e.currentTarget.dataset.item)}}});
+Component({
+  properties: {
+    /**
+     * 折叠列表参数，必填
+     * @property {string} content       -列表项内容
+     * @property {string} [detail]      -列表项详情
+     * @property {array}  [children]    -列表项子项数组，格式与上同
+     * @example 
+     * {
+     *  content: '',
+     *  detail: '',
+     *  clickable:'',
+     *  children: [],
+     * }
+     */
+    options: {
+      type: Array,
+      default: [],
+    },
+  },
+
+  methods: {
+    /**
+     * 处理点击动作
+     * 当为父项时控制折叠
+     */
+    handleCollapse(e) {
+      const { index } = e.currentTarget.dataset;
+      if (this.properties.options[index].children) {
+        this.setData({ [`options[${index}].opened`]: !this.properties.options[index].opened });
+      }
+    },
+
+    /**
+     * 处理子项的点击动作并回传点击事件和子项内容
+     */
+    handleCollapseChild(e) {
+      this.triggerEvent('collapse', e.currentTarget.dataset.item);
+    },
+  }
+})

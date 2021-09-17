@@ -1,1 +1,35 @@
-.dialog-body{position:absolute;top:45%;left:50%;z-index:10001;min-height:262rpx;width:646rpx;border-radius:24rpx;background:#fff;text-align:center;font-size:32rpx;padding-top:60rpx;transform:translate(-50%,-50%)}.dialog-title{padding:0 40rpx 40rpx 40rpx;font-weight:700;font-size:32rpx;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.dialog-content{overflow:auto;padding:0 40rpx;max-height:800rpx;word-wrap:break-word}.dialog-btn{margin-top:70rpx;padding:0 40rpx 32rpx 40rpx;display:flex;align-items:center;justify-content:space-between}
+.dialog-body {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  z-index: 10001;
+  min-height: 262rpx;
+  width: 646rpx;
+  border-radius: 24rpx;
+  background: #ffffff;
+  text-align: center;
+  font-size: 32rpx;
+  padding-top: 60rpx;
+  transform: translate(-50%, -50%);
+}
+.dialog-title {
+  padding: 0 40rpx 40rpx 40rpx;
+  font-weight: 700;
+  font-size: 32rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.dialog-content {
+  overflow: auto;
+  padding: 0 40rpx;
+  max-height: 800rpx;
+  word-wrap: break-word;
+}
+.dialog-btn {
+  margin-top: 70rpx;
+  padding: 0 40rpx 32rpx 40rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

@@ -1,1 +1,1 @@
-"use strict";Component({});
+Component({});
