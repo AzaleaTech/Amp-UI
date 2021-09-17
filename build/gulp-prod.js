@@ -10,8 +10,8 @@ const del = require('del');
 
 // 输出目录
 const outputDir = '../dist/';
-// 以下文件不做处理, 按源文件输出
-const ignoreFiles = ['echarts.js', 'wx-canvas.js'];
+// 以下文件打包不做处理, 按源文件输出
+const ignoreFiles = ['echarts.js'];
 
 /**
  * 文件是否压缩
@@ -56,9 +56,12 @@ gulp.task('compile-js', () => {
   return gulp
     .src(['../lib/**/*.js'])
     .pipe(
-      babel({
-        presets: ['@babel/env'],
-      }),
+      gulpif(
+        condition,
+        babel({
+          presets: ['@babel/env'],
+        }),
+      ),
     )
     .pipe(gulpif(condition, uglify()))
     .pipe(gulp.dest(outputDir));
@@ -80,6 +83,6 @@ gulp.task(
   'default',
   gulp.series(
     'compile-clean',
-    gulp.parallel('compile-css', 'compile-js', 'compile-json', 'compile-wxml', 'compile-images'),
+    gulp.parallel('compile-css', 'compile-images', 'compile-js', 'compile-json', 'compile-wxml'),
   ),
 );

@@ -1,1 +1,77 @@
-.record{flex-direction:column;display:flex;align-items:center;justify-content:center}.record-container{position:relative;overflow:hidden;width:300rpx;height:300rpx}.record-container image{position:absolute;top:0;left:0;width:300rpx;height:300rpx}.record-box{overflow:hidden;background:0 0;width:300rpx;height:300rpx}.record-main{position:absolute;top:0;left:0;z-index:-1;overflow:hidden;width:300rpx;height:300rpx}.record-main image:first-child{z-index:3}.record-main image:nth-child(2){z-index:2}.record-main image:nth-child(3){z-index:1}.tips{position:absolute;bottom:0;width:100%;color:#929292;text-align:center;font-size:28rpx;line-height:40rpx}.tips-more{position:absolute;bottom:20rpx;left:50rpx;color:#fff;text-align:center;font-weight:700;font-size:34rpx;line-height:48rpx;width:204rpx;height:48rpx}.del-btn{margin:60rpx 0 40rpx;height:50rpx;color:#e9a32d;font-size:28rpx;line-height:40rpx;display:flex}.del-btn image{margin-right:12rpx;width:38rpx 36rpx;height:38rpx 36rpx}
+.record {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.record-container {
+  position: relative;
+  overflow: hidden;
+  width: 300rpx;
+  height: 300rpx;
+}
+.record-container image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300rpx;
+  height: 300rpx;
+}
+.record-box {
+  overflow: hidden;
+  background: transparent;
+  width: 300rpx;
+  height: 300rpx;
+}
+.record-main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  overflow: hidden;
+  width: 300rpx;
+  height: 300rpx;
+}
+.record-main image:first-child {
+  z-index: 3;
+}
+.record-main image:nth-child(2) {
+  z-index: 2;
+}
+.record-main image:nth-child(3) {
+  z-index: 1;
+}
+.tips {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: #929292;
+  text-align: center;
+  font-size: 28rpx;
+  line-height: 40rpx;
+}
+.tips-more {
+  position: absolute;
+  bottom: 20rpx;
+  left: 50rpx;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 700;
+  font-size: 34rpx;
+  line-height: 48rpx;
+  width: 204rpx;
+  height: 48rpx;
+}
+.del-btn {
+  margin: 60rpx 0 40rpx;
+  height: 50rpx;
+  color: #e9a32d;
+  font-size: 28rpx;
+  line-height: 40rpx;
+  display: flex;
+}
+.del-btn image {
+  margin-right: 12rpx;
+  width: 38rpx 36rpx;
+  height: 38rpx 36rpx;
+}

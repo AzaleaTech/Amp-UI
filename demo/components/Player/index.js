@@ -1,1 +1,79 @@
-"use strict";var innerAudioContext=wx.createInnerAudioContext();Component({properties:{url:{type:String,value:""}},data:{playIcon:2,time:null,isPlaying:!1},lifetimes:{attached:function(){var t=this;wx.setInnerAudioOption({obeyMuteSwitch:!1}),innerAudioContext.onEnded(function(){clearTimeout(t.data.time),t.data.time=null,t.setData({playIcon:2,isPlaying:!1})}),innerAudioContext.onStop(function(){t.setData({playIcon:2,isPlaying:!1}),clearTimeout(t.data.time),t.data.time=null})}},methods:{playVoice:function(){var t=this;this.data.time=setTimeout(function(){t.setData({playIcon:2===t.data.playIcon?0:t.data.playIcon+1}),t.playVoice()},300)},tapPlayer:function(){var t=this;innerAudioContext.stop(),this.data.time?(this.setData({playIcon:1,isPlaying:!1}),innerAudioContext.stop(),clearTimeout(this.data.time),this.data.time=null):setTimeout(function(){innerAudioContext.src=t.properties.url,innerAudioContext.play(),t.playVoice(),t.setData({playIcon:0,isPlaying:!0})},50)}}});
+const innerAudioContext = wx.createInnerAudioContext();
+
+Component({
+  properties: {
+    // 音频链接
+    url: {
+      type: String,
+      value: '',
+    },
+  },
+
+  data: {
+    playIcon: 2,
+    time: null,
+    isPlaying: false,
+  },
+
+  lifetimes: {
+    attached() {
+      wx.setInnerAudioOption({
+        obeyMuteSwitch: false,
+      });
+      
+      // 监听语音播放对象的播放完毕以及关闭
+      innerAudioContext.onEnded(() => {
+        clearTimeout(this.data.time);
+        this.data.time = null;
+        this.setData({
+          playIcon: 2,
+          isPlaying: false,
+        });
+      });
+
+      innerAudioContext.onStop(() => {
+        this.setData({
+          playIcon: 2,
+          isPlaying: false,
+        });
+        clearTimeout(this.data.time);
+        this.data.time = null;
+      });
+    },
+  },
+
+  methods: {
+    playVoice() {
+      this.data.time = setTimeout(() => {
+        this.setData({
+          playIcon: this.data.playIcon === 2 ? 0 : this.data.playIcon + 1,
+        });
+        this.playVoice();
+      }, 300);
+    },
+
+    tapPlayer() {
+      innerAudioContext.stop();
+      if (!this.data.time) {
+        setTimeout(() => {
+          innerAudioContext.src = this.properties.url;
+          innerAudioContext.play();
+          this.playVoice();
+          this.setData({
+            playIcon: 0,
+            isPlaying: true,
+          });
+        }, 50);
+      } else {
+        this.setData({
+          playIcon: 1,
+          isPlaying: false,
+        });
+        innerAudioContext.stop();
+        // 当音频文件错误时innerAudioContext无法监测停止，需要手动关闭计时器
+        clearTimeout(this.data.time);
+        this.data.time = null;
+      }
+    },
+  },
+});
