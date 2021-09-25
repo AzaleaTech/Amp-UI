@@ -18,6 +18,10 @@ gulp.task('compile-css', () => {
     .pipe(gulp.dest(outputDir));
 });
 
+gulp.task('compile-images', () => {
+  return gulp.src('../lib/**/*.?(png|jpg|gif|jpeg|webp|svg)').pipe(gulp.dest(outputDir));
+});
+
 gulp.task('compile-js', () => {
   return gulp.src(['../lib/**/*.js']).pipe(gulp.dest(outputDir));
 });
@@ -36,6 +40,7 @@ gulp.task('compile-clean', async () => {
 
 gulp.task('auto', () => {
   gulp.watch('../lib/**/*.less', gulp.series('compile-css'));
+  gulp.watch('../lib/**/*.?(png|jpg|gif|jpeg|webp|svg)', gulp.series('compile-images'));
   gulp.watch('../lib/**/*.js', gulp.series('compile-js'));
   gulp.watch('../lib/**/*.json', gulp.series('compile-json'));
   gulp.watch('../lib/**/*.wxml', gulp.series('compile-wxml'));
@@ -45,6 +50,13 @@ gulp.task(
   'default',
   gulp.series(
     'compile-clean',
-    gulp.parallel('compile-css', 'compile-js', 'compile-json', 'compile-wxml', 'auto'),
+    gulp.parallel(
+      'compile-css',
+      'compile-images',
+      'compile-js',
+      'compile-json',
+      'compile-wxml',
+      'auto',
+    ),
   ),
 );
