@@ -1,4 +1,4 @@
-### 微信小程序组件库
+# 微信小程序组件库
 
 ## Done
 
@@ -15,7 +15,7 @@
 - Modal (Toast&&Dialog)
 - Player
 - Rate
-- Record
+- [Record](./docs/record.md)
 - [Tabs](./docs/tabs.md)
 - [Upload](./docs/upload.md)
 - Verfication
