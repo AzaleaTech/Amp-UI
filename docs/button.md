@@ -6,8 +6,6 @@
 
 ## 示例
 
-在.json 中引入组件
-
 ```html
 按钮形状
 <a-button circle="{{ true }}">圆角</a-button>
