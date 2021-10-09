@@ -2,7 +2,7 @@
 
 ## Done
 
-- Button
+- [Button](./docs/button.md)
 - ButtonGroup
 - Card
 - Collapse
@@ -16,8 +16,8 @@
 - Player
 - Rate
 - Record
-- Tabbar
-- Upload
+- [Tabs](./docs/tabs.md)
+- [Upload](./docs/upload.md)
 - Verfication
 
 ## In Progress
