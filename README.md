@@ -14,7 +14,7 @@
 - Input (clearable)
 - Modal (Toast&&Dialog)
 - Player
-- Rate
+- [Rate](./docs/rate.md)
 - [Record](./docs/record.md)
 - [Tabs](./docs/tabs.md)
 - [Upload](./docs/upload.md)
