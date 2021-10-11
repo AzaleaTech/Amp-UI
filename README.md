@@ -13,7 +13,7 @@
 - Header
 - Input (clearable)
 - Modal (Toast&&Dialog)
-- Player
+- [Player](./docs/player.md)
 - [Rate](./docs/rate.md)
 - [Record](./docs/record.md)
 - [Tabs](./docs/tabs.md)
