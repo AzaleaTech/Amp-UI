@@ -4,7 +4,7 @@
 
 - [Button](./docs/button.md)
 - [ButtonGroup](./docs/buttonGroup.md)
-- Card
+- [Card](./docs/card.md)
 - Collapse
 - Cropper
 - Echarts
