@@ -11,7 +11,7 @@
 - Form
 - FormItem
 - Header
-- Input (clearable)
+- [Input](./docs/input.md)
 - Modal ([Toast](./docs/toast.md)&&[Dialog](./docs/dialog.md))
 - [Player](./docs/player.md)
 - [Rate](./docs/rate.md)
