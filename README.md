@@ -12,7 +12,7 @@
 - FormItem
 - Header
 - Input (clearable)
-- Modal (Toast&&Dialog)
+- Modal ([Toast](./docs/toast.md)&&[Dialog](./docs/dialog.md))
 - [Player](./docs/player.md)
 - [Rate](./docs/rate.md)
 - [Record](./docs/record.md)
@@ -36,6 +36,7 @@
 ## Optimize
 
 - [Icon](./docs/icon.md)
+- [Toast](./docs/toast.md)&&[Dialog](./docs/dialog.md)支持函数调用
 
 ## Usage
 
