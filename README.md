@@ -6,7 +6,7 @@
 - [ButtonGroup](./docs/buttonGroup.md)
 - [Card](./docs/card.md)
 - [Collapse](./docs/collapse.md)
-- Cropper
+- [Cropper](./docs/cropper.md)
 - Echarts
 - Form
 - FormItem
