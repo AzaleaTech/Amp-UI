@@ -10,7 +10,7 @@
 - Echarts
 - Form
 - FormItem
-- Header
+- [Header](./docs/header)
 - [Input](./docs/input.md)
 - Modal ([Toast](./docs/toast.md)&&[Dialog](./docs/dialog.md))
 - [Player](./docs/player.md)
