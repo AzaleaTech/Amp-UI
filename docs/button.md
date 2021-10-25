@@ -46,15 +46,16 @@
 
 ### Props
 
-| 参数      | 说明                           | 必填 | 类型    | 默认值  | 可选值                                                                                                                                           |
-| --------- | ------------------------------ | ---- | ------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| circle    | 按钮圆角                       | 否   | boolean | false   |
-| margin-x  | 按钮左右外边距，默认单位为 rpx | 否   | number  | 20      |
-| size      | 按钮尺寸                       | 否   | string  | default | large、default、small                                                                                                                            |
-| type      | 按钮样式 (颜色，边框，字体)    | 否   | string  | default | default、primary、success、 error、warning                                                                                                       |
-| disabled  | 禁用按钮                       | 否   | boolean | false   |
-| loading   | 名称前是否带 loading 图标      | 否   | boolean | false   |
-| open-type | 微信开放能力                   | 否   | string  | -       | contact、getUserInfo、getPhoneNumber、openSetting、launchApp，[官方文档](https://developers.weixin.qq.com/miniprogram/dev/component/button.html) |
+| 参数      | 说明                                                                                                             | 必填 | 类型    | 默认值  | 可选值                                                       |
+| --------- | ---------------------------------------------------------------------------------------------------------------- | ---- | ------- | ------- | ------------------------------------------------------------ |
+| circle    | 按钮圆角                                                                                                         | 否   | boolean | false   |
+| margin-x  | 按钮左右外边距，默认单位为 rpx                                                                                   | 否   | number  | 20      |
+| size      | 按钮尺寸                                                                                                         | 否   | string  | default | large、default、small                                        |
+| type      | 按钮样式 (颜色，边框，字体)                                                                                      | 否   | string  | default | default、primary、success、 error、warning                   |
+| disabled  | 禁用按钮                                                                                                         | 否   | boolean | false   |
+| loading   | 名称前是否带 loading 图标                                                                                        | 否   | boolean | false   |
+| open-type | 微信开放能力, 参考[微信 button 文档](https://developers.weixin.qq.com/miniprogram/dev/component/button.html)     | 否   | string  | -       | contact、getUserInfo、getPhoneNumber、openSetting、launchApp |
+| form-type | 用于 `form` 组件, 参考[微信 button 文档](https://developers.weixin.qq.com/miniprogram/dev/component/button.html) | 否   | string  | -       | submit、reset                                                |
 
 ### Events
 

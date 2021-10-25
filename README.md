@@ -7,10 +7,8 @@
 - [Card](./docs/card.md)
 - [Collapse](./docs/collapse.md)
 - [Cropper](./docs/cropper.md)
-- Echarts
-- Form
-- FormItem
-- [Header](./docs/header)
+- [Form](./docs/form.md)
+- [Header](./docs/header.md)
 - [Input](./docs/input.md)
 - Modal ([Toast](./docs/toast.md)&&[Dialog](./docs/dialog.md))
 - [Player](./docs/player.md)
@@ -19,6 +17,7 @@
 - [Tabs](./docs/tabs.md)
 - [Upload](./docs/upload.md)
 - Verfication
+- Echarts
 
 ## In Progress
 

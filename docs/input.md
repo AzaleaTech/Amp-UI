@@ -23,13 +23,14 @@
 
 ## APIs
 
-参考微信组件库[Input文档](https://developers.weixin.qq.com/miniprogram/dev/component/input.html)
+参考微信组件库[Input 文档](https://developers.weixin.qq.com/miniprogram/dev/component/input.html)
 
 ### Props
 
 | 参数         | 说明                                              | 类型    | 默认值 | 可选值                                     | 必填 |
 | ------------ | ------------------------------------------------- | ------- | ------ | ------------------------------------------ | ---- |
 | a-class      | 自定义 class 类名                                 | string  | -      | -                                          | -    |
+| name         | 输入框的唯一标识                                  | string  | -      | -                                          | -    |
 | value        | 输入框的初始内容                                  | string  | -      | -                                          | 否   |
 | type         | 输入框类型                                        | string  | text   | text、number、idcard、digit、safe-password |
 | placeholder  | 占位文本                                          | string  | -      | -                                          | 否   |
