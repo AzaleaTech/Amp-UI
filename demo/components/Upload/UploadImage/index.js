@@ -1,64 +1,44 @@
 Component({
   properties: {
-    /**
-     * 展示的图片列表
-     */
     imgs: {
       type: Array,
       value: [],
     },
-    /**
-     * 是否需要裁剪图片，默认为false
-     */
-    isCropper: {
-      type: Boolean,
-      value: false,
-    },
-    /**
-     * 限制图片上传数量
-     * 默认无限制
-     */
-    limit: {
-      type: Number,
-      value: 0,
-    },
-    /**
-     * 图片的来源 ['album', 'camera']
-     * 默认两者均可
-     * ['album']: ['album']
-     * ['camera']: ['camera']
-     */
-    sourceType: {
-      type: Array,
-      value: ['album', 'camera'],
-    },
-    /**
-     * upload禁用, read-only
-     */
-    disabled: {
-      type: Boolean,
-      value: false,
-    },
-    /**
-     * 展示图片的宽度， 默认140rpx
-     */
     width: {
       type: Number,
       value: 140,
     },
-    /**
-     * 展示图片的高度， 默认140rpx
-     */
     height: {
       type: Number,
       value: 140,
     },
-    /**
-     * 上传图片的最大大小, 默认为-1，不限制大小，单位为kb
-     */
+    sourceType: {
+      type: Array,
+      value: ['album', 'camera'],
+    },
+    count: {
+      type: Number,
+      value: 9,
+    },
+    sizeType: {
+      type: Array,
+      value: ['original', 'compressed'],
+    },
+    limit: {
+      type: Number,
+      value: 0,
+    },
     size: {
       type: Number,
       value: -1,
+    },
+    disabled: {
+      type: Boolean,
+      value: false,
+    },
+    isCropped: {
+      type: Boolean,
+      value: false,
     },
   },
 
@@ -94,20 +74,28 @@ Component({
 
     chooseImage() {
       wx.chooseImage({
-        sizeType: ['original', 'compressed'],
+        sizeType: this.properties.sizeType,
         sourceType: this.properties.sourceType,
-        count: this.data.limit,
+        count: this.properties.isCropped ? 1 : this.properties.count,
         success: (res) => {
           // 判断上传图片大小
-          if (this.properties.size > 0 && this.properties.size * 1024 < res.tempFiles[0].size) {
-            this.triggerEvent('change', {
-              status: 'error',
-              msg: `上传的图片大小不得超过${this.properties.size}kb`,
+          if (this.properties.size > 0) {
+            let overLimit = false;
+            res.tempFiles.forEach((item) => {
+              if (item.size > this.properties.size * 1024 * 1024) {
+                overLimit = true;
+              }
             });
-            return;
+            if (overLimit) {
+              this.triggerEvent('change', {
+                status: 'error',
+                msg: `上传的图片大小不得超过${this.properties.size}MB`,
+              });
+              return;
+            }
           }
           // 判断是否需要裁剪
-          if (this.properties.isCropper) {
+          if (this.properties.isCropped) {
             this.setData({
               imgUrl: res.tempFilePaths[0],
             });
@@ -121,10 +109,9 @@ Component({
           }
         },
         fail: (err) => {
-          console.log('chooseImage error', err);
+          console.warn('ChooseImage error', err);
           this.triggerEvent('change', { status: 'error', msg: err });
         },
-        complete: () => {},
       });
     },
 

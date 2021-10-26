@@ -13,7 +13,7 @@
   <view class="example-box-content">
     <upload-image
                   imgs="{{ cropperImages }}"
-                  isCropper="{{ isCropper }}"
+                  isCropped="{{ isCropped }}"
                   limit="{{ 1 }}"
                   size="{{ 500 }}"
                   sourceType="{{ ['album'] }}"

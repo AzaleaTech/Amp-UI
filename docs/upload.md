@@ -32,9 +32,9 @@
 | count      | 最多可以选择的图片张数                     | number        | 9                          | 否   |
 | sizeType   | 所选的图片的尺寸                           | Array[string] | ['original', 'compressed'] | 否   |
 | limit      | 限制图片上传数量, 默认无限制               | number        | -1                         | 否   |
-| size       | 上传图片的最大大小, 默认无限制, 单位[`kb`] | number        | -1                         | 否   |
+| size       | 上传图片的最大大小, 默认无限制, 单位[`MB`] | number        | -1                         | 否   |
 | disabled   | 是否禁用                                   | boolean       | false                      | 否   |
-| isCropper  | 是否需要裁剪图片                           | boolean       | false                      | 否   |
+| isCropped  | 是否需要裁剪图片                           | boolean       | false                      | 否   |
 
 #### 视频
 
@@ -50,7 +50,7 @@
 | compressed  | 是否压缩所选择的视频文件                   | boolean       | false               | 否   |
 | camera      | 默认拉起的是前置或者后置摄像头             | string        | 'back'              | 否   |
 | limit       | 限制视频上传数量, 默认无限制               | number        | -1                  | 否   |
-| size        | 上传视频的最大大小, 默认无限制, 单位[`kb`] | number        | -1                  | 否   |
+| size        | 上传视频的最大大小, 默认无限制, 单位[`MB`] | number        | -1                  | 否   |
 | disabled    | 是否禁用                                   | boolean       | false               | 否   |
 
 ### Events
