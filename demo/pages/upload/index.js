@@ -11,10 +11,11 @@ Page({
     largeWidth: 400,
     largeHeight: 300,
     // 是否裁剪图片
-    isCropper: true,
+    isCropped: true,
   },
 
   handleImageChange(e) {
+    console.log('1111', e)
     this.setData({
       images: e.detail.value,
     });
@@ -46,25 +47,25 @@ Page({
     this.setData({ videos: this.data.videos });
   },
 
-  handleChooseCompressVideo(e){
+  handleChooseCompressVideo(e) {
     this.setData({
       compressVideos: this.data.compressVideos.concat(e.detail.value),
-    })
+    });
   },
 
-  handleRemoveCompressVideo(e){
+  handleRemoveCompressVideo(e) {
     this.data.compressVideos.splice(e.detail, 1);
     this.setData({ compressVideos: this.data.compressVideos });
   },
 
-  handleChooseLargeVideo(e){
+  handleChooseLargeVideo(e) {
     this.setData({
       largeVideos: this.data.largeVideos.concat(e.detail.value),
-    })
+    });
   },
 
-  handleRemoveLargeVideo(e){
+  handleRemoveLargeVideo(e) {
     this.data.largeVideos.splice(e.detail, 1);
     this.setData({ largeVideos: this.data.largeVideos });
-  }
-})
+  },
+});
