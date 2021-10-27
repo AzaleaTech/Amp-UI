@@ -1,23 +1,14 @@
 Component({
   properties: {
-    /**
-     * 导航栏内容数组，必填
-     */
-    tabs: {
+    tabList: {
       type: Array,
       default: [],
     },
-    /**
-     * 初始激活的tab项，选填
-     */
     current: {
       type: Number,
       default: 0,
     },
-    /**
-     * 是否顶部吸附
-     */
-    isCeiling: {
+    ceiling: {
       type: Boolean,
       default: false,
     },
@@ -45,11 +36,11 @@ Component({
      * 父组件取得当前tab索引
      */
     switchTab(e) {
-      const cur = e.currentTarget.dataset.current;
-      if (this.data.currentIndex !== cur) {
-        this.setData({ currentIndex: cur });
+      const { current } = e.currentTarget.dataset;
+      if (this.data.currentIndex !== current) {
+        this.setData({ currentIndex: current });
       }
-      this.triggerEvent('change', cur);
+      this.triggerEvent('change', { value: current });
     },
 
     /**
@@ -63,7 +54,7 @@ Component({
       // 滚动状态下滚动条边距
       const TABBAR_PADDING = 60;
       // tab个数
-      const length = this.properties.tabs.length;
+      const length = this.properties.tabList.length;
       // rpx与px转换倍数
       const rpxMultiple = MAX_WIDTH / wx.getSystemInfoSync().windowWidth;
       // 总宽度

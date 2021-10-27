@@ -1,7 +1,6 @@
 @import '../styles/_index.less';
 
-.tabbar-container {
-  z-index: @z-index-tabbar;
+.tabs-container {
   position: relative;
   width: 100%;
 
@@ -11,7 +10,7 @@
   }
 }
 
-.tabbar {
+.tabs {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -20,12 +19,12 @@
   .tab {
     display: inline-flex;
     justify-content: center;
+    flex: 1;
     padding: 24rpx 0;
     color: @text-color-tertiary;
     text-align: center;
     font-size: 30rpx;
     line-height: 42rpx;
-    flex: 1;
 
     .word-nowrap();
 
@@ -36,11 +35,11 @@
       font-size: 34rpx;
 
       &::before {
-        content: '';
         position: absolute;
         top: 84rpx;
         width: 60rpx;
         border-bottom: 6rpx solid @primary-color;
+        content: '';
       }
     }
   }
