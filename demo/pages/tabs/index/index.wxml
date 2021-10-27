@@ -12,18 +12,18 @@
 </view>
 <view class="example-box">
   <view class="example-box-title">标签宽度不超过页面</view>
-  <a-tabbar tabs="{{ staticTabs }}"></a-tabbar>
+  <a-tabs tabList="{{ staticTabs }}"></a-tabs>
 </view>
 <view class="example-box">
   <view class="example-box-title">标签宽度超过页面</view>
-  <a-tabbar tabs="{{ overflowTabs }}"></a-tabbar>
+  <a-tabs tabList="{{ overflowTabs }}"></a-tabs>
 </view>
 <view class="example-box">
   <view class="example-box-title">初始化索引及切换标签</view>
-  <a-tabbar
-            tabs="{{ staticTabs }}"
-            current="{{ currentTab }}"
-            bind:change="handleSwitchTab">
+  <a-tabs
+          tabList="{{ staticTabs }}"
+          current="{{ currentTab }}"
+          bind:change="handleSwitchTab">
     <view wx:if="{{ currentTab === 0 }}">
       <a-card
               title="{{ card.title + 1 }}"
@@ -42,6 +42,6 @@
               contents="{{ card.contents }}"
               imgUrl="{{ card.imgUrl }}"></a-card>
     </view>
-  </a-tabbar>
+  </a-tabs>
 </view>
 

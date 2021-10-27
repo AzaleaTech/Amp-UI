@@ -1,8 +1,8 @@
 Page({
   data: {
     currentTab: 1,
-    isCeiling: false,
-    tabbarHeight: 96,
+    ceiling: false,
+    tabsHeight: 96,
     staticTabs: ['测试标签1', '测试标签2', '测试标签3'],
     overflowTabs: ['测试标签1', '测试标签2', '测试标签3', '测试标签4', '测试标签5'],
     card: {
@@ -13,18 +13,18 @@ Page({
   },
 
   onPageScroll(res) {
-    if (res.scrollTop >= this.data.tabbarHeight && !this.data.isCeiling) {
-      this.setData({ isCeiling: true });
-    } else if (res.scrollTop < this.data.tabbarHeight && this.data.isCeiling) {
-      this.setData({ isCeiling: false });
+    if (res.scrollTop >= this.data.tabsHeight && !this.data.ceiling) {
+      this.setData({ ceiling: true });
+    } else if (res.scrollTop < this.data.tabsHeight && this.data.ceiling) {
+      this.setData({ ceiling: false });
     }
   },
 
   handleSwitchTab(e) {
-    this.setData({ currentTab: e.detail });
+    this.setData({ currentTab: e.detail.value });
   },
 
   handleCeiling() {
-    wx.navigateTo({ url: '/demo/pages/tabbar/ceiling/index' });
+    wx.navigateTo({ url: '/demo/pages/tabs/ceiling/index' });
   },
 });
