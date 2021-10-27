@@ -5,8 +5,8 @@
   justify-content: center;
 }
 .rate-wrap .rate-item {
-  margin-right: 40rpx;
   position: relative;
+  margin-right: 40rpx;
 }
 .rate-wrap .rate-item-selected {
   position: absolute;
