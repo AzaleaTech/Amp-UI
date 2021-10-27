@@ -1,6 +1,6 @@
 {
   "navigationBarTitleText": "Rate",
   "usingComponents": {
-    "rate": "../../components/Rate/index"
+    "a-rate": "../../components/Rate/index"
   }
 }

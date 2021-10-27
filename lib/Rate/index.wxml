@@ -3,14 +3,13 @@
         wx:for="{{ count }}"
         wx:key="index"
         data-index="{{ index }}"
-        data-width="{{ width }}"
         class="rate-item"
-        style="{{ style }}; margin-right: {{ width / 2 }}rpx"
+        style="{{ style }}; margin-right: {{ size / 2 }}rpx"
         bind:tap="handleClick">
     <block wx:if="{{ value > index }}">
       <view
             class="rate-item-selected"
-            style="width: {{ (value - index) * width }}rpx">
+            style="width: {{ (value - index) * size }}rpx">
         <image
                src="{{ images[1] }}"
                style="{{ style }}" />
