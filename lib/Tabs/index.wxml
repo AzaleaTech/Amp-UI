@@ -1,8 +1,8 @@
-<view class="tabbar-container {{ isCeiling ? 'tabbar-container-fixed-top' : ''}}">
+<view class="tabs-container {{ ceiling ? 'tabs-container-fixed-top' : ''}}">
   <scroll-view scroll-x="{{ scroll }}">
-    <view class="tabbar {{ scroll ? 'tabbar-scroll' : '' }}">
+    <view class="tabs {{ scroll ? 'tabs-scroll' : '' }}">
       <view
-            wx:for="{{ tabs }}"
+            wx:for="{{ tabList }}"
             wx:key="index"
             data-current="{{ index }}"
             class="tab {{ index === currentIndex ? 'tab-active' : '' }}"
@@ -15,7 +15,7 @@
         wx:if="{{ scroll }}"
         class="gradient"></view>
 </view>
-<view class="{{ isCeiling ? 'tab-panel-fixed' : ''}}">
+<view class="{{ ceiling ? 'tab-panel-fixed' : ''}}">
   <slot></slot>
 </view>
 

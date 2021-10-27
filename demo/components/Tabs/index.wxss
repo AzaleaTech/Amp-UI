@@ -1,52 +1,51 @@
-.tabbar-container {
-  z-index: 10;
+.tabs-container {
   position: relative;
   width: 100%;
 }
-.tabbar-container-fixed-top {
+.tabs-container-fixed-top {
   position: sticky;
   top: 0;
 }
-.tabbar {
+.tabs {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #f4f5f6;
 }
-.tabbar .tab {
+.tabs .tab {
   display: inline-flex;
   justify-content: center;
+  flex: 1;
   padding: 24rpx 0;
   color: #868686;
   text-align: center;
   font-size: 30rpx;
   line-height: 42rpx;
-  flex: 1;
   white-space: nowrap;
   word-wrap: normal;
 }
-.tabbar .tab-active {
+.tabs .tab-active {
   position: relative;
   box-sizing: border-box;
   color: #e9a32d;
   font-size: 34rpx;
 }
-.tabbar .tab-active::before {
-  content: '';
+.tabs .tab-active::before {
   position: absolute;
   top: 84rpx;
   width: 60rpx;
   border-bottom: 6rpx solid #e9a32d;
+  content: '';
 }
-.tabbar-scroll {
+.tabs-scroll {
   display: inline-flex;
   padding: 0 30rpx;
 }
-.tabbar-scroll .tab {
+.tabs-scroll .tab {
   flex: 0;
   margin-right: 64rpx;
 }
-.tabbar-scroll .tab:last-child {
+.tabs-scroll .tab:last-child {
   margin-right: 0;
 }
 .gradient {

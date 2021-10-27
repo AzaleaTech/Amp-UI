@@ -1,7 +1,7 @@
 {
   "navigationBarTitleText": "Tabbar",
   "usingComponents": {
-    "a-tabbar": "../../../components/Tabbar/index",
+    "a-tabs": "../../../components/Tabs/index",
     "a-card": "../../../components/Card/index",
     "a-button": "../../../components/Button/index"
   }

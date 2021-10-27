@@ -2,8 +2,8 @@
   "pages": [
     "demo/pages/index/index",
     "demo/pages/card/index",
-    "demo/pages/tabbar/index/index",
-    "demo/pages/tabbar/ceiling/index",
+    "demo/pages/tabs/index/index",
+    "demo/pages/tabs/ceiling/index",
     "demo/pages/button/index",
     "demo/pages/form/index",
     "demo/pages/verification/index",
