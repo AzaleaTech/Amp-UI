@@ -2,17 +2,20 @@
 
 .record {
   flex-direction: column;
+
   .flex-type(center);
 
   &-container {
     position: relative;
     overflow: hidden;
+
     .set-size(300rpx);
 
     & image {
       position: absolute;
       top: 0;
       left: 0;
+
       .set-size(300rpx);
     }
   }
@@ -20,6 +23,7 @@
   &-box {
     overflow: hidden;
     background: transparent;
+
     .set-size(300rpx);
   }
 
@@ -29,6 +33,7 @@
     left: 0;
     z-index: -1;
     overflow: hidden;
+
     .set-size(300rpx);
 
     & image {
@@ -65,20 +70,22 @@
     font-weight: 700;
     font-size: 34rpx;
     line-height: 48rpx;
-    .set-size(204rpx, 48rpx)
+
+    .set-size(204rpx, 48rpx);
   }
 }
 
 .del-btn {
+  display: flex;
   margin: 60rpx 0 40rpx;
   height: 50rpx;
   color: @primary-color;
   font-size: 28rpx;
   line-height: 40rpx;
-  display: flex;
 
   & image {
     margin-right: 12rpx;
-    .set-size(38rpx 36rpx);
+
+    .set-size(38rpx, 36rpx);
   }
 }
