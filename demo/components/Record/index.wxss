@@ -63,15 +63,15 @@
   height: 48rpx;
 }
 .del-btn {
+  display: flex;
   margin: 60rpx 0 40rpx;
   height: 50rpx;
   color: #e9a32d;
   font-size: 28rpx;
   line-height: 40rpx;
-  display: flex;
 }
 .del-btn image {
   margin-right: 12rpx;
-  width: 38rpx 36rpx;
-  height: 38rpx 36rpx;
+  width: 38rpx;
+  height: 36rpx;
 }
