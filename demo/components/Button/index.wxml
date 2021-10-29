@@ -1,34 +1,18 @@
-<view
-      class="{{ childType ? 'child-' + childType : '' }}"
-      catch:tap="handleTap"
-      catch:touchstart="handleTouchStart"
-      catch:touchend="handleTouchEnd">
-  <view
-        wx:if="{{ type === 'icon' }}"
-        class="icon-btn">
-    <view>
-      <image
-             src="{{ iconUrl }}"
-             class="icon" />
-      <view class="icon-btn-content">
-        <slot></slot>
-      </view>
-    </view>
-  </view>
-  <view
-        wx:else
-        class="btn btn-{{ type }} btn-{{ size }} {{ active && type === 'default' ? 'btn-default-active' : '' }}"
-        style="{{ width ? 'width:' + width + 'rpx;' : '' }}">
-    <image
-           wx:if="{{ iconUrl }}"
-           src="{{ iconUrl }}"
-           class="icon" />
-    <view>
-      <slot></slot>
-    </view>
-    <view
-          wx:if="{{ type === 'primary' }}"
-          class="btn-mask btn-mask-{{ size }} {{ active ? 'btn-mask-active' : ''}}  {{ disabled ? 'btn-mask-disabled' : '' }}"></view>
-  </view>
-</view>
+<button
+        disabled="{{ disaebld }}"
+        loading="{{ loading }}"
+        open-type="{{ openType }}"
+        form-type="{{ formType }}"
+        hover-class="btn-hover"
+        class="a-class btn btn-type-{{ type }} btn-size-{{ size }} {{ circle ? 'btn-radius-' + size : '' }} {{ disabled ? 'btn-disabled' : '' }} {{ block ? 'btn-block' : '' }} {{ childType ? 'child-' + childType : '' }}"
+        catch:tap="handleTap"
+        catch:touchend="handleTouchEnd"
+        bind:contact="handleContact"
+        bind:getuserinfo="handleGetUserInfo"
+        bind:opensetting="handleOpenSetting"
+        bind:launchapp="handleLaunchApp"
+        bind:getphonenumber="handleGetPhoneNumber"
+        bind:error="handleError">
+  <slot></slot>
+</button>
 
