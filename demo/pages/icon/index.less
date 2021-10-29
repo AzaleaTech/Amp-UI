@@ -1,17 +1,21 @@
-@import '../../../lib/styles/index.less';
-
+@import '../../assets/styles/base.less';
 
 .icons {
   display: flex;
-  flex-wrap: wrap;
   padding: 30rpx;
+  flex-wrap: wrap;
 
-  &-box {
-    flex-direction: column;
-    border: 1px solid #9e9e9e3b;
-    border-radius: 10rpx;
-    margin: 0 2rpx 2rpx;
-    .set-size(220rpx, 200rpx);
-    .flex-type(center);
+  .icon {
+    &-box {
+      flex-direction: column;
+      flex: 1 0 auto;
+      margin: 0 2rpx 2rpx;
+      border: 1px solid #9e9e9e3b;
+      border-radius: 10rpx;
+      font-size: 22rpx;
+
+      .flex-type(center);
+      .set-size(160rpx);
+    }
   }
 }

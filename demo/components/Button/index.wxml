@@ -1,5 +1,5 @@
 <button
-        disabled="{{ disaebld }}"
+        disabled="{{ disabled }}"
         loading="{{ loading }}"
         open-type="{{ openType }}"
         form-type="{{ formType }}"
