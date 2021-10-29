@@ -45,10 +45,10 @@ Page({
       title: this.data.title === 'Header' ? 'Header1' : 'Header',
     });
   },
-  goback() {
-    // wx.navigateBack();
+  goHome() {
+    // url:看情况而定
     wx.switchTab({
-      url: '/pages/wq/wq',
+      url: 'url',
     });
   },
 });
