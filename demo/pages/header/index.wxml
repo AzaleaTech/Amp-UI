@@ -2,7 +2,9 @@
           background="{{ background }}"
           color="{{ color }}"
           has-return="{{ hasReturn }}"
-          title="{{ title }}" />
+          title="{{ title }}"
+          has-home="{{hasHome}}"
+          navigator="navigateBack" />
 <view class="example-box">
   <view class="example-box-content">
     <button bind:tap="handleBackground">点击改变背景颜色</button>
@@ -12,6 +14,12 @@
   </view>
   <view class="example-box-content">
     <button bind:tap="handleReturn">是否有返回按钮</button>
+  </view>
+  <view class="example-box-content">
+    <button bind:tap="handleHome">是否有首页按钮</button>
+  </view>
+  <view class="example-box-content">
+    <button bind:tap="handleBoth">是否有返回及首页按钮</button>
   </view>
   <view class="example-box-content">
     <button bind:tap="handleTitle">点击改变标题</button>
