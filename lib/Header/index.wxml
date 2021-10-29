@@ -6,14 +6,46 @@
           class="status-bar"
           style="height: {{ statusBarHeight }}px" />
     <view
-          class="title-bar"
+          class="title-bar "
           style="height:44px;">
-      <view
-            wx:if="{{ hasReturn }}"
-            class="back-button"
-            bind:tap="handleReturn">
-        <image src="./images/return.png" />
-      </view>
+      <block wx:if="{{hasReturn && !hasHome}}">
+        <view
+              class="back-button"
+              style="left:{{leftMargin}}px;width:{{width}}px;height:{{height}}px;"
+              bind:tap="handleReturn">
+          <image src="./images/return.png" />
+        </view>
+      </block>
+
+      <block wx:if="{{!hasReturn && hasHome}}">
+        <view
+              class="back-button"
+              style="left:{{leftMargin}}px;width:{{width}}px;height:{{height}}px;"
+              bind:tap="handleHome">
+          <image
+                 src="./images/home.png"
+                 mode="aspectFill" />
+        </view>
+      </block>
+
+      <block wx:if="{{hasReturn && hasHome}}">
+        <view
+              class="both"
+              style="width:{{width}}px;height:{{height}}px;left:{{leftMargin}}px">
+          <image
+                 src="./images/return.png"
+                 bind:tap="handleReturn" />
+          <view
+                class="line"
+                style="height:{{height}}px;"> |
+          </view>
+          <image
+                 src="./images/home.png"
+                 class="home"
+                 mode="aspectFill"
+                 bind:tap="handleHome" />
+        </view>
+      </block>
       <view
             style="color: {{ color }}"
             class="title">

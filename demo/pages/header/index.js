@@ -4,29 +4,51 @@ Page({
     color: 'black',
     hasReturn: true,
     title: 'Header',
+    hasHome: false,
   },
 
-  handleBackground(){
+  handleBackground() {
     this.setData({
       background: this.data.background === 'white' ? 'gray' : 'white',
     });
   },
 
-  handleColor(){
+  handleColor() {
     this.setData({
       color: this.data.color === 'black' ? 'blue' : 'black',
     });
   },
 
-  handleReturn(){
+  handleReturn() {
     this.setData({
-      hasReturn: !this.data.hasReturn,
+      hasReturn: this.data.hasReturn && this.hasHome ? false : true,
+      hasHome: this.data.hasReturn && this.hasHome ? true : false,
     });
   },
 
-  handleTitle(){
+  handleHome() {
+    this.setData({
+      hasHome: this.data.hasReturn && this.hasHome ? false : true,
+      hasReturn: this.data.hasReturn && this.hasHome ? true : false,
+    });
+  },
+
+  handleBoth() {
+    this.setData({
+      hasHome: true,
+      hasReturn: true,
+    });
+  },
+
+  handleTitle() {
     this.setData({
       title: this.data.title === 'Header' ? 'Header1' : 'Header',
     });
-  }
-})
+  },
+  goback() {
+    // wx.navigateBack();
+    wx.switchTab({
+      url: '/pages/wq/wq',
+    });
+  },
+});
