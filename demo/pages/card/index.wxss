@@ -1,16 +1,30 @@
 page {
-  background-color: #f4f5f6;
   padding-bottom: 30rpx;
+  background-color: #f4f5f6;
 }
 .example-box {
   margin-bottom: 20rpx;
 }
 .example-box-title {
-  font-weight: 700;
   margin: 20rpx 0 20rpx 30rpx;
   color: #e9a32d;
+  font-weight: 700;
 }
 .example-box-content {
   padding: 20rpx 30rpx;
   background-color: #ffffff;
+}
+.card-box {
+  margin-left: 30rpx;
+  width: 690rpx;
+  height: 200rpx;
+}
+.card-header {
+  font-size: 24rpx;
+  color: #c7c7c7;
+}
+.card-footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
 }
