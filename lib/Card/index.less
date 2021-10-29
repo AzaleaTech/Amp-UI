@@ -1,8 +1,18 @@
 @import '../styles/_index.less';
 
 .card {
-  padding: 30rpx 30rpx;
+  box-sizing: border-box;
+  padding: 30rpx;
   background-color: rgba(255, 255, 255, 1);
+}
+
+.card-header:not(:empty) {
+  position: relative;
+  box-sizing: border-box;
+  padding-bottom: 12rpx;
+  margin-bottom: 30rpx;
+  border-bottom: 2rpx solid @light-primary-color;
+  .flex-start();
 }
 
 .card-body {
@@ -33,12 +43,6 @@
     .card-contents {
       color: @text-color-tertiary;
       font-size: 26rpx;
-
-      .card-content {
-        margin-bottom: 12rpx;
-
-        .ellipsis-multiple(2);
-      }
     }
   }
 
@@ -56,64 +60,27 @@
         display: flex;
         flex-wrap: wrap;
         font-size: 22rpx;
-
-        .card-content {
-          margin-right: 60rpx;
-        }
       }
     }
   }
 }
 
-.card-spec {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  color: @text-color-secondary;
-
-  .card-spec-line {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-
-    span {
-      margin-bottom: 2px;
-    }
-  }
-
-  .card-spec-likes {
-    position: absolute;
-    right: 0;
-    bottom: 8rpx;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-right: 42rpx;
-
-    .card-spec-likes-icon {
-      .set-size(26rpx, 30rpx);
-    }
-  }
-
-  .card-spec-tag {
-    margin-left: 8rpx;
-    padding: 2rpx 16rpx;
-    border: 2rpx solid @tag-color;
-    border-radius: 32rpx;
-    color: @tag-color;
-  }
-}
-
-.card-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.card-footer:not(:empty) {
+  position: relative;
   box-sizing: border-box;
   padding-top: 30rpx;
   border-top: 2rpx solid @light-primary-color;
+  .flex-start();
+}
 
-  .card-footer-content {
-    color: @text-color-secondary;
-    font-size: 26rpx;
-  }
+.card-tag-left:not(:empty) {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card-tag-right:not(:empty) {
+  position: absolute;
+  top: 0;
+  right: 0;
 }

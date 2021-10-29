@@ -1,6 +1,17 @@
 .card {
-  padding: 30rpx 30rpx;
+  box-sizing: border-box;
+  padding: 30rpx;
   background-color: #ffffff;
+}
+.card-header:not(:empty) {
+  position: relative;
+  box-sizing: border-box;
+  padding-bottom: 12rpx;
+  margin-bottom: 30rpx;
+  border-bottom: 2rpx solid #ffe3bb;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 .card-body {
   display: flex;
@@ -31,13 +42,6 @@
   color: #868686;
   font-size: 26rpx;
 }
-.card-body .card-container .card-contents .card-content {
-  margin-bottom: 12rpx;
-  display: -webkit-box;
-  overflow: hidden;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-}
 .card-body-full {
   padding-bottom: 0;
 }
@@ -52,52 +56,22 @@
   flex-wrap: wrap;
   font-size: 22rpx;
 }
-.card-body-full .card-container .card-contents .card-content {
-  margin-right: 60rpx;
-}
-.card-spec {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  color: #525252;
-}
-.card-spec .card-spec-line {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.card-spec .card-spec-line span {
-  margin-bottom: 2px;
-}
-.card-spec .card-spec-likes {
-  position: absolute;
-  right: 0;
-  bottom: 8rpx;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin-right: 42rpx;
-}
-.card-spec .card-spec-likes .card-spec-likes-icon {
-  width: 26rpx;
-  height: 30rpx;
-}
-.card-spec .card-spec-tag {
-  margin-left: 8rpx;
-  padding: 2rpx 16rpx;
-  border: 2rpx solid #e52323;
-  border-radius: 32rpx;
-  color: #e52323;
-}
-.card-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.card-footer:not(:empty) {
+  position: relative;
   box-sizing: border-box;
   padding-top: 30rpx;
   border-top: 2rpx solid #ffe3bb;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
-.card-footer .card-footer-content {
-  color: #525252;
-  font-size: 26rpx;
+.card-tag-left:not(:empty) {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.card-tag-right:not(:empty) {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
