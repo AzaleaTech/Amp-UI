@@ -3,8 +3,9 @@
           color="{{ color }}"
           has-return="{{ hasReturn }}"
           title="{{ title }}"
-          has-home="{{hasHome}}"
-          navigator="navigateBack" />
+          has-home="{{ hasHome }}"
+          navigator="navigateBack"
+          bind:backHome="goHome" />
 <view class="example-box">
   <view class="example-box-content">
     <button bind:tap="handleBackground">点击改变背景颜色</button>
