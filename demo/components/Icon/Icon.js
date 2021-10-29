@@ -1,6 +1,6 @@
 Component({
   properties: {
-    // qiye | xuewei
+    // satisfied_fill | satisfied_line | service_fill | service_line | picture_fill | picture_line | love_fill | love_line | positioning_fill | positioning_line | share_line | share_fill | instructions_fill | instructions_line | succeed_line | error_line | about_line | delete_fill | photograph_line | telephone_fill | telephone_line | video_line | trumpet_line | trumpet_fill | praise_fill | praise_line | star_fill | star_line | succeed_fill | error_fill | about_fill | delete_line | photograph_fill | video_fill
     name: {
       type: String,
     },
@@ -16,17 +16,17 @@ Component({
     },
     size: {
       type: Number,
-      value: 24,
+      value: 60,
       observer: function(size) {
         this.setData({
-          svgSize: size,
+          svgSize: size / 750 * wx.getSystemInfoSync().windowWidth,
         });
       },
     },
   },
   data: {
     colors: '',
-    svgSize: 24,
+    svgSize: 60 / 750 * wx.getSystemInfoSync().windowWidth,
     quot: '"',
     isStr: true,
   },
