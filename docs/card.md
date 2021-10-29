@@ -23,6 +23,10 @@
 
 <!-- 图片 -->
 <a-card img-url="{{ imgUrl }}"></a-card>
+
+<!-- 图片预览 -->
+<a-card img-url="{{ imgUrl }}"
+        preview="{{ true }}"></a-card>
 ```
 
 ## API
@@ -35,6 +39,7 @@
 | a-class-tag | 自定义标签插槽样式类 | string | -      | -      | 否   |
 | title       | 标题                 | string | -      | -      | 否   |
 | img-url     | 图片地址             | string | -      | -      | 否   |
+| preview     | 图片是否可预览             | boolean | false      | -      | 否   |
 
 ### Slots
 

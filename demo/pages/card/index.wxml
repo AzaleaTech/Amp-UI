@@ -1,61 +1,53 @@
 <view class="example-box">
-  <view class="example-box-title">无icon</view>
+  <view class="example-box-title">card组件使用</view>
   <a-card
-          title="{{ card.complexTitle }}"
-          contents="{{ card.complexContents }}">
-    <a-button>test</a-button>
-  </a-card>
-</view>
-<view class="example-box">
-  <view class="example-box-title">有icon</view>
-  <a-card
-          class="example-box"
-          title="{{ card.complexTitle }}"
-          contents="{{ card.complexContents }}"
-          imgUrl="{{ card.imgUrl }}">
-    <a-button>test</a-button>
-  </a-card>
-</view>
-<view class="example-box">
-  <view class="example-box-title">footer及footer按钮</view>
-  <a-card
-          class="example-box"
-          title="{{ card.title }}"
-          contents="{{ card.contents }}"
+          title="card测试"
           imgUrl="{{ card.imgUrl }}"
-          footer="{{ card.footer }}">
+          preview="{{ true }}"
+          bind:click="handleClickCard">
+    <view
+          slot="header"
+          class="card-header">2021-10-10 10:10:10
+    </view>
+    <view slot="content">
+      <view>
+        <view>测试内容</view>
+        <view>测试内容</view>
+      </view>
+    </view>
+    <view
+          slot="footer"
+          class="card-footer">
+      <a-button
+                type="primary"
+                size="mini">测试按钮
+      </a-button>
+    </view>
+  </a-card>
+</view>
+<view class="example-box">
+  <view class="example-box-title">自定义根节点样式类</view>
+  <a-card a-class="card-box"></a-card>
+</view>
+<view class="example-box">
+  <view class="example-box-title">标题</view>
+  <a-card
+          class="example-box"
+          title="{{ card.title }}"></a-card>
+</view>
+<view class="example-box">
+  <view class="example-box-title">图片</view>
+  <a-card
+          class="example-box"
+          imgUrl="{{ card.imgUrl }}"></a-card>
+</view>
+<view class="example-box">
+  <view class="example-box-title">底部插槽</view>
+  <a-card class="example-box">
     <a-button
               type="primary"
-              size="mini">
-      测试按钮
-    </a-button>
-  </a-card>
-</view>
-<view class="example-box">
-  <view class="example-box-title">spec文本行(标准文本 + tag + 点赞按钮)</view>
-  <a-card
-          class="example-box"
-          title="{{ card.title }}"
-          contents="{{ card.contents }}"
-          imgUrl="{{ card.imgUrl }}"
-          spec="{{ card.spec }}"
-          bind:like="handleLike"></a-card>
-</view>
-<view class="example-box">
-  <view class="example-box-title">复合card(包括点击卡片功能)</view>
-  <a-card
-          class="example-box"
-          title="{{ card.title }}"
-          contents="{{ card.contents }}"
-          imgUrl="{{ card.imgUrl }}"
-          footer="{{ card.footer }}"
-          spec="{{ card.spec }}"
-          bind:click="handleClickCard"
-          bind:like="handleLike">
-    <a-button
-              type="primary"
-              size="mini">
-      测试按钮
+              size="mini"
+              slot="footer">测试按钮
     </a-button>
   </a-card>
 </view>
