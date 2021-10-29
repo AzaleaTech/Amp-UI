@@ -1,16 +1,34 @@
+page {
+  padding-bottom: 30rpx;
+  background-color: #f4f5f6;
+}
+.example-box {
+  margin-bottom: 20rpx;
+}
+.example-box-title {
+  margin: 20rpx 0 20rpx 30rpx;
+  color: #e9a32d;
+  font-weight: 700;
+}
+.example-box-content {
+  padding: 20rpx 30rpx;
+  background-color: #ffffff;
+}
 .icons {
   display: flex;
-  flex-wrap: wrap;
   padding: 30rpx;
+  flex-wrap: wrap;
 }
-.icons-box {
+.icons .icon-box {
   flex-direction: column;
+  flex: 1 0 auto;
+  margin: 0 2rpx 2rpx;
   border: 1px solid #9e9e9e3b;
   border-radius: 10rpx;
-  margin: 0 2rpx 2rpx;
-  width: 220rpx;
-  height: 200rpx;
+  font-size: 22rpx;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 160rpx;
+  height: 160rpx;
 }
