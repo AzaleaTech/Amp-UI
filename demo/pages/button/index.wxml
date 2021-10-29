@@ -1,79 +1,140 @@
 <view class="example-box">
-  <view class="example-box-title">按钮类型</view>
+  <view class="example-box-title">按钮形状</view>
   <view class="example-box-content">
     <a-button
-              type="default"
-              width="240">default
+              circle="{{ true }}"
+              type="primary">圆角
     </a-button>
     <a-button
-              type="primary"
-              width="240">primary
-    </a-button>
-    <a-button
-              iconUrl="/demo/pages/button/images/likes-list-icon.png"
-              type="icon">icon
+              circle="{{ false }}"
+              type="primary">无圆角
     </a-button>
   </view>
 </view>
 <view class="example-box">
-  <view class="example-box-title">按钮大小</view>
+  <view class="example-box-title">按钮盒类型</view>
   <view class="example-box-content">
     <a-button
-              size="normal"
+              size="default"
               type="primary"
-              width="240">normal
+              block="{{ true }}">block
+    </a-button>
+    <a-button
+              size="default"
+              type="primary"
+              block="{{ false }}">none
+    </a-button>
+  </view>
+</view>
+<view class="example-box">
+  <view class="example-box-title">按钮尺寸</view>
+  <view class="example-box-content">
+    <a-button
+              size="large"
+              type="primary">size:large
+    </a-button>
+    <a-button
+              size="default"
+              type="primary">size:default
     </a-button>
     <a-button
               size="small"
-              type="primary"
-              width="210">small
-    </a-button>
-    <a-button
-              size="mini"
-              type="primary"
-              width="180">mini
+              type="primary">size:small
     </a-button>
   </view>
 </view>
 <view class="example-box">
-  <view class="example-box-title">禁用按钮</view>
+  <view class="example-box-title">按钮类型</view>
+  <view class="example-box-content">
+    <a-button type="default">type:default</a-button>
+    <a-button type="primary">type:primary</a-button>
+    <a-button type="success">type:success</a-button>
+    <a-button type="error">type:error</a-button>
+    <a-button type="warning">type:warning</a-button>
+  </view>
+</view>
+<view class="example-box">
+  <view class="example-box-title">按钮状态</view>
   <view class="example-box-content">
     <a-button
-              disabled="true"
-              type="primary"
-              width="240">disabled
+              disabled="{{ false }}"
+              type="primary">disabled:false
+    </a-button>
+    <a-button
+              disabled="{{ true }}"
+              type="primary">disabled:true
     </a-button>
   </view>
 </view>
 <view class="example-box">
-  <view class="example-box-title">点击事件</view>
+  <view class="example-box-title">按钮加载状态</view>
   <view class="example-box-content">
     <a-button
-              type="primary"
-              width="240"
-              bind:click="handleClickButton">clickEvent
+              loading="{{ false }}"
+              type="primary">false
+    </a-button>
+    <a-button
+              loading="{{ true }}"
+              type="primary">true
     </a-button>
   </view>
 </view>
 <view class="example-box">
-  <view class="example-box-title">带图标按钮</view>
+  <view class="example-box-title">开放能力</view>
   <view class="example-box-content">
     <a-button
-              iconUrl="/demo/pages/button/images/download-icon.png"
-              type="primary"
-              width="360">
-      button with icon
+              open-type="contact"
+              type="primary">contact
+    </a-button>
+    <a-button
+              open-type="getUserInfo"
+              type="primary">getUserInfo
+    </a-button>
+    <a-button
+              open-type="getPhoneNumber"
+              type="primary">getPhoneNumber
+    </a-button>
+    <a-button
+              open-type="openSetting"
+              type="primary">openSetting
+    </a-button>
+    <a-button
+              open-type="launchApp"
+              type="primary">launchApp
+    </a-button>
+    <a-button
+              form-type="submit"
+              type="primary">submit
+    </a-button>
+    <a-button
+              form-type="reset"
+              type="primary">reset
     </a-button>
   </view>
 </view>
 <view class="example-box">
-  <view class="example-box-title">按钮组</view>
+  <view class="example-box-title">按钮组内按钮尺寸</view>
   <view class="example-box-content">
-    <a-button-group
-                    size="mini"
-                    width="200">
-      <a-button type="default">last</a-button>
-      <a-button type="primary">next</a-button>
+    <a-button-group size="large">
+      <a-button>large1</a-button>
+    </a-button-group>
+    <a-button-group size="default">
+      <a-button>default1</a-button>
+      <a-button>default2</a-button>
+      <a-button>default3</a-button>
+    </a-button-group>
+    <a-button-group size="small">
+      <a-button>small1</a-button>
+      <a-button>small2</a-button>
+    </a-button-group>
+  </view>
+</view>
+<view class="example-box">
+  <view class="example-box-title">整体按钮组</view>
+  <view class="example-box-content">
+    <a-button-group entire="{{ true }}">
+      <a-button>left</a-button>
+      <a-button>right</a-button>
     </a-button-group>
   </view>
 </view>
