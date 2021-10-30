@@ -15,6 +15,10 @@
   <view class="example-box-content">
     <button bind:tap="handleMaxHeightDialog">显示最大高度的dialog弹窗</button>
   </view>
+  <view class="example-box-title">显示带有插槽的dialog弹窗</view>
+  <view class="example-box-content">
+    <button bind:tap="handleSlotDialog">显示带有插槽的dialog弹窗</button>
+  </view>
   <view class="example-box-title">显示success提示信息</view>
   <view class="example-box-content">
     <button bind:tap="handleSuccessToast">显示success提示信息</button>
@@ -33,7 +37,13 @@
   </view>
   <!-- 显示dialog弹窗 -->
   <view wx:if="{{ showDialog }}">
-    <a-dialog dialogData="{{ dialogData }}" />
+    <a-dialog dialogData="{{ dialogData }}">
+      <!-- 插槽部分 -->
+      <image
+             class="extra"
+             src="{{ dialogData.extra }}"
+             catch:tap="handleImage" />
+    </a-dialog>
   </view>
   <!-- 显示Toast提示信息 -->
   <view>

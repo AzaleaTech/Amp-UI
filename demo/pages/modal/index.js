@@ -43,6 +43,16 @@ Page({
     });
   },
 
+  handleSlotDialog() {
+    this.setData({
+      showDialog: true,
+      dialogData: {
+        title: '弹窗标题',
+        extra: 'http://img.touxiangwu.com/uploads/allimg/2021090520/4ypmjhjszm0.jpg',
+      },
+    });
+  },
+
   handleSuccessToast() {
     this.setData({
       toastData: {
@@ -69,5 +79,9 @@ Page({
         type: 'warning',
       },
     });
+  },
+
+  handleImage() {
+    console.log(this.data.dialogData.extra);
   },
 });

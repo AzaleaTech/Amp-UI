@@ -6,7 +6,14 @@
           wx:if="{{ dialogData.title }}"
           class="dialog-title">{{ dialogData.title }}
     </view>
-    <view class="dialog-content">{{ dialogData.content }}</view>
+    <view class="dialog-content">
+      <block wx:if="{{ dialogData.content }}">
+        {{ dialogData.content }}
+      </block>
+      <block wx:else>
+        <slot></slot>
+      </block>
+    </view>
     <view class="dialog-btn">
       <a-button
                 wx:if="{{ dialogData.cancelText }}"
