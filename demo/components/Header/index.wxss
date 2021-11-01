@@ -25,42 +25,42 @@
 .status-bar {
   width: 750rpx;
 }
-.back-button {
+.back-btn {
   position: absolute;
+  top: 50%;
   display: flex;
   justify-content: flex-start;
   box-sizing: border-box;
-  top: 50%;
-  transform: translateY(-50%);
   padding: 10rpx 20rpx 10rpx 0;
+  transform: translateY(-50%);
 }
-.back-button image {
+.back-btn image {
   width: 48rpx;
   height: 48rpx;
 }
 .both {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
-  border-radius: 32rpx;
-  border: 1rpx solid rgba(204, 204, 204, 0.6);
   display: flex;
   justify-content: space-around;
   align-items: center;
+  border: 1rpx solid rgba(204, 204, 204, 0.6);
+  border-radius: 32rpx;
+  transform: translateY(-50%);
 }
 .both image {
+  padding: 6rpx;
   width: 48rpx;
   height: 48rpx;
-  padding: 6rpx;
 }
 .both .line {
-  font-size: 36rpx;
-  font-weight: 100;
-  color: rgba(204, 204, 204, 0.6);
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0;
+  color: rgba(204, 204, 204, 0.6);
+  font-weight: 100;
+  font-size: 36rpx;
 }
 .title {
   width: 500rpx;

@@ -10,16 +10,15 @@
           style="height:44px;">
       <block wx:if="{{ hasReturn && !hasHome }}">
         <view
-              class="back-button"
+              class="back-btn"
               style="left: {{ leftMargin }}px; width: {{ width }}px; height: {{ height }}px;"
               bind:tap="handleReturn">
           <image src="./images/return.png" />
         </view>
       </block>
-
       <block wx:if="{{ !hasReturn && hasHome }}">
         <view
-              class="back-button"
+              class="back-btn"
               style="left: {{ leftMargin }}px; width:{{ width }}px; height: {{ height }}px;"
               bind:tap="handleHome">
           <image
@@ -27,7 +26,6 @@
                  mode="aspectFill" />
         </view>
       </block>
-
       <block wx:if="{{ hasReturn && hasHome }}">
         <view
               class="both"
@@ -41,8 +39,8 @@
           </view>
           <image
                  src="./images/home.png"
-                 class="home"
                  mode="aspectFill"
+                 class="home"
                  bind:tap="handleHome" />
         </view>
       </block>

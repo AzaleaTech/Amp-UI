@@ -46,9 +46,6 @@ Page({
     });
   },
   goHome() {
-    // url:看情况而定
-    wx.switchTab({
-      url: 'url',
-    });
+    console.log('home');
   },
 });
