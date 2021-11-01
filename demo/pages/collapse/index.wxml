@@ -1,15 +1,95 @@
 <view class="example-box">
-  <view class="example-box-title">单层列表</view>
-  <a-collapse options="{{ singleList }}"></a-collapse>
-</view>
-<view class="example-box">
-  <view class="example-box-title">双层列表</view>
-  <a-collapse options="{{ doubleList }}"></a-collapse>
-</view>
-<view class="example-box">
-  <view class="example-box-title">子项点击事件</view>
+  <view class="example-box-title">非手风琴模式</view>
   <a-collapse
-              options="{{ clickList }}"
-              bind:collapse="handleCollapse"></a-collapse>
+              bind:open="handleOpen"
+              bind:close="handleClose">
+    <a-collapse-item
+                     name="test0"
+                     title="测试"
+                     value="测试">
+      <view slot="content">
+        <view>测试</view>
+      </view>
+    </a-collapse-item>
+    <a-collapse-item
+                     name="test1"
+                     title="测试"
+                     value="测试">
+      <view slot="content">
+        <view>测试</view>
+        <view>测试</view>
+      </view>
+    </a-collapse-item>
+    <a-collapse-item
+                     name="test2"
+                     title="测试"
+                     value="测试">
+      <view slot="content">
+        <view>测试</view>
+      </view>
+    </a-collapse-item>
+  </a-collapse>
+</view>
+<view class="example-box">
+  <view class="example-box-title">content属性</view>
+  <a-collapse>
+    <a-collapse-item
+                     name="test1"
+                     title="测试"
+                     content="{{ content }}"
+                     bind:click="handleClick" />
+    <a-collapse-item
+                     name="test2"
+                     title="测试"
+                     content="{{ content }}"
+                     bind:click="handleClick" />
+  </a-collapse>
+</view>
+<view class="example-box">
+  <view class="example-box-title">icon-slot</view>
+  <a-collapse value="{{ ['测试'] }}">
+    <a-collapse-item
+                     name="测试"
+                     title="测试"
+                     value="测试">
+      <a-icon
+              slot="icon-left"
+              name="star_fill"
+              class="icon-left" />
+      <a-icon
+              slot="icon-right"
+              name="star_fill"
+              class="icon-right" />
+      <view slot="content">
+        <view>测试</view>
+      </view>
+    </a-collapse-item>
+  </a-collapse>
+</view>
+<view class="example-box">
+  <view class="example-box-title">手风琴模式</view>
+  <a-collapse accordion>
+    <a-collapse-item
+                     name="test"
+                     title="测试"
+                     value="测试">
+      <view slot="content">
+        <view>测试</view>
+        <view>测试</view>
+      </view>
+    </a-collapse-item>
+    <a-collapse-item
+                     name="test1"
+                     title="测试"
+                     value="测试">
+      <view slot="content">测试</view>
+    </a-collapse-item>
+    <a-collapse-item
+                     name="test2"
+                     title="测试"
+                     value="测试">
+      <view slot="content">测试</view>
+    </a-collapse-item>
+  </a-collapse>
 </view>
 
