@@ -57,7 +57,6 @@ Page({
     this.setData({
       toastData: {
         content: '成功提示',
-        // type: 'success',
         duration: 4000,
       },
     });

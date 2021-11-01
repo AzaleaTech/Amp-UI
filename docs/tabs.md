@@ -7,13 +7,13 @@
 ## 示例
 
 ```html
-<!-- 基本用法 -->
+基础用法
 <a-tabs tabList="{{ ['tab1', 'tab2'] }}"></a-tabs>
 
-<!-- 默认选中标签页 -->
+默认选中标签页
 <a-tabs tabList="{{ ['tab1', 'tab2'] }}" current="{{ 1 }}"></a-tabs>
 
-<!-- 顶部吸附 -->
+顶部吸附
 <a-tabs tabList="{{ ['tab1', 'tab2'] }}" ceiling></a-tabs>
 ```
 

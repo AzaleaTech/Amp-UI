@@ -7,11 +7,15 @@
 ## 示例
 
 ```html
-<!-- 基本用法 -->
-<a-header title="header顶部栏"></a-header>
+基础用法
+<a-header title="{{ title }}"></a-header>
 
-<!-- 返回按钮 -->
-<a-header title="header顶部栏" return></a-header>
+返回上一页
+<a-header title="{{ title }}" has-return></a-header>
+<a-header title="{{ title }}" has-return navigator="switchTab"></a-header>
+
+返回主页
+<a-header title="{{ title }}" has-home></a-header>
 ```
 
 ## API
