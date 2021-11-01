@@ -33,7 +33,15 @@
   <view class="example-box-title">标题</view>
   <a-card
           class="example-box"
-          title="{{ card.title }}"></a-card>
+          title="{{ card.title }}"
+          contents="{{ card.contents }}"
+          imgUrl="{{ card.imgUrl }}"
+          footer="{{ card.footer }}">
+    <a-button
+              type="primary"
+              size="mini">测试按钮
+    </a-button>
+  </a-card>
 </view>
 <view class="example-box">
   <view class="example-box-title">图片</view>
@@ -46,8 +54,7 @@
   <a-card class="example-box">
     <a-button
               type="primary"
-              size="mini"
-              slot="footer">测试按钮
+              size="mini">测试按钮
     </a-button>
   </a-card>
 </view>
