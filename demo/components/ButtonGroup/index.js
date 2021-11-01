@@ -7,6 +7,17 @@ Component({
     },
   },
 
+  properties: {
+    size: {
+      type: String,
+      value: 'default',
+    },
+    entire: {
+      type: Boolean,
+      value: false,
+    },
+  },
+
   lifetimes: {
     ready() {
       const targets = this.getRelationNodes('../Button/index');
@@ -36,17 +47,6 @@ Component({
           });
         }
       }
-    },
-  },
-
-  properties: {
-    size: {
-      type: String,
-      value: 'default',
-    },
-    entire: {
-      type: Boolean,
-      value: false,
     },
   },
 });

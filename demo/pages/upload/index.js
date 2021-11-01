@@ -15,7 +15,7 @@ Page({
   },
 
   handleImageChange(e) {
-    console.log('1111', e)
+    console.log('1111', e);
     this.setData({
       images: e.detail.value,
     });

@@ -1,8 +1,8 @@
 {
   "navigationBarTitleText": "Upload",
   "usingComponents": {
-    "upload-image": "../../components/Upload/UploadImage/index",
-    "upload-video": "../../components/Upload/UploadVideo/index",
+    "a-upload-image": "../../components/Upload/UploadImage/index",
+    "a-upload-video": "../../components/Upload/UploadVideo/index",
     "a-toast": "../../components/Modal/Toast/index"
   }
 }

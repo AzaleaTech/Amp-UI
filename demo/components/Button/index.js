@@ -31,7 +31,7 @@ Component({
       type: 'parent',
       /**
        * 获取并同步按钮组的统一格式，当Button有单独定义时不生效
-       * @param {*} target 父组件Form节点
+       * @param {*} target 父组件节点
        */
       linked(target) {
         if (!this.properties.size && target.data.size) {
@@ -42,21 +42,23 @@ Component({
   },
 
   properties: {
+    // default、primary、success、warning、error
+    type: {
+      type: String,
+      value: 'default',
+    },
+    inline: {
+      type: Boolean,
+      value: false,
+    },
     circle: {
       type: Boolean,
       value: false,
     },
-    block: {
-      type: Boolean,
-      value: false,
-    },
+    // large、default、small
     size: {
       type: String,
       value: '',
-    },
-    type: {
-      type: String,
-      value: 'default',
     },
     disabled: {
       type: Boolean,

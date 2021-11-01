@@ -25,9 +25,8 @@
 </view>
 <view wx:if="{{ showCropper }}">
   <cropper
-           cutScale="{{ 690 / 400 }}"
            imgUrl="{{ imgUrl }}"
-           type="uploadImage"
+           ratio="{{ 690 / 400 }}"
            bind:cancel="handleCancel"
            bind:save="handleSave" />
 </view>

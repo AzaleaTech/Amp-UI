@@ -27,14 +27,14 @@
 .tabs .tab-active {
   position: relative;
   box-sizing: border-box;
-  color: #e9a32d;
+  color: #409eff;
   font-size: 34rpx;
 }
 .tabs .tab-active::before {
   position: absolute;
   top: 84rpx;
   width: 60rpx;
-  border-bottom: 6rpx solid #e9a32d;
+  border-bottom: 6rpx solid #409eff;
   content: '';
 }
 .tabs-scroll {

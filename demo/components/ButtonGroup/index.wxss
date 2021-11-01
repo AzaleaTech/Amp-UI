@@ -3,3 +3,9 @@
   align-items: center;
   justify-content: center;
 }
+.btn-group a-button {
+  margin-right: 20rpx !important;
+}
+.btn-group-entire a-button {
+  margin-right: 0 !important;
+}

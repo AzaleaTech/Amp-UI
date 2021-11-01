@@ -5,18 +5,18 @@
         <image
                wx:if="{{ croppedPic }}"
                src="{{ croppedPic }}"
-               class="show"
-               style="width: {{ cutWidth }}px; height: {{ cutWidth / cutScale }}px; {{ type === 'avatar' ? 'border-radius: 50%' : '' }}" />
+               class="show {{ circle ? 'cropper-circle' : '' }}"
+               style="width: {{ cutWidth }}px; height: {{ cutWidth / ratio }}px" />
         <view
               wx:else
-              class="show"
-              style="width: {{ screenWidth }}px; height: {{ screenWidth / cutScale }}px; {{ type === 'avatar' ? 'border-radius: 50%' : '' }}"
+              class="show {{ circle ? 'cropper-circle' : '' }}"
+              style="width: {{ screenWidth }}px; height: {{ screenWidth / ratio }}px"
               bind:touchstart="handleStart"
               bind:touchmove="handleMove">
           <scroll-view
                        scroll-x
                        scroll-y
-                       style="width: {{ screenWidth }}px; height: {{ screenWidth / cutScale }}px"
+                       style="width: {{ screenWidth }}px; height: {{ screenWidth / ratio }}px"
                        bind:scroll="handleScroll">
             <image
                    src="{{ imgUrl }}"
@@ -42,7 +42,8 @@
                     bind:click="handleCrop">
             <text>裁切图片</text>
           </a-button>
-          <a-button bind:click="handleCancel">取消</a-button>
+          <a-button bind:click="handleCancel">取消
+          </a-button>
         </block>
       </view>
     </view>

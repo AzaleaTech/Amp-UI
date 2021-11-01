@@ -7,7 +7,7 @@
 ## 示例
 
 ```html
-<!-- 基础用法 -->
+基础用法
 <a-input value="{{ value }}" bind:change="handleChange" />
 
 <!-- 不同类型 -->

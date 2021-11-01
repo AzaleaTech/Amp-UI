@@ -2,11 +2,11 @@
         wx:if="{{ !isCropper }}"
         bind:tap="handleClick">裁剪图片
 </button>
-<cropper
-         wx:else
-         cutScale="{{ 690 / 400 }}"
-         imgUrl="{{ image }}"
-         type="uploadImage"
-         bind:cancel="handleCancel"
-         bind:save="handleSave" />
+<a-cropper
+           wx:else
+           imgUrl="{{ img }}"
+           ratio="{{ 690 / 400 }}"
+           bind:cancel="handleCancel"
+           bind:save="handleSave"></a-cropper>
+<a-toast toastData="{{ toastData }}" />
 

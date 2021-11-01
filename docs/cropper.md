@@ -7,13 +7,9 @@
 ## 示例
 
 ```html
-<!-- 需裁剪的图片 -->
+基础用法
 <a-cropper img-url="{{ imgUrl }}"></a-cropper>
-
-<!-- 保存路径为uploadImg -->
-<a-cropper img-url="{{ imgUrl }}" prefix-name="uploadImg"></a-cropper>
-
-<!-- 剪裁比列为1.2 -->
+<a-cropper img-url="{{ imgUrl }}" circle></a-cropper>
 <a-cropper img-url="{{ imgUrl }}" ratio="{{ 1.2 }}"></a-cropper>
 ```
 
@@ -21,11 +17,11 @@
 
 ### Props
 
-| 参数        | 说明             | 类型   | 默认值  | 可选值 | 必填 |
-| ----------- | ---------------- | ------ | ------- | ------ | ---- |
-| img-url     | 图片地址         | string | -       | -      | 是   |
-| prefix-name | 保存路径前缀名称 | string | 'extra' | -      | 否   |
-| ratio       | 裁剪比例         | number | 1       | -      | 否   |
+| 参数    | 说明                          | 类型    | 默认值 | 可选值 | 必填 |
+| ------- | ----------------------------- | ------- | ------ | ------ | ---- |
+| img-url | 图片地址                      | string  | -      | -      | 是   |
+| ratio   | 裁剪比例                      | number  | 1      | -      | 否   |
+| circle  | 是否圆形裁剪, 大小固定 400rpx | boolean | false  | -      | 否   |
 
 ### Events
 

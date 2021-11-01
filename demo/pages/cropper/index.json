@@ -1,6 +1,7 @@
 {
   "navigationBarTitleText": "Cropper",
   "usingComponents": {
-    "cropper": "../../components/Cropper/index"
+    "a-cropper": "../../components/Cropper/index",
+    "a-toast": "../../components/Modal/Toast/index"
   }
 }

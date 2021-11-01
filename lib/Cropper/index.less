@@ -1,18 +1,27 @@
 @import '../styles/_index.less';
 
 .container {
-  .set-size(100%);
   .flex-center();
+  .set-size(100%);
 
-  .cropper{
+  .cropper {
     border-radius: 16rpx;
     background-color: @white-color;
+
     .set-size(96%, 70%);
+
+    &-circle {
+      border-radius: 50%;
+
+      .flex-type(center);
+      .set-size(@cropper-circle-size) !important;
+    }
   }
 }
 
 .cropper-box {
-  padding: 80rpx 30rpx 0 30rpx;
+  padding: 80rpx 30rpx;
+
   .flex-center();
 
   ::-webkit-scrollbar {
@@ -37,17 +46,14 @@ canvas {
 
 .bottom {
   box-sizing: border-box;
-  margin-top: 300rpx;
-  position: relative;
-  width: 100%;
   padding: 0 60rpx;
-  bottom: 84rpx;
+  width: 100%;
 
   a-button {
     display: block;
 
     &:not(:first-child) {
-      padding-top: 32rpx;
+      padding-top: 20rpx;
     }
   }
 }

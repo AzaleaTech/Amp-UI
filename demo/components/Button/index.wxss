@@ -2,60 +2,64 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 12rpx;
-  padding: 0;
-  width: auto !important;
-  border-radius: 2rpx;
+  margin: 10rpx;
+  width: 100% !important;
+  border-radius: 2px;
+  padding: 4px 10px;
+  height: 44px;
+  font-size: 16px;
+  line-height: 44px;
 }
 .btn-radius-large {
-  border-radius: 50rpx;
+  border-radius: 48px;
 }
 .btn-radius-default {
-  border-radius: 46rpx;
+  border-radius: 44px;
 }
 .btn-radius-small {
-  border-radius: 40rpx;
+  border-radius: 40px;
 }
 .btn-size-large {
-  padding: 0 32rpx;
-  height: 96rpx !important;
-  font-size: 32rpx;
-  line-height: 44rpx;
+  padding: 6px 16px;
+  height: 48px;
+  font-size: 18px;
+  line-height: 48px;
 }
 .btn-size-default {
-  padding: 0 16rpx;
-  height: 88rpx !important;
-  font-size: 30rpx;
-  line-height: 40rpx;
+  padding: 4px 10px;
+  height: 44px;
+  font-size: 16px;
+  line-height: 44px;
 }
 .btn-size-small {
-  font-size: 26rpx;
-  line-height: 36rpx;
+  padding: 2px 7px;
+  height: 40px;
+  font-size: 14px;
+  line-height: 40px;
 }
 .btn-type-default {
-  border: 2px solid #e9a32d;
-  background-color: #ffffff;
-  color: #e9a32d;
-}
-.btn-type-default-active {
-  border: 0;
-  background-color: #e48e00;
-  color: #ffffff;
+  border: 2rpx solid #409eff;
+  background: #ffffff;
+  color: #409eff;
 }
 .btn-type-primary {
-  background-color: #007bff;
+  background: #409eff;
   color: #ffffff;
 }
 .btn-type-success {
-  background-color: #218838;
-  color: #ffffff;
-}
-.btn-type-error {
-  background-color: #dc3545;
+  background: #67c23a;
   color: #ffffff;
 }
 .btn-type-warning {
-  background-color: #ffc107;
+  background: #e6a23c;
+  color: #ffffff;
+}
+.btn-type-error {
+  background: #f56c6c;
+  color: #ffffff;
+}
+.btn-hover.btn-type-default {
+  background: #409eff;
   color: #ffffff;
 }
 .btn-hover::before {
@@ -76,8 +80,10 @@
   width: 100%;
   height: 100%;
 }
-.btn-block {
-  display: flex;
+.btn-inline {
+  display: inline-flex;
+  margin-right: 20rpx !important;
+  width: auto !important;
 }
 .child-normal {
   margin-right: 20rpx !important;

@@ -16,8 +16,8 @@
 在.json 中引入组件
 
 ```html
+基础用法
 <a-icon name="satisfied_fill"></a-icon>
-
 <a-icon name="satisfied_fill" size="{{ 80 }}"></a-icon>
 ```
 
