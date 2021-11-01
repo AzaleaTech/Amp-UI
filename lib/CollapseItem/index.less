@@ -1,0 +1,44 @@
+@import '../styles/_index.less';
+
+.collapse-item {
+  padding-left: 30rpx;
+  font-size: 32rpx;
+  line-height: 44rpx;
+  background-color: @white-color;
+  color: @text-color;
+
+  &-header {
+    padding: 34rpx 30rpx 34rpx 0;
+    .flex-between();
+  }
+
+  &-icon {
+    margin-left: 20rpx;
+    .set-size(28rpx, 16rpx);
+  }
+
+  &-content {
+    padding-left: 36rpx;
+  }
+
+  &-content-list {
+    .flex-between();
+  }
+
+  &-content-padding {
+    padding: 34rpx 40rpx 34rpx 0;
+  }
+
+  &-content-icon {
+    margin-left: 20rpx;
+    .set-size(12rpx, 24rpx);
+  }
+
+  &-flex {
+    .flex-start();
+  }
+
+  &-border {
+    border-bottom: 2rpx solid rgba(238, 238, 238, 1);
+  }
+}

@@ -1,28 +1,30 @@
 Page({
   data: {
-    singleList: [
-      { content: '文本', detail: '详情' },
-      { content: '文本', detail: '详情' },
-    ],
-    doubleList: [
+    content: [
       {
-        content: '文本',
-        children: [{ content: '子项', detail: '子项详情' }],
+        title: '测试标题1',
+        value: '测试内容1',
       },
-    ],
-    clickList: [
       {
-        content: '文本',
-        children: [
-          { content: '子项1', detail: '子项详情' },
-          { content: '子项2', detail: '子项详情' },
-        ],
+        title: '测试标题2',
+        value: '测试内容2',
+      },
+      {
+        title: '测试标题3',
+        value: '测试内容3',
       },
     ],
   },
 
-  handleCollapse(e) {
-    const childItem = e.detail;
-    wx.showToast({ title: `点击${childItem.content}` });
+  handleOpen(e) {
+    wx.showToast({ title: `打开${e.detail.value}` });
+  },
+
+  handleClose(e) {
+    wx.showToast({ title: `关闭${e.detail.value}` });
+  },
+
+  handleClick(e) {
+    wx.showToast({ title: `点击${e.detail.value.value}` });
   },
 });
