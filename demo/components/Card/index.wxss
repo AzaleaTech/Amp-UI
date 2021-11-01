@@ -6,9 +6,9 @@
 .card-header:not(:empty) {
   position: relative;
   box-sizing: border-box;
-  padding-bottom: 12rpx;
   margin-bottom: 30rpx;
-  border-bottom: 2rpx solid #ffe3bb;
+  padding-bottom: 12rpx;
+  border-bottom: 2rpx solid #84bff7;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -60,7 +60,7 @@
   position: relative;
   box-sizing: border-box;
   padding-top: 30rpx;
-  border-top: 2rpx solid #ffe3bb;
+  border-top: 2rpx solid #84bff7;
   display: flex;
   align-items: center;
   justify-content: flex-start;

@@ -1,18 +1,32 @@
 Page({
   data: {
     isCropper: false,
-    image: '',
+    img: '',
   },
 
   onLoad(e) {
-    this.setData({ image: e.image });
+    this.setData({ img: e.img });
   },
 
   handleClick() {
     this.setData({ isCropper: true });
   },
 
-  handleSave(e) {},
+  handleSave(e) {
+    this.setData({
+      toastData: {
+        content: '裁剪成功',
+      },
+      isCropper: false,
+    });
+  },
 
-  handleCancel() {},
+  handleCancel() {
+    this.setData({
+      toastData: {
+        content: '取消操作',
+      },
+      isCropper: false,
+    });
+  },
 });

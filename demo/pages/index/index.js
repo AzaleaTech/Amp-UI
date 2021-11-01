@@ -23,7 +23,7 @@ Page({
   handleClickFormItem(e) {
     if (e.currentTarget.dataset.label == 'Cropper 图片裁剪组件') {
       wx.navigateTo({
-        url: e.currentTarget.dataset.url + `?image=${this.data.img}`,
+        url: e.currentTarget.dataset.url + `?img=${this.data.img}`,
       });
     }
     wx.navigateTo({ url: e.currentTarget.dataset.url });

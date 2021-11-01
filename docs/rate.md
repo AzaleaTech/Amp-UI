@@ -9,14 +9,14 @@
 ## 示例
 
 ```html
-<!-- 基础用法 -->
+基础用法
 <a-rate bind:change="handleChange"></a-rate>
 
-<!-- 不同大小 -->
+不同大小
 <a-rate size="30"></a-rate>
 <a-rate size="40"></a-rate>
 
-<!-- 只读 -->
+只读
 <a-rate value="{{ 2.88 }}" disabled></a-rate>
 <a-rate value="{{ 5 }}" disabled></a-rate>
 ```

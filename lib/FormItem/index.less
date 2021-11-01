@@ -6,8 +6,8 @@
 
   .form-warning-message {
     min-height: 24rpx;
+    color: @error-color;;
     font-size: 24rpx;
-    color: @warning-color;
   }
 }
 
@@ -15,31 +15,33 @@
   .flex-start();
 
   &-warning-icon {
-    color: @warning-color;
     margin-right: 10rpx;
+    color: @error-color;
   }
 
   &-icon {
-    padding-bottom: 24rpx;
     margin-right: 22rpx;
+    padding-bottom: 24rpx;
+
     .set-size(48rpx);
   }
 
   &-label {
-    margin-right: 10px;
-    font-size: 32rpx;
-    font-weight: 700;
     display: inline;
+    margin-right: 10px;
+    font-weight: 700;
+    font-size: 32rpx;
   }
 
   &-panel {
+    flex: 1;
     padding-bottom: 24rpx;
     border-bottom: 3rpx solid @shadow-color;
-    flex: 1;
+
     .flex-start();
 
     &-warning {
-      border-bottom: 3rpx solid @warning-color;
+      border-bottom: 3rpx solid @error-color;
     }
   }
 
@@ -52,6 +54,7 @@
 
     &-icon {
       margin: 0 10rpx;
+
       .set-size(12rpx, 24rpx);
     }
   }

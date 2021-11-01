@@ -9,37 +9,25 @@
 ## 示例
 
 ```html
-<!-- 自定义根节点样式类 -->
-<a-card a-class="custom-class"></a-card>
-
-<!-- 自定义tag插槽样式类 -->
-<a-card a-class-content="custom-class-content"></a-card>
-
-<!-- 自定义tag插槽样式类 -->
-<a-card a-class-tag="custom-class-tag"></a-card>
-
-<!-- 标题 -->
+基础用法
 <a-card title="标题"></a-card>
-
-<!-- 图片 -->
 <a-card img-url="{{ imgUrl }}"></a-card>
 
-<!-- 图片预览 -->
-<a-card img-url="{{ imgUrl }}"
-        preview="{{ true }}"></a-card>
+图片预览
+<a-card img-url="{{ imgUrl }}" preview></a-card>
 ```
 
 ## API
 
 ### Props
 
-| 参数        | 说明                 | 类型   | 默认值 | 可选值 | 必填 |
-| ----------- | -------------------- | ------ | ------ | ------ | ---- |
-| a-class     | 自定义根节点样式类   | string | -      | -      | 否   |
-| a-class-tag | 自定义标签插槽样式类 | string | -      | -      | 否   |
-| title       | 标题                 | string | -      | -      | 否   |
-| img-url     | 图片地址             | string | -      | -      | 否   |
-| preview     | 图片是否可预览             | boolean | false      | -      | 否   |
+| 参数        | 说明                 | 类型    | 默认值 | 可选值 | 必填 |
+| ----------- | -------------------- | ------- | ------ | ------ | ---- |
+| a-class     | 自定义根节点样式类   | string  | -      | -      | 否   |
+| a-class-tag | 自定义标签插槽样式类 | string  | -      | -      | 否   |
+| title       | 标题                 | string  | -      | -      | 否   |
+| img-url     | 图片地址             | string  | -      | -      | 否   |
+| preview     | 图片是否可预览       | boolean | false  | -      | 否   |
 
 ### Slots
 

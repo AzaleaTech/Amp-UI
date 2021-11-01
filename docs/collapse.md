@@ -7,7 +7,7 @@
 ## 示例
 
 ```html
-<!-- 非手风琴模式 -->
+非手风琴模式
 <a-collapse value="{{ names }}" bind:open="handleOpen" bind:close="handleClose">
   <a-collapse-item name="name1" title="标题1">
     <a-icon name="icon" slot="icon-left"></a-icon>
@@ -22,7 +22,7 @@
   </a-collapse-item>
 </a-collapse>
 
-<!-- 手风琴模式 -->
+手风琴模式
 <a-collapse accordion value="{{ name }}" bind:open="handleOpen" bind:close="handleClose">
   <a-collapse-item name="name1" title="标题1">
     <a-icon name="icon" slot="icon-left"></a-icon>
@@ -56,19 +56,19 @@
 
 ### CollapseItem Props
 
-| 参数     | 说明           | 类型             | 默认值 | 可选值 | 必填 |
-| -------- | -------------- | ---------------- | ------ | ------ | ---- |
-| name     | 唯一标识符     | string \| number | -      | -      | 是   |
-| title    | 标题栏左侧内容 | string           | -      | -      | 否   |
-| value    | 标题栏右侧内容 | string           | -      | -      | 否   |
-| disabled | 是否禁用面板   | boolean          | false  | -      | 否   |
-| content | 内容列表[{ title: '', value: ''}]   | array          |   | -      | 否   |
+| 参数     | 说明                              | 类型             | 默认值 | 可选值 | 必填 |
+| -------- | --------------------------------- | ---------------- | ------ | ------ | ---- |
+| name     | 唯一标识符                        | string \| number | -      | -      | 是   |
+| title    | 标题栏左侧内容                    | string           | -      | -      | 否   |
+| value    | 标题栏右侧内容                    | string           | -      | -      | 否   |
+| disabled | 是否禁用面板                      | boolean          | false  | -      | 否   |
+| content  | 内容列表[{ title: '', value: ''}] | array            |        | -      | 否   |
 
 ### CollapseItem Events
 
-| 事件名 | 说明           | 参数 |
-| ------ | -------------- | ---- |
-| click   | 点击内容具体项时触发，仅当使用"content"prop时有效 | e    |
+| 事件名 | 说明                                               | 参数 |
+| ------ | -------------------------------------------------- | ---- |
+| click  | 点击内容具体项时触发，仅当使用"content"prop 时有效 | e    |
 
 ### CollapseItem Slots
 

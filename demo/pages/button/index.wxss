@@ -7,16 +7,10 @@ page {
 }
 .example-box-title {
   margin: 20rpx 0 20rpx 30rpx;
-  color: #e9a32d;
+  color: #2f2f2f;
   font-weight: 700;
 }
 .example-box-content {
   padding: 20rpx 30rpx;
   background-color: #ffffff;
-}
-a-button {
-  margin-right: 30rpx;
-}
-a-button-group a-button {
-  margin-right: 0;
 }

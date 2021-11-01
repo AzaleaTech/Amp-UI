@@ -2,7 +2,7 @@
   <view class="example-box-title">按钮形状</view>
   <view class="example-box-content">
     <a-button
-              circle="{{ true }}"
+              circle
               type="primary">圆角
     </a-button>
     <a-button
@@ -12,17 +12,12 @@
   </view>
 </view>
 <view class="example-box">
-  <view class="example-box-title">按钮盒类型</view>
+  <view class="example-box-title">行内按钮</view>
   <view class="example-box-content">
+    <a-button inline>按钮1</a-button>
     <a-button
-              size="default"
-              type="primary"
-              block="{{ true }}">block
-    </a-button>
-    <a-button
-              size="default"
-              type="primary"
-              block="{{ false }}">none
+              inline
+              type="primary">按钮2
     </a-button>
   </view>
 </view>
@@ -31,51 +26,38 @@
   <view class="example-box-content">
     <a-button
               size="large"
-              type="primary">size:large
+              type="primary">大尺寸
     </a-button>
     <a-button
               size="default"
-              type="primary">size:default
+              type="primary">默认尺寸
     </a-button>
     <a-button
               size="small"
-              type="primary">size:small
+              type="primary">小尺寸
     </a-button>
   </view>
 </view>
 <view class="example-box">
   <view class="example-box-title">按钮类型</view>
   <view class="example-box-content">
-    <a-button type="default">type:default</a-button>
-    <a-button type="primary">type:primary</a-button>
-    <a-button type="success">type:success</a-button>
-    <a-button type="error">type:error</a-button>
-    <a-button type="warning">type:warning</a-button>
+    <a-button type="default">default</a-button>
+    <a-button type="primary">primary</a-button>
+    <a-button type="success">success</a-button>
+    <a-button type="warning">warning</a-button>
+    <a-button type="error">error</a-button>
   </view>
 </view>
 <view class="example-box">
   <view class="example-box-title">按钮状态</view>
   <view class="example-box-content">
     <a-button
-              disabled="{{ false }}"
-              type="primary">disabled:false
+              disabled
+              type="primary">禁用
     </a-button>
     <a-button
-              disabled="{{ true }}"
-              type="primary">disabled:true
-    </a-button>
-  </view>
-</view>
-<view class="example-box">
-  <view class="example-box-title">按钮加载状态</view>
-  <view class="example-box-content">
-    <a-button
-              loading="{{ false }}"
-              type="primary">false
-    </a-button>
-    <a-button
-              loading="{{ true }}"
-              type="primary">true
+              loading
+              type="primary">加载中
     </a-button>
   </view>
 </view>
@@ -101,14 +83,6 @@
     <a-button
               open-type="launchApp"
               type="primary">launchApp
-    </a-button>
-    <a-button
-              form-type="submit"
-              type="primary">submit
-    </a-button>
-    <a-button
-              form-type="reset"
-              type="primary">reset
     </a-button>
   </view>
 </view>
