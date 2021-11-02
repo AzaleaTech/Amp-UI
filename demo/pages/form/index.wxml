@@ -54,7 +54,11 @@
       <input placeholder="请输入文字" />
     </a-form-item>
     <a-form-item label="可清除Input">
-      <a-input placeholder="请输入文字" />
+      <a-input
+               a-class="red-text"
+               placeholder="请输入文字"
+               placeholder-style="color:rgba(255,182,185,1.0);"
+               bind:blur="blur" />
     </a-form-item>
     <a-form-item label="Picker">
       <picker

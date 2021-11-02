@@ -27,19 +27,21 @@
 
 ### Props
 
-| 参数         | 说明                                              | 类型    | 默认值 | 可选值                                     | 必填 |
-| ------------ | ------------------------------------------------- | ------- | ------ | ------------------------------------------ | ---- |
-| a-class      | 自定义 class 类名                                 | string  | -      | -                                          | -    |
-| name         | 输入框的唯一标识                                  | string  | -      | -                                          | -    |
-| value        | 输入框的初始内容                                  | string  | -      | -                                          | 否   |
-| type         | 输入框类型                                        | string  | text   | text、number、idcard、digit、safe-password |
-| placeholder  | 占位文本                                          | string  | -      | -                                          | 否   |
-| maxlength    | 最大输入长度,设置为 -1 的时候不限制最大长度       | number  | 140    | -                                          | 否   |
-| password     | 是否是密码类型                                    | boolean | false  | -                                          | 否   |
-| disabled     | 是否禁用                                          | boolean | false  | -                                          | 否   |
-| clearable    | 是否可清空                                        | boolean | false  | -                                          | 否   |
-| focus        | 获取焦点                                          | boolean | false  | -                                          | 否   |
-| confirm-type | 设置键盘右下角按钮的文字，仅在`type='text'`时生效 | string  | done   | -                                          | 否   |
+| 参数              | 说明                                              | 类型    | 默认值 | 可选值                                     | 必填 |
+| ----------------- | ------------------------------------------------- | ------- | ------ | ------------------------------------------ | ---- |
+| a-class           | 自定义 class 类名                                 | string  | -      | -                                          | -    |
+| name              | 输入框的唯一标识                                  | string  | -      | -                                          | -    |
+| value             | 输入框的初始内容                                  | string  | -      | -                                          | 否   |
+| type              | 输入框类型                                        | string  | text   | text、number、idcard、digit、safe-password |
+| placeholder       | 占位文本                                          | string  | -      | -                                          | 否   |
+| maxlength         | 最大输入长度,设置为 -1 的时候不限制最大长度       | number  | 140    | -                                          | 否   |
+| password          | 是否是密码类型                                    | boolean | false  | -                                          | 否   |
+| disabled          | 是否禁用                                          | boolean | false  | -                                          | 否   |
+| clearable         | 是否可清空                                        | boolean | false  | -                                          | 否   |
+| focus             | 获取焦点                                          | boolean | false  | -                                          | 否   |
+| confirm-type      | 设置键盘右下角按钮的文字，仅在`type='text'`时生效 | string  | done   | `send`, `search`, `next`, `go`             | 否   |
+| style             | 设置输入框的样式，默认 width 为 90%               | string  | -      | -                                          | 否   |
+| placeholder-style | 占位符的样式                                      | string  | -      | -                                          | 否   |
 
 ### Events
 
