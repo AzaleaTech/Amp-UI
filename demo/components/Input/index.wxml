@@ -1,12 +1,19 @@
 <view class="custom-input">
   <input
-         value="{{ value }}"
-         placeholder="{{ placeholder }}"
-         type="{{ type }}"
+         confirm-type="{{ confirmType }}"
          disabled="{{ disabled }}"
+         focus="{{ focus }}"
          maxlength="{{ maxlength }}"
+         placeholder="{{ placeholder }}"
+         placeholder-style="{{placeholderStyle}}"
          password="{{ password }}"
+         name="{{ name }}"
          style="{{ style }}"
+         type="{{ type }}"
+         value="{{ value }}"
+         class="a-class"
+         bind:blur="handleBlur"
+         bind:focus="handleFocus"
          bind:input="handleChange" />
   <image
          wx:if="{{ allowClear && value }}"
