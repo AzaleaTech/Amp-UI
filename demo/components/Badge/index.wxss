@@ -1,0 +1,32 @@
+.badge {
+  position: relative;
+  display: inline-block;
+}
+.badge-number {
+  position: absolute;
+  top: -12rpx;
+  right: 0;
+  z-index: 9;
+  box-sizing: border-box;
+  padding: 0 10rpx;
+  min-width: 36rpx;
+  height: 36rpx;
+  border: 2rpx solid transparent;
+  border-radius: 18rpx;
+  background: #f56c6c;
+  color: #ffffff;
+  font-size: 24rpx;
+  line-height: 35rpx;
+  transform: translateX(50%);
+}
+.badge-dot {
+  position: absolute;
+  top: -8rpx;
+  right: -16rpx;
+  z-index: 9;
+  border-radius: 100%;
+  background: #f56c6c;
+  transform: translateX(-50%);
+  width: 16rpx;
+  height: 16rpx;
+}

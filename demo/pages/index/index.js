@@ -3,6 +3,7 @@ Page({
     components: [
       { label: 'Icon 图标', url: '../icon/index' },
       { label: 'Avatar 头像', url: '../avatar/index' },
+      { label: 'Badge 徽标', url: '../badge/index' },
       { label: 'Card 卡片', url: '../card/index' },
       { label: 'Tabs 标签页', url: '../tabs/index/index' },
       { label: 'Button & ButtonGroup 按钮及按钮组', url: '../button/index' },

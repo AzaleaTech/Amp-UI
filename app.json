@@ -16,7 +16,8 @@
     "demo/pages/upload/index",
     "demo/pages/echarts/map/index",
     "demo/pages/icon/index",
-    "demo/pages/avatar/index"
+    "demo/pages/avatar/index",
+    "demo/pages/badge/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -24,6 +25,5 @@
     "navigationBarTitleText": "Weixin",
     "navigationBarTextStyle": "black"
   },
-  "style": "v2",
   "sitemapLocation": "sitemap.json"
 }
