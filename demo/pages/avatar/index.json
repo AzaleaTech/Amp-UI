@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "Avatar",
+  "usingComponents": {
+    "a-avatar": "../../components/Avatar/index"
+  }
+}

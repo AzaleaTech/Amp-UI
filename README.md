@@ -18,10 +18,10 @@
 - [Upload](./docs/upload.md)
 - Verfication
 - Echarts
+- [Avatar](./docs/avatar.md)
 
 ## In Progress
 
-- Avatar \*
 - Badge \*
 - Checkbox
 - Divider \*
