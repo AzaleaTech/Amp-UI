@@ -1,0 +1,6 @@
+<image
+       src="{{ src }}"
+       class="a-class avatar {{ circle ? 'avatar-circle' : '' }} {{ border ? 'avatar-border': '' }}"
+       style="width: {{ size }}rpx; height: {{ size }}rpx"
+       bind:tap="handleClick"></image>
+
