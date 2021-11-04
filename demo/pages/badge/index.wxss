@@ -14,3 +14,20 @@ page {
   padding: 20rpx 30rpx;
   background-color: #ffffff;
 }
+a-badge {
+  margin-right: 60rpx;
+}
+.badge-box {
+  background: gray;
+  width: 80rpx;
+  height: 60rpx;
+}
+.badge-box.dot {
+  border-radius: 50%;
+  width: 80rpx;
+  height: 80rpx;
+}
+.img {
+  width: 80rpx;
+  height: 80rpx;
+}

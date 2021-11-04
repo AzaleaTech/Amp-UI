@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "Badge",
+  "usingComponents": {
+    "a-badge": "../../components/Badge/index",
+    "a-button": "../../components/Button/index"
+  }
+}

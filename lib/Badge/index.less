@@ -1,0 +1,36 @@
+@import '../styles/_index.less';
+
+.badge {
+  position: relative;
+  display: inline-block;
+
+  &-number {
+    position: absolute;
+    top: -12rpx;
+    right: 0;
+    z-index: @z-index-dot;
+    box-sizing: border-box;
+    padding: 0 10rpx;
+    min-width: 36rpx;
+    height: 36rpx;
+    border: 2rpx solid transparent;
+    border-radius: 18rpx;
+    background: @error-color;
+    color: @white-color;
+    font-size: 24rpx;
+    line-height: 35rpx;
+    transform: translateX(50%);
+  }
+
+  &-dot {
+    position: absolute;
+    top: -8rpx;
+    right: -16rpx;
+    z-index: @z-index-dot;
+    border-radius: 100%;
+    background: @error-color;
+    transform: translateX(-50%);
+
+    .set-size(16rpx);
+  }
+}
