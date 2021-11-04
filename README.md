@@ -19,10 +19,10 @@
 - Verfication
 - Echarts
 - [Avatar](./docs/avatar.md)
+- [Badge](./docs/badge.md)
 
 ## In Progress
 
-- Badge \*
 - Checkbox
 - Divider \*
 - Radio

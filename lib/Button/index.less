@@ -5,22 +5,17 @@
   color: @white-color;
 }
 
-.btn-size(@padding, @font-size, @height, @line-height: @height) {
-  padding: @padding;
+.btn-size(@font-size, @height, @line-height: @height) {
   height: @height;
   font-size: @font-size;
   line-height: @line-height;
 }
 
 .btn {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10rpx;
-  width: 100% !important;
+  margin-bottom: @btn-inline-margin;
   border-radius: @btn-border-radius;
 
-  .btn-size(@btn-padding, @btn-font-size, @btn-circle-size);
+  .btn-size(@btn-font-size, @btn-circle-size);
 
   &-radius {
     &-large {
@@ -38,15 +33,15 @@
 
   &-size {
     &-large {
-      .btn-size(@btn-padding-large, @btn-font-size-large, @btn-circle-size-large);
+      .btn-size(@btn-font-size-large, @btn-circle-size-large);
     }
 
     &-default {
-      .btn-size(@btn-padding, @btn-font-size, @btn-circle-size);
+      .btn-size(@btn-font-size, @btn-circle-size);
     }
 
     &-small {
-      .btn-size(@btn-padding-small, @btn-font-size-small, @btn-circle-size-small);
+      .btn-size(@btn-font-size-small, @btn-circle-size-small);
     }
   }
 
@@ -102,8 +97,7 @@
 
   &-inline {
     display: inline-flex;
-    margin-right: @btn-inline-margin !important;
-    width: auto !important;
+    margin: @btn-inline-margin;
   }
 }
 

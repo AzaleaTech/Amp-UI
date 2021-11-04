@@ -19,6 +19,7 @@
 // 各层次组件高度
 @background-z-index: -1; // 背景图片z轴高度 
 @z-index-base: 1; // 基本高度
+@z-index-dot: 9; // 红点高度
 @z-index-tabbar: 10; // 导航栏高度
 @z-index-mask: 100; // 遮罩层高度
 @content-z-index: 1000; // 实际内容高度
@@ -29,7 +30,7 @@
 // Button
 @btn-active-hover: rgba(0, 0, 0, 0.1); // 激活遮罩
 @btn-disabled-hover: rgba(255, 255, 255, 0.35); //禁用遮罩
-@btn-inline-margin: 20rpx; // 行内相邻按钮间距
+@btn-inline-margin: 10px; // 行内相邻按钮间距
 
 @btn-border-radius: 2px; // 非圆角默认弧度
 @btn-circle-size-small: 40px; // 圆角弧度小
@@ -39,10 +40,6 @@
 @btn-font-size-small: 14px; //字体小
 @btn-font-size: @text-size; // 字体中
 @btn-font-size-large: 18px; // 字体大
-
-@btn-padding-small: 2px 7px; // 间距小
-@btn-padding: 4px 10px; // 间距中
-@btn-padding-large: 6px 16px; // 间距大
 
 // Card
 @card-line-bg: rgba(132, 191, 247, 1); // 线条色
