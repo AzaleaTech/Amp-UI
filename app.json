@@ -15,7 +15,8 @@
     "demo/pages/audio/index",
     "demo/pages/upload/index",
     "demo/pages/echarts/map/index",
-    "demo/pages/icon/index"
+    "demo/pages/icon/index",
+    "demo/pages/avatar/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

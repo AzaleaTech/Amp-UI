@@ -1,0 +1,37 @@
+<view class="example-box">
+  <view class="example-box-title">头像形状</view>
+  <view class="example-box-content">
+    <a-avatar
+              src="{{ imgUrl }}"
+              bind:click="handleClick"></a-avatar>
+    <a-avatar
+              circle
+              src="{{ imgUrl }}"
+              bind:click="handleClick"></a-avatar>
+  </view>
+  <view class="example-box-title">头像边框</view>
+  <view class="example-box-content">
+    <a-avatar
+              border
+              src="{{ imgUrl }}"></a-avatar>
+    <a-avatar
+              circle
+              border
+              src="{{ imgUrl }}"></a-avatar>
+  </view>
+  <view class="example-box-title">头像大小</view>
+  <view class="example-box-content">
+    <a-avatar
+              circle
+              size="{{ 100 }}"
+              src="{{ imgUrl }}"></a-avatar>
+    <a-avatar
+              circle
+              src="{{ imgUrl }}"></a-avatar>
+    <a-avatar
+              circle
+              size="{{ 140 }}"
+              src="{{ imgUrl }}"></a-avatar>
+  </view>
+</view>
+
