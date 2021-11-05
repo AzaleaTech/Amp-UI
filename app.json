@@ -17,7 +17,8 @@
     "demo/pages/echarts/map/index",
     "demo/pages/icon/index",
     "demo/pages/avatar/index",
-    "demo/pages/badge/index"
+    "demo/pages/badge/index",
+    "demo/pages/checkbox/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

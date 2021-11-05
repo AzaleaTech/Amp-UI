@@ -1,0 +1,76 @@
+<view class="example-box">
+  <view class="example-box-title">checkbox不同状态</view>
+  <view class="example-box-content">
+    <a-checkbox
+                value="{{ value1 }}"
+                checked="{{ checked1 }}"
+                data-index="1"
+                bind:change="handleChange"></a-checkbox>
+    <a-checkbox
+                value="{{ value2 }}"
+                checked="{{ checked2 }}"
+                data-index="2"
+                bind:change="handleChange"></a-checkbox>
+    <a-checkbox
+                value="{{ value3 }}"
+                checked="{{ checked3 }}"
+                disabled
+                data-index="3"
+                bind:change="handleChange"></a-checkbox>
+  </view>
+  <view class="example-box-title">按钮位置</view>
+  <view class="example-box-content">
+    <a-checkbox
+                value="{{ value1 }}"
+                checked="{{ checked1 }}"
+                data-index="1"
+                position="right"></a-checkbox>
+    <a-checkbox
+                value="{{ value2 }}"
+                checked="{{ checked2 }}"
+                data-index="2"
+                position="right">>
+    </a-checkbox>
+    <a-checkbox
+                value="{{ value3 }}"
+                checked="{{ checked3 }}"
+                disabled
+                data-index="3"
+                position="right">>
+    </a-checkbox>
+  </view>
+  <view class="example-box-title">按钮颜色</view>
+  <view class="example-box-content">
+    <a-checkbox
+                value="{{ value1 }}"
+                checked
+                color="#3e04df"></a-checkbox>
+    <a-checkbox
+                value="{{ value2 }}"
+                checked
+                color="#cf2828"></a-checkbox>
+  </view>
+  <view class="example-box-title">checkbox-group 排列方向</view>
+  <view class="example-box-content">
+    <a-checkbox-group
+                      current="{{ current }}"
+                      direction="horizontal"
+                      bind:change="handleGroupChange">
+      <a-checkbox value="{{ value1 }}"></a-checkbox>
+      <a-checkbox value="{{ value2 }}"></a-checkbox>
+      <a-checkbox value="{{ value3 }}"></a-checkbox>
+      <a-checkbox value="{{ value3 }}"></a-checkbox>
+      <a-checkbox value="{{ value3 }}"></a-checkbox>
+    </a-checkbox-group>
+  </view>
+  <view class="example-box-title">checkbox-group 禁用</view>
+  <view class="example-box-content">
+    <a-checkbox-group
+                      current="{{ current }}"
+                      disabled>
+      <a-checkbox value="{{ value1 }}"></a-checkbox>
+      <a-checkbox value="{{ value2 }}"></a-checkbox>
+    </a-checkbox-group>
+  </view>
+</view>
+
