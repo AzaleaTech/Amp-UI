@@ -1,5 +1,5 @@
 <view
-      class="checkbox"
+      class="a-class checkbox"
       catch:tap="handleChange">
   <label>
     <radio

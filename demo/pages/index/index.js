@@ -7,6 +7,7 @@ Page({
       { label: 'Card 卡片', url: '../card/index' },
       { label: 'Tabs 标签页', url: '../tabs/index/index' },
       { label: 'Button & ButtonGroup 按钮及按钮组', url: '../button/index' },
+      { label: 'Radio 单选框', url: '../radio/index' },
       { label: 'Checkbox 多选框', url: '../checkbox/index' },
       { label: 'Form & FormItem 表单及表单项', url: '../form/index' },
       { label: 'Verification 验证码按钮', url: '../verification/index' },
