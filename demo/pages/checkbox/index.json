@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "Checkbox",
+  "usingComponents": {
+    "a-checkbox": "../../components/Checkbox/index",
+    "a-checkbox-group": "../../components/CheckboxGroup/index"
+  }
+}

@@ -1,0 +1,14 @@
+.checkbox {
+  height: 80rpx;
+  vertical-align: middle;
+  line-height: 80rpx;
+}
+.checkbox-radio-left {
+  float: left;
+}
+.checkbox-radio-right {
+  float: right;
+}
+.checkbox-title {
+  display: inline-block;
+}
