@@ -1,0 +1,14 @@
+<view
+      class="checkbox"
+      catch:tap="handleChange">
+  <label>
+    <radio
+           value="{{ value }}"
+           checked="{{ checked }}"
+           color="{{ checked ? color : ''}}"
+           disabled="{{ disabled }}"
+           class="checkbox-radio checkbox-radio-{{ position }}" />
+    <view class="checkbox-title">{{ value }}</view>
+  </label>
+</view>
+

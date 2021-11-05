@@ -20,10 +20,11 @@
 - Echarts
 - [Avatar](./docs/avatar.md)
 - [Badge](./docs/badge.md)
+- [Checkbox](./docs/checkbox.md)
+- [CheckboxGroup](./docs/checkboxGroup.md)
 
 ## In Progress
 
-- Checkbox
 - Divider \*
 - Radio
 - Steps \*
