@@ -18,7 +18,10 @@
     "demo/pages/icon/index",
     "demo/pages/avatar/index",
     "demo/pages/badge/index",
-    "demo/pages/checkbox/index"
+    "demo/pages/checkbox/index",
+    "demo/pages/radio/index",
+    "lib/Radio/index",
+    "lib/RadioGroup/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

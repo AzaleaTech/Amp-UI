@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "Radio",
+  "usingComponents": {
+    "a-radio": "../../components/Radio/index",
+    "a-radio-group": "../../components/RadioGroup/index"
+  }
+}

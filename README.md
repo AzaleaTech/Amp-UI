@@ -22,6 +22,7 @@
 - [Badge](./docs/badge.md)
 - [Checkbox](./docs/checkbox.md)
 - [CheckboxGroup](./docs/checkboxGroup.md)
+- [Radio](./docs/radio.md)
 
 ## In Progress
 
