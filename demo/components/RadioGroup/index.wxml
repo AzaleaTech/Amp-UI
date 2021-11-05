@@ -1,0 +1,4 @@
+<view class="a-class radio-group-{{ direction }}">
+  <slot></slot>
+</view>
+

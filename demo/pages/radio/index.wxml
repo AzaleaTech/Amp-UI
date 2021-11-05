@@ -1,0 +1,75 @@
+<view class="example-box">
+  <view class="example-box-title">radio不同状态</view>
+  <view class="example-box-content">
+    <a-radio
+             value="{{ value1 }}"
+             checked="{{ checked1 }}"
+             data-index="1"
+             bind:change="handleChange"></a-radio>
+    <a-radio
+             value="{{ value2 }}"
+             checked="{{ checked2 }}"
+             data-index="2"
+             bind:change="handleChange"></a-radio>
+    <a-radio
+             value="{{ value3 }}"
+             checked="{{ checked3 }}"
+             disabled
+             data-index="3"
+             bind:change="handleChange"></a-radio>
+  </view>
+  <view class="example-box-title">按钮位置</view>
+  <view class="example-box-content">
+    <a-radio
+             value="{{ value1 }}"
+             checked="{{ checked1 }}"
+             data-index="1"
+             position="right"
+             bind:change="handleChange"></a-radio>
+    <a-radio
+             value="{{ value2 }}"
+             checked="{{ checked2 }}"
+             data-index="2"
+             position="right"
+             bind:change="handleChange"></a-radio>
+    <a-radio
+             value="{{ value3 }}"
+             checked="{{ checked3 }}"
+             disabled
+             data-index="3"
+             position="right"
+             bind:change="handleChange"></a-radio>
+  </view>
+  <view class="example-box-title">按钮颜色</view>
+  <view class="example-box-content">
+    <a-radio
+             value="{{ value1 }}"
+             checked
+             color="#3e04df"></a-radio>
+    <a-radio
+             value="{{ value2 }}"
+             checked
+             color="#cf2828"></a-radio>
+  </view>
+  <view class="example-box-title">radio-group 排列方向</view>
+  <view class="example-box-content">
+    <a-radio-group
+                   current="{{ current }}"
+                   direction="horizontal"
+                   bind:change="handleGroupChange">
+      <a-radio value="{{ value1 }}"></a-radio>
+      <a-radio value="{{ value2 }}"></a-radio>
+      <a-radio value="{{ value3 }}"></a-radio>
+    </a-radio-group>
+  </view>
+  <view class="example-box-title">radio-group 禁用</view>
+  <view class="example-box-content">
+    <a-radio-group
+                   current="{{ current }}"
+                   disabled>
+      <a-radio value="{{ value1 }}"></a-radio>
+      <a-radio value="{{ value2 }}"></a-radio>
+    </a-radio-group>
+  </view>
+</view>
+
