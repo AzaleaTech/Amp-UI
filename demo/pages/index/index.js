@@ -19,6 +19,7 @@ Page({
       { label: 'Cropper 图片裁剪组件', url: '../cropper/index' },
       { label: 'Upload 上传图片或视频组件', url: '../upload/index' },
       { label: 'Echarts 图表', url: '../echarts/map/index' },
+      { label: 'Divider 分割线', url: '../divider/index' },
     ],
     //用于图片剪裁
     img: '/demo/assets/images/test-avatar.jpg',

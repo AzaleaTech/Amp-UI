@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "Divider",
+  "usingComponents": {
+    "a-divider": "../../components/Divider/index",
+    "a-icon": "../../components/Icon/Icon"
+  }
+}
