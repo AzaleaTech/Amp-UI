@@ -23,11 +23,10 @@
 - [Checkbox](./docs/checkbox.md)
 - [CheckboxGroup](./docs/checkboxGroup.md)
 - [Radio](./docs/radio.md)
+- [Divider](./docs/divider)
 
 ## In Progress
 
-- Divider \*
-- Radio
 - Steps \*
 - Painter \*
 - Progress

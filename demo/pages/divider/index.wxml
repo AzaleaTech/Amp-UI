@@ -1,0 +1,36 @@
+<view class="example-box">
+  <view class="example-box-title">一般用法</view>
+  <view class="example-box-content">
+    <a-divider></a-divider>
+    <a-divider content="分割线"></a-divider>
+    <a-divider
+               content="虚线"
+               dashed></a-divider>
+  </view>
+  <view class="example-box-title">自定义颜色大小</view>
+  <view class="example-box-content">
+    <a-divider
+               content="分割线"
+               size="{{ 24 }}">
+    </a-divider>
+    <a-divider
+               content="分割线"
+               color="#1f47d7">
+    </a-divider>
+    <a-divider
+               content="虚线"
+               dashed
+               color="#ff4949"
+               line-color="#ff4949">
+    </a-divider>
+  </view>
+  <view class="example-box-title">自定义内容</view>
+  <view class="example-box-content">
+    <a-divider>内容</a-divider>
+    <a-divider>
+      <a-icon name="succeed_line" />
+      icon
+    </a-divider>
+  </view>
+</view>
+
