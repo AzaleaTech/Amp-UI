@@ -20,8 +20,7 @@
     "demo/pages/badge/index",
     "demo/pages/checkbox/index",
     "demo/pages/radio/index",
-    "lib/Radio/index",
-    "lib/RadioGroup/index"
+    "demo/pages/divider/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

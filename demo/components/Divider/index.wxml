@@ -1,0 +1,17 @@
+<view
+      class="a-class divider"
+      style="height: {{ height }}rpx; color: {{ color }}; font-size: {{ size }}rpx">
+  <view
+        wx:if="{{ content !== '' }}"
+        class="divider-content">{{ content }}
+  </view>
+  <view
+        wx:else
+        class="divider-content">
+    <slot/>
+  </view>
+  <view
+        class="divider-line"
+        style="border-bottom: 1rpx {{ dashed ? 'dashed' : 'solid' }} {{ lineColor }}" />
+</view>
+
