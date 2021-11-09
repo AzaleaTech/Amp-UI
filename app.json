@@ -21,6 +21,7 @@
     "demo/pages/checkbox/index",
     "demo/pages/radio/index",
     "demo/pages/switch/index",
+    "demo/pages/tag/index",
     "demo/pages/divider/index"
   ],
   "window": {
