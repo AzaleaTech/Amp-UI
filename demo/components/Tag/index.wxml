@@ -1,0 +1,7 @@
+<view
+      class="a-class tag tag-{{ size }} tag-{{ type }} {{ circle ? 'tag-circle' : '' }} {{ plain ? 'tag-plain' : '' }} {{ disabled ? 'tag-disabled' : '' }}"
+      bind:tap="handleTap">
+  <block wx:if="{{ name }}">{{ name }}</block>
+  <slot wx:else></slot>
+</view>
+

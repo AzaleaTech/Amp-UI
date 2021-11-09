@@ -1,0 +1,53 @@
+<view class="example-box">
+  <view class="example-box-title">标签大小</view>
+  <view class="example-box-content">
+    <a-tag
+           wx:for="{{ tagList }}"
+           wx:if="{{ index < 3 }}"
+           wx:key="index"
+           name="{{ item.name }}"
+           size="{{ item.size }}"
+           class="tag-box"></a-tag>
+  </view>
+  <view class="example-box-title">标签类型</view>
+  <view class="example-box-content">
+    <a-tag
+           wx:for="{{ tagList }}"
+           wx:key="index"
+           name="{{ item.name }}"
+           type="{{ item.type }}"
+           class="tag-box"></a-tag>
+  </view>
+  <view class="example-box-title">镂空标签</view>
+  <view class="example-box-content">
+    <a-tag
+           wx:for="{{ tagList }}"
+           wx:key="index"
+           plain
+           name="{{ item.name }}"
+           type="{{ item.type }}"
+           class="tag-box"></a-tag>
+  </view>
+  <view class="example-box-title">圆角标签</view>
+  <view class="example-box-content">
+    <a-tag
+           wx:for="{{ tagList }}"
+           wx:key="index"
+           circle
+           name="{{ item.name }}"
+           size="{{ item.size }}"
+           type="{{ item.type }}"
+           class="tag-box"></a-tag>
+  </view>
+  <view class="example-box-title">禁用标签</view>
+  <view class="example-box-content">
+    <a-tag
+           wx:for="{{ tagList }}"
+           wx:key="index"
+           disabled
+           name="{{ item.name }}"
+           type="{{ item.type }}"
+           class="tag-box"></a-tag>
+  </view>
+</view>
+
