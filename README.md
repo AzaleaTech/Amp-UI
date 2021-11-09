@@ -23,6 +23,7 @@
 - [Checkbox](./docs/checkbox.md)
 - [CheckboxGroup](./docs/checkboxGroup.md)
 - [Radio](./docs/radio.md)
+- [Switch](./docs/switch.md)
 - [Divider](./docs/divider)
 
 ## In Progress

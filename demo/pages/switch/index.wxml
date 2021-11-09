@@ -1,0 +1,36 @@
+<view class="example-box">
+  <view class="example-box-title">不同颜色</view>
+  <view class="example-box-content">
+    <view class="switch-box">
+      <a-switch
+                checked="{{ checked }}"
+                bind:change="handleChange"></a-switch>
+    </view>
+    <view class="switch-box">
+      <a-switch
+                checked="{{ checked }}"
+                color="#f42dee"
+                bind:change="handleChange"></a-switch>
+    </view>
+    <view class="switch-box">
+      <a-switch
+                checked="{{ checked }}"
+                color="#2f445d"
+                bind:change="handleChange"></a-switch>
+    </view>
+  </view>
+  <view class="example-box-title">禁用状态</view>
+  <view class="example-box-content">
+    <view class="switch-box">
+      <a-switch
+                checked="{{ checked1 }}"
+                disabled></a-switch>
+    </view>
+    <view class="switch-box">
+      <a-switch
+                checked="{{ !checked1 }}"
+                disabled></a-switch>
+    </view>
+  </view>
+</view>
+

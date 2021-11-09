@@ -11,10 +11,15 @@
 @bg-color: rgba(244, 245, 246, 1); // 背景色
 @shadow-color: rgba(238, 238, 238, 1); // 阴影色
 
+// 字体大小
 @text-size: 16px;
 
 // 固定颜色
-@white-color: rgba(255, 255, 255, 1); // 白色
+@white-color: rgba(255, 255, 255, 1.0); // 白色
+@grey-color: rgba(204, 204, 204, 1.0); // 灰色
+
+// 透明度
+@disabled-opacity: 0.4;
 
 // 各层次组件高度
 @background-z-index: -1; // 背景图片z轴高度 
@@ -57,3 +62,7 @@
 @divider-font-size: @text-size; // 分割线字体默认大小
 @divider-font-color: @text-color; // 分割线字体默认颜色
 @divider-line-bg: rgba(204, 204, 204, 1.0); // 分割线默认颜色
+
+// Switch
+@switch-color-base: @grey-color; // 默认底色
+@switch-with-base: 96rpx; // 默认宽度
