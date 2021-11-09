@@ -9,6 +9,7 @@ Page({
       { label: 'Button & ButtonGroup 按钮及按钮组', url: '../button/index' },
       { label: 'Radio 单选框', url: '../radio/index' },
       { label: 'Checkbox 多选框', url: '../checkbox/index' },
+      { label: 'Switch 开关', url: '../switch/index' },
       { label: 'Form & FormItem 表单及表单项', url: '../form/index' },
       { label: 'Verification 验证码按钮', url: '../verification/index' },
       { label: 'Collapse 可折叠列表', url: '../collapse/index' },

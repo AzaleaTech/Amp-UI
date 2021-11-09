@@ -1,0 +1,30 @@
+.switch {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 2rpx solid #cccccc;
+  border-radius: 48rpx;
+  background-color: #cccccc;
+  transition: all 0.3s ease-in-out;
+  width: 96rpx;
+  height: 48rpx;
+}
+.switch-inner {
+  position: absolute;
+  left: 2rpx;
+  border-radius: 100%;
+  background-color: #ffffff;
+  transition: left 0.3s ease-in-out;
+  width: 44rpx;
+  height: 44rpx;
+}
+.switch-inner-checked {
+  left: 50rpx;
+}
+.switch-checked {
+  border-color: #409eff;
+  background-color: #409eff;
+}
+.switch-disabled {
+  opacity: 0.4;
+}
