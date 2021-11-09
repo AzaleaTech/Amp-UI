@@ -20,6 +20,7 @@
     "demo/pages/badge/index",
     "demo/pages/checkbox/index",
     "demo/pages/radio/index",
+    "demo/pages/switch/index",
     "demo/pages/divider/index"
   ],
   "window": {

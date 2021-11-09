@@ -1,0 +1,36 @@
+@import '../styles/_index.less';
+
+.switch {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 2rpx solid @switch-color-base;
+  border-radius: (@switch-with-base / 2);
+  background-color: @switch-color-base;
+  transition: all 0.3s ease-in-out;
+
+  .set-size(@switch-with-base, (@switch-with-base / 2));
+
+  &-inner {
+    position: absolute;
+    left: 2rpx;
+    border-radius: 100%;
+    background-color: @white-color;
+    transition: left 0.3s ease-in-out;
+
+    .set-size((@switch-with-base / 2) - 4);
+
+    &-checked {
+      left: 50rpx;
+    }
+  }
+
+  &-checked {
+    border-color: @primary-color;
+    background-color: @primary-color;
+  }
+
+  &-disabled {
+    opacity: @disabled-opacity;
+  }
+}
