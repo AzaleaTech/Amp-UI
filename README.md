@@ -26,14 +26,13 @@
 - [Switch](./docs/switch.md)
 - [Divider](./docs/divider.md)
 - [Tag](./docs/tag.md)
+- [Parse](./docs/parse.md)
 
 ## In Progress
 
 - Steps \*
 - Painter \*
 - Progress
-- Pagination
-- WxParse \*
 
 ## Optimize
 
