@@ -1,0 +1,13 @@
+<view class="example-box">
+  <view class="example-box-title">基本使用</view>
+  <view class="example-box-content">
+    <a-parse nodes="{{ node1 }}"></a-parse>
+  </view>
+  <view class="example-box-title">外部链接跳转</view>
+  <view class="example-box-content">
+    <a-parse
+             nodes="{{ node2 }}"
+             webview-path="{{ webviewPath }}"></a-parse>
+  </view>
+</view>
+
