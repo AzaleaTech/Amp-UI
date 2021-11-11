@@ -1,0 +1,106 @@
+@import '../styles/_index.less';
+@grey-bg: rgba(238, 238, 238, 1);
+
+.step {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 24rpx;
+
+  &-head {
+    .flex-type(center);
+    .set-size(100%, 48rpx);
+  }
+
+  &-dot {
+    position: relative;
+    z-index: 2;
+    margin: 0 auto;
+    border: 2rpx solid @grey-bg;
+    border-radius: 50%;
+    background-color: @grey-bg;
+
+    .set-size(20rpx);
+
+    &-active {
+      border-color: @primary-color;
+      background-color: @primary-color;
+
+      .set-size(32rpx);
+    }
+  }
+
+  &-line {
+    position: absolute;
+    top: 24rpx;
+    left: 50%;
+    background: @grey-bg;
+
+    .set-size(100%, 4rpx);
+
+    &-active {
+      width: 50%;
+      background: @primary-color;
+    }
+
+    &-actived {
+      width: 100%;
+      background: @primary-color;
+    }
+  }
+
+  &-body {
+    margin-top: 20rpx;
+    text-align: center;
+  }
+
+  &-title {
+    .font-style(24rpx, @text-color);
+    .text-truncate;
+
+    &-active {
+      color: @primary-color;
+    }
+  }
+
+  &-desc {
+    margin-top: 6rpx;
+
+    .ellipsis-multiple(2);
+    .font-style(24rpx, @text-color);
+  }
+
+  &-vertical {
+    width: 100% !important;
+    height: 160rpx;
+
+    .step-head {
+      float: left;
+      width: 24px;
+    }
+
+    .step-body {
+      margin-top: 0;
+      margin-left: 40px;
+      text-align: left;
+    }
+
+    .step-line {
+      position: absolute;
+      top: 18rpx;
+      left: 22rpx;
+      width: 4rpx;
+      height: 100%;
+
+      &-active {
+        height: 50%;
+        background-color: @primary-color;
+      }
+
+      &-actived {
+        height: 100%;
+        background-color: @primary-color;
+      }
+    }
+  }
+}

@@ -23,6 +23,7 @@ Page({
       { label: 'Echarts 图表', url: '../echarts/map/index' },
       { label: 'Divider 分割线', url: '../divider/index' },
       { label: 'Parse 富文本解析', url: '../parse/index' },
+      { label: 'Steps 步骤条', url: '../steps/index' },
     ],
     //用于图片剪裁
     img: '/demo/assets/images/test-avatar.jpg',

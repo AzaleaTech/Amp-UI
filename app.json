@@ -24,7 +24,8 @@
     "demo/pages/tag/index",
     "demo/pages/divider/index",
     "demo/pages/parse/index",
-    "demo/pages/webview/index"
+    "demo/pages/webview/index",
+    "demo/pages/steps/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

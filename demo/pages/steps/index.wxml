@@ -1,0 +1,20 @@
+<view class="example-box">
+  <view class="example-box-title">基础用法</view>
+  <view class="example-box-content">
+    <a-steps steps="{{ steps1 }}"></a-steps>
+    <a-steps
+             current="{{ 1 }}"
+             steps="{{ steps2 }}"></a-steps>
+  </view>
+  <view class="example-box-title">竖直方向</view>
+  <view class="example-box-content">
+    <a-steps
+             direction="vertical"
+             steps="{{ steps1 }}"></a-steps>
+    <a-steps
+             current="{{ 1 }}"
+             direction="vertical"
+             steps="{{ steps2 }}"></a-steps>
+  </view>
+</view>
+

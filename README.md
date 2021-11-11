@@ -27,10 +27,10 @@
 - [Divider](./docs/divider.md)
 - [Tag](./docs/tag.md)
 - [Parse](./docs/parse.md)
+- [Steps](./docs/steps.md)
 
 ## In Progress
 
-- Steps \*
 - Painter \*
 - Progress
 
