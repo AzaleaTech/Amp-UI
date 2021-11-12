@@ -6,7 +6,6 @@
     "demo/pages/tabs/ceiling/index",
     "demo/pages/button/index",
     "demo/pages/form/index",
-    "demo/pages/verification/index",
     "demo/pages/collapse/index",
     "demo/pages/modal/index",
     "demo/pages/cropper/index",
@@ -14,7 +13,6 @@
     "demo/pages/rate/index",
     "demo/pages/audio/index",
     "demo/pages/upload/index",
-    "demo/pages/echarts/map/index",
     "demo/pages/icon/index",
     "demo/pages/avatar/index",
     "demo/pages/badge/index",
@@ -26,6 +24,12 @@
     "demo/pages/parse/index",
     "demo/pages/webview/index",
     "demo/pages/steps/index"
+  ],
+  "subpackages": [
+    {
+      "root": "demo/subPages",
+      "pages": ["echarts/map/index"]
+    }
   ],
   "window": {
     "backgroundTextStyle": "light",

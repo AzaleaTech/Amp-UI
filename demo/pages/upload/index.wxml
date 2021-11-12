@@ -1,53 +1,19 @@
 <view class="example-box">
-  <view class="example-box-title">上传拍摄图片,限制上传图片为2张,不可裁剪,宽高设为200rpx</view>
+  <view class="example-box-title">上传图片,limit为2,size为500,可裁剪</view>
   <view class="example-box-content">
     <a-upload-image
-                    imgs="{{ images }}"
+                    imgs="{{ imgs }}"
+                    isCropped
                     limit="{{ 2 }}"
-                    width="{{ 200 }}"
-                    height="{{ 200 }}"
-                    sourceType="{{ ['camera'] }}"
-                    bind:change="handleImageChange" />
-  </view>
-  <view class="example-box-title">上传相册图片,限制上传图片为1张,上传图片大小为500KB,可裁剪</view>
-  <view class="example-box-content">
-    <a-upload-image
-                    imgs="{{ cropperImages }}"
-                    isCropped="{{ isCropped }}"
-                    limit="{{ 1 }}"
                     size="{{ 500 }}"
-                    sourceType="{{ ['album'] }}"
                     bind:change="handleCropperImageChange" />
   </view>
-  <view class="example-box-title">上传相册视频,默认不压缩，不设置size则宽度为200rpx,高度为150rpx</view>
+  <view class="example-box-title">上传视频</view>
   <view class="example-box-content">
     <a-upload-video
-                    sourceType="{{ ['album'] }}"
                     videos="{{ videos }}"
                     bind:choose="handleChooseVideo"
                     bind:remove="handleRemoveVideo" />
-  </view>
-  <view class="example-box-title">上传视频,压缩，设置宽高140rpx，不设置则宽度为200rpx,高度为150rpx,限制只能上传一个视频</view>
-  <view class="example-box-content">
-    <a-upload-video
-                    compressed="{{ true }}"
-                    height="{{ minHeight }}"
-                    sourceType="{{ ['camera'] }}"
-                    videos="{{ compressVideos }}"
-                    width="{{ minWidth }}"
-                    limit="{{ 1 }}"
-                    bind:choose="handleChooseCompressVideo"
-                    bind:remove="handleRemoveCompressVideo" />
-  </view>
-  <view class="example-box-title">上传视频,默认不压缩，设置宽400rpx,高300rpx，不设置则宽度为200rpx,高度为150rpx</view>
-  <view class="example-box-content">
-    <a-upload-video
-                    height="{{ largeHeight }}"
-                    sourceType="{{ ['camera'] }}"
-                    videos="{{ largeVideos }}"
-                    width="{{ largeWidth }}"
-                    bind:choose="handleChooseLargeVideo"
-                    bind:remove="handleRemoveLargeVideo" />
   </view>
 </view>
 <a-toast toastData="{{ toastData }}" />

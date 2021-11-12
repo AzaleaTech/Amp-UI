@@ -13,11 +13,15 @@
 <a-rate bind:change="handleChange"></a-rate>
 
 不同大小
-<a-rate size="30"></a-rate>
 <a-rate size="40"></a-rate>
+<a-rate size="60"></a-rate>
+
+不同数量
+<a-rate count="{{ 3 }}"></a-rate>
+<a-rate count="{{ 7 }}"></a-rate>
 
 只读
-<a-rate value="{{ 2.88 }}" disabled></a-rate>
+<a-rate value="{{ 2.68 }}" disabled></a-rate>
 <a-rate value="{{ 5 }}" disabled></a-rate>
 ```
 
@@ -30,7 +34,7 @@
 | a-class  | 自定义 class 类名      | string  | -      | 否   |
 | count    | star 总数              | number  | 5      | 否   |
 | value    | 当前 star 数           | number  | 0      | 否   |
-| size     | 图标大小，单位[`rpx`]  | string  | 40     | 否   |
+| size     | 图标大小，单位[`rpx`]  | string  | 50     | 否   |
 | disabled | 是否只读，无法进行交互 | boolean | false  | 否   |
 
 ### Events

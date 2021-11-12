@@ -1,9 +1,0 @@
-<a-button
-          type="primary"
-          size="mini"
-          width="184"
-          disabled="{{ remainingTime > 0 || disabled }}"
-          bind:click="handleClickButton">
-  {{ content }}{{ remainingTime ? remainingTime + 's' : '' }}
-</a-button>
-

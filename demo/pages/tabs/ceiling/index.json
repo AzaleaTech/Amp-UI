@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "Tabbar-ceiling",
+  "navigationBarTitleText": "Tabs",
   "usingComponents": {
     "a-tabs": "../../../components/Tabs/index",
     "a-card": "../../../components/Card/index"

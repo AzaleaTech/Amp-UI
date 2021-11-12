@@ -1,5 +1,5 @@
 <view class="example-box">
-  <view class="example-box-title">不同数值角标</view>
+  <view class="example-box-title">不同数值</view>
   <view class="example-box-content">
     <a-badge value="{{ 2 }}">
       <view class="badge-box"></view>
@@ -11,13 +11,14 @@
       <view class="badge-box"></view>
     </a-badge>
   </view>
-  <view class="example-box-title">红点角标</view>
+  <view class="example-box-title">红点</view>
   <view class="example-box-content">
     <a-badge dot>
-      <view class="badge-box dot"></view>
+      <view class="badge-box"></view>
     </a-badge>
     <a-badge dot>
-      <image src="{{ imgUrl }}" class="img"></image>
+      <image src="{{ imgUrl }}"></image>
     </a-badge>
   </view>
 </view>
+

@@ -5,6 +5,7 @@ const del = require('del');
 
 // 输出目录
 const outputDir = '../demo/components/';
+const pluginsDir = '../demo/plugins';
 
 gulp.task('compile-css', () => {
   return gulp
@@ -23,7 +24,7 @@ gulp.task('compile-images', () => {
 });
 
 gulp.task('compile-js', () => {
-  return gulp.src(['../lib/**/*.js']).pipe(gulp.dest(outputDir));
+  return gulp.src(['../lib/**/*.js', '!../lib/Echarts/*.js']).pipe(gulp.dest(outputDir));
 });
 
 gulp.task('compile-json', () => {

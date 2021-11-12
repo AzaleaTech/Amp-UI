@@ -10,7 +10,7 @@ Component({
     },
     height: {
       type: Number,
-      value: 150,
+      value: 180,
     },
     sourceType: {
       type: Array,

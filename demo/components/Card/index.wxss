@@ -30,7 +30,7 @@
 }
 .card-body .card-container .card-title {
   margin-bottom: 28rpx;
-  color: #2f2f2f;
+  color: #525252;
   font-weight: 700;
   font-size: 32rpx;
   display: -webkit-box;

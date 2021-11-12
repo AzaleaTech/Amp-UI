@@ -4,7 +4,7 @@
 }
 .form-container .form-warning-message {
   min-height: 24rpx;
-  color: #f56c6c;
+  color: #ed4114;
   font-size: 24rpx;
 }
 .form-item {
@@ -14,7 +14,7 @@
 }
 .form-item-warning-icon {
   margin-right: 10rpx;
-  color: #f56c6c;
+  color: #ed4114;
 }
 .form-item-icon {
   margin-right: 22rpx;
@@ -37,7 +37,7 @@
   justify-content: flex-start;
 }
 .form-item-panel-warning {
-  border-bottom: 3rpx solid #f56c6c;
+  border-bottom: 3rpx solid #ed4114;
 }
 .form-item-slot {
   flex: 1;
