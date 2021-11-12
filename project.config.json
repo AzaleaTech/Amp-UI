@@ -9,6 +9,14 @@
       {
         "type": "suffix",
         "value": ".less"
+      },
+      {
+        "type": "folder",
+        "value": "lib"
+      },
+      {
+        "type": "suffix",
+        "value": ".md"
       }
     ]
   },
@@ -48,7 +56,7 @@
   },
   "compileType": "miniprogram",
   "libVersion": "2.8.3",
-  "appid": "wx6ed522217ab33735",
+  "appid": "wx1188a75907ee7a73",
   "projectname": "WXCOM",
   "debugOptions": {
     "hidedInDevtools": []

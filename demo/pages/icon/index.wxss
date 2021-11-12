@@ -6,8 +6,8 @@ page {
   margin-bottom: 20rpx;
 }
 .example-box-title {
-  margin: 20rpx 0 20rpx 30rpx;
-  color: #e9a32d;
+  margin: 20rpx 30rpx;
+  color: #525252;
   font-weight: 700;
 }
 .example-box-content {
@@ -23,8 +23,10 @@ page {
   flex-direction: column;
   flex: 1 0 auto;
   margin: 0 2rpx 2rpx;
-  border: 1px solid #9e9e9e3b;
+  max-width: calc(25% - 6rpx);
+  border: 2rpx solid #f4f5f6;
   border-radius: 10rpx;
+  background: #ffffff;
   font-size: 22rpx;
   display: flex;
   align-items: center;

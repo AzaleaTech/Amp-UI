@@ -7,7 +7,7 @@ page {
 }
 .example-box-title {
   margin: 20rpx 30rpx;
-  color: #2f2f2f;
+  color: #525252;
   font-weight: 700;
 }
 .example-box-content {
@@ -18,16 +18,12 @@ a-badge {
   margin-right: 60rpx;
 }
 .badge-box {
-  background: gray;
-  width: 80rpx;
-  height: 60rpx;
+  border-radius: 4rpx;
+  background: #d8d8d8;
+  width: 100rpx;
+  height: 100rpx;
 }
-.badge-box.dot {
-  border-radius: 50%;
-  width: 80rpx;
-  height: 80rpx;
-}
-.img {
-  width: 80rpx;
-  height: 80rpx;
+image {
+  width: 100rpx;
+  height: 100rpx;
 }

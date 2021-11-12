@@ -30,28 +30,28 @@
   line-height: 40px;
 }
 .btn-type-default {
-  border: 2rpx solid #409eff;
+  border: 2rpx solid #3895f7;
   background: #ffffff;
-  color: #409eff;
+  color: #3895f7;
 }
 .btn-type-primary {
-  background: #409eff;
+  background: #3895f7;
   color: #ffffff;
 }
 .btn-type-success {
-  background: #67c23a;
+  background: #19be6b;
   color: #ffffff;
 }
 .btn-type-warning {
-  background: #e6a23c;
+  background: #ffb500;
   color: #ffffff;
 }
 .btn-type-error {
-  background: #f56c6c;
+  background: #ed4114;
   color: #ffffff;
 }
 .btn-hover.btn-type-default {
-  background: #409eff;
+  background: #3895f7;
   color: #ffffff;
 }
 .btn-hover::before {

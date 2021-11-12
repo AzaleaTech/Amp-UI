@@ -66,7 +66,7 @@
   display: flex;
   margin: 60rpx 0 40rpx;
   height: 50rpx;
-  color: #409eff;
+  color: #3895f7;
   font-size: 28rpx;
   line-height: 40rpx;
 }

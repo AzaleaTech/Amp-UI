@@ -7,7 +7,7 @@
 ## 示例
 
 ```html
-不同数值角标
+不同数值
 <a-badge value="{{ 2 }}">
   <view class="badge-box"></view>
 </a-badge>
@@ -23,7 +23,7 @@
   <view class="badge-box"></view>
 </a-badge>
 <a-badge dot>
-  <image src="{{ imgUrl }}" class="img"></image>
+  <image src="{{ imgUrl }}"></image>
 </a-badge>
 ```
 

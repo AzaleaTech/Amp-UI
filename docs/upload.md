@@ -45,7 +45,7 @@
 | ----------- | ------------------------------------------ | ------------- | ------------------- | ---- |
 | videos      | 视频列表                                   | Array[string] | []                  | 是   |
 | width       | 视频宽度, 单位[`rpx`]                      | number        | 200                 | 否   |
-| height      | 视频高度, 单位[`rpx`]                      | number        | 150                 | 否   |
+| height      | 视频高度, 单位[`rpx`]                      | number        | 180                 | 否   |
 | sourceType  | 视频来源                                   | Array[string] | ['album', 'camera'] | 否   |
 | maxDuration | 拍摄视频最长拍摄时间，单位[`秒`]           | number        | 60                  | 否   |
 | compressed  | 是否压缩所选择的视频文件                   | boolean       | false               | 否   |

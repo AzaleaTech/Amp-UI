@@ -1,14 +1,14 @@
-.rate-wrap {
+.rate {
   flex-wrap: wrap;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.rate-wrap .rate-item {
+.rate-item {
   position: relative;
   margin-right: 40rpx;
 }
-.rate-wrap .rate-item-selected {
+.rate-item-selected {
   position: absolute;
   overflow: hidden;
 }
