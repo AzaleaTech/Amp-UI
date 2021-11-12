@@ -1,44 +1,5 @@
 # 微信小程序组件库
 
-## Done
-
-- [Button](./docs/button.md)
-- [ButtonGroup](./docs/buttonGroup.md)
-- [Card](./docs/card.md)
-- [Collapse](./docs/collapse.md)
-- [Cropper](./docs/cropper.md)
-- [Form](./docs/form.md)
-- [Header](./docs/header.md)
-- [Input](./docs/input.md)
-- Modal ([Toast](./docs/toast.md)&&[Dialog](./docs/dialog.md))
-- [Player](./docs/player.md)
-- [Rate](./docs/rate.md)
-- [Record](./docs/record.md)
-- [Tabs](./docs/tabs.md)
-- [Upload](./docs/upload.md)
-- Verfication
-- Echarts
-- [Avatar](./docs/avatar.md)
-- [Badge](./docs/badge.md)
-- [Checkbox](./docs/checkbox.md)
-- [CheckboxGroup](./docs/checkboxGroup.md)
-- [Radio](./docs/radio.md)
-- [Switch](./docs/switch.md)
-- [Divider](./docs/divider.md)
-- [Tag](./docs/tag.md)
-- [Parse](./docs/parse.md)
-- [Steps](./docs/steps.md)
-
-## In Progress
-
-- Painter \*
-- Progress
-
-## Optimize
-
-- [Icon](./docs/icon.md)
-- [Toast](./docs/toast.md)&&[Dialog](./docs/dialog.md)支持函数调用
-
 ## Usage
 
 ```bash
@@ -48,19 +9,86 @@ git clone ${url}
 npm install / yarn
 
 # dev
-yarn dev
+npm run dev/ yarn dev
 
 # build
-yarn build
+npm run build / yarn build
 
 ```
 
-## docs
+> _开始前，请阅读[快速上手](./docs/index.md)_
 
-项目中引用, 查看[快速上手](./docs/index.md)
+## Done
 
-> ## Notice
+基础
 
-1. 组件中若存在样式, 需包含`.less`样式文件（暂不支持只含`.wxss`, 只编译转换`.less`文件）
+- [Icon](./docs/icon.md)
+- [Button](./docs/button.md)
+- [ButtonGroup](./docs/buttonGroup.md)
 
-2. `Echarts`目前引入的是完整包(约 900 多 k)，具体项目具体配置。[查看链接](https://github.com/ecomfe/echarts-for-weixin)
+导航
+
+- [Header](./docs/header.md)
+- [Tabs](./docs/tabs.md)
+
+视图
+
+- [Avatar](./docs/avatar.md)
+- [Badge](./docs/badge.md)
+- [Card](./docs/card.md)
+- [Collapse](./docs/collapse.md)
+- [Steps](./docs/steps.md)
+- [Tag](./docs/tag.md)
+- [Divider](./docs/divider.md)
+- [Parse](./docs/parse.md)
+
+表单
+
+- [Form](./docs/form.md)
+- [Input](./docs/input.md)
+- [Checkbox](./docs/checkbox.md)
+- [CheckboxGroup](./docs/checkboxGroup.md)
+- [Rate](./docs/rate.md)
+- [Radio](./docs/radio.md)
+- [Switch](./docs/switch.md)
+- [Player](./docs/player.md)
+- [Record](./docs/record.md)
+- [Cropper](./docs/cropper.md)
+- [Upload](./docs/upload.md)
+
+操作反馈
+
+- Modal ([Toast](./docs/toast.md)&&[Dialog](./docs/dialog.md))
+
+## In Progress
+
+- Painter \*
+- Swiper \*
+- DatePicker \*
+- List \*
+
+## Remove
+
+- Verfication
+- Echarts
+
+## TODO
+
+- [Toast](./docs/toast.md)&&[Dialog](./docs/dialog.md)支持函数调用
+- 全局图标替换
+- mock 数据
+
+## 预览
+
+- 小程序二维码(体验版)
+
+  <image src="./docs/imgs/preview.jpg" style="width: 140px"/>
+
+## 贡献代码
+
+代码基于 develop 分支开发，欢迎提交 Pull Request 进行代码贡献。
+在提交 Pull Request 之前，请详细阅读[开发规范](http://server.azalea-tech.com:10086/pages/viewpage.action?pageId=21660191)。
+
+## 开源协议
+
+[MIT](https://opensource.org/licenses/MIT)© 2021, Saxonion

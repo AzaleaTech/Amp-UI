@@ -1,4 +1,4 @@
-<view class="rate-wrap">
+<view class="a-class rate">
   <view
         wx:for="{{ count }}"
         wx:key="index"

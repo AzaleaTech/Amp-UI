@@ -23,6 +23,8 @@
 }
 ```
 
-## 预览
+> ## Notice
 
-- 小程序二维码(TODO)
+1. 组件中若存在样式, 需包含`.less`样式文件（暂不支持只含`.wxss`, 只编译转换`.less`文件）
+
+2. `Echarts`已从`lib`目录中移除, 具体使用可参照示例:`demo/subPages/`目录。 目前引入的是完整包(约 900 多 k)，具体项目具体配置。[查看链接](https://github.com/ecomfe/echarts-for-weixin)

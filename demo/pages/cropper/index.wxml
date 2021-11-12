@@ -1,12 +1,17 @@
-<button
-        wx:if="{{ !isCropper }}"
-        bind:tap="handleClick">裁剪图片
-</button>
-<a-cropper
-           wx:else
-           imgUrl="{{ img }}"
-           ratio="{{ 690 / 400 }}"
-           bind:cancel="handleCancel"
-           bind:save="handleSave"></a-cropper>
+<view class="example-box">
+  <view class="example-box-title">基础用法</view>
+  <view class="example-box-content">
+    <button
+            wx:if="{{ !isCropper }}"
+            bind:tap="handleClick">裁剪图片
+    </button>
+    <a-cropper
+               wx:else
+               imgUrl="{{ img }}"
+               ratio="{{ 690 / 400 }}"
+               bind:cancel="handleCancel"
+               bind:save="handleSave"></a-cropper>
+  </view>
+</view>
 <a-toast toastData="{{ toastData }}" />
 

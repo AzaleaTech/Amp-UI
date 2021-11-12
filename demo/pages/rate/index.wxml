@@ -1,43 +1,27 @@
 <view class="example-box">
-  <view class="example-box-title">图标宽高默认为80rpx,默认为5个图标，默认disabled为fasle，不禁用可以打分</view>
+  <view class="example-box-title">基础用法</view>
   <view class="example-box-content">
-    <a-rate value="{{ score / 10 }}">{{ score }}</a-rate>
+    <a-rate bind:change="handleChange"></a-rate>
   </view>
-  <view class="example-box-title">设置图标宽高为70rpx，默认为80rpx,disabled为false，不禁用则可以点击打分</view>
+  <view class="example-box-title">不同大小</view>
+  <view class="example-box-content">
+    <a-rate size="40"></a-rate>
+    <a-rate size="60"></a-rate>
+  </view>
+  <view class="example-box-title">不同数量</view>
+  <view class="example-box-content">
+    <a-rate count="{{ 3 }}"></a-rate>
+    <a-rate count="{{ 7 }}"></a-rate>
+  </view>
+  <view class="example-box-title">只读</view>
   <view class="example-box-content">
     <a-rate
-            value="{{ score / 10 }}"
-            size="70">
-      <text>{{ score }}</text>
+            value="{{ 2.68 }}"
+            disabled>2.68
     </a-rate>
-  </view>
-  <view class="example-box-title">设置图标宽高为56rpx，disabled为true，不可以点击打分</view>
-  <view class="example-box-content">
     <a-rate
-            disabled
-            value="{{ score1 / 10 }}"
-            size="56">
-      <text>{{ score1 }}</text>
-    </a-rate>
-  </view>
-  <view class="example-box-title">设置最高为80分，即count为8，8个图标</view>
-  <view class="example-box-content">
-    <a-rate
-            count="{{ 8 }}"
-            disabled
-            value="{{ score2 / 10 }}"
-            size="56">
-      <text>{{ score2 }}</text>
-    </a-rate>
-  </view>
-  <view class="example-box-title">设置最高为100分，即count为10，10个图标</view>
-  <view class="example-box-content">
-    <a-rate
-            count="{{ 10 }}"
-            disabled
-            value="{{ score3 / 10 }}"
-            size="56">
-      <text>{{ score3 }}</text>
+            value="{{ 5 }}"
+            disabled>5
     </a-rate>
   </view>
 </view>

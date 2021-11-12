@@ -3,7 +3,7 @@
   font-size: 32rpx;
   line-height: 44rpx;
   background-color: #ffffff;
-  color: #2f2f2f;
+  color: #525252;
 }
 .collapse-item-header {
   padding: 34rpx 30rpx 34rpx 0;

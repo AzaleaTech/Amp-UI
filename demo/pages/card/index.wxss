@@ -6,8 +6,8 @@ page {
   margin-bottom: 20rpx;
 }
 .example-box-title {
-  margin: 20rpx 0 20rpx 30rpx;
-  color: #e9a32d;
+  margin: 20rpx 30rpx;
+  color: #525252;
   font-weight: 700;
 }
 .example-box-content {
@@ -20,11 +20,11 @@ page {
   height: 200rpx;
 }
 .card-header {
-  font-size: 24rpx;
   color: #c7c7c7;
+  font-size: 24rpx;
 }
 .card-footer {
-  width: 100%;
   display: flex;
   flex-direction: row-reverse;
+  width: 100%;
 }

@@ -13,7 +13,7 @@
   height: 36rpx;
   border: 2rpx solid transparent;
   border-radius: 18rpx;
-  background: #f56c6c;
+  background: #ed4114;
   color: #ffffff;
   font-size: 24rpx;
   line-height: 35rpx;
@@ -25,7 +25,7 @@
   right: -16rpx;
   z-index: 9;
   border-radius: 100%;
-  background: #f56c6c;
+  background: #ed4114;
   transform: translateX(-50%);
   width: 16rpx;
   height: 16rpx;

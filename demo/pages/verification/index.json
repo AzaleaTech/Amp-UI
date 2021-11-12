@@ -1,8 +1,0 @@
-{
-  "navigationBarTitleText": "Verification",
-  "usingComponents": {
-    "a-verification": "../../components/Verification/index",
-    "a-form-item": "../../components/FormItem/index",
-    "a-button": "../../components/Button/index"
-  }
-}

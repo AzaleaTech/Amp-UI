@@ -22,8 +22,8 @@
   height: 20rpx;
 }
 .step-dot-active {
-  border-color: #409eff;
-  background-color: #409eff;
+  border-color: #3895f7;
+  background-color: #3895f7;
   width: 32rpx;
   height: 32rpx;
 }
@@ -37,11 +37,11 @@
 }
 .step-line-active {
   width: 50%;
-  background: #409eff;
+  background: #3895f7;
 }
 .step-line-actived {
   width: 100%;
-  background: #409eff;
+  background: #3895f7;
 }
 .step-body {
   margin-top: 20rpx;
@@ -49,13 +49,13 @@
 }
 .step-title {
   font-size: 24rpx;
-  color: #2f2f2f;
+  color: #525252;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 .step-title-active {
-  color: #409eff;
+  color: #3895f7;
 }
 .step-desc {
   margin-top: 6rpx;
@@ -64,7 +64,7 @@
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   font-size: 24rpx;
-  color: #2f2f2f;
+  color: #525252;
 }
 .step-vertical {
   width: 100% !important;
@@ -88,9 +88,9 @@
 }
 .step-vertical .step-line-active {
   height: 50%;
-  background-color: #409eff;
+  background-color: #3895f7;
 }
 .step-vertical .step-line-actived {
   height: 100%;
-  background-color: #409eff;
+  background-color: #3895f7;
 }
