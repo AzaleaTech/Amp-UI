@@ -1,13 +1,40 @@
 .radio {
+  display: flex;
+  align-items: center;
   height: 80rpx;
-  vertical-align: middle;
-  line-height: 80rpx;
 }
-.radio-radio-left {
-  float: left;
+.radio-dot {
+  position: relative;
+  border: 4rpx solid #cccccc;
+  border-radius: 50%;
+  width: 40rpx;
+  height: 40rpx;
 }
-.radio-radio-right {
-  float: right;
+.radio-dot-left {
+  margin-right: 30rpx;
+}
+.radio-dot-right {
+  position: absolute;
+  right: 30rpx;
+}
+.radio-dot-checked {
+  border-color: #3895f7;
+}
+.radio-dot-checked::after {
+  position: absolute;
+  top: 12rpx;
+  left: 12rpx;
+  border-radius: 50%;
+  background-color: #3895f7;
+  content: '';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16rpx;
+  height: 16rpx;
+}
+.radio-dot-disabled {
+  opacity: 0.4;
 }
 .radio-title {
   display: inline-block;

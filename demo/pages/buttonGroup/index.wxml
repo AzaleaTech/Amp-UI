@@ -1,0 +1,32 @@
+<view class="example-box">
+  <view class="example-box-title">默认按钮组</view>
+  <view class="example-box-content">
+    <a-button-group>
+      <a-button>left</a-button>
+      <a-button>right</a-button>
+    </a-button-group>
+  </view>
+  <view class="example-box-title">整体按钮组</view>
+  <view class="example-box-content">
+    <a-button-group entire>
+      <a-button>left</a-button>
+      <a-button>right</a-button>
+    </a-button-group>
+  </view>
+  <view class="example-box-title">按钮组内按钮尺寸</view>
+  <view class="example-box-content">
+    <a-button-group size="large">
+      <a-button>large1</a-button>
+    </a-button-group>
+    <a-button-group size="default">
+      <a-button>default1</a-button>
+      <a-button>default2</a-button>
+      <a-button>default3</a-button>
+    </a-button-group>
+    <a-button-group size="small">
+      <a-button>small1</a-button>
+      <a-button>small2</a-button>
+    </a-button-group>
+  </view>
+</view>
+

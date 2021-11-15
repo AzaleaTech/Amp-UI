@@ -1,6 +1,7 @@
 .divider {
   position: relative;
   width: 100%;
+  color: #868686;
   text-align: center;
   font-size: 12px;
   display: flex;

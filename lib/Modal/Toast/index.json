@@ -1,6 +1,6 @@
 {
   "component": true,
   "usingComponents": {
-    "modal": "../index/index"
+    "a-modal": "../index/index"
   }
 }

@@ -1,15 +1,13 @@
-<modal
-       wx:if="{{ show }}"
-       catch:tap="closeDialog">
+<a-modal
+         wx:if="{{ show }}"
+         catch:tap="closeDialog">
   <view class="dialog-body">
     <view
           wx:if="{{ dialogData.title }}"
           class="dialog-title">{{ dialogData.title }}
     </view>
     <view class="dialog-content">
-      <block wx:if="{{ dialogData.content }}">
-        {{ dialogData.content }}
-      </block>
+      <block wx:if="{{ dialogData.content }}">{{ dialogData.content }}</block>
       <block wx:else>
         <slot></slot>
       </block>
@@ -17,18 +15,18 @@
     <view class="dialog-btn">
       <a-button
                 wx:if="{{ dialogData.cancelText }}"
-                width="{{ 248 }}"
+                inline
                 catch:click="cancel">
         <text>{{ dialogData.cancelText }}</text>
       </a-button>
       <a-button
                 wx:if="{{ dialogData.confirmText }}"
                 type="primary"
-                width="{{ dialogData.cancelText ? 248 : 566 }}"
+                inline
                 catch:click="confirm">
         {{ dialogData.confirmText || '确认' }}
       </a-button>
     </view>
   </view>
-</modal>
+</a-modal>
 
