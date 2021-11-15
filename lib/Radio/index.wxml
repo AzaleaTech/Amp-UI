@@ -1,14 +1,7 @@
 <view
       class="a-class radio"
       catch:tap="handleChange">
-  <label>
-    <radio
-           value="{{ value }}"
-           checked="{{ checked }}"
-           color="{{ checked ? color : ''}}"
-           disabled="{{ disabled }}"
-           class="radio-radio radio-radio-{{ position }}" />
-    <view class="radio-title">{{ value }}</view>
-  </label>
+  <view class="radio-dot {{ checked ? 'radio-dot-checked' : '' }}  {{ disabled ? 'radio-dot-disabled': '' }} radio-dot-{{ position }}"></view>
+  <view class="radio-title">{{ value }}</view>
 </view>
 

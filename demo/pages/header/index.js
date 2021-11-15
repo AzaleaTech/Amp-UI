@@ -45,7 +45,10 @@ Page({
       title: this.data.title === 'Header' ? 'Header1' : 'Header',
     });
   },
+
   goHome() {
-    console.log('home');
+    wx.redirectTo({
+      url: '/demo/pages/index/index',
+    });
   },
 });

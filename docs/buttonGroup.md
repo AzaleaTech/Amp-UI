@@ -7,24 +7,31 @@
 ## 示例
 
 ```
-按钮组内按钮尺寸
-<button-group size="large">
-  <a-button>large<a-button>
-</button-group>
-
-<button-group size="default">
-  <a-button>default<a-button>
-</button-group>
-
-<button-group size="small">
-  <a-button>small<a-button>
-</button-group>
+默认按钮组
+<a-button-group>
+  <a-button>left</a-button>
+  <a-button>right</a-button>
+</a-button-group>
 
 整体按钮组
-<button-group entire="{{ true }}">
-  <a-button>left<a-button>
-  <a-button>right<a-button>
-</button-group>
+<a-button-group entire>
+  <a-button>left</a-button>
+  <a-button>right</a-button>
+</a-button-group>
+
+按钮组内按钮尺寸
+<a-button-group size="large">
+  <a-button>large1</a-button>
+</a-button-group>
+<a-button-group size="default">
+  <a-button>default1</a-button>
+  <a-button>default2</a-button>
+  <a-button>default3</a-button>
+</a-button-group>
+<a-button-group size="small">
+  <a-button>small1</a-button>
+  <a-button>small2</a-button>
+</a-button-group>
 ```
 
 ## API

@@ -23,7 +23,7 @@ page {
   flex-direction: column;
   flex: 1 0 auto;
   margin: 0 2rpx 2rpx;
-  max-width: calc(25% - 6rpx);
+  max-width: calc(25% - 8rpx);
   border: 2rpx solid #f4f5f6;
   border-radius: 10rpx;
   background: #ffffff;

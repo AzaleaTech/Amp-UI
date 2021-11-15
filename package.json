@@ -1,5 +1,5 @@
 {
-  "name": "wx_lib",
+  "name": "wxcom",
   "version": "1.0.0",
   "description": "微信组件库",
   "main": "app.js",
@@ -39,5 +39,5 @@
     "组件"
   ],
   "author": "saxon",
-  "license": "ISC"
+  "license": "MIT"
 }

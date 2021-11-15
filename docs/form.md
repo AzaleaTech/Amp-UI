@@ -2,7 +2,7 @@
 
 ## 概述
 
-表单组件。将组件内的用户输入的值提交。由于小程序组件化的限制，要触发 submit，必须使用 AButton 且设置 formType='submit'，onSubmit 事件获得的 event 中的 event.detail.value 始终为空对象，开发者要获取数据，可以自行在页面的 state 中获取。
+表单组件。将组件内的用户输入的值提交。要获取数据，可以自行在页面的 state 中获取。
 
 ## 示例
 
@@ -38,14 +38,22 @@
 | labelWidth     | `label`标签的文本宽度, 单位[`rpx`] | string  | -      | -                          | 否   |
 | required       | 是否必填                           | boolean | false  | -                          | 否   |
 | warningMessage | 警告信息                           | string  | -      | -                          | 否   |
+| iconUrl        | 表单项图标地址                     | string  | -      | -                          | 否   |
+| footer         | 表单项尾部文字                     | string  | -      | -                          | 否   |
+| footer-arrow   | 表单项尾部箭头                     | boolean | false  | -                          | 否   |
 
 ### Events
 
 #### Form
 
-| 事件名 | 说明                               | 参数 |
-| ------ | ---------------------------------- | ---- |
-| submit | 携带 form 中的数据触发 submit 事件 | e    |
-| reset  | 表单重置时触发                     | e    |
+| 事件名 | 说明 | 参数 |
+| ------ | ---- | ---- |
+| 暂无   | -    | -    |
+
+#### FormItem
+
+| 事件名 | 说明           | 参数 |
+| ------ | -------------- | ---- |
+| click  | 每一项点击事件 | e    |
 
 ## 常见问题
