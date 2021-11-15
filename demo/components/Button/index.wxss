@@ -54,14 +54,12 @@
   background: #3895f7;
   color: #ffffff;
 }
-.btn-hover::before {
+.btn-hover::after {
   position: absolute;
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.1);
   content: '';
-  width: 100%;
-  height: 100%;
 }
 .btn-disabled::before {
   position: absolute;

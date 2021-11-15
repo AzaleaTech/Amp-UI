@@ -1,15 +1,44 @@
-.radio {
-  height: 80rpx;
-  vertical-align: middle;
-  line-height: 80rpx;
+@import '../styles/_index.less';
 
-  &-radio {
+.radio {
+  display: flex;
+  align-items: center;
+  height: 80rpx;
+
+  &-dot {
+    position: relative;
+    border: 4rpx solid @grey-color;
+    border-radius: 50%;
+
+    .set-size(40rpx);
+
     &-left {
-      float: left;
+      margin-right: 30rpx;
     }
 
     &-right {
-      float: right;
+      position: absolute;
+      right: 30rpx;
+    }
+
+    &-checked {
+      border-color: @primary-color;
+
+      &::after {
+        position: absolute;
+        top: 12rpx;
+        left: 12rpx;
+        border-radius: 50%;
+        background-color: @primary-color;
+        content: '';
+
+        .flex-type(center);
+        .set-size(16rpx);
+      }
+    }
+
+    &-disabled {
+      opacity: @disabled-opacity;
     }
   }
 

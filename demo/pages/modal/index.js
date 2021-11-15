@@ -8,6 +8,11 @@ Page({
     this.setData({
       showModal: true,
     });
+    setTimeout(() => {
+      this.setData({
+        showModal: false,
+      });
+    }, 1000);
   },
 
   handleDialog() {

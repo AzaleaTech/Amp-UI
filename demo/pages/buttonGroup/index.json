@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "ButtonGroup",
+  "usingComponents": {
+    "a-button": "../../components/Button/index",
+    "a-button-group": "../../components/ButtonGroup/index"
+  }
+}

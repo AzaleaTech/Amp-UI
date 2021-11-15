@@ -20,6 +20,12 @@
               border
               src="{{ imgUrl }}"
               bind:click="handleClick"></a-avatar>
+    <a-avatar
+              circle
+              border
+              border-color="#009BA4"
+              src="{{ imgUrl }}"
+              bind:click="handleClick"></a-avatar>
   </view>
   <view class="example-box-title">头像大小</view>
   <view class="example-box-content">

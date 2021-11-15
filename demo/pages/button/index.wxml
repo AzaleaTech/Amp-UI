@@ -1,41 +1,23 @@
 <view class="example-box">
   <view class="example-box-title">按钮形状</view>
   <view class="example-box-content">
-    <a-button
-              circle
-              type="primary">圆角
-    </a-button>
-    <a-button
-              circle="{{ false }}"
-              type="primary">无圆角
-    </a-button>
+    <a-button circle type="primary">圆角</a-button>
+    <a-button circle="{{ false }}" type="primary">无圆角</a-button>
   </view>
 </view>
 <view class="example-box">
   <view class="example-box-title">行内按钮</view>
   <view class="example-box-content">
     <a-button inline>按钮1</a-button>
-    <a-button
-              inline
-              type="primary">按钮2
-    </a-button>
+    <a-button inline type="primary">按钮2</a-button>
   </view>
 </view>
 <view class="example-box">
   <view class="example-box-title">按钮尺寸</view>
   <view class="example-box-content">
-    <a-button
-              size="large"
-              type="primary">大尺寸
-    </a-button>
-    <a-button
-              size="default"
-              type="primary">默认尺寸
-    </a-button>
-    <a-button
-              size="small"
-              type="primary">小尺寸
-    </a-button>
+    <a-button size="large" type="primary">大尺寸</a-button>
+    <a-button size="default" type="primary">默认尺寸</a-button>
+    <a-button size="small" type="primary">小尺寸</a-button>
   </view>
 </view>
 <view class="example-box">
@@ -51,65 +33,17 @@
 <view class="example-box">
   <view class="example-box-title">按钮状态</view>
   <view class="example-box-content">
-    <a-button
-              disabled
-              type="primary">禁用
-    </a-button>
-    <a-button
-              loading
-              type="primary">加载中
-    </a-button>
+    <a-button disabled type="primary">禁用</a-button>
+    <a-button loading type="primary">加载中</a-button>
   </view>
 </view>
 <view class="example-box">
   <view class="example-box-title">开放能力</view>
   <view class="example-box-content">
-    <a-button
-              open-type="contact"
-              type="primary">contact
-    </a-button>
-    <a-button
-              open-type="getUserInfo"
-              type="primary">getUserInfo
-    </a-button>
-    <a-button
-              open-type="getPhoneNumber"
-              type="primary">getPhoneNumber
-    </a-button>
-    <a-button
-              open-type="openSetting"
-              type="primary">openSetting
-    </a-button>
-    <a-button
-              open-type="launchApp"
-              type="primary">launchApp
-    </a-button>
+    <a-button open-type="contact" type="primary">contact</a-button>
+    <a-button open-type="getUserInfo" type="primary">getUserInfo</a-button>
+    <a-button open-type="getPhoneNumber" type="primary">getPhoneNumber</a-button>
+    <a-button open-type="openSetting" type="primary">openSetting</a-button>
+    <a-button open-type="launchApp" type="primary">launchApp</a-button>
   </view>
 </view>
-<view class="example-box">
-  <view class="example-box-title">按钮组内按钮尺寸</view>
-  <view class="example-box-content">
-    <a-button-group size="large">
-      <a-button>large1</a-button>
-    </a-button-group>
-    <a-button-group size="default">
-      <a-button>default1</a-button>
-      <a-button>default2</a-button>
-      <a-button>default3</a-button>
-    </a-button-group>
-    <a-button-group size="small">
-      <a-button>small1</a-button>
-      <a-button>small2</a-button>
-    </a-button-group>
-  </view>
-</view>
-<view class="example-box">
-  <view class="example-box-title">整体按钮组</view>
-  <view class="example-box-content">
-    <a-button-group entire="{{ true }}">
-      <a-button>left</a-button>
-      <a-button>right</a-button>
-    </a-button-group>
-  </view>
-</view>
-

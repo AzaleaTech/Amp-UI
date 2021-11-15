@@ -94,11 +94,8 @@ Component({
   },
 
   methods: {
-    /**
-     * 点击结束抑制按钮，若未被禁用则提供点击事件
-     */
-    handleTouchEnd: debounce(function () {
-      if (!this.properties.disabled) {
+    handleTap: debounce(function () {
+      if (!this.data.disabled) {
         this.triggerEvent('click');
       }
     }),
