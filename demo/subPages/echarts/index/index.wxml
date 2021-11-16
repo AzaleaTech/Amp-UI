@@ -1,0 +1,4 @@
+<view class="title">常用图表如下:</view>
+<a-form label-width="600">
+  <a-form-item wx:for="{{ lists }}" wx:key="id" footer-arrow label="{{ item.name }}" data-id="{{ item.id }}" bind:click="handleTap"></a-form-item>
+</a-form>
