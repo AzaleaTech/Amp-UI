@@ -1,0 +1,6 @@
+<view class="echarts-container">
+  <a-echart
+            canvas-id="echarts-bar"
+            ec="{{ ec }}"></a-echart>
+</view>
+
