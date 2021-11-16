@@ -1,48 +1,58 @@
 # 微信小程序组件库（wxcom）
 
-## 设计目标
+## 项目目标
 
-针对业务中出现的高频组件, 基于微信小程序自定义组件特性开发而成的一套简洁、易用、高效的组件库, 尽可能兼容不同场景各个模块。
+### 短期目标
+针对我司业务场景中高频使用的组件,结合微信小程序自定义组件特性，沉淀开发出一套简洁、易用、高效的组件库，兼容不同场景下的各类功能模块，以达到提高工作效率，提升工作体验的目的。
+
+### 长期目标
+内部使用无碍且短期目标基本达到后，将代表研发部对外进行开源，分享至业内，为前端技术生态做出我们的贡献。
 
 ## 功能特性
 
 1. UI 样式可配置，拓展灵活，轻松适应不同的设计风格
-2. 项目一键移植，提升开发效率
+2. 项目一键移植，提升开发效率，提高工作体验
 3. 代码以及图片压缩， 减少代码体积
 
-## 使用
+## 预览
+
+- 小程序二维码(体验版)
+
+  <image src="./docs/imgs/preview.jpg" style="width: 140px"/>
+
+## 使用方法
 
 ```bash
-# clone
+# 克隆组件库至本地
 git clone ${url}
 
-# dependence
+# 安装依赖
 npm install / yarn
 
-# dev
+# 开启开发环境
 npm run dev/ yarn dev
 
-# build
+# 构建项目
 npm run build / yarn build
 
 ```
 
 > _开始前，请阅读[快速上手](./docs/index.md)_
 
-## Done
+## 已完成组件列表
 
-基础
+基础组件
 
 - [Icon](./docs/icon.md)
 - [Button](./docs/button.md)
 - [ButtonGroup](./docs/buttonGroup.md)
 
-导航
+导航组件
 
 - [Header](./docs/header.md)
 - [Tabs](./docs/tabs.md)
 
-视图
+视图组件
 
 - [Avatar](./docs/avatar.md)
 - [Badge](./docs/badge.md)
@@ -53,7 +63,7 @@ npm run build / yarn build
 - [Divider](./docs/divider.md)
 - [Parse](./docs/parse.md)
 
-表单
+表单组件
 
 - [Form](./docs/form.md)
 - [Input](./docs/input.md)
@@ -71,7 +81,7 @@ npm run build / yarn build
 
 - Modal ([Toast](./docs/toast.md)&&[Dialog](./docs/dialog.md))
 
-## In Progress
+## 开发中
 
 - Col \*
 - Row \*
@@ -80,7 +90,7 @@ npm run build / yarn build
 - DatePicker \*
 - List \*
 
-## Remove
+## 已移除
 
 - ~~Verfication~~
 - ~~Echarts~~
@@ -89,19 +99,14 @@ npm run build / yarn build
 
 - [Toast](./docs/toast.md)&&[Dialog](./docs/dialog.md)支持函数调用
 - 全局图标替换
-- demo 完善
+- demo 的进一步完善
 
-## 预览
-
-- 小程序二维码(体验版)
-
-  <image src="./docs/imgs/preview.jpg" style="width: 140px"/>
 
 ## 贡献代码
 
-代码基于 develop 分支开发，欢迎提交 Pull Request 进行代码贡献。
-在提交 Pull Request 之前，请详细阅读[开发规范](http://server.azalea-tech.com:10086/pages/viewpage.action?pageId=21660191)和[贡献指南](./docs/dev/guide.md)。
+代码基于 develop 分支开发，欢迎提交 Merge Request 进行代码贡献。
+在提交 Merge Request 之前，请详细阅读[开发规范](http://server.azalea-tech.com:10086/pages/viewpage.action?pageId=21660191)和[贡献指南](./docs/dev/guide.md)。
 
 ## License
 
-[MIT](https://opensource.org/licenses/MIT)© 2021
+[MIT License](https://opensource.org/licenses/MIT)© 2021
