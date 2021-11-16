@@ -49,7 +49,7 @@ Page({
       },
       {
         title: '其他',
-        data: [{ label: 'Echarts 图表', url: '/demo/subPages/echarts/map/index' }],
+        data: [{ label: 'Echarts 图表', url: '/demo/subPages/echarts/index/index' }],
       },
     ],
     //用于图片剪裁

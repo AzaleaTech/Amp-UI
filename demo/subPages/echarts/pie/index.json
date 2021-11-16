@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "echarts-pie",
+  "usingComponents": {
+    "a-echart": "../../components/Echarts/index"
+  }
+}

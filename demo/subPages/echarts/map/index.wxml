@@ -1,7 +1,3 @@
-<view class="container">
-  <a-echart
-            id="mychart-dom-area"
-            canvas-id="mychart-area"
-            ec="{{ ec }}"></a-echart>
+<view class="echarts-container">
+  <a-echart canvas-id="echarts-map" ec="{{ ec }}"></a-echart>
 </view>
-

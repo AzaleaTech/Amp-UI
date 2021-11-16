@@ -33,7 +33,13 @@
   "subpackages": [
     {
       "root": "demo/subPages",
-      "pages": ["echarts/map/index"]
+      "pages": [
+        "echarts/index/index",
+        "echarts/line/index",
+        "echarts/bar/index",
+        "echarts/pie/index",
+        "echarts/map/index"
+      ]
     }
   ],
   "window": {

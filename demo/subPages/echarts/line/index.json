@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "echarts-line",
+  "usingComponents": {
+    "a-echart": "../../components/Echarts/index"
+  }
+}
