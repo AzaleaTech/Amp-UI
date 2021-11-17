@@ -12,14 +12,21 @@
 <a-divider content="分割线"></a-divider>
 <a-divider content="虚线" dashed></a-divider>
 
-自定义颜色大小
-<a-divider content="分割线" size="{{ 24 }}"> </a-divider>
-<a-divider content="分割线" color="#1f47d7"> </a-divider>
-<a-divider content="虚线" dashed color="#ff4949" line-color="#ff4949"> </a-divider>
+字体大小
+<a-divider content="分割线" size="{{ 28 }}"></a-divider>
+<a-divider content="分割线" size="{{ 36 }}"></a-divider>
 
-自定义内容
-<a-divider>内容</a-divider>
-<a-divider> <a-icon name="succeed_line" /> icon </a-divider>
+字体颜色
+<a-divider content="分割线" color="#1f47d7"></a-divider>
+<a-divider content="分割线" color="#ff4949"></a-divider>
+
+线条颜色
+<a-divider line-color="#1f47d7"></a-divider>
+<a-divider line-color="#ff4949"></a-divider>
+
+slot插槽
+<a-divider>自定义内容</a-divider>
+<a-divider> <a-icon name="succeed_line" /> icon</a-divider>
 ```
 
 ## API

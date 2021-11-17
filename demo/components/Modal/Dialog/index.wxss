@@ -29,7 +29,4 @@
 .dialog-btn {
   margin-top: 70rpx;
   padding: 0 40rpx 32rpx 40rpx;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }

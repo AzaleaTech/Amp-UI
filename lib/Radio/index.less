@@ -5,35 +5,37 @@
   align-items: center;
   height: 80rpx;
 
-  &-dot {
+  &-circle {
     position: relative;
-    border: 4rpx solid @grey-color;
+    border: 2rpx solid @grey-color;
     border-radius: 50%;
 
-    .set-size(40rpx);
+    .set-size(20px);
 
     &-left {
-      margin-right: 30rpx;
+      margin-right: 15px;
     }
 
     &-right {
       position: absolute;
-      right: 30rpx;
+      right: 15px;
     }
 
     &-checked {
       border-color: @primary-color;
+    }
 
-      &::after {
+    &-dot {
+      &-checked {
         position: absolute;
-        top: 12rpx;
-        left: 12rpx;
+        top: 6px;
+        left: 6px;
         border-radius: 50%;
         background-color: @primary-color;
         content: '';
 
         .flex-type(center);
-        .set-size(16rpx);
+        .set-size(8px);
       }
     }
 

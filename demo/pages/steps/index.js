@@ -15,5 +15,28 @@ Page({
         desc: '这是描述信息描述信息描述信息描述信息描述信息描述信息',
       },
     ],
+    current1: 0,
+    current2: 1,
+  },
+
+  handleStep() {
+    if (this.data.current1 >= this.data.steps1.length - 1) {
+      this.setData({
+        current1: 0,
+      });
+    } else {
+      this.setData({
+        current1: this.data.current1 + 1,
+      });
+    }
+    if (this.data.current2 >= this.data.steps2.length - 1) {
+      this.setData({
+        current2: 0,
+      });
+    } else {
+      this.setData({
+        current2: this.data.current2 + 1,
+      });
+    }
   },
 });

@@ -18,7 +18,11 @@
         class="video-box"
         style="width: {{ width }}rpx; height: {{ height }}rpx"
         bind:tap="chooseVideo">
-    <image src="../images/default-video.png" />
+    <a-icon
+            name="video_line"
+            size="100"
+            color="#929292"></a-icon>
+    上传视频
   </view>
 </view>
 

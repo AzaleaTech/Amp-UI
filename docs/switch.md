@@ -8,12 +8,35 @@
 
 ```html
 不同颜色
-<a-switch checked="{{ checked }}" bind:change="handleChange"></a-switch>
-<a-switch checked="{{ checked }}" color="#f42dee" bind:change="handleChange"></a-switch>
-<a-switch checked="{{ checked }}" color="#2f445d" bind:change="handleChange"></a-switch>
+<a-switch checked="{{ checked1 }}" data-index="1" bind:change="handleChange"></a-switch>
+<a-switch checked="{{ checked2 }}" color="#f42dee" data-index="2" bind:change="handleChange">
+</a-switch>
+<a-switch checked="{{ checked3 }}" color="#2f445d" data-index="3" bind:change="handleChange">
+</a-switch>
 
 禁用状态
-<a-switch checked disabled></a-switch>
+<a-switch checked="{{ checked4 }}" disabled></a-switch>
+<a-switch checked="{{ !checked4 }}" disabled></a-switch>
+```
+
+```js
+Page({
+  data: {
+    checked1: true,
+    checked2: true,
+    checked3: true,
+    checked4: false,
+  },
+
+  handleChange(e) {
+    const { index } = e.currentTarget.dataset;
+    const { value } = e.detail;
+
+    this.setData({
+      ['checked' + index]: value,
+    });
+  },
+});
 ```
 
 ## API

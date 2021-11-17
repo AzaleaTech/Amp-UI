@@ -5,8 +5,7 @@
               type="primary"
               size="mini"
               width="280"
-              bind:click="handleCeiling">
-      顶部吸附演示
+              bind:click="handleCeiling">顶部吸附演示
     </a-button>
   </view>
 </view>
@@ -24,24 +23,18 @@
           tabList="{{ staticTabs }}"
           current="{{ currentTab }}"
           bind:change="handleSwitchTab">
-    <view wx:if="{{ currentTab === 0 }}">
-      <a-card
-              title="{{ card.title + 1 }}"
-              contents="{{ card.contents }}"
-              imgUrl="{{ card.imgUrl }}"></a-card>
-    </view>
-    <view wx:if="{{ currentTab === 1 }}">
-      <a-card
-              title="{{ card.title + 2 }}"
-              contents="{{ card.contents }}"
-              imgUrl="{{ card.imgUrl }}"></a-card>
-    </view>
-    <view wx:if="{{ currentTab === 2 }}">
-      <a-card
-              title="{{ card.title + 3 }}"
-              contents="{{ card.contents }}"
-              imgUrl="{{ card.imgUrl }}"></a-card>
-    </view>
+    <a-card
+            wx:if="{{ currentTab === 0 }}"
+            title="{{ card.title + 1 }}"
+            imgUrl="{{ card.imgUrl }}"></a-card>
+    <a-card
+            wx:if="{{ currentTab === 1 }}"
+            title="{{ card.title + 2 }}"
+            imgUrl="{{ card.imgUrl }}"></a-card>
+    <a-card
+            wx:if="{{ currentTab === 2 }}"
+            title="{{ card.title + 3 }}"
+            imgUrl="{{ card.imgUrl }}"></a-card>
   </a-tabs>
 </view>
 

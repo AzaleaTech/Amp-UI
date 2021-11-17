@@ -1,20 +1,29 @@
 <view class="example-box">
   <view class="example-box-title">基础用法</view>
   <view class="example-box-content">
-    <a-steps steps="{{ steps1 }}"></a-steps>
     <a-steps
-             current="{{ 1 }}"
+             current="{{ current1 }}"
+             steps="{{ steps1 }}"></a-steps>
+    <a-steps
+             current="{{ current2 }}"
              steps="{{ steps2 }}"></a-steps>
   </view>
   <view class="example-box-title">竖直方向</view>
   <view class="example-box-content">
     <a-steps
+             current="{{ current1 }}"
              direction="vertical"
              steps="{{ steps1 }}"></a-steps>
     <a-steps
-             current="{{ 1 }}"
+             current="{{ current2 }}"
              direction="vertical"
              steps="{{ steps2 }}"></a-steps>
+  </view>
+  <view class="example-box-content">
+    <a-button
+              type="primary"
+              bind:click="handleStep">下一步
+    </a-button>
   </view>
 </view>
 

@@ -1,12 +1,23 @@
 Page({
   data: {
     currentTab: 0,
-    ceiling: true,
-    staticTabs: ['测试标签'],
+    staticTabs: ['标签1', '标签2', '标签3'],
     card: {
-      title: '测试Tab页',
-      contents: [{ label: '测试项', content: '测试Tab页' }],
+      title: '标题',
       imgUrl: '/demo/assets/images/test-avatar.jpg',
     },
+  },
+
+  handleSwitchTab(e) {
+    this.setData({ currentTab: e.detail.value });
+    wx.createSelectorQuery()
+      .select('.tabs')
+      .boundingClientRect((res) => {
+        wx.pageScrollTo({
+          scrollTop: res.top,
+          duration: 300,
+        });
+      })
+      .exec();
   },
 });

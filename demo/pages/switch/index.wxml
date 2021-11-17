@@ -3,19 +3,22 @@
   <view class="example-box-content">
     <view class="switch-box">
       <a-switch
-                checked="{{ checked }}"
+                checked="{{ checked1 }}"
+                data-index="1"
                 bind:change="handleChange"></a-switch>
     </view>
     <view class="switch-box">
       <a-switch
-                checked="{{ checked }}"
+                checked="{{ checked2 }}"
                 color="#f42dee"
+                data-index="2"
                 bind:change="handleChange"></a-switch>
     </view>
     <view class="switch-box">
       <a-switch
-                checked="{{ checked }}"
+                checked="{{ checked3 }}"
                 color="#2f445d"
+                data-index="3"
                 bind:change="handleChange"></a-switch>
     </view>
   </view>
@@ -23,12 +26,12 @@
   <view class="example-box-content">
     <view class="switch-box">
       <a-switch
-                checked="{{ checked1 }}"
+                checked="{{ checked4 }}"
                 disabled></a-switch>
     </view>
     <view class="switch-box">
       <a-switch
-                checked="{{ !checked1 }}"
+                checked="{{ !checked4 }}"
                 disabled></a-switch>
     </view>
   </view>

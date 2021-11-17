@@ -6,8 +6,15 @@
 }
 .img-box {
   position: relative;
+  flex-direction: column;
   margin: 30rpx 30rpx 0 0;
+  border: 4rpx dotted #cecece;
   border-radius: 8rpx;
+  color: #929292;
+  font-size: 26rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 140rpx;
   height: 140rpx;
 }

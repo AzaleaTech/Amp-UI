@@ -1,95 +1,33 @@
 <view class="example-box">
   <view class="example-box-title">非手风琴模式</view>
-  <a-collapse
-              bind:open="handleOpen"
-              bind:close="handleClose">
-    <a-collapse-item
-                     name="test0"
-                     title="测试"
-                     value="测试">
+  <a-collapse bind:open="handleOpen" bind:close="handleClose">
+    <a-collapse-item name="标题1" title="标题1" value="文本内容">
       <view slot="content">
-        <view>测试</view>
+        <view>文本内容1</view>
       </view>
     </a-collapse-item>
-    <a-collapse-item
-                     name="test1"
-                     title="测试"
-                     value="测试">
+    <a-collapse-item name="标题2" title="标题2" value="content内容列表" content="{{ content }}" bind:click="handleClick" />
+    <a-collapse-item name="标题3" title="标题3" value="自定义标题">
+      <a-icon slot="icon-left" name="star_fill" class="icon-left" />
+      <a-icon slot="icon-right" name="star_fill" class="icon-right" />
       <view slot="content">
-        <view>测试</view>
-        <view>测试</view>
+        <view>文本内容3</view>
       </view>
     </a-collapse-item>
-    <a-collapse-item
-                     name="test2"
-                     title="测试"
-                     value="测试">
+    <a-collapse-item disabled name="标题1" title="标题1" value="禁用展开">
       <view slot="content">
-        <view>测试</view>
-      </view>
-    </a-collapse-item>
-  </a-collapse>
-</view>
-<view class="example-box">
-  <view class="example-box-title">content属性</view>
-  <a-collapse>
-    <a-collapse-item
-                     name="test1"
-                     title="测试"
-                     content="{{ content }}"
-                     bind:click="handleClick" />
-    <a-collapse-item
-                     name="test2"
-                     title="测试"
-                     content="{{ content }}"
-                     bind:click="handleClick" />
-  </a-collapse>
-</view>
-<view class="example-box">
-  <view class="example-box-title">icon-slot</view>
-  <a-collapse value="{{ ['测试'] }}">
-    <a-collapse-item
-                     name="测试"
-                     title="测试"
-                     value="测试">
-      <a-icon
-              slot="icon-left"
-              name="star_fill"
-              class="icon-left" />
-      <a-icon
-              slot="icon-right"
-              name="star_fill"
-              class="icon-right" />
-      <view slot="content">
-        <view>测试</view>
+        <view>文本内容4</view>
       </view>
     </a-collapse-item>
   </a-collapse>
 </view>
 <view class="example-box">
   <view class="example-box-title">手风琴模式</view>
-  <a-collapse accordion>
-    <a-collapse-item
-                     name="test"
-                     title="测试"
-                     value="测试">
+  <a-collapse accordion bind:open="handleOpen" bind:close="handleClose">
+    <a-collapse-item wx:for="{{ 3 }}" wx:key="index" name="{{ '标题'+ (index + 1) }}" title="{{ '标题'+ (index + 1) }}">
       <view slot="content">
-        <view>测试</view>
-        <view>测试</view>
+        <view>文本内容 {{ index + 1 }}</view>
       </view>
-    </a-collapse-item>
-    <a-collapse-item
-                     name="test1"
-                     title="测试"
-                     value="测试">
-      <view slot="content">测试</view>
-    </a-collapse-item>
-    <a-collapse-item
-                     name="test2"
-                     title="测试"
-                     value="测试">
-      <view slot="content">测试</view>
     </a-collapse-item>
   </a-collapse>
 </view>
-

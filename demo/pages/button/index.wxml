@@ -1,23 +1,41 @@
 <view class="example-box">
   <view class="example-box-title">按钮形状</view>
   <view class="example-box-content">
-    <a-button circle type="primary">圆角</a-button>
-    <a-button circle="{{ false }}" type="primary">无圆角</a-button>
+    <a-button
+              circle
+              type="primary">圆角
+    </a-button>
+    <a-button
+              circle="{{ false }}"
+              type="primary">无圆角
+    </a-button>
   </view>
 </view>
 <view class="example-box">
   <view class="example-box-title">行内按钮</view>
   <view class="example-box-content">
     <a-button inline>按钮1</a-button>
-    <a-button inline type="primary">按钮2</a-button>
+    <a-button
+              inline
+              type="primary">按钮2
+    </a-button>
   </view>
 </view>
 <view class="example-box">
   <view class="example-box-title">按钮尺寸</view>
   <view class="example-box-content">
-    <a-button size="large" type="primary">大尺寸</a-button>
-    <a-button size="default" type="primary">默认尺寸</a-button>
-    <a-button size="small" type="primary">小尺寸</a-button>
+    <a-button
+              size="large"
+              type="primary">大尺寸
+    </a-button>
+    <a-button
+              size="default"
+              type="primary">默认尺寸
+    </a-button>
+    <a-button
+              size="small"
+              type="primary">小尺寸
+    </a-button>
   </view>
 </view>
 <view class="example-box">
@@ -33,17 +51,48 @@
 <view class="example-box">
   <view class="example-box-title">按钮状态</view>
   <view class="example-box-content">
-    <a-button disabled type="primary">禁用</a-button>
-    <a-button loading type="primary">加载中</a-button>
+    <a-button
+              disabled
+              type="primary">禁用
+    </a-button>
+    <a-button
+              loading
+              type="primary">加载中
+    </a-button>
   </view>
 </view>
 <view class="example-box">
   <view class="example-box-title">开放能力</view>
   <view class="example-box-content">
-    <a-button open-type="contact" type="primary">contact</a-button>
-    <a-button open-type="getUserInfo" type="primary">getUserInfo</a-button>
-    <a-button open-type="getPhoneNumber" type="primary">getPhoneNumber</a-button>
-    <a-button open-type="openSetting" type="primary">openSetting</a-button>
-    <a-button open-type="launchApp" type="primary">launchApp</a-button>
+    <a-button
+              open-type="contact"
+              type="primary">contact
+    </a-button>
+    <a-button
+              open-type="getUserInfo"
+              type="primary"
+              bind:getuserinfo="getUserInfo">getUserInfo
+    </a-button>
+    <a-button
+              open-type="getPhoneNumber"
+              type="primary"
+              bind:getphonenumber="getPhoneNumber">getPhoneNumber
+    </a-button>
+    <a-button
+              open-type="openSetting"
+              type="primary">openSetting
+    </a-button>
+    <a-button
+              open-type="launchApp"
+              type="primary"
+              bind:error="handleError">launchApp
+    </a-button>
   </view>
 </view>
+<a-dialog dialogData="{{ dialogData }}">
+  <image
+         src="{{ userInfo.avatarUrl }}"
+         class="avatar" />
+  <view>{{ userInfo.nickName }}</view>
+</a-dialog>
+

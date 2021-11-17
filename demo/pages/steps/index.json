@@ -1,6 +1,7 @@
 {
   "navigationBarTitleText": "Steps",
   "usingComponents": {
-    "a-steps": "../../components/Steps/index"
+    "a-steps": "../../components/Steps/index",
+    "a-button": "../../components/Button/index"
   }
 }

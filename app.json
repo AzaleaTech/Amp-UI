@@ -45,7 +45,7 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
+    "navigationBarTitleText": "wxcom",
     "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json"

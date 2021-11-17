@@ -1,11 +1,7 @@
 Page({
   data: {
     isCropper: false,
-    img: '',
-  },
-
-  onLoad(e) {
-    this.setData({ img: e.img });
+    imgUrl: '/demo/assets/images/test-avatar.jpg',
   },
 
   handleClick() {
@@ -17,6 +13,7 @@ Page({
       toastData: {
         content: '裁剪成功',
       },
+      imgUrl: e.detail.value,
       isCropper: false,
     });
   },

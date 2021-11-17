@@ -14,3 +14,6 @@ page {
   padding: 20rpx 30rpx;
   background-color: #ffffff;
 }
+.extra {
+  width: 100%;
+}

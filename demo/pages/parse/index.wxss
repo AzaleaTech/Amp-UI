@@ -7,7 +7,7 @@ page {
 }
 .example-box-title {
   margin: 20rpx 30rpx;
-  color: #2f2f2f;
+  color: #525252;
   font-weight: 700;
 }
 .example-box-content {

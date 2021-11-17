@@ -1,11 +1,13 @@
+const data = {
+  background: 'white',
+  color: 'black',
+  title: '标题栏',
+  hasReturn: false,
+  hasHome: false,
+};
+
 Page({
-  data: {
-    background: 'white',
-    color: 'black',
-    hasReturn: true,
-    title: 'Header',
-    hasHome: false,
-  },
+  data,
 
   handleBackground() {
     this.setData({
@@ -42,7 +44,7 @@ Page({
 
   handleTitle() {
     this.setData({
-      title: this.data.title === 'Header' ? 'Header1' : 'Header',
+      title: this.data.title === '标题栏' ? '标题栏1' : '标题栏',
     });
   },
 
@@ -50,5 +52,9 @@ Page({
     wx.redirectTo({
       url: '/demo/pages/index/index',
     });
+  },
+
+  handleReset() {
+    this.setData({ ...data });
   },
 });

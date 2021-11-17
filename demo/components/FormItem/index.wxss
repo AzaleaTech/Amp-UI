@@ -4,7 +4,7 @@
 }
 .form-container .form-warning-message {
   min-height: 24rpx;
-  color: #ed4114;
+  color: #e07477;
   font-size: 24rpx;
 }
 .form-item {
@@ -25,6 +25,7 @@
 .form-item-label {
   display: inline;
   margin-right: 10px;
+  min-width: 100rpx;
   font-weight: 700;
   font-size: 32rpx;
 }

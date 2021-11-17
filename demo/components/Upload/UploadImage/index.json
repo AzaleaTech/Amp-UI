@@ -1,6 +1,7 @@
 {
   "component": true,
   "usingComponents": {
-    "cropper": "../../Cropper/index"
+    "a-icon": "../../Icon/Icon",
+    "a-cropper": "../../Cropper/index"
   }
 }
