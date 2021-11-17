@@ -1,7 +1,13 @@
 <view
       class="a-class radio"
       catch:tap="handleChange">
-  <view class="radio-dot {{ checked ? 'radio-dot-checked' : '' }}  {{ disabled ? 'radio-dot-disabled': '' }} radio-dot-{{ position }}"></view>
+  <view
+        class="radio-circle {{ checked ? 'radio-circle-checked' : '' }}  {{ disabled ? 'radio-circle-disabled': '' }} radio-circle-{{ position }} "
+        style="{{ color ? 'border-color:' + color : '' }}">
+    <view
+          class="{{ checked ? 'radio-circle-dot-checked' : '' }}"
+          style="{{ color ? 'background-color:' + color : '' }}"></view>
+  </view>
   <view class="radio-title">{{ value }}</view>
 </view>
 

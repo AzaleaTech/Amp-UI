@@ -1,17 +1,25 @@
 Page({
   data: {
-    value1: '选项一',
-    value2: '选项二',
-    value3: '选项三',
+    value1: '单选项一',
+    value2: '单选项二',
     checked1: false,
     checked2: true,
-    checked3: true,
-    current: '选项一',
+    color1: true,
+    color2: true,
+    current: '单选项一',
   },
 
   handleChange(e) {
     const { index } = e.currentTarget.dataset;
     const temp = `checked${index}`;
+    this.setData({
+      [temp]: !this.data[temp],
+    });
+  },
+
+  handleColorChange(e) {
+    const { index } = e.currentTarget.dataset;
+    const temp = `color${index}`;
     this.setData({
       [temp]: !this.data[temp],
     });

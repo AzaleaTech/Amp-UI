@@ -52,16 +52,10 @@ Page({
         data: [{ label: 'Echarts 图表', url: '/demo/subPages/echarts/index/index' }],
       },
     ],
-    //用于图片剪裁
-    img: '/demo/assets/images/test-avatar.jpg',
   },
 
   handleClickFormItem(e) {
-    if (e.currentTarget.dataset.label.includes('Cropper 图片裁剪组件')) {
-      wx.navigateTo({
-        url: e.currentTarget.dataset.url + `?img=${this.data.img}`,
-      });
-    }
-    wx.navigateTo({ url: e.currentTarget.dataset.url });
+    const { url } = e.currentTarget.dataset;
+    wx.navigateTo({ url });
   },
 });

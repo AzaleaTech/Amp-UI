@@ -14,16 +14,19 @@
     <button bind:tap="handleColor">点击改变字体颜色</button>
   </view>
   <view class="example-box-content">
-    <button bind:tap="handleReturn">是否有返回按钮</button>
+    <button bind:tap="handleReturn">只有返回按钮</button>
   </view>
   <view class="example-box-content">
-    <button bind:tap="handleHome">是否有首页按钮</button>
+    <button bind:tap="handleHome">只有首页按钮</button>
   </view>
   <view class="example-box-content">
-    <button bind:tap="handleBoth">是否有返回及首页按钮</button>
+    <button bind:tap="handleBoth">同时存在返回及首页按钮</button>
   </view>
   <view class="example-box-content">
     <button bind:tap="handleTitle">点击改变标题</button>
+  </view>
+  <view class="example-box-content">
+    <button bind:tap="handleReset">重置</button>
   </view>
 </view>
 

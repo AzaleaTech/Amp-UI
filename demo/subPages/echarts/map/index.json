@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "Echarts-map",
+  "navigationBarTitleText": "echarts-map",
   "usingComponents": {
     "a-echart": "../../components/Echarts/index"
   }

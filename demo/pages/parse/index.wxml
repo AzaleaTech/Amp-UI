@@ -2,6 +2,10 @@
   <view class="example-box-title">基本使用</view>
   <view class="example-box-content">
     <a-parse nodes="{{ node1 }}"></a-parse>
+    <a-button
+              type="primary"
+              bind:click="handleClick">查看源码
+    </a-button>
   </view>
   <view class="example-box-title">外部链接跳转</view>
   <view class="example-box-content">

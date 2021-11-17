@@ -44,14 +44,6 @@ Component({
     },
   },
 
-  lifetimes: {
-    ready() {
-      if (!this.properties.labelAlign) {
-        this.setData({ labelAlign: 'left' });
-      }
-    },
-  },
-
   methods: {
     handleTap() {
       this.triggerEvent('click');

@@ -1,7 +1,20 @@
 <view class="title">WXCOM组件库DEMO</view>
-<view wx:for="{{ components }}" wx:key="index" class="category">
-  <view class="category-title">{{ item.title }}</view>
-  <a-form label-width="600" class="category-item">
-    <a-form-item wx:for="{{ item.data }}" wx:key="index" label="{{ item.label }}" footerArrow data-label="{{ item.label }}" data-url="{{ item.url }}" bind:click="handleClickFormItem"></a-form-item>
+<view
+      wx:for="{{ components }}"
+      wx:key="index"
+      class="category">
+  <view class="category-title">{{ item.title }}组件</view>
+  <a-form
+          label-width="600"
+          class="category-item">
+    <a-form-item
+                 wx:for="{{ item.data }}"
+                 wx:key="index"
+                 label="{{ item.label }}"
+                 footerArrow
+                 data-label="{{ item.label }}"
+                 data-url="{{ item.url }}"
+                 bind:click="handleClickFormItem"></a-form-item>
   </a-form>
 </view>
+

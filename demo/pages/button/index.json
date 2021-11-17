@@ -1,6 +1,7 @@
 {
   "navigationBarTitleText": "Button",
   "usingComponents": {
-    "a-button": "../../components/Button/index"
+    "a-button": "../../components/Button/index",
+    "a-dialog": "../../components/Modal/Dialog/index"
   }
 }

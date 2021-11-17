@@ -2,16 +2,16 @@ Page({
   data: {
     content: [
       {
-        title: '测试标题1',
-        value: '测试内容1',
+        title: '标题2-1',
+        value: '内容2-1',
       },
       {
-        title: '测试标题2',
-        value: '测试内容2',
+        title: '标题2-2',
+        value: '内容2-2',
       },
       {
-        title: '测试标题3',
-        value: '测试内容3',
+        title: '标题2-3',
+        value: '内容2-3',
       },
     ],
   },

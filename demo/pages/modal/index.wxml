@@ -27,9 +27,9 @@
   <view class="example-box-content">
     <button bind:tap="handleErrorToast">显示error提示信息</button>
   </view>
-  <view class="example-box-title">显示waring提示信息</view>
+  <view class="example-box-title">显示warning提示信息</view>
   <view class="example-box-content">
-    <button bind:tap="handleWarningToast">显示waring提示信息</button>
+    <button bind:tap="handleWarningToast">显示warning提示信息</button>
   </view>
   <!-- 显示遮罩层 -->
   <view wx:if="{{ showModal }}">
@@ -40,8 +40,8 @@
     <a-dialog dialogData="{{ dialogData }}">
       <!-- 插槽部分 -->
       <image
-             class="extra"
              src="{{ dialogData.extra }}"
+             class="extra"
              catch:tap="handleImage" />
     </a-dialog>
   </view>

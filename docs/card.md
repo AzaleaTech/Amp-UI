@@ -10,11 +10,51 @@
 
 ```html
 基础用法
-<a-card title="标题"></a-card>
-<a-card img-url="{{ imgUrl }}"></a-card>
+<a-card title="card标题" imgUrl="{{ imgUrl }}">
+  <view slot="content">
+    <view>{{ content1 }}</view>
+    <view>{{ content2 }}</view>
+  </view>
+</a-card>
 
-图片预览
-<a-card img-url="{{ imgUrl }}" preview></a-card>
+左侧图片支持预览
+<a-card title="card标题" imgUrl="{{ imgUrl }}" preview bind:click="handleClickCard">
+  <view slot="content">
+    <view>{{ content1 }}</view>
+    <view>{{ content2 }}</view>
+  </view>
+</a-card>
+
+带头部及尾部内容
+<a-card title="card标题" imgUrl="{{ imgUrl }}" preview bind:click="handleClickCard">
+  <view slot="header" class="card-header">{{ time }} </view>
+  <view slot="content">
+    <view>{{ content1 }}</view>
+    <view>{{ content2 }}</view>
+  </view>
+  <view slot="footer" class="card-footer" catch:tap="handelClickBtn">
+    <a-button type="primary" size="small">操作按钮 </a-button>
+  </view>
+</a-card>
+```
+
+```js
+Page({
+  data: {
+    imgUrl: '/demo/assets/images/test-avatar.jpg',
+    time: '2021-10-10 10:10:10',
+    content1: '文本内容1',
+    content2: '文本内容2',
+  },
+
+  handleClickCard() {
+    wx.showToast({ title: '点击卡片' });
+  },
+
+  handelClickBtn() {
+    wx.showToast({ title: '点击按钮' });
+  },
+});
 ```
 
 ## API

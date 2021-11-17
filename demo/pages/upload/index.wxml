@@ -1,5 +1,5 @@
 <view class="example-box">
-  <view class="example-box-title">上传图片,limit为2,size为500,可裁剪</view>
+  <view class="example-box-title">上传图片,limit为2,size为500kb,可裁剪</view>
   <view class="example-box-content">
     <a-upload-image
                     imgs="{{ imgs }}"

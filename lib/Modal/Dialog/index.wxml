@@ -15,14 +15,14 @@
     <view class="dialog-btn">
       <a-button
                 wx:if="{{ dialogData.cancelText }}"
-                inline
+                inline="{{ dialogData.confirmText ? true : false }}"
                 catch:click="cancel">
         <text>{{ dialogData.cancelText }}</text>
       </a-button>
       <a-button
                 wx:if="{{ dialogData.confirmText }}"
                 type="primary"
-                inline
+                inline="{{ dialogData.cancelText ? true : false }}"
                 catch:click="confirm">
         {{ dialogData.confirmText || '确认' }}
       </a-button>
