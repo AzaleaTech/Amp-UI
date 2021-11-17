@@ -2,13 +2,14 @@
   <view class="example-box-title">顶部吸附</view>
   <a-tabs
           tabList="{{ staticTabs }}"
+          ceiling
           current="{{ currentTab }}"
-          ceiling="{{ ceiling }}">
+          class="tabs"
+          bind:change="handleSwitchTab">
     <a-card
-            wx:for="{{ [0,0,0,0,0,0] }}"
+            wx:for="{{ 8 }}"
             wx:key="index"
-            title="{{ card.title }}"
-            contents="{{ card.contents }}"
+            title="{{ card.title + (currentTab + 1) }}"
             imgUrl="{{ card.imgUrl }}"></a-card>
   </a-tabs>
 </view>

@@ -6,11 +6,17 @@ page {
   margin-bottom: 20rpx;
 }
 .example-box-title {
-  margin: 20rpx 0 20rpx 30rpx;
-  color: #2f2f2f;
+  margin: 20rpx 30rpx;
+  color: #525252;
   font-weight: 700;
 }
 .example-box-content {
   padding: 20rpx 30rpx;
   background-color: #ffffff;
+}
+.avatar {
+  margin: 30rpx auto;
+  border-radius: 50%;
+  width: 200rpx;
+  height: 200rpx;
 }

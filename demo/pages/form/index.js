@@ -8,7 +8,10 @@ Page({
     wx.showToast({ title: '点击表单项' });
   },
 
-  blur(e) {
-    console.log('e', e);
+  handlePickerChange(e) {
+    const { value } = e.detail;
+    this.setData({
+      value,
+    });
   },
 });

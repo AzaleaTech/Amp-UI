@@ -1,6 +1,7 @@
 {
   "navigationBarTitleText": "Parse",
   "usingComponents": {
-    "a-parse": "../../components/Parse/index"
+    "a-parse": "../../components/Parse/index",
+    "a-button": "../../components/Button/index"
   }
 }

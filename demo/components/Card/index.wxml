@@ -1,6 +1,6 @@
 <view
       class="a-class card"
-      catch:tap="handleTap">
+      bind:tap="handleTap">
   <view class="card-header">
     <slot name="header"></slot>
   </view>

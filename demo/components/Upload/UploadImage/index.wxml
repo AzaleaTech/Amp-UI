@@ -20,14 +20,18 @@
         class="img-box"
         style="width: {{ width }}rpx; height: {{ height }}rpx"
         bind:tap="chooseImage">
-    <image src="../images/default-image.png" />
+    <a-icon
+            name="photograph_line"
+            size="80"
+            color="#929292"></a-icon>
+    上传图片
   </view>
 </view>
 <view wx:if="{{ showCropper }}">
-  <cropper
-           imgUrl="{{ imgUrl }}"
-           ratio="{{ 690 / 400 }}"
-           bind:cancel="handleCancel"
-           bind:save="handleSave" />
+  <a-cropper
+             imgUrl="{{ imgUrl }}"
+             ratio="{{ 690 / 400 }}"
+             bind:cancel="handleCancel"
+             bind:save="handleSave"></a-cropper>
 </view>
 

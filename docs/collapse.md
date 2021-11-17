@@ -2,40 +2,73 @@
 
 ## 概述
 
-折叠列表
+用于内容区域折叠/展开。
 
 ## 示例
 
 ```html
 非手风琴模式
-<a-collapse value="{{ names }}" bind:open="handleOpen" bind:close="handleClose">
-  <a-collapse-item name="name1" title="标题1">
-    <a-icon name="icon" slot="icon-left"></a-icon>
+<a-collapse>
+  <a-collapse-item name="标题1" title="标题1" value="文本内容">
+    <view slot="content">
+      <view>文本内容1</view>
+    </view>
   </a-collapse-item>
-
-  <a-collapse-item name="name2" title="标题2" value="详情">
-    <a-icon name="arrow" slot="icon-right"></a-icon>
+  <a-collapse-item
+    name="标题2"
+    title="标题2"
+    value="content内容列表"
+    content="{{ content }}"
+    bind:click="handleClick"
+  />
+  <a-collapse-item name="标题3" title="标题3" value="自定义标题">
+    <a-icon slot="icon-left" name="star_fill" class="icon-left" />
+    <a-icon slot="icon-right" name="star_fill" class="icon-right" />
+    <view slot="content">
+      <view>文本内容3</view>
+    </view>
   </a-collapse-item>
-
-  <a-collapse-item name="name3" disabled>
-    <a-list-item slot="content"></a-list-item>
+  <a-collapse-item disabled name="标题1" title="标题1" value="禁用展开">
+    <view slot="content">
+      <view>文本内容4</view>
+    </view>
   </a-collapse-item>
 </a-collapse>
 
 手风琴模式
-<a-collapse accordion value="{{ name }}" bind:open="handleOpen" bind:close="handleClose">
-  <a-collapse-item name="name1" title="标题1">
-    <a-icon name="icon" slot="icon-left"></a-icon>
-  </a-collapse-item>
-
-  <a-collapse-item name="name2" title="标题2" value="详情">
-    <a-icon name="arrow" slot="icon-right"></a-icon>
-  </a-collapse-item>
-
-  <a-collapse-item name="name3" disabled>
-    <a-list-item slot="content"></a-list-item>
+<a-collapse accordion>
+  <a-collapse-item
+    wx:for="{{ 3 }}"
+    wx:key="index"
+    name="{{ '标题'+ (index + 1) }}"
+    title="{{ '标题'+ (index + 1) }}"
+  >
+    <view slot="content">
+      <view>文本内容 {{ index + 1 }}</view>
+    </view>
   </a-collapse-item>
 </a-collapse>
+```
+
+```js
+Page({
+  data: {
+    content: [
+      {
+        title: '标题2-1',
+        value: '内容2-1',
+      },
+      {
+        title: '标题2-2',
+        value: '内容2-2',
+      },
+      {
+        title: '标题2-3',
+        value: '内容2-3',
+      },
+    ],
+  },
+});
 ```
 
 ## API

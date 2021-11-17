@@ -1,84 +1,72 @@
 <view class="example-box">
-  <view class="example-box-title">标签设置</view>
-  <a-form-item
-               label="标签宽度"
-               labelWidth="160"></a-form-item>
-  <a-form-item
-               label="标签颜色"
-               labelWidth="160"
-               labelColor="rgba(60, 160, 255, 1)"></a-form-item>
-  <a-form-item
-               label="标签布局"
-               labelWidth="160"
-               labelAlign="justify"></a-form-item>
-</view>
-<view class="example-box">
-  <view class="example-box-title">校验设置</view>
-  <a-form-item
-               label="必填项"
-               required></a-form-item>
-  <a-form-item
-               label="警告信息"
-               warningMessage="数据格式错误"></a-form-item>
-</view>
-<view class="example-box">
-  <view class="example-box-title">附加设置</view>
-  <a-form-item
-               label="带图标表单项"
-               iconUrl="/demo/assets/images/test-avatar.jpg"></a-form-item>
-  <a-form-item
-               label="尾部信息及箭头"
-               footer="详情"
-               footerArrow></a-form-item>
-  <a-form-item
-               label="点击事件"
-               footerArrow
-               bind:click="handleClickFormItem"></a-form-item>
-</view>
-<view class="example-box">
-  <view class="example-box-title">表单统一设置</view>
+  <view class="example-box-title">Form 统一标签对齐方式（justify）</view>
   <a-form
-          labelWidth="160"
-          labelColor="rgba(60, 160, 255, 1)"
-          labelAlign="justify">
-    <a-form-item label="表单项"></a-form-item>
-    <a-form-item label="表单项"></a-form-item>
+          label-width="160"
+          label-align="justify">
+    <a-form-item label="标签1"></a-form-item>
+    <a-form-item label="标签2"></a-form-item>
+  </a-form>
+  <view class="example-box-title">FormItem 标签对齐方式（left、right、justify）</view>
+  <a-form>
+    <a-form-item label="左对齐"></a-form-item>
+    <a-form-item
+                 label="右对齐"
+                 label-width="160"
+                 label-align="right"></a-form-item>
+    <a-form-item
+                 label="居中对齐"
+                 label-width="160"
+                 label-align="justify"></a-form-item>
+  </a-form>
+  <view class="example-box-title">标签文本颜色</view>
+  <a-form label-align="left">
+    <a-form-item
+                 label="#3895F7"
+                 label-color="#3895F7"></a-form-item>
+    <a-form-item
+                 label="#FFB500"
+                 label-color="#FFB500"></a-form-item>
   </a-form>
 </view>
 <view class="example-box">
-  <view class="example-box-title">配合小程序输入组件</view>
+  <view class="example-box-title">校验设置</view>
+  <a-form>
+    <a-form-item
+                 label="必填项"
+                 required></a-form-item>
+    <a-form-item
+                 label="警告信息"
+                 warning-message="数据格式错误"></a-form-item>
+  </a-form>
+</view>
+<view class="example-box">
+  <view class="example-box-title">附加设置（图标、箭头）</view>
+  <a-form>
+    <a-form-item
+                 label="带图标表单项"
+                 icon-url="/demo/assets/images/test-avatar.jpg"></a-form-item>
+    <a-form-item
+                 label="尾部信息及箭头"
+                 footer="详情"
+                 footer-arrow
+                 bind:click="handleClickFormItem"></a-form-item>
+  </a-form>
+</view>
+<view class="example-box">
+  <view class="example-box-title">结合其他表单输入组件</view>
   <a-form
-          labelWidth="120"
+          labelWidth="160"
           labelAlign="left">
     <a-form-item label="Input">
       <input placeholder="请输入文字" />
     </a-form-item>
-    <a-form-item label="可清除Input">
-      <a-input
-               a-class="red-text"
-               placeholder="请输入文字"
-               placeholder-style="color:rgba(255,182,185,1.0);"
-               bind:blur="blur" />
-    </a-form-item>
     <a-form-item label="Picker">
       <picker
-              style="width: 100%"
               range="{{ range }}"
-              value="{{ value }}">{{ value }}
+              value="{{ value }}"
+              bind:change="handlePickerChange">{{ value }}
       </picker>
     </a-form-item>
   </a-form>
-</view>
-<view class="example-box">
-  <view class="example-box-title">复合表单项</view>
-  <a-form-item
-               label="复合表单项"
-               footer="详情"
-               iconUrl="/demo/assets/images/test-avatar.jpg"
-               warningMessage="数据格式错误"
-               footerArrow
-               required>
-    <input placeholder="请输入文字" />
-  </a-form-item>
 </view>
 

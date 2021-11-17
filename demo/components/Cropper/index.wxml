@@ -1,4 +1,4 @@
-<modal>
+<a-modal>
   <view class="container">
     <view class="cropper">
       <view class="cropper-box">
@@ -42,11 +42,10 @@
                     bind:click="handleCrop">
             <text>裁切图片</text>
           </a-button>
-          <a-button bind:click="handleCancel">取消
-          </a-button>
+          <a-button bind:click="handleCancel">取消</a-button>
         </block>
       </view>
     </view>
   </view>
-</modal>
+</a-modal>
 

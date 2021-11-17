@@ -2,6 +2,6 @@
   "component": true,
   "usingComponents": {
     "a-button": "../Button/index",
-    "modal": "../Modal/index/index"
+    "a-modal": "../Modal/index/index"
   }
 }

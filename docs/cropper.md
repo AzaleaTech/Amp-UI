@@ -31,3 +31,7 @@
 | save   | 裁剪后保存图片 | { file, fileName } |
 
 ## 常见问题
+
+Q:tempFilePath 无法作为 img 标签的 src 属性显示图片。
+
+A:使用本地图片而非网络图片

@@ -1,12 +1,17 @@
 Page({
   data: {
-    checked: true,
-    checked1: false
+    checked1: true,
+    checked2: true,
+    checked3: true,
+    checked4: false,
   },
 
   handleChange(e) {
+    const { index } = e.currentTarget.dataset;
+    const { value } = e.detail;
+
     this.setData({
-      checked: e.detail.value
-    })
+      ['checked' + index]: value,
+    });
   },
 });

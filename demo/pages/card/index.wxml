@@ -1,26 +1,46 @@
 <view class="example-box">
   <view class="example-box-title">基本使用</view>
   <a-card
-          title="card测试"
-          imgUrl="{{ card.imgUrl }}"
-          preview="{{ true }}"
+          title="card标题"
+          imgUrl="{{ imgUrl }}"
+          bind:click="handleClickCard">
+    <view slot="content">
+      <view>{{ content1 }}</view>
+      <view>{{ content2 }}</view>
+    </view>
+  </a-card>
+  <view class="example-box-title">左侧图片支持预览</view>
+  <a-card
+          title="card标题"
+          imgUrl="{{ imgUrl }}"
+          preview
+          bind:click="handleClickCard">
+    <view slot="content">
+      <view>{{ content1 }}</view>
+      <view>{{ content2 }}</view>
+    </view>
+  </a-card>
+  <view class="example-box-title">带头部及尾部内容</view>
+  <a-card
+          title="card标题"
+          imgUrl="{{ imgUrl }}"
+          preview
           bind:click="handleClickCard">
     <view
           slot="header"
-          class="card-header">2021-10-10 10:10:10
+          class="card-header">{{ time }}
     </view>
     <view slot="content">
-      <view>
-        <view>测试内容</view>
-        <view>测试内容</view>
-      </view>
+      <view>{{ content1 }}</view>
+      <view>{{ content2 }}</view>
     </view>
     <view
           slot="footer"
-          class="card-footer">
+          class="card-footer"
+          catch:tap="handelClickBtn">
       <a-button
                 type="primary"
-                size="mini">测试按钮
+                size="small">操作按钮
       </a-button>
     </view>
   </a-card>

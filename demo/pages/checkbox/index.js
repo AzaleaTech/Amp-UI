@@ -6,12 +6,22 @@ Page({
     checked1: false,
     checked2: true,
     checked3: true,
+    color1: true,
+    color2: true,
     current: ['选项一', '选项二', '选项三'],
   },
 
   handleChange(e) {
     const { index } = e.currentTarget.dataset;
     const temp = `checked${index}`;
+    this.setData({
+      [temp]: !this.data[temp],
+    });
+  },
+
+  handleColorChange(e) {
+    const { index } = e.currentTarget.dataset;
+    const temp = `color${index}`;
     this.setData({
       [temp]: !this.data[temp],
     });
