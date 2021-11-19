@@ -3,9 +3,11 @@
 ## 项目目标
 
 ### 短期目标
+
 针对我司业务场景中高频使用的组件,结合微信小程序自定义组件特性，沉淀开发出一套简洁、易用、高效的组件库，兼容不同场景下的各类功能模块，以达到提高工作效率，提升工作体验的目的。
 
 ### 长期目标
+
 内部使用无碍且短期目标基本达到后，将代表研发部对外进行开源，分享至业内，为前端技术生态做出我们的贡献。
 
 ## 功能特性
@@ -101,7 +103,6 @@ npm run build / yarn build
 - 全局图标替换
 - demo 的进一步完善
 
-
 ## 贡献代码
 
 代码基于 develop 分支开发，欢迎提交 Merge Request 进行代码贡献。
@@ -109,4 +110,4 @@ npm run build / yarn build
 
 ## License
 
-[MIT License](https://opensource.org/licenses/MIT)© 2021
+[MIT License](./LICENSE)© 2021
