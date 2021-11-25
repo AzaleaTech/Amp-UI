@@ -70,13 +70,7 @@ Component({
         success: (res) => {
           // 判断上传视频大小
           if (this.properties.size > 0) {
-            let overLimit = false;
-            res.tempFiles.forEach((item) => {
-              if (item.size > this.properties.size * 1024 * 1024) {
-                overLimit = true;
-              }
-            });
-            if (overLimit) {
+            if (res.size > this.properties.size * 1024 * 1024) {
               this.triggerEvent('change', {
                 status: 'error',
                 msg: `上传的视频大小不得超过${this.properties.size}MB`,
@@ -84,7 +78,7 @@ Component({
               return;
             }
           }
-          this.data.videoList = this.data.videoList.concat(res.tempFilePaths);
+          this.data.videoList = this.data.videoList.concat(res.tempFilePath);
           this.setData({
             videoList: this.data.videoList,
           });
