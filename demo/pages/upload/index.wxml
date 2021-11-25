@@ -3,7 +3,6 @@
   <view class="example-box-content">
     <a-upload-image
                     imgs="{{ imgs }}"
-                    isCropped
                     limit="{{ 2 }}"
                     size="{{ 500 }}"
                     bind:change="handleCropperImageChange" />
@@ -12,8 +11,8 @@
   <view class="example-box-content">
     <a-upload-video
                     videos="{{ videos }}"
-                    bind:choose="handleChooseVideo"
-                    bind:remove="handleRemoveVideo" />
+                    size="{{ 30 }}"
+                    bind:change="handleChooseVideo" />
   </view>
 </view>
 <a-toast toastData="{{ toastData }}" />
