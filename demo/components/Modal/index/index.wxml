@@ -1,4 +1,6 @@
-<view class="modal">
+<view
+      class="modal"
+      catchtouchmove="true">
   <slot></slot>
 </view>
 
