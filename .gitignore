@@ -19,3 +19,10 @@ yarn.lock
 project.private.config.json
 test/
 lib/**/*.wxss
+
+# lib build
+dist
+
+# docs build
+docs-dist
+

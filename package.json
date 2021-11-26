@@ -22,12 +22,15 @@
     "gulp-uglify": "^3.0.2",
     "gulp-util": "^3.0.8",
     "mini-program-iconfont-cli": "^0.6.1",
-    "prettier": "^2.2.1"
+    "prettier": "^2.2.1",
+    "vuepress": "^2.0.0-beta.27"
   },
   "scripts": {
     "dev": "gulp -f build/gulp-dev.js",
     "build": "gulp -f build/gulp-prod.js",
-    "ci-publish": "ci-publish"
+    "ci-publish": "ci-publish",
+    "docs:dev": "vuepress dev",
+    "docs:build": "vuepress build"
   },
   "repository": {
     "type": "git",
