@@ -3,6 +3,8 @@
  * 详细参考https://developers.weixin.qq.com/miniprogram/dev/component/input.html
  */
 Component({
+  externalClasses: ['a-class'],
+
   properties: {
     /**
      * 输入框的唯一标识符，用于表单提交时
@@ -11,6 +13,7 @@ Component({
       type: String,
       value: 'input',
     },
+
     /**
      * Input内容
      */
@@ -18,6 +21,7 @@ Component({
       type: String,
       value: '',
     },
+
     /**
      * input的类型，原生属性
      */
@@ -25,6 +29,7 @@ Component({
       type: String,
       value: 'text',
     },
+
     /**
      * 提示信息
      */
@@ -32,6 +37,7 @@ Component({
       type: String,
       value: undefined,
     },
+
     /**
      * 最大输入长度，原生属性，-1时不限制最大长度
      */
@@ -39,6 +45,7 @@ Component({
       type: Number,
       value: -1,
     },
+
     /**
      * 是否是密码类型，原生属性
      */
@@ -46,6 +53,7 @@ Component({
       type: Boolean,
       value: false,
     },
+
     /**
      * 是否禁用
      */
@@ -53,6 +61,7 @@ Component({
       type: Boolean,
       value: false,
     },
+
     /**
      * 是否可清除文本
      */
@@ -60,6 +69,7 @@ Component({
       type: Boolean,
       value: true,
     },
+
     /**
      * 是否获取焦点，原生属性
      */
@@ -67,6 +77,7 @@ Component({
       type: Boolean,
       value: true,
     },
+
     /**
      * 键盘右下角的文字，默认'done',可选'send','search','next','go'，原生属性
      */
@@ -74,6 +85,7 @@ Component({
       type: String,
       value: 'done',
     },
+
     /**
      * input样式, 默认width为90%
      */
@@ -81,6 +93,7 @@ Component({
       type: String,
       value: '',
     },
+
     /**
      * 占位符的样式，原生属性
      */
@@ -90,25 +103,33 @@ Component({
     },
   },
 
-  externalClasses: ['a-class'],
-
   methods: {
     handleChange(e) {
       const value = e.detail.value ? e.detail.value : '';
+
       this.setData({
         value,
       });
-      this.triggerEvent('change', { value });
+
+      this.triggerEvent('change', {
+        value,
+      });
     },
 
     handleBlur(e) {
       const value = e.detail.value ? e.detail.value : '';
-      this.triggerEvent('blur', { value });
+
+      this.triggerEvent('blur', {
+        value,
+      });
     },
 
     handleFocus(e) {
       const value = e.detail.value ? e.detail.value : '';
-      this.triggerEvent('focus', { value });
+
+      this.triggerEvent('focus', {
+        value,
+      });
     },
   },
 });

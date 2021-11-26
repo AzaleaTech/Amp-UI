@@ -1,5 +1,5 @@
 <view
-      class="player-container"
+      class="a-player"
       catch:tap="tapPlayer">
   <image src="./images/player-base.png" />
   <image

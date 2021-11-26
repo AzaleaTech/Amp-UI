@@ -1,9 +1,9 @@
 <a-modal wx:if="{{ show }}">
-  <view class="toast-modal-body">
+  <view class="a-toast">
     <image
            src="./images/{{ toastData.type || 'success' }}.png"
-           class="toast-modal-img" />
-    <view class="toast-modal-content">{{ toastData.content }}</view>
+           class="a-toast-img" />
+    <view class="a-toast-content">{{ toastData.content }}</view>
   </view>
 </a-modal>
 

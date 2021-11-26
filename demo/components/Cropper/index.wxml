@@ -1,15 +1,15 @@
 <a-modal>
-  <view class="container">
-    <view class="cropper">
-      <view class="cropper-box">
+  <view class="a-container">
+    <view class="a-cropper">
+      <view class="a-cropper-box">
         <image
                wx:if="{{ croppedPic }}"
                src="{{ croppedPic }}"
-               class="show {{ circle ? 'cropper-circle' : '' }}"
+               class="a-cropper-img {{ circle ? 'a-cropper-circle' : '' }}"
                style="width: {{ cutWidth }}px; height: {{ cutWidth / ratio }}px" />
         <view
               wx:else
-              class="show {{ circle ? 'cropper-circle' : '' }}"
+              class="a-cropper-img {{ circle ? 'a-cropper-circle' : '' }}"
               style="width: {{ screenWidth }}px; height: {{ screenWidth / ratio }}px"
               bind:touchstart="handleStart"
               bind:touchmove="handleMove">
@@ -27,7 +27,7 @@
                   style="width: {{ width }}px; height: {{ height }}px" />
         </view>
       </view>
-      <view class="bottom">
+      <view class="a-cropper-footer">
         <block wx:if="{{ croppedPic }}">
           <a-button
                     type="primary"

@@ -1,6 +1,6 @@
 @import '../styles/_index.less';
 
-.tabs-container {
+.a-tabs-container {
   position: relative;
   width: 100%;
 
@@ -9,15 +9,19 @@
     top: 0;
     z-index: @z-index-tabbar;
   }
+
+  &-ceiling {
+    padding-top: 90rpx;
+  }
 }
 
-.tabs {
+.a-tabs {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: @bg-color;
 
-  .tab {
+  .a-tab {
     display: inline-flex;
     justify-content: center;
     flex: 1;
@@ -49,7 +53,7 @@
     display: inline-flex;
     padding: 0 30rpx;
 
-    .tab {
+    .a-tab {
       flex: 0;
       margin-right: 64rpx;
 
@@ -58,18 +62,14 @@
       }
     }
   }
-}
 
-.gradient {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: @z-index-mask;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), @bg-color, @bg-color);
+  &-gradient {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: @z-index-mask;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), @bg-color, @bg-color);
 
-  .set-size(30rpx, 90rpx);
-}
-
-.tab-panel-fixed {
-  padding-top: 90rpx;
+    .set-size(30rpx, 90rpx);
+  }
 }

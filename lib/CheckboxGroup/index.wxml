@@ -1,4 +1,4 @@
-<view class="a-class checkbox-group-{{ direction }}">
+<view class="a-class a-checkbox-group-{{ direction }}">
   <slot></slot>
 </view>
 

@@ -1,11 +1,11 @@
-.btn-group {
+.a-btn-group {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.btn-group a-button {
+.a-btn-group a-button {
   margin-right: 10px !important;
 }
-.btn-group-entire a-button {
+.a-btn-group-entire a-button {
   margin-right: 0 !important;
 }

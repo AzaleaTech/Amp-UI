@@ -1,23 +1,24 @@
 @import '../../styles/_index.less';
 
-.toast-modal {
-  &-body {
-    position: relative;
-    background: @white-color;
-    padding: 20rpx 30rpx;
-    border-radius: 12rpx;
-    margin: auto;
-    margin-top: 600rpx;
-    min-height: 40rpx;
-    width: fit-content;
-    max-width: 500rpx;
-    font-size: 28rpx;
-    .flex-center()
-  }
+.a-toast {
+  position: relative;
+  margin: auto;
+  margin-top: 600rpx;
+  padding: 20rpx 30rpx;
+  min-height: 40rpx;
+  max-width: 500rpx;
+  width: fit-content;
+  border-radius: 12rpx;
+  background: @white-color;
+  font-size: 28rpx;
+
+  .flex-center();
+
 
   &-img {
     margin-right: 20rpx;
     border-radius: 8rpx;
+
     .set-size(30rpx);
   }
 

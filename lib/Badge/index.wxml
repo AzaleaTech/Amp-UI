@@ -1,11 +1,11 @@
-<view class="a-class badge">
+<view class="a-class a-badge">
   <slot></slot>
   <view
-        class="badge-dot"
-        wx:if="{{ dot }}"></view>
+        wx:if="{{ dot }}"
+        class="a-badge-dot"></view>
   <view
-        class="badge-number"
-        wx:elif="{{ value !== 0 }}">{{ value > maxValue ? maxValue + '+' : value }}
+        wx:elif="{{ value !== 0 }}"
+        class="a-badge-number">{{ value > maxValue ? maxValue + '+' : value }}
   </view>
 </view>
 

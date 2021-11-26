@@ -1,9 +1,9 @@
-.avatar {
+.a-avatar {
   border-radius: 4px;
 }
-.avatar-border {
+.a-avatar-border {
   border: 1px solid #3895f7;
 }
-.avatar-circle {
+.a-avatar-circle {
   border-radius: 50%;
 }

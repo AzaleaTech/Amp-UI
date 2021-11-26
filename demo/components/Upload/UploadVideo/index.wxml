@@ -1,8 +1,8 @@
-<view class="video">
+<view class="a-upload-video">
   <view
         wx:for="{{ videos }}"
         wx:key="id"
-        class="video-box"
+        class="a-upload-video-box"
         style="width: {{ width }}rpx; height: {{ height }}rpx">
     <video
            show-center-play-btn="{{ false }}"
@@ -15,7 +15,7 @@
   </view>
   <view
         wx:if="{{ limit < 0 || videos.length < limit }}"
-        class="video-box"
+        class="a-upload-video-box"
         style="width: {{ width }}rpx; height: {{ height }}rpx"
         bind:tap="chooseVideo">
     <a-icon

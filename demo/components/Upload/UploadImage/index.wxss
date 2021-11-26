@@ -1,10 +1,10 @@
-.img {
+.a-upload-image {
   display: flex;
   flex-direction: row;
   width: 100%;
   flex-wrap: wrap;
 }
-.img-box {
+.a-upload-image-box {
   position: relative;
   flex-direction: column;
   margin: 30rpx 30rpx 0 0;
@@ -18,12 +18,12 @@
   width: 140rpx;
   height: 140rpx;
 }
-.img-box image:first-child {
+.a-upload-image-box image:first-child {
   border-radius: 8rpx;
   width: 100%;
   height: 100%;
 }
-.img-box .del-img {
+.a-upload-image-del {
   position: absolute;
   top: 0;
   right: 0;

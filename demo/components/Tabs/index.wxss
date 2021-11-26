@@ -1,19 +1,22 @@
-.tabs-container {
+.a-tabs-container {
   position: relative;
   width: 100%;
 }
-.tabs-container-fixed-top {
+.a-tabs-container-fixed-top {
   position: sticky;
   top: 0;
   z-index: 10;
 }
-.tabs {
+.a-tabs-container-ceiling {
+  padding-top: 90rpx;
+}
+.a-tabs {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #f4f5f6;
 }
-.tabs .tab {
+.a-tabs .a-tab {
   display: inline-flex;
   justify-content: center;
   flex: 1;
@@ -25,31 +28,31 @@
   white-space: nowrap;
   word-wrap: normal;
 }
-.tabs .tab-active {
+.a-tabs .a-tab-active {
   position: relative;
   box-sizing: border-box;
   color: #3895f7;
   font-size: 34rpx;
 }
-.tabs .tab-active::before {
+.a-tabs .a-tab-active::before {
   position: absolute;
   top: 84rpx;
   width: 60rpx;
   border-bottom: 6rpx solid #3895f7;
   content: '';
 }
-.tabs-scroll {
+.a-tabs-scroll {
   display: inline-flex;
   padding: 0 30rpx;
 }
-.tabs-scroll .tab {
+.a-tabs-scroll .a-tab {
   flex: 0;
   margin-right: 64rpx;
 }
-.tabs-scroll .tab:last-child {
+.a-tabs-scroll .a-tab:last-child {
   margin-right: 0;
 }
-.gradient {
+.a-tabs-gradient {
   position: absolute;
   top: 0;
   right: 0;
@@ -57,7 +60,4 @@
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #f4f5f6, #f4f5f6);
   width: 30rpx;
   height: 90rpx;
-}
-.tab-panel-fixed {
-  padding-top: 90rpx;
 }
