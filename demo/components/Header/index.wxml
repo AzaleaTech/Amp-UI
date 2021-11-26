@@ -1,16 +1,16 @@
-<view class="header-container">
+<view class="a-class a-header">
   <view
-        class="header-fixed"
+        class="a-header-fixed"
         style="background: {{ background }}">
     <view
-          class="status-bar"
+          class="a-header-box"
           style="height: {{ statusBarHeight }}px" />
     <view
-          class="title-bar"
-          style="height:44px;">
+          class="a-header-titles"
+          style="height: 44px;">
       <block wx:if="{{ hasReturn && !hasHome }}">
         <view
-              class="back-btn"
+              class="a-header-btn"
               style="left: {{ leftMargin }}px; width: {{ width }}px; height: {{ height }}px;"
               bind:tap="handleReturn">
           <image src="./images/return.png" />
@@ -18,7 +18,7 @@
       </block>
       <block wx:if="{{ !hasReturn && hasHome }}">
         <view
-              class="back-btn"
+              class="a-header-btn"
               style="left: {{ leftMargin }}px; width:{{ width }}px; height: {{ height }}px;"
               bind:tap="handleHome">
           <image
@@ -28,31 +28,30 @@
       </block>
       <block wx:if="{{ hasReturn && hasHome }}">
         <view
-              class="both"
+              class="a-header-btns"
               style="width: {{ width }}px; height:{{ height }}px; left:{{ leftMargin }}px">
           <image
                  src="./images/return.png"
                  bind:tap="handleReturn" />
           <view
-                class="line"
-                style="height: {{ height }}px;"> |
+                class="a-header-line"
+                style="height: {{ height }}px;">|
           </view>
           <image
                  src="./images/home.png"
                  mode="aspectFill"
-                 class="home"
                  bind:tap="handleHome" />
         </view>
       </block>
       <view
             style="color: {{ color }}"
-            class="title">
+            class="a-header-title">
         <text>{{ title }}</text>
       </view>
     </view>
   </view>
   <view
-        class="status-bar"
+        class="a-header-status-bar"
         style="height: {{ statusBarHeight + 44 }}px" />
 </view>
 

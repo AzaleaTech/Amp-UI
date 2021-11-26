@@ -1,4 +1,4 @@
-<view class="custom-input">
+<view class="a-class a-input">
   <input
          confirm-type="{{ confirmType }}"
          disabled="{{ disabled }}"
@@ -11,7 +11,6 @@
          style="{{ style }}"
          type="{{ type }}"
          value="{{ value }}"
-         class="a-class"
          bind:blur="handleBlur"
          bind:focus="handleFocus"
          bind:input="handleChange" />

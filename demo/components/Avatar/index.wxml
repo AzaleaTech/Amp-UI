@@ -1,6 +1,6 @@
 <image
        src="{{ src }}"
-       class="a-class avatar {{ circle ? 'avatar-circle' : '' }} {{ border ? 'avatar-border': '' }}"
+       class="a-class a-avatar {{ circle ? 'a-avatar-circle' : '' }} {{ border ? 'a-avatar-border': '' }}"
        style="width: {{ size }}rpx; height: {{ size }}rpx; border-color: {{ borderColor }}"
        bind:tap="handleClick"></image>
 

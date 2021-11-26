@@ -1,19 +1,19 @@
-<view class="a-class steps">
+<view class="a-class">
   <view
         wx:for="{{ steps }}"
         wx:key="index"
-        class="step step-{{ direction }}"
+        class="a-step a-step-{{ direction }}"
         style="width: {{ 100 / steps.length }}%">
-    <view class="step-head">
-      <view class="step-dot {{ current >= index ? 'step-dot-active' : ''}}"></view>
+    <view class="a-step-head">
+      <view class="a-step-dot {{ current >= index ? 'a-step-dot-active' : ''}}"></view>
       <view hidden="{{ steps.length - 1 === index }}">
-        <view class="step-line"></view>
-        <view class="step-line {{ current === index ? 'step-line-active' : ''}} {{ current > index ? 'step-line-actived' : '' }}"></view>
+        <view class="a-step-line"></view>
+        <view class="a-step-line {{ current === index ? 'a-step-line-active' : ''}} {{ current > index ? 'a-step-line-actived' : '' }}"></view>
       </view>
     </view>
-    <view class="step-body">
-      <view class="step-title {{ current === index ? 'step-title-active' : ''}}">{{ item.title || item }}</view>
-      <view class="step-desc">{{ item.desc || '' }}</view>
+    <view class="a-step-body">
+      <view class="a-step-title {{ current === index ? 'a-step-title-active' : ''}}">{{ item.title || item }}</view>
+      <view class="a-step-desc">{{ item.desc || '' }}</view>
     </view>
   </view>
 </view>

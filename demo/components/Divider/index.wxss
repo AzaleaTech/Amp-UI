@@ -1,4 +1,4 @@
-.divider {
+.a-divider {
   position: relative;
   width: 100%;
   color: #868686;
@@ -8,14 +8,14 @@
   align-items: center;
   justify-content: center;
 }
-.divider-line {
+.a-divider-line {
   position: absolute;
   top: 50%;
   left: 0;
   width: 100%;
   border-bottom: 1rpx solid #cccccc;
 }
-.divider-content {
+.a-divider-content {
   position: relative;
   z-index: 1;
   display: inline-flex;

@@ -1,45 +1,45 @@
-<view class="collapse-item">
+<view class="a-collapse-item">
   <view
-        class="collapse-item-header {{ !last || expand ? 'collapse-item-border' : '' }}"
+        class="a-collapse-item-header {{ !last || expand ? 'a-collapse-item-border' : '' }}"
         bind:tap="handleCollapseItem">
-    <view class="collapse-item-flex">
+    <view class="a-collapse-item-flex">
       <slot name="icon-left"></slot>
       <view wx:if="{{ title }}">{{ title }}</view>
       <slot name="icon-right"></slot>
     </view>
-    <view class="collapse-item-flex">
+    <view class="a-collapse-item-flex">
       <view wx:if="{{ value }}">{{ value }}</view>
       <image
              wx:if="{{ expand }}"
              src="./images/caret-up-icon.png"
-             class="collapse-item-icon" />
+             class="a-collapse-item-icon" />
       <image
              wx:else
              src="./images/caret-down-icon.png"
-             class="collapse-item-icon" />
+             class="a-collapse-item-icon" />
     </view>
   </view>
   <view
         wx:if="{{ expand }}"
-        class="collapse-item-content">
+        class="a-collapse-item-content">
     <block wx:if="{{ content.length > 0 }}">
       <view
             wx:for="{{ content }}"
             wx:key="index"
             data-item="{{ item }}"
-            class="collapse-item-content-list collapse-item-content-padding {{ !last ? 'collapse-item-border' : '' }}"
+            class="a-collapse-item-content-list a-collapse-item-content-padding {{ !last ? 'a-collapse-item-border' : '' }}"
             catch:tap="handleContent">
         <view>{{ item.title }}</view>
-        <view class="collapse-item-flex">
+        <view class="a-collapse-item-flex">
           <view>{{ item.value }}</view>
           <image
                  src="./images/arrow-right-icon.png"
-                 class="collapse-item-content-icon" />
+                 class="a-collapse-item-content-icon" />
         </view>
       </view>
     </block>
     <block wx:else>
-      <view class="collapse-item-content-padding {{ !last ? 'collapse-item-border' : '' }}">
+      <view class="a-collapse-item-content-padding {{ !last ? 'a-collapse-item-border' : '' }}">
         <slot name="content"></slot>
       </view>
     </block>

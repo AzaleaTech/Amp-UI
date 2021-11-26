@@ -1,12 +1,12 @@
-.custom-input {
+.a-input {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.custom-input input {
+.a-input input {
   width: 90%;
 }
-.custom-input image {
+.a-input image {
   width: 28rpx;
   height: 28rpx;
 }

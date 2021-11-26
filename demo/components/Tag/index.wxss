@@ -1,4 +1,4 @@
-.tag {
+.a-tag {
   display: inline-block;
   min-width: 40rpx;
   border: 2rpx solid #cccccc;
@@ -10,62 +10,62 @@
   height: 36rpx;
   line-height: 36rpx;
 }
-.tag-small {
+.a-tag-small {
   padding: 0 8rpx;
   height: 30rpx;
   line-height: 30rpx;
 }
-.tag-large {
+.a-tag-large {
   padding: 0 14rpx;
   height: 42rpx;
   line-height: 42rpx;
 }
-.tag-primary {
+.a-tag-primary {
   border: 1rpx solid #3895f7;
   background-color: #3895f7;
   color: #ffffff;
 }
-.tag-success {
+.a-tag-success {
   border: 1rpx solid #19be6b;
   background-color: #19be6b;
   color: #ffffff;
 }
-.tag-warning {
+.a-tag-warning {
   border: 1rpx solid #ffb500;
   background-color: #ffb500;
   color: #ffffff;
 }
-.tag-error {
+.a-tag-error {
   border: 1rpx solid #ed4114;
   background-color: #ed4114;
   color: #ffffff;
 }
-.tag-circle {
+.a-tag-circle {
   border-radius: 20rpx;
 }
-.tag-plain {
+.a-tag-plain {
   background-color: #ffffff;
 }
-.tag-plain.tag-primary {
+.a-tag-plain.a-tag-primary {
   border: 1rpx solid #3895f7;
   background-color: #ffffff;
   color: #3895f7;
 }
-.tag-plain.tag-success {
+.a-tag-plain.a-tag-success {
   border: 1rpx solid #19be6b;
   background-color: #ffffff;
   color: #19be6b;
 }
-.tag-plain.tag-warning {
+.a-tag-plain.a-tag-warning {
   border: 1rpx solid #ffb500;
   background-color: #ffffff;
   color: #ffb500;
 }
-.tag-plain.tag-error {
+.a-tag-plain.a-tag-error {
   border: 1rpx solid #ed4114;
   background-color: #ffffff;
   color: #ed4114;
 }
-.tag-disabled {
+.a-tag-disabled {
   opacity: 0.4;
 }

@@ -1,13 +1,13 @@
-<view class="record">
-  <view class="record-container">
+<view class="a-record">
+  <view class="a-record-container">
     <view
-          class="record-box"
+          class="a-record-box"
           bind:longpress="handleLongPress"
           bind:tap="handleRecord"
           bind:touchend="cancelTouch"></view>
     <view
           wx:if="{{ show }}"
-          class="record-main">
+          class="a-record-main">
       <block wx:if="{{ filePath }}">
         <image src="./images/player1.png" />
         <image
@@ -18,7 +18,7 @@
                src="./images/record3.png" />
         <view
               wx:if="{{ !isPlaying }}"
-              class="tips">
+              class="a-record-tips">
           <text>点击播放</text>
         </view>
       </block>
@@ -32,7 +32,7 @@
                src="./images/record3.png" />
         <view
               wx:if="{{ !isRecording }}"
-              class="tips">
+              class="a-record-tips">
           <text>{{ tips }}</text>
         </view>
       </block>
@@ -40,7 +40,7 @@
   </view>
   <view
         wx:if="{{ filePath }}"
-        class="del-btn"
+        class="a-record-btn"
         bind:tap="handleDelete">
     <image src="./images/delete.png" />
     删除录音

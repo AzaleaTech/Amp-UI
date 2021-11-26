@@ -1,26 +1,26 @@
-.radio {
+.a-radio {
   display: flex;
   align-items: center;
   height: 80rpx;
 }
-.radio-circle {
+.a-radio-circle {
   position: relative;
   border: 2rpx solid #cccccc;
   border-radius: 50%;
   width: 20px;
   height: 20px;
 }
-.radio-circle-left {
+.a-radio-circle-left {
   margin-right: 15px;
 }
-.radio-circle-right {
+.a-radio-circle-right {
   position: absolute;
   right: 15px;
 }
-.radio-circle-checked {
+.a-radio-circle-checked {
   border-color: #3895f7;
 }
-.radio-circle-dot-checked {
+.a-radio-circle-dot-checked {
   position: absolute;
   top: 6px;
   left: 6px;
@@ -33,9 +33,9 @@
   width: 8px;
   height: 8px;
 }
-.radio-circle-disabled {
+.a-radio-circle-disabled {
   opacity: 0.4;
 }
-.radio-title {
+.a-radio-title {
   display: inline-block;
 }

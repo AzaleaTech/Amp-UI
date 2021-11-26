@@ -1,4 +1,4 @@
-.switch {
+.a-switch {
   position: relative;
   display: flex;
   align-items: center;
@@ -9,7 +9,7 @@
   width: 96rpx;
   height: 48rpx;
 }
-.switch-inner {
+.a-switch-inner {
   position: absolute;
   left: 2rpx;
   border-radius: 100%;
@@ -18,13 +18,13 @@
   width: 44rpx;
   height: 44rpx;
 }
-.switch-inner-checked {
+.a-switch-inner-checked {
   left: 50rpx;
 }
-.switch-checked {
+.a-switch-checked {
   border-color: #3895f7;
   background-color: #3895f7;
 }
-.switch-disabled {
+.a-switch-disabled {
   opacity: 0.4;
 }

@@ -1,30 +1,29 @@
 <view
-      class="a-class card"
+      class="a-class a-card"
       bind:tap="handleTap">
-  <view class="card-header">
+  <view class="a-card-header">
     <slot name="header"></slot>
   </view>
-  <view class="card-body {{ imgUrl ? '' : 'card-body-full' }}">
+  <view class="a-card-body {{ imgUrl ? '' : 'a-card-body-full' }}">
     <image
            wx:if="{{ imgUrl }}"
            src="{{ imgUrl }}"
-           id="card-img"
-           class="card-img"
+           class="a-card-img"
            bind:tap="handlePreview" />
-    <view class="card-container">
-      <view class="card-title">{{title}}</view>
-      <view class="card-contents">
+    <view class="a-card-container">
+      <view class="a-card-title">{{title}}</view>
+      <view class="a-card-contents">
         <slot name="content"></slot>
       </view>
     </view>
   </view>
-  <view class="card-footer">
+  <view class="a-card-footer">
     <slot name="footer"></slot>
   </view>
-  <view class="a-class-tag tag-left">
+  <view class="a-class-tag a-card-tag-left">
     <slot name="tag-left"></slot>
   </view>
-  <view class="a-class-tag tag-right">
+  <view class="a-class-tag a-card-tag-right">
     <slot name="tag-right"></slot>
   </view>
 </view>

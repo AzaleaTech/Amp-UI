@@ -1,4 +1,4 @@
-<view class="btn-group {{ entire ? 'btn-group-entire' : ''}}">
+<view class="a-btn-group {{ entire ? 'a-btn-group-entire' : ''}}">
   <slot></slot>
 </view>
 
