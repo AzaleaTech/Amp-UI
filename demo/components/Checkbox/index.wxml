@@ -1,5 +1,5 @@
 <view
-      class="a-class checkbox"
+      class="a-class a-checkbox"
       catch:tap="handleChange">
   <label>
     <radio
@@ -7,8 +7,8 @@
            checked="{{ checked }}"
            color="{{ checked ? color : ''}}"
            disabled="{{ disabled }}"
-           class="checkbox-radio checkbox-radio-{{ position }}" />
-    <view class="checkbox-title">{{ value }}</view>
+           class="a-checkbox-radio a-checkbox-radio-{{ position }}" />
+    <view class="a-checkbox-title">{{ value }}</view>
   </label>
 </view>
 

@@ -1,17 +1,17 @@
-.container {
+.a-container {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   height: 100%;
 }
-.container .cropper {
+.a-cropper {
   border-radius: 16rpx;
   background-color: #ffffff;
   width: 96%;
   height: 70%;
 }
-.container .cropper-circle {
+.a-cropper-circle {
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -19,35 +19,32 @@
   width: 400rpx !important;
   height: 400rpx !important;
 }
-.cropper-box {
+.a-cropper-box {
   padding: 80rpx 30rpx;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.cropper-box ::-webkit-scrollbar {
+.a-cropper-box ::-webkit-scrollbar {
   display: none;
 }
-.show {
+.a-cropper-img {
   position: relative;
   overflow: hidden;
 }
-.img {
-  overflow: scroll;
+.a-cropper-footer {
+  box-sizing: border-box;
+  padding: 0 60rpx;
+  width: 100%;
+}
+.a-cropper-footer a-button {
+  display: block;
+}
+.a-cropper-footer a-button:not(:first-child) {
+  padding-top: 20rpx;
 }
 canvas {
   position: fixed;
   top: -9999rpx;
   left: 0;
-}
-.bottom {
-  box-sizing: border-box;
-  padding: 0 60rpx;
-  width: 100%;
-}
-.bottom a-button {
-  display: block;
-}
-.bottom a-button:not(:first-child) {
-  padding-top: 20rpx;
 }

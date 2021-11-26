@@ -1,42 +1,42 @@
-.collapse-item {
+.a-collapse-item {
   padding-left: 30rpx;
-  font-size: 32rpx;
-  line-height: 44rpx;
   background-color: #ffffff;
   color: #525252;
+  font-size: 32rpx;
+  line-height: 44rpx;
 }
-.collapse-item-header {
+.a-collapse-item-header {
   padding: 34rpx 30rpx 34rpx 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.collapse-item-icon {
+.a-collapse-item-icon {
   margin-left: 20rpx;
   width: 28rpx;
   height: 16rpx;
 }
-.collapse-item-content {
+.a-collapse-item-content {
   padding-left: 36rpx;
 }
-.collapse-item-content-list {
+.a-collapse-item-content-list {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.collapse-item-content-padding {
+.a-collapse-item-content-padding {
   padding: 34rpx 40rpx 34rpx 0;
 }
-.collapse-item-content-icon {
+.a-collapse-item-content-icon {
   margin-left: 20rpx;
   width: 12rpx;
   height: 24rpx;
 }
-.collapse-item-flex {
+.a-collapse-item-flex {
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
-.collapse-item-border {
+.a-collapse-item-border {
   border-bottom: 2rpx solid #eeeeee;
 }

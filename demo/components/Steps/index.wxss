@@ -1,17 +1,17 @@
-.step {
+.a-step {
   position: relative;
   display: inline-block;
   vertical-align: top;
   font-size: 24rpx;
 }
-.step-head {
+.a-step-head {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   height: 48rpx;
 }
-.step-dot {
+.a-step-dot {
   position: relative;
   z-index: 2;
   margin: 0 auto;
@@ -22,13 +22,13 @@
   width: 20rpx;
   height: 20rpx;
 }
-.step-dot-active {
+.a-step-dot-active {
   border-color: #3895f7;
   background-color: #3895f7;
   width: 32rpx;
   height: 32rpx;
 }
-.step-line {
+.a-step-line {
   position: absolute;
   top: 24rpx;
   left: 50%;
@@ -37,29 +37,29 @@
   width: 100%;
   height: 4rpx;
 }
-.step-line-active {
+.a-step-line-active {
   width: 50%;
   background: #3895f7;
 }
-.step-line-actived {
+.a-step-line-actived {
   width: 100%;
   background: #3895f7;
 }
-.step-body {
+.a-step-body {
   margin-top: 20rpx;
   text-align: center;
 }
-.step-title {
+.a-step-title {
   font-size: 24rpx;
   color: #525252;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.step-title-active {
+.a-step-title-active {
   color: #3895f7;
 }
-.step-desc {
+.a-step-desc {
   margin-top: 6rpx;
   display: -webkit-box;
   overflow: hidden;
@@ -68,31 +68,31 @@
   font-size: 24rpx;
   color: #525252;
 }
-.step-vertical {
+.a-step-vertical {
   width: 100% !important;
   height: 160rpx;
 }
-.step-vertical .step-head {
+.a-step-vertical .a-step-head {
   float: left;
   width: 24px;
 }
-.step-vertical .step-body {
+.a-step-vertical .a-step-body {
   margin-top: 0;
   margin-left: 40px;
   text-align: left;
 }
-.step-vertical .step-line {
+.a-step-vertical .a-step-line {
   position: absolute;
   top: 18rpx;
   left: 22rpx;
   width: 4rpx;
   height: 100%;
 }
-.step-vertical .step-line-active {
+.a-step-vertical .a-step-line-active {
   height: 50%;
   background-color: #3895f7;
 }
-.step-vertical .step-line-actived {
+.a-step-vertical .a-step-line-actived {
   height: 100%;
   background-color: #3895f7;
 }

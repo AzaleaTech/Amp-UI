@@ -11,7 +11,7 @@
   line-height: @line-height;
 }
 
-.btn {
+.a-btn {
   margin-bottom: @btn-inline-margin;
   border-radius: @btn-border-radius;
 
@@ -97,31 +97,33 @@
     display: inline-flex;
     margin: @btn-inline-margin;
   }
+
+  &-child {
+    &-normal {
+      margin-right: 20rpx !important;
+    }
+
+    &-last {
+      margin-right: 0;
+    }
+
+    &-left {
+      margin-right: 0;
+      width: 316rpx !important;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    &-right {
+      margin-left: 0;
+      width: 316rpx !important;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
 }
 
-.child {
-  &-normal {
-    margin-right: 20rpx !important;
-  }
 
-  &-last {
-    margin-right: 0;
-  }
-
-  &-left {
-    margin-right: 0;
-    width: 316rpx !important;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-  }
-
-  &-right {
-    margin-left: 0;
-    width: 316rpx !important;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-  }
-}
 
 button::after {
   border: none;

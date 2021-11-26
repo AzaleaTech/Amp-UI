@@ -1,8 +1,8 @@
-.badge {
+.a-badge {
   position: relative;
   display: inline-block;
 }
-.badge-number {
+.a-badge-number {
   position: absolute;
   top: -12rpx;
   right: 0;
@@ -19,7 +19,7 @@
   line-height: 35rpx;
   transform: translateX(50%);
 }
-.badge-dot {
+.a-badge-dot {
   position: absolute;
   top: -8rpx;
   right: -16rpx;

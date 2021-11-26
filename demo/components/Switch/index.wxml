@@ -1,14 +1,12 @@
 <view
-      class="a-class switch {{ checked ? 'switch-checked' : '' }} {{ disabled ? 'switch-disabled' : '' }}"
+      class="a-class a-switch {{ checked ? 'a-switch-checked' : '' }} {{ disabled ? 'a-switch-disabled' : '' }}"
       style="{{ checked ? 'background:' + color + '; border-color:' + color : '' }}"
       bind:tap="handleSwitch">
   <view
         wx:if="{{ checked }}"
-        class="switch-inner {{ checked ? 'switch-inner-checked' : '' }}">
-  </view>
+        class="a-switch-inner {{ checked ? 'a-switch-inner-checked' : '' }}"></view>
   <view
         wx:else
-        class="switch-inner">
-  </view>
+        class="a-switch-inner"></view>
 </view>
 

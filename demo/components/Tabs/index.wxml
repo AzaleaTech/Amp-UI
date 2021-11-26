@@ -1,21 +1,22 @@
-<view class="tabs-container {{ ceiling ? 'tabs-container-fixed-top' : ''}}">
+<view class="a-tabs-container {{ ceiling ? 'a-tabs-container-fixed-top' : ''}}">
   <scroll-view scroll-x="{{ scroll }}">
-    <view class="tabs {{ scroll ? 'tabs-scroll' : '' }}">
+    <view class="a-tabs {{ scroll ? 'a-tabs-scroll' : '' }}">
       <view
             wx:for="{{ tabList }}"
             wx:key="index"
             data-current="{{ index }}"
-            class="tab {{ index === currentIndex ? 'tab-active' : '' }}"
+            class="a-tab {{ index === currentIndex ? 'a-tab-active' : '' }}"
             catch:tap="switchTab">
-        <span class="tab-{{ index }}">{{ item }}</span>
+        <!-- 该类用于js中计算元素宽度 -->
+        <span class="a-tab-{{ index }}">{{ item }}</span>
       </view>
     </view>
   </scroll-view>
   <view
         wx:if="{{ scroll }}"
-        class="gradient"></view>
+        class="a-tabs-gradient"></view>
 </view>
-<view class="{{ ceiling ? 'tab-panel-fixed' : ''}}">
+<view class="{{ ceiling ? 'a-tabs-container-ceiling' : ''}}">
   <slot></slot>
 </view>
 

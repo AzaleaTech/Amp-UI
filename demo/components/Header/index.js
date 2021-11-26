@@ -1,4 +1,6 @@
 Component({
+  externalClasses: ['a-class'],
+
   properties: {
     title: {
       type: String,
