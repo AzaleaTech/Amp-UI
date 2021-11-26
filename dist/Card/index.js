@@ -1,1 +1,0 @@
-"use strict";Component({properties:{title:{type:String,value:""},contents:{type:Array,value:[]},imgUrl:{type:String,value:void 0},footer:{type:String,value:void 0},spec:{type:Object,value:void 0}},methods:{handleTap:function(e){this.triggerEvent("click",e)},handleLike:function(e){this.triggerEvent("like",e)}}});

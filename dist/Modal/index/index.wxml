@@ -1,4 +1,0 @@
-<view class="modal">
-  <slot></slot>
-</view>
-
