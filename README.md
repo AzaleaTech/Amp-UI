@@ -1,4 +1,4 @@
-# 微信小程序组件库（wxcom）
+# 前览
 
 ## 项目目标
 
@@ -20,7 +20,11 @@
 
 - 小程序二维码(体验版)
 
-  <image src="./docs/imgs/preview.jpg" style="width: 140px"/>
+  <img src="./docs/imgs/preview.jpg" style="width: 140px"/>
+
+- 正式版
+
+  <img src="./docs/imgs/release.jpg" style="width: 140px"/>
 
 ## 使用方法
 
