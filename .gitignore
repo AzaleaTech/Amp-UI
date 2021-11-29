@@ -23,6 +23,7 @@ lib/**/*.wxss
 # lib build
 dist
 
-# docs build
+# docs
+.vuepress
 docs-dist
 
