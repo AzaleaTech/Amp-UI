@@ -63,7 +63,7 @@ docs-release:
     - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
   script:
     - mkdir -p ./$CI_PROJECT_NAMESPACE/web
-    - cp -r dist/* ./$CI_PROJECT_NAMESPACE/web
+    - cp -r docs-dist/* ./$CI_PROJECT_NAMESPACE/web
     - scp -r ./$CI_PROJECT_NAMESPACE $DEV_USER@$DEV_HOST:~
   rules:
     - if: '$CI_PROJECT_NAMESPACE == $NAMESPACE && $CI_COMMIT_REF_NAME =~ /^v.*/'
