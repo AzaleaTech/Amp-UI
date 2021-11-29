@@ -7,6 +7,10 @@
         "value": ".vscode"
       },
       {
+        "type": "folder",
+        "value": ".vuepress"
+      },
+      {
         "type": "suffix",
         "value": ".less"
       },
