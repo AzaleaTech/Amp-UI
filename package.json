@@ -29,8 +29,8 @@
     "dev": "gulp -f build/gulp-dev.js",
     "build": "gulp -f build/gulp-prod.js",
     "ci-publish": "ci-publish",
-    "docs:dev": "vuepress dev",
-    "docs:build": "vuepress build"
+    "docs:dev": "vuepress dev -c vuepress.config.js",
+    "docs:build": "vuepress build -c vuepress.config.js"
   },
   "repository": {
     "type": "git",
