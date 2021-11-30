@@ -13,8 +13,9 @@
 }
 
 // common flex type
-.flex-type(@justify-type: flex-start) {
+.flex-type(@justify-type: flex-start, @direction-type: row) {
   display: flex;
+  flex-direction: @direction-type;
   align-items: center;
   justify-content: @justify-type;
 }

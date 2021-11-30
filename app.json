@@ -8,17 +8,18 @@
     "demo/pages/header/index",
     "demo/pages/tabs/index/index",
     "demo/pages/tabs/ceiling/index",
-
+    
     "demo/pages/avatar/index",
     "demo/pages/badge/index",
     "demo/pages/tag/index",
     "demo/pages/card/index",
     "demo/pages/collapse/index",
     "demo/pages/steps/index",
+    "demo/pages/swiper/index",
     "demo/pages/divider/index",
     "demo/pages/parse/index",
     "demo/pages/webview/index",
-
+    
     "demo/pages/form/index",
     "demo/pages/rate/index",
     "demo/pages/radio/index",
@@ -27,7 +28,7 @@
     "demo/pages/audio/index",
     "demo/pages/cropper/index",
     "demo/pages/upload/index",
-
+    
     "demo/pages/modal/index"
   ],
   "subpackages": [
