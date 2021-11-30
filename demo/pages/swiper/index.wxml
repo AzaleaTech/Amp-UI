@@ -1,0 +1,107 @@
+<view class="example-box">
+  <view class="example-box-title">基础用法</view>
+  <view class="example-box-content">
+    <a-swiper img-urls="{{ imgUrls }}"></a-swiper>
+  </view>
+  <view class="example-box-title">组合用法</view>
+  <view class="example-box-content">
+    <a-swiper
+              a-class="a-swiper-class"
+              autoplay="{{ autoplay }}"
+              circle="{{ circle }}"
+              current="{{ current }}"
+              dots="{{ dots }}"
+              dot-color="{{ dotColor }}"
+              dot-active-color="{{ dotActiveColor }}"
+              duration="{{ duration }}"
+              easing-function="{{ easingFunction }}"
+              img-urls="{{ imgUrls }}"
+              interval="{{interval}}"
+              next-margin="{{ nextMargin }}"
+              previous-margin="{{ previousMargin }}"
+              vertical="{{ vertical }}" />
+    <view class="example-box-section example-box-section-first">
+      <view class="section-cells section-cells-after-title">
+        <view class="section-cell section-cell-switch">
+          <view class="section-cell-bd">指示点</view>
+          <view class="section-cell-ft">
+            <switch
+                    data-property-name="dots"
+                    checked="{{ dots }}"
+                    bind:change="handleProperty" />
+          </view>
+        </view>
+        <view class="section-cell section-cell-switch">
+          <view class="section-cell-bd">自动播放</view>
+          <view class="section-cell-ft">
+            <switch
+                    data-property-name="autoplay"
+                    checked="{{ autoplay }}"
+                    bind:change="handleProperty" />
+          </view>
+        </view>
+        <view class="section-cell section-cell-switch">
+          <view class="section-cell-bd">衔接滑动</view>
+          <view class="section-cell-ft">
+            <switch
+                    data-property-name="circle"
+                    checked="{{ circle }}"
+                    bind:change="handleProperty" />
+          </view>
+        </view>
+        <view class="section-cell section-cell-switch">
+          <view class="section-cell-bd">竖向</view>
+          <view class="section-cell-ft">
+            <switch
+                    data-property-name="vertical"
+                    checked="{{ vertical }}"
+                    bind:change="handleProperty" />
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="example-box-section example-box-section-spacing">
+      <view class="example-box-section-title">
+        <text>幻灯片切换时长(ms)</text>
+        <text class="info">{{ duration }}</text>
+      </view>
+      <slider
+              data-property-name="duration"
+              min="500"
+              max="2000"
+              value="{{ duration }}"
+              bind:change="handleProperty" />
+      <view class="example-box-section-title">
+        <text>自动播放间隔时长(ms)</text>
+        <text class="info">{{ interval }}</text>
+      </view>
+      <slider
+              data-property-name="interval"
+              min="2000"
+              max="10000"
+              value="{{ interval }}"
+              bind:change="handleProperty" />
+      <view class="example-box-section-title">
+        <text>前边距(px)</text>
+        <text class="info">{{ previousMargin }}</text>
+      </view>
+      <slider
+              data-property-name="previousMargin"
+              min="0"
+              max="50"
+              value="{{ previousMargin }}"
+              bind:change="handleProperty" />
+      <view class="example-box-section-title">
+        <text>后边距(px)</text>
+        <text class="info">{{ nextMargin }}</text>
+      </view>
+      <slider
+              data-property-name="nextMargin"
+              min="0"
+              max="50"
+              value="{{ nextMargin }}"
+              bind:change="handleProperty" />
+    </view>
+  </view>
+</view>
+

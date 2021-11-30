@@ -1,0 +1,35 @@
+<view class="a-class a-swiper">
+  <swiper
+          autoplay="{{ autoplay }}"
+          interval="{{ interval }}"
+          duration="{{ duration }}"
+          current="{{ current }}"
+          bindchange="swiperChange"
+          circular="{{ circle }}"
+          easing-function="{{ easingFunction }}"
+          vertical="{{ vertical }}"
+          previous-margin="{{ previousMargin }}px"
+          next-margin="{{ nextMargin }}px">
+    <block
+           wx:for="{{ imgUrls }}"
+           wx:key="index">
+      <swiper-item>
+        <image
+               src="{{ item }}"
+               class="a-swiper-slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view
+        wx:if="{{ dots }}"
+        class="a-swiper-dots {{ vertical ? 'a-swiper-dots-vertical' : 'a-swiper-dots-horizontal' }}">
+    <block
+           wx:for="{{ imgUrls }}"
+           wx:key="index">
+      <view
+            class="a-swiper-dot {{ vertical ? 'a-swiper-dot-vertical' : 'a-swiper-dot-horizontal' }} {{ index === current ? 'a-swiper-dot-active' : '' }}"
+            style="background: {{ index === current ? dotActiveColor : dotColor }};"></view>
+    </block>
+  </view>
+</view>
+
