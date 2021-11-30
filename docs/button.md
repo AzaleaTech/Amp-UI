@@ -59,7 +59,7 @@
 
 | 事件名         | 说明                                                                    | 参数 |
 | -------------- | ----------------------------------------------------------------------- | ---- |
-| click          | 点击事件(无 openType 时触发)                                            | -    |
+| click          | 点击事件(无 openType, 且非禁用状态时触发)                               | -    |
 | contact        | 客服消息回调，open-type="contact"时有效                                 | e    |
 | error          | 当使用开放能力时，发生错误的回调，open-type=launchApp 时有效            | e    |
 | getuserinfo    | 用户点击该按钮时，会返回获取到的用户信息，open-type="getUserInfo"时有效 | e    |

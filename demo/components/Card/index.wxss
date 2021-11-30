@@ -1,4 +1,5 @@
 .a-card {
+  position: relative;
   box-sizing: border-box;
   padding: 30rpx;
   background-color: #ffffff;
@@ -61,12 +62,12 @@
   align-items: center;
   justify-content: flex-start;
 }
-.a-card-tag-left:not(:empty) {
+.a-card-tag-left {
   position: absolute;
   top: 0;
   left: 0;
 }
-.a-card-tag-right:not(:empty) {
+.a-card-tag-right {
   position: absolute;
   top: 0;
   right: 0;
