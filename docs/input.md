@@ -10,14 +10,14 @@
 基础用法
 <a-input value="{{ value }}" bind:change="handleChange" />
 
-<!-- 不同类型 -->
+不同类型
 <a-input value="{{ value }}" type="number" placeholder="请输入手机号" maxlength="{{ 11 }}" />
 <a-input value="{{ value }}" type="safe-password" placeholder="请输入密码" focus />
 
-<!-- 禁用 -->
+禁用
 <a-input value="{{ value }}" disabled />
 
-<!-- 可清空 -->
+可清空
 <a-input value="{{ value }}" clearable />
 ```
 
