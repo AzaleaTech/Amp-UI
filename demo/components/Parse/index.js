@@ -32,7 +32,9 @@ Component({
         // 采用markdown解析
         if (language === 'markdown' || language === 'md') {
           const converter = new showdown.Converter();
+          console.log('converter: ', converter);
           const parseNodes = converter.makeHtml(val);
+          console.log('parseNodes: ', parseNodes);
           setTimeout(() => {
             this._parseNodes(parseNodes);
           }, 0);

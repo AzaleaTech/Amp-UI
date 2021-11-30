@@ -1,9 +1,10 @@
 @import '../styles/_index.less';
 
 .a-card {
+  position: relative;
   box-sizing: border-box;
   padding: 30rpx;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: @white-color;
 
   &-header:not(:empty) {
     position: relative;
@@ -69,13 +70,13 @@
     .flex-start();
   }
 
-  &-tag-left:not(:empty) {
+  &-tag-left {
     position: absolute;
     top: 0;
     left: 0;
   }
 
-  &-tag-right:not(:empty) {
+  &-tag-right {
     position: absolute;
     top: 0;
     right: 0;
