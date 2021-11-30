@@ -28,6 +28,7 @@
   background-color: #3895f7;
   content: '';
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   width: 8px;
