@@ -1,3 +1,6 @@
 {
-  "component": true
+  "component": true,
+  "usingComponents": {
+    "a-icon": "../Icon/Icon"
+  }
 }
