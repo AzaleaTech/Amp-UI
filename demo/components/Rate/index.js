@@ -12,27 +12,26 @@ Component({
       type: Number,
       value: 0,
     },
+    iconName: {
+      type: String,
+      value: 'star_fill',
+    },
     // 指定图标大小，单位rpx
     size: {
+      type: Number,
+      value: 92,
+    },
+    color: {
       type: String,
-      value: '50',
+      value: '#d8d8d8',
+    },
+    activeColor: {
+      type: String,
+      value: '#ffb500',
     },
     disabled: {
       type: Boolean,
       value: false,
-    },
-  },
-
-  data: {
-    images: ['./images/star-unselected.png', './images/star-selected.png'],
-    style: null,
-  },
-
-  lifetimes: {
-    ready() {
-      this.setData({
-        style: `width: ${this.properties.size}rpx; height: ${this.properties.size}rpx`,
-      });
     },
   },
 

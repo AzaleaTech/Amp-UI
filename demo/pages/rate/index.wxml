@@ -5,13 +5,24 @@
   </view>
   <view class="example-box-title">不同大小</view>
   <view class="example-box-content">
-    <a-rate size="40"></a-rate>
-    <a-rate size="60"></a-rate>
+    <a-rate size="{{ 60 }}"></a-rate>
+    <a-rate size="{{ 80 }}"></a-rate>
   </view>
   <view class="example-box-title">不同数量</view>
   <view class="example-box-content">
     <a-rate count="{{ 3 }}"></a-rate>
     <a-rate count="{{ 7 }}"></a-rate>
+  </view>
+  <view class="example-box-title">不同图标</view>
+  <view class="example-box-content">
+    <a-rate
+            value="{{ 3 }}"
+            icon-name="praise_fill"
+            active-color="#3895f7"></a-rate>
+    <a-rate
+            value="{{ 5 }}"
+            icon-name="love_fill"
+            active-color="#ed4115"></a-rate>
   </view>
   <view class="example-box-title">只读</view>
   <view class="example-box-content">

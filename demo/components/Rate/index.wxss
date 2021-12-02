@@ -6,7 +6,6 @@
 }
 .a-rate-item {
   position: relative;
-  margin-right: 40rpx;
 }
 .a-rate-item-selected {
   position: absolute;
