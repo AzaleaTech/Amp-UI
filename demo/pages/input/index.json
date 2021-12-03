@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "a-input": "../../components/Input/index"
+  }
+}
