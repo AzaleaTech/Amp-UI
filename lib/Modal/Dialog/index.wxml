@@ -12,10 +12,11 @@
         <slot></slot>
       </block>
     </view>
-    <view class="a-dialog-btn">
+    <view class="a-dialog-btns">
       <a-button
                 wx:if="{{ dialogData.cancelText }}"
                 inline="{{ dialogData.confirmText ? true : false }}"
+                a-class="a-dialog-btn"
                 catch:click="cancel">
         <text>{{ dialogData.cancelText }}</text>
       </a-button>
@@ -23,6 +24,7 @@
                 wx:if="{{ dialogData.confirmText }}"
                 type="primary"
                 inline="{{ dialogData.cancelText ? true : false }}"
+                a-class="a-dialog-btn"
                 catch:click="confirm">
         {{ dialogData.confirmText || '确认' }}
       </a-button>

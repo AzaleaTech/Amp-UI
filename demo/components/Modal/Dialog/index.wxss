@@ -26,7 +26,10 @@
   max-height: 800rpx;
   word-wrap: break-word;
 }
-.a-dialog-btn {
+.a-dialog-btns {
   margin-top: 70rpx;
   padding: 0 40rpx 32rpx 40rpx;
+}
+.a-dialog-btn {
+  width: 40%;
 }

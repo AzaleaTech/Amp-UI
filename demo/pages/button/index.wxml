@@ -17,7 +17,8 @@
     <a-button inline>按钮1</a-button>
     <a-button
               inline
-              type="primary">按钮2
+              type="primary"
+              a-class="btn">按钮2
     </a-button>
   </view>
 </view>

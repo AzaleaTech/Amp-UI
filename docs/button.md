@@ -16,7 +16,7 @@
 
 行内按钮
 <a-button inline>按钮1</a-button>
-<a-button inline type="primary">按钮2</a-button>
+<a-button inline type="primary" a-class="btn">按钮2</a-button>
 
 按钮形状
 <a-button circle>圆角</a-button>
@@ -45,7 +45,7 @@
 
 | 参数      | 说明                                                                                                             | 必填 | 类型    | 默认值  | 可选值                                    |
 | --------- | ---------------------------------------------------------------------------------------------------------------- | ---- | ------- | ------- | ----------------------------------------- |
-| a-class   | 自定义外部样式类                                                                                                 | 否   | string  | -       |                                           |
+| a-class   | 自定义根节点样式类，常用于指定按钮宽度                                                                           | 否   | string  | -       |                                           |
 | type      | 按钮类型 (颜色，边框，字体)                                                                                      | 否   | string  | default | default、primary、success、warning、error |
 | inline    | 是否为行内元素，开启后宽度为自适应型                                                                             | 否   | boolean | false   |                                           |
 | circle    | 按钮圆角                                                                                                         | 否   | boolean | false   |                                           |
