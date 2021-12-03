@@ -1,0 +1,21 @@
+page {
+  padding-bottom: 30rpx;
+  background-color: #f4f5f6;
+}
+.example-box {
+  margin-bottom: 20rpx;
+}
+.example-box-title {
+  margin: 20rpx 30rpx;
+  color: #2f2f2f;
+  font-weight: 700;
+}
+.example-box-content {
+  padding: 20rpx 30rpx;
+  background-color: #ffffff;
+}
+.example-box-content-text {
+  background: rgba(0, 155, 164, 0.5);
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+}
