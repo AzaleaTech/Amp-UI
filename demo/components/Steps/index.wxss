@@ -58,6 +58,7 @@
   white-space: nowrap;
 }
 .a-step-title-active {
+  font-size: 26rpx;
   color: #3895f7;
 }
 .a-step-desc {
