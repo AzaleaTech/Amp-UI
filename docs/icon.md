@@ -9,7 +9,7 @@
 ![symbol](https://raw.githubusercontent.com/iconfont-cli/mini-program-iconfont-cli/master/images/symbol-url.png)
 
 1. 替换`iconfont.json`文件中`symbol_url`字段为上图中链接
-2. run `npx iconfont-wechat` 生成 Icon 文件夹
+2. run `yarn icon` 生成 Icon 文件夹
 
 ## 示例
 
