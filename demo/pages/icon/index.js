@@ -1,6 +1,16 @@
 Page({
   data: {
     icons: [
+      'visible',
+      'invisible',
+      'home_fill',
+      'home_line',
+      'arrow-down',
+      'arrow-left',
+      'arrow-right',
+      'arrow-up',
+      'arrow-up_fill',
+      'arrow-down_fill',
       'satisfied_fill',
       'satisfied_line',
       'service_fill',

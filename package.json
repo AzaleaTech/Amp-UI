@@ -28,6 +28,7 @@
   "scripts": {
     "dev": "gulp -f build/gulp-dev.js",
     "build": "gulp -f build/gulp-prod.js",
+    "icon": "npx iconfont-wechat",
     "ci-publish": "ci-publish",
     "docs:dev": "vuepress dev -c vuepress.config.js",
     "docs:build": "vuepress build -c vuepress.config.js"
