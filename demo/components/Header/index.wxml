@@ -1,57 +1,30 @@
 <view class="a-class a-header">
-  <view
-        class="a-header-fixed"
-        style="background: {{ background }}">
-    <view
-          class="a-header-box"
-          style="height: {{ statusBarHeight }}px" />
-    <view
-          class="a-header-titles"
-          style="height: 44px;">
+  <view class="a-header-fixed" style="background: {{ background }}">
+    <view class="a-header-box" style="height: {{ statusBarHeight }}px" />
+    <view class="a-header-titles" style="height: 44px;">
       <block wx:if="{{ hasReturn && !hasHome }}">
-        <view
-              class="a-header-btn"
-              style="left: {{ leftMargin }}px; width: {{ width }}px; height: {{ height }}px;"
-              bind:tap="handleReturn">
-          <image src="./images/return.png" />
+        <view class="a-header-btn" style="left: {{ leftMargin }}px; width: {{ width }}px; height: {{ height }}px;" bind:tap="handleReturn">
+          <a-icon name="arrow-left" color="{{ iconColor }}" size="{{ iconSize }}"></a-icon>
         </view>
       </block>
       <block wx:if="{{ !hasReturn && hasHome }}">
-        <view
-              class="a-header-btn"
-              style="left: {{ leftMargin }}px; width:{{ width }}px; height: {{ height }}px;"
-              bind:tap="handleHome">
-          <image
-                 src="./images/home.png"
-                 mode="aspectFill" />
+        <view class="a-header-btn" style="left: {{ leftMargin }}px; width:{{ width }}px; height: {{ height }}px;" bind:tap="handleHome">
+          <a-icon name="home_fill" color="{{ iconColor }}" size="{{ iconSize }}"></a-icon>
         </view>
       </block>
       <block wx:if="{{ hasReturn && hasHome }}">
-        <view
-              class="a-header-btns"
-              style="width: {{ width }}px; height:{{ height }}px; left:{{ leftMargin }}px">
-          <image
-                 src="./images/return.png"
-                 bind:tap="handleReturn" />
-          <view
-                class="a-header-line"
-                style="height: {{ height }}px;">|
+        <view class="a-header-btns" style="width: {{ width }}px; height:{{ height }}px; left:{{ leftMargin }}px">
+          <a-icon name="arrow-left" color="{{ iconColor }}" size="{{ iconSize }}"></a-icon>
+          <view class="a-header-line" style="height: {{ height }}px;">|</view>
+          <view bind:tap="handleHome">
+            <a-icon name="home_fill" color="{{ iconColor }}" size="{{ iconSize }}"></a-icon>
           </view>
-          <image
-                 src="./images/home.png"
-                 mode="aspectFill"
-                 bind:tap="handleHome" />
         </view>
       </block>
-      <view
-            style="color: {{ color }}"
-            class="a-header-title">
+      <view style="color: {{ color }}" class="a-header-title">
         <text>{{ title }}</text>
       </view>
     </view>
   </view>
-  <view
-        class="a-header-status-bar"
-        style="height: {{ statusBarHeight + 44 }}px" />
+  <view class="a-header-status-bar" style="height: {{ statusBarHeight + 44 }}px" />
 </view>
-

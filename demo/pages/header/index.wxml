@@ -4,6 +4,7 @@
           has-return="{{ hasReturn }}"
           title="{{ title }}"
           has-home="{{ hasHome }}"
+          icon-color="{{ iconColor }}"
           navigator="navigateBack"
           bind:backHome="goHome" />
 <view class="example-box">
@@ -21,6 +22,9 @@
   </view>
   <view class="example-box-content">
     <button bind:tap="handleBoth">同时存在返回及首页按钮</button>
+  </view>
+  <view class="example-box-content">
+    <button bind:tap="handleIcon">点击改变按钮颜色</button>
   </view>
   <view class="example-box-content">
     <button bind:tap="handleTitle">点击改变标题</button>
