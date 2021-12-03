@@ -66,6 +66,7 @@ npm run build / yarn build
 - [Card](./docs/card.md)
 - [Collapse](./docs/collapse.md)
 - [Steps](./docs/steps.md)
+- [Swiper](./docs/swiper.md)
 - [Divider](./docs/divider.md)
 - [Parse](./docs/parse.md)
 

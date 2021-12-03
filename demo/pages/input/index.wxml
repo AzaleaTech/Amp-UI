@@ -1,0 +1,50 @@
+<view class="example-box">
+  <view class="example-box-title">基本使用</view>
+  <view class="example-box-content">
+    <a-input
+             placeholder="基本使用"
+             value="{{ basicValue }}"></a-input>
+  </view>
+  <view class="example-box-title">不同类型</view>
+  <view class="example-box-content">
+    <a-input
+             value="{{ phone }}"
+             type="number"
+             placeholder="请输入手机号"
+             maxlength="{{ 11 }}" />
+    <br/>
+  </view>
+  <view class="example-box-content">
+    <a-input
+             value="{{ password }}"
+             type="safe-password"
+             password
+             placeholder="请输入密码"
+             focus />
+  </view>
+  <view class="example-box-title">禁用</view>
+  <view class="example-box-content">
+    <a-input
+             placeholder="禁用"
+             disabled />
+  </view>
+  <view class="example-box-title">可清空</view>
+  <view class="example-box-content">
+    <a-input
+             placeholder="可清空"
+             clearable />
+  </view>
+  <view class="example-box-title">绑定value</view>
+  <view class="example-box-content">
+    <view class="example-box-content-text">
+      value值: {{ value }}
+    </view>
+  </view>
+  <view class="example-box-content">
+    <a-input
+             placeholder="绑定value"
+             value="{{ value }}"
+             bind:change="handleChange" />
+  </view>
+</view>
+
