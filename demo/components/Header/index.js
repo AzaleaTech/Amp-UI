@@ -6,6 +6,18 @@ Component({
       type: String,
       value: '',
     },
+    color: {
+      type: String,
+      value: '#000',
+    },
+    background: {
+      type: String,
+      value: '#fff',
+    },
+    iconColor: {
+      type: String,
+      value: '#000',
+    },
     hasReturn: {
       type: Boolean,
       value: true,
@@ -23,14 +35,10 @@ Component({
       type: String,
       value: 'navigateBack',
     },
-    background: {
-      type: String,
-      value: '',
-    },
-    color: {
-      type: String,
-      value: '',
-    },
+  },
+
+  data: {
+    iconSize: 48, // 默认图标大小 单位rpx
   },
 
   lifetimes: {

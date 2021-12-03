@@ -61,7 +61,7 @@
   font-size: 36rpx;
 }
 .a-header-title {
-  width: 500rpx;
+  width: 300rpx;
   text-align: center;
   overflow: hidden;
   text-overflow: ellipsis;

@@ -1,6 +1,7 @@
 const data = {
   background: 'white',
   color: 'black',
+  iconColor: 'black',
   title: '标题栏',
   hasReturn: false,
   hasHome: false,
@@ -39,6 +40,12 @@ Page({
     this.setData({
       hasHome: true,
       hasReturn: true,
+    });
+  },
+
+  handleIcon() {
+    this.setData({
+      iconColor: this.data.iconColor === 'black' ? 'blue' : 'black',
     });
   },
 
