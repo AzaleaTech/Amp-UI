@@ -14,6 +14,7 @@ Page({
         value: '内容2-3',
       },
     ],
+    iconColor: '#3895f7',
   },
 
   handleOpen(e) {

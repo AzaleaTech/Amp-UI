@@ -40,3 +40,6 @@
 .a-collapse-item-border {
   border-bottom: 2rpx solid #eeeeee;
 }
+.a-collapse-item-disabled {
+  opacity: 0.4;
+}

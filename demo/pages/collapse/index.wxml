@@ -1,20 +1,44 @@
 <view class="example-box">
   <view class="example-box-title">非手风琴模式</view>
-  <a-collapse bind:open="handleOpen" bind:close="handleClose">
-    <a-collapse-item name="标题1" title="标题1" value="文本内容">
+  <a-collapse
+              iconColor="{{ iconColor }}"
+              bind:open="handleOpen"
+              bind:close="handleClose">
+    <a-collapse-item
+                     name="标题1"
+                     title="标题1"
+                     value="文本内容">
       <view slot="content">
         <view>文本内容1</view>
       </view>
     </a-collapse-item>
-    <a-collapse-item name="标题2" title="标题2" value="content内容列表" content="{{ content }}" bind:click="handleClick" />
-    <a-collapse-item name="标题3" title="标题3" value="自定义标题">
-      <a-icon slot="icon-left" name="star_fill" class="icon-left" />
-      <a-icon slot="icon-right" name="star_fill" class="icon-right" />
+    <a-collapse-item
+                     name="标题2"
+                     title="标题2"
+                     value="content内容列表"
+                     content="{{ content }}"
+                     bind:click="handleClick" />
+    <a-collapse-item
+                     name="标题3"
+                     title="标题3"
+                     value="自定义标题">
+      <a-icon
+              slot="icon-left"
+              name="star_fill"
+              class="icon-left" />
+      <a-icon
+              slot="icon-right"
+              name="star_fill"
+              class="icon-right" />
       <view slot="content">
         <view>文本内容3</view>
       </view>
     </a-collapse-item>
-    <a-collapse-item disabled name="标题1" title="标题1" value="禁用展开">
+    <a-collapse-item
+                     disabled
+                     name="标题1"
+                     title="标题1"
+                     value="禁用展开">
       <view slot="content">
         <view>文本内容4</view>
       </view>
@@ -23,11 +47,20 @@
 </view>
 <view class="example-box">
   <view class="example-box-title">手风琴模式</view>
-  <a-collapse accordion bind:open="handleOpen" bind:close="handleClose">
-    <a-collapse-item wx:for="{{ 3 }}" wx:key="index" name="{{ '标题'+ (index + 1) }}" title="{{ '标题'+ (index + 1) }}">
+  <a-collapse
+              accordion
+              iconColor="{{ iconColor }}"
+              bind:open="handleOpen"
+              bind:close="handleClose">
+    <a-collapse-item
+                     wx:for="{{ 3 }}"
+                     wx:key="index"
+                     name="{{ '标题'+ (index + 1) }}"
+                     title="{{ '标题'+ (index + 1) }}">
       <view slot="content">
         <view>文本内容 {{ index + 1 }}</view>
       </view>
     </a-collapse-item>
   </a-collapse>
 </view>
+

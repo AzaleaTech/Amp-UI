@@ -2,6 +2,11 @@ Component({
   relations: {
     '../Collapse/index': {
       type: 'parent',
+      linked(target) {
+        if (target.data.iconColor && !this.properties.iconColor) {
+          this.setData({ iconColor: target.data.iconColor });
+        }
+      },
     },
   },
 
@@ -30,6 +35,10 @@ Component({
       type: Array,
       value: [],
     },
+    iconColor: {
+      type: String,
+      value: '',
+    },
   },
 
   data: {
@@ -54,7 +63,6 @@ Component({
       if (!this.data.parent) {
         return;
       }
-
       const { value } = this.data.parent.data;
       this.setData({
         expand: value.some((name) => name + '' === this.properties.name),
@@ -65,7 +73,6 @@ Component({
       if (this.data.disabled) {
         return;
       }
-
       this.data.parent.changeExpandList(this.properties.name, !this.data.expand);
     },
 
