@@ -8,7 +8,7 @@
 
 ```html
 非手风琴模式
-<a-collapse>
+<a-collapse iconColor="{{ iconColor }}">
   <a-collapse-item name="标题1" title="标题1" value="文本内容">
     <view slot="content">
       <view>文本内容1</view>
@@ -36,7 +36,7 @@
 </a-collapse>
 
 手风琴模式
-<a-collapse accordion>
+<a-collapse accordion iconColor="{{ iconColor }}">
   <a-collapse-item
     wx:for="{{ 3 }}"
     wx:key="index"
@@ -67,6 +67,7 @@ Page({
         value: '内容2-3',
       },
     ],
+    iconColor: '#3895f7',
   },
 });
 ```
@@ -78,6 +79,7 @@ Page({
 | 参数      | 说明                | 类型                                                                  | 默认值 | 可选值 | 必填 |
 | --------- | ------------------- | --------------------------------------------------------------------- | ------ | ------ | ---- |
 | value     | 所有展开面板的 name | 非手风琴模式：Array[string \| number] ，手风琴模式： string \| number | -      | -      | 否   |
+| iconColor | 图标颜色            | string                                                                | -      | -      | 否   |
 | accordion | 手风琴模式          | boolean                                                               | false  | -      | 否   |
 
 ### Collapse Events
@@ -89,13 +91,14 @@ Page({
 
 ### CollapseItem Props
 
-| 参数     | 说明                              | 类型             | 默认值 | 可选值 | 必填 |
-| -------- | --------------------------------- | ---------------- | ------ | ------ | ---- |
-| name     | 唯一标识符                        | string \| number | -      | -      | 是   |
-| title    | 标题栏左侧内容                    | string           | -      | -      | 否   |
-| value    | 标题栏右侧内容                    | string           | -      | -      | 否   |
-| disabled | 是否禁用面板                      | boolean          | false  | -      | 否   |
-| content  | 内容列表[{ title: '', value: ''}] | array            |        | -      | 否   |
+| 参数      | 说明                              | 类型             | 默认值 | 可选值 | 必填 |
+| --------- | --------------------------------- | ---------------- | ------ | ------ | ---- |
+| name      | 唯一标识符                        | string \| number | -      | -      | 是   |
+| title     | 标题栏左侧内容                    | string           | -      | -      | 否   |
+| value     | 标题栏右侧内容                    | string           | -      | -      | 否   |
+| disabled  | 是否禁用面板                      | boolean          | false  | -      | 否   |
+| content   | 内容列表[{ title: '', value: ''}] | array            |        | -      | 否   |
+| iconColor | 图标颜色                          | string           | -      | -      | 否   |
 
 ### CollapseItem Events
 
