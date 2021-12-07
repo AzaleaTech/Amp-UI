@@ -7,16 +7,16 @@
       <view wx:if="{{ title }}">{{ title }}</view>
       <slot name="icon-right"></slot>
     </view>
-    <view class="a-collapse-item-flex">
+    <view class="a-collapse-item-flex {{ disabled ? 'a-collapse-item-disabled' : '' }}">
       <view wx:if="{{ value }}">{{ value }}</view>
-      <image
-             wx:if="{{ expand }}"
-             src="./images/caret-up-icon.png"
-             class="a-collapse-item-icon" />
-      <image
-             wx:else
-             src="./images/caret-down-icon.png"
-             class="a-collapse-item-icon" />
+      <a-icon
+              wx:if="{{ expand }}"
+              color="{{ iconColor }}"
+              name="arrow-up_fill"></a-icon>
+      <a-icon
+              wx:else
+              color="{{ iconColor }}"
+              name="arrow-down_fill"></a-icon>
     </view>
   </view>
   <view
@@ -32,9 +32,9 @@
         <view>{{ item.title }}</view>
         <view class="a-collapse-item-flex">
           <view>{{ item.value }}</view>
-          <image
-                 src="./images/arrow-right-icon.png"
-                 class="a-collapse-item-content-icon" />
+          <a-icon
+                  name="arrow-right"
+                  color="#b2b2b2"></a-icon>
         </view>
       </view>
     </block>
