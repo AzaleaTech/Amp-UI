@@ -13,12 +13,6 @@
   align-items: center;
   justify-content: center;
 }
-.a-toast-img {
-  margin-right: 20rpx;
-  border-radius: 8rpx;
-  width: 30rpx;
-  height: 30rpx;
-}
 .a-toast-content {
   max-width: 450rpx;
 }
