@@ -1,8 +1,8 @@
 <a-modal wx:if="{{ show }}">
   <view class="a-toast">
-    <image
-           src="./images/{{ toastData.type || 'success' }}.png"
-           class="a-toast-img" />
+    <a-icon
+            name="{{ iconName }}"
+            color="{{ iconColor }}"></a-icon>
     <view class="a-toast-content">{{ toastData.content }}</view>
   </view>
 </a-modal>

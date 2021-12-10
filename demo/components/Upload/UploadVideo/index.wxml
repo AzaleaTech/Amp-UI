@@ -7,11 +7,13 @@
     <video
            show-center-play-btn="{{ false }}"
            src="{{ item }}" />
-    <cover-image
-                 data-index="{{ index }}"
-                 hidden="{{ disabled }}"
-                 src="../images/remove.png"
-                 bind:tap="removeVideo" />
+    <a-icon
+            wx:if="{{ !disabled }}"
+            name="error_fill"
+            color="#929292"
+            data-index="{{ index }}"
+            class="a-upload-video-del"
+            bind:tap="removeVideo"></a-icon>
   </view>
   <view
         wx:if="{{ limit < 0 || videos.length < limit }}"
