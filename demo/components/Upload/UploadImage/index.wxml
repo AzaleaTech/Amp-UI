@@ -1,13 +1,38 @@
 <view class="a-upload-image">
-  <view wx:for="{{ imgList }}" wx:key="id" class="a-upload-image-box" style="width: {{ width }}rpx; height: {{ height }}rpx">
-    <image src="{{ item }}" data-index="{{ index }}" bind:tap="previewImage" />
-    <image hidden="{{ disabled }}" src="../images/remove.png" data-index="{{ index }}" class="a-upload-image-del" bind:tap="removeImage" />
+  <view
+        wx:for="{{ imgList }}"
+        wx:key="id"
+        class="a-upload-image-box"
+        style="width: {{ width }}rpx; height: {{ height }}rpx">
+    <image
+           src="{{ item }}"
+           data-index="{{ index }}"
+           bind:tap="previewImage" />
+    <a-icon
+            wx:if="{{ !disabled }}"
+            name="error_fill"
+            color="#929292"
+            data-index="{{ index }}"
+            class="a-upload-image-del"
+            bind:tap="removeImage"></a-icon>
   </view>
-  <view wx:if="{{ (limit > imgList.length || !limit) && !disabled }}" class="a-upload-image-box" style="width: {{ width }}rpx; height: {{ height }}rpx" bind:tap="chooseImage">
-    <a-icon name="photograph_line" size="80" color="#929292"></a-icon>
+  <view
+        wx:if="{{ (limit > imgList.length || !limit) && !disabled }}"
+        class="a-upload-image-box"
+        style="width: {{ width }}rpx; height: {{ height }}rpx"
+        bind:tap="chooseImage">
+    <a-icon
+            name="photograph_line"
+            size="80"
+            color="#929292"></a-icon>
     上传图片
   </view>
 </view>
 <view wx:if="{{ showCropper }}">
-  <a-cropper imgUrl="{{ imgUrl }}" ratio="{{ 690 / 400 }}" bind:cancel="handleCancel" bind:save="handleSave"></a-cropper>
+  <a-cropper
+             imgUrl="{{ imgUrl }}"
+             ratio="{{ 690 / 400 }}"
+             bind:cancel="handleCancel"
+             bind:save="handleSave"></a-cropper>
 </view>
+

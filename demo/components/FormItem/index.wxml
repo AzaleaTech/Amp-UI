@@ -28,10 +28,10 @@
             wx:if="{{ footer }}"
             class="a-form-item-footer">{{ footer }}
       </view>
-      <image
-             wx:if="{{ footerArrow }}"
-             class="a-form-item-footer-icon"
-             src="./images/arrow-right-icon.png" />
+      <a-icon
+              wx:if="{{ footerArrow }}"
+              name="arrow-right"
+              color="#b2b2b2"></a-icon>
     </view>
   </view>
 </view>

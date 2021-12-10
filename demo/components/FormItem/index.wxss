@@ -46,8 +46,3 @@
 .a-form-item-footer {
   margin-left: 10rpx;
 }
-.a-form-item-footer-icon {
-  margin: 0 10rpx;
-  width: 12rpx;
-  height: 24rpx;
-}

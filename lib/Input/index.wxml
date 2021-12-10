@@ -14,9 +14,11 @@
          bind:blur="handleBlur"
          bind:focus="handleFocus"
          bind:input="handleChange" />
-  <image
-         wx:if="{{ allowClear && value }}"
-         src="./images/clear-icon.png"
-         bind:tap="handleChange" />
+  <a-icon
+          wx:if="{{ allowClear && value  }}"
+          name="error_fill"
+          color="#b2b2b2"
+          size="44"
+          bind:tap="handleChange"></a-icon>
 </view>
 
