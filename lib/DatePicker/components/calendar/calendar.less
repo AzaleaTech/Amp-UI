@@ -1,0 +1,127 @@
+@import '../../../styles/_index.less';
+
+.calendar {
+  background-color: white;
+  height: 750rpx;
+  padding: 20rpx;
+
+  .selected-date {
+    padding-bottom: 16rpx;
+    overflow: hidden;
+
+    .set-size(100%, 56rpx);
+    .flex-type(space-around);
+
+    & > view {
+      width: 29.5%;
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+
+  .calendar-week {
+    background: @white-color;
+    overflow: hidden;
+
+    .set-size(100%, calc(100% / 10));
+    .flex-type();
+
+    .weekday-label {
+      width: calc(100% / 7);
+      font-size: 26rpx;
+      padding: 12rpx 0;
+      
+      .flex-type(center);
+      .text-truncate()
+    }
+  }
+
+  .calendar-panel {
+
+    .set-size(100%, calc(100% - 78rpx));
+
+    .calendar-box {
+      background: @white-color;
+      overflow: hidden;
+
+      .set-size(100%, calc(100% / 6));
+      .flex-type();
+
+      .weekday-label {
+        width: calc(100% / 7);
+        font-size: 26rpx;
+        padding: 12rpx 0;
+
+        .text-truncate();
+        .flex-type(center);
+
+        &-text {
+          line-height: 70rpx;
+          border-radius: 50%;
+          text-align: center;
+          position: relative;
+
+          .set-size(70rpx);
+
+          &::before {
+            // 增加点击面积
+            content: '';
+            position: absolute;
+            top: -10rpx;
+            bottom: -10rpx;
+            left: -10rpx;
+            right: -10rpx;
+          }
+        }
+
+        .sub-color {
+          color: @date-picker-base-color;
+        }
+
+        .active-date,
+        .round-range-mark {
+          background: @date-picker-base-color;
+          /* 选中后的日期数字本身颜色 */
+          color: @white-color;
+          font-weight: bold;
+          overflow: hidden;
+          position: relative;
+        }
+
+        .block-range-mark {
+          border-radius: 0;
+          background: @date-picker-base-color;
+          /* 选中后的日期数字本身颜色 */
+          color: @white-color;
+          font-weight: bold;
+          overflow: hidden;
+          position: relative;
+
+          .set-size(100%, 70rpx);
+        }
+
+        .round-range-left-mark {
+          border-radius: 35rpx 0 0 35rpx;
+        }
+
+        .round-range-right-mark {
+          border-radius: 0 35rpx 35rpx 0;
+        }
+      }
+
+      .actived-date {
+        overflow: hidden;
+        position: relative;
+      }
+
+      .actived-date::after {
+        content: attr(data-event);
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 16rpx;
+      }
+    }
+  }
+}

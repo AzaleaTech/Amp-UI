@@ -1,0 +1,125 @@
+.calendar {
+  background-color: white;
+  height: 750rpx;
+  padding: 20rpx;
+}
+.calendar .selected-date {
+  padding-bottom: 16rpx;
+  overflow: hidden;
+  width: 100%;
+  height: 56rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.calendar .selected-date > view {
+  width: 29.5%;
+  display: flex;
+  justify-content: space-around;
+}
+.calendar .calendar-week {
+  background: #ffffff;
+  overflow: hidden;
+  width: 100%;
+  height: calc(100% / 10);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.calendar .calendar-week .weekday-label {
+  width: calc(100% / 7);
+  font-size: 26rpx;
+  padding: 12rpx 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.calendar .calendar-panel {
+  width: 100%;
+  height: calc(100% - 78rpx);
+}
+.calendar .calendar-panel .calendar-box {
+  background: #ffffff;
+  overflow: hidden;
+  width: 100%;
+  height: calc(100% / 6);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.calendar .calendar-panel .calendar-box .weekday-label {
+  width: calc(100% / 7);
+  font-size: 26rpx;
+  padding: 12rpx 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.calendar .calendar-panel .calendar-box .weekday-label-text {
+  line-height: 70rpx;
+  border-radius: 50%;
+  text-align: center;
+  position: relative;
+  width: 70rpx;
+  height: 70rpx;
+}
+.calendar .calendar-panel .calendar-box .weekday-label-text::before {
+  content: '';
+  position: absolute;
+  top: -10rpx;
+  bottom: -10rpx;
+  left: -10rpx;
+  right: -10rpx;
+}
+.calendar .calendar-panel .calendar-box .weekday-label .sub-color {
+  color: #3895f7;
+}
+.calendar .calendar-panel .calendar-box .weekday-label .active-date,
+.calendar .calendar-panel .calendar-box .weekday-label .round-range-mark {
+  background: #3895f7;
+  /* 选中后的日期数字本身颜色 */
+  color: #ffffff;
+  font-weight: bold;
+  overflow: hidden;
+  position: relative;
+}
+.calendar .calendar-panel .calendar-box .weekday-label .block-range-mark {
+  border-radius: 0;
+  background: #3895f7;
+  /* 选中后的日期数字本身颜色 */
+  color: #ffffff;
+  font-weight: bold;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 70rpx;
+}
+.calendar .calendar-panel .calendar-box .weekday-label .round-range-left-mark {
+  border-radius: 35rpx 0 0 35rpx;
+}
+.calendar .calendar-panel .calendar-box .weekday-label .round-range-right-mark {
+  border-radius: 0 35rpx 35rpx 0;
+}
+.calendar .calendar-panel .calendar-box .actived-date {
+  overflow: hidden;
+  position: relative;
+}
+.calendar .calendar-panel .calendar-box .actived-date::after {
+  content: attr(data-event);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 16rpx;
+}

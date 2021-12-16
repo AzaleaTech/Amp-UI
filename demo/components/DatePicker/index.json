@@ -1,0 +1,9 @@
+{
+  "component": true,
+  "usingComponents": {
+    "a-picker-header":"./components/header",
+    "a-calendar":"./components/calendar/calendar",
+    "a-modal": "../Modal/index/index",
+    "a-time": "./components/time/time"
+  }
+}

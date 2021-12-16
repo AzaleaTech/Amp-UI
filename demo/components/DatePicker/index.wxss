@@ -1,0 +1,50 @@
+@keyframes fadein {
+  from {
+    transform: translateY(850rpx);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.a-date-picker {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 10001;
+  background: #ffffff;
+  text-align: center;
+  font-size: 28rpx;
+  color: #252525;
+}
+.a-date-picker-animation {
+  animation: fadein 0.3s forwards;
+}
+.a-date-picker .leftDate {
+  transform: translate(0, 0);
+}
+.a-date-picker .rightTime {
+  transform: translate(-750rpx, 0);
+}
+.a-date-picker-time {
+  transform: translate(-750rpx, 0);
+}
+.a-date-picker-view {
+  transition: 0.5s;
+}
+.a-date-picker-view .a-calendar {
+  box-sizing: border-box;
+  width: 750rpx;
+  transform: translate(0rpx, 0);
+}
+.a-date-picker-view .a-time {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(750rpx, 0);
+  width: 750rpx;
+  height: 750rpx;
+}

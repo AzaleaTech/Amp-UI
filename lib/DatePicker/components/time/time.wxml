@@ -1,0 +1,27 @@
+<view
+      wx:if="{{ type === 'time' || type === 'datetime' }}"
+      class="time a-class">
+  <picker-view
+               indicator-style="height: 50px;"
+               value="{{ value }}"
+               class="time-container"
+               bindchange="bindChange">
+    <picker-view-column>
+      <view
+            wx:for="{{ hours }}"
+            wx:key="*this"
+            class="time-container-hour">
+        {{ item < 10 ? '0'  : '' }}{{ item }}
+      </view>
+    </picker-view-column>
+    <picker-view-column>
+      <view
+            wx:for="{{ minutes }}"
+            wx:key="*this"
+            class="time-container-minute">
+        {{ item < 10 ? '0'  : '' }}{{ item }}
+      </view>
+    </picker-view-column>
+  </picker-view>
+</view>
+
