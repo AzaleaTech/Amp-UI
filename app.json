@@ -30,6 +30,7 @@
     "demo/pages/audio/index",
     "demo/pages/cropper/index",
     "demo/pages/upload/index",
+    "demo/pages/datePicker/index",
 
     "demo/pages/modal/index",
 

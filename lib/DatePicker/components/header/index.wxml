@@ -1,0 +1,38 @@
+<view class="header">
+  <view class="header-left">
+    <view wx:if="{{ type === 'date' }}">
+      <view class="header-text">
+        {{ headerDateText }}
+      </view>
+    </view>
+    <view wx:if="{{ type === 'time' }}">
+      <view class="header-text">
+        {{ time.hour
+        < 10 ? '0' : '' }}{{ time.hour }}:{{ time.minute < 10 ? '0' : '' }}{{ time.minute }}
+      </view>
+    </view>
+    <view wx:if="{{ type === 'range' }}">
+      <view class="header-text">
+        <view class="header-text-range {{ rangeDate[0] ? 'header-text-range-active' : '' }}">
+          {{ rangeDate[0] ? rangeDate[0].headerRangeText : '开始时间' }}
+        </view>
+        -
+        <view class="header-text-range {{ rangeDate[1] ? 'header-text-range-active' : '' }}">
+          {{ rangeDate[1] ? rangeDate[1].headerRangeText : '结束时间' }}
+        </view>
+      </view>
+    </view>
+    <view wx:if="{{ type === 'datetime' }}">
+      <view class="header-text header-text-normal {{ textStyle === 'leftDate' ? 'header-text-active' : '' }}" data-type="leftDate" bind:tap="handleChange">
+        {{ headerDateText }}
+      </view>
+      <view class="header-text header-text-normal {{ textStyle === 'rightTime' ? 'header-text-active' : '' }}" data-type="rightTime" bind:tap="handleChange">
+        {{ time.hour < 10 ? '0' : '' }}{{ time.hour }}:{{ time.minute < 10 ? '0' : '' }}{{ time.minute }}
+      </view>
+    </view>
+  </view>
+  <view class="header-right" bind:tap="handleTap">
+    <view class="header-right-content">确定</view>    
+  </view>
+</view>
+

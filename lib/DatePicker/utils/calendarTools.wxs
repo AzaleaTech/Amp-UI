@@ -1,0 +1,92 @@
+// 每月1号改变颜色
+var getSubColor = function (subValue, disabled) {
+  return subValue && !disabled ? 'sub-color' : '';
+};
+
+// 选择出现绿色圆点
+var getActiveDate = function (type, value, selectedDate) {
+  return (type === 'date' || type === 'datetime') && value === selectedDate ? 'active-date' : '';
+};
+
+// range模式第一次点击出现绿色圆点
+var getRoundRangeMark = function (type, value, leftSelectedDate, rightSelectedDate) {
+  return type === 'range' && (value === leftSelectedDate || value === rightSelectedDate)
+    ? 'round-range-mark'
+    : '';
+};
+
+// range模式点击完成中间的绿色方块
+var getBlockRangeMark = function (type, stamp, leftSelectedStamp, rightSelectedStamp) {
+  return type === 'range' && stamp <= rightSelectedStamp && stamp >= leftSelectedStamp
+    ? 'block-range-mark'
+    : '';
+};
+
+// range模式左边圆弧
+var getRoundRangeLeftMark = function (type, value, leftSelectedDate, rightSelectedDate) {
+  return type === 'range' && leftSelectedDate && rightSelectedDate && value === leftSelectedDate
+    ? 'round-range-left-mark'
+    : '';
+};
+
+// range模式右边圆弧
+var getRoundRangeRightMark = function (type, value, leftSelectedDate, rightSelectedDate) {
+  return type === 'range' && leftSelectedDate && rightSelectedDate && value === rightSelectedDate
+    ? 'round-range-right-mark'
+    : '';
+};
+
+// 选中mark标记消失
+var getActivedDate = function (
+  type,
+  event,
+  value,
+  selectedDate,
+  stamp,
+  leftSelectedDate,
+  rightSelectedDate,
+  leftSelectedStamp,
+  rightSelectedStamp,
+) {
+  return event &&
+    (((type === 'date' || type === 'datetime') && value !== selectedDate) ||
+      (type === 'range' &&
+        (!leftSelectedDate ||
+          (leftSelectedDate && !rightSelectedDate && value !== leftSelectedDate) ||
+          (leftSelectedStamp &&
+            rightSelectedStamp &&
+            (stamp > rightSelectedStamp || stamp < leftSelectedStamp)))))
+    ? 'actived-date'
+    : '';
+};
+
+var changeWeekdayLabel = function (
+  subValue,
+  disabled,
+  type,
+  value,
+  stamp,
+  selectedDate,
+  leftSelectedDate,
+  rightSelectedDate,
+  leftSelectedStamp,
+  rightSelectedStamp,
+) {
+  return (
+    getSubColor(subValue, disabled) +
+    ' ' +
+    getActiveDate(type, value, selectedDate) +
+    ' ' +
+    getRoundRangeMark(type, value, leftSelectedDate, rightSelectedDate) +
+    ' ' +
+    getRoundRangeLeftMark(type, value, leftSelectedDate, rightSelectedDate) +
+    ' ' +
+    getRoundRangeRightMark(type, value, leftSelectedDate, rightSelectedDate) +
+    ' ' +
+    getBlockRangeMark(type, stamp, leftSelectedStamp, rightSelectedStamp)
+  );
+};
+module.exports = {
+  getActivedDate: getActivedDate,
+  changeWeekdayLabel: changeWeekdayLabel,
+};

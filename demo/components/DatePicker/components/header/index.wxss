@@ -1,0 +1,46 @@
+.header {
+  height: 80rpx;
+  line-height: 80rpx;
+  padding: 0 30rpx;
+  background: #f4f5f6;
+  font-size: 28rpx;
+  color: #252525;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-right-content {
+  color: #3895f7;
+}
+.header-text {
+  display: inline-block;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  margin-right: 40rpx;
+}
+.header-text-range {
+  display: inline-block;
+  color: #b2b2b2;
+}
+.header-text-range-active {
+  color: #252525;
+}
+.header-text-normal {
+  color: #868686;
+}
+.header-text-active {
+  color: #252525;
+  position: relative;
+}
+.header-text-active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 60rpx;
+  height: 4rpx;
+  background: #3895f7;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 6rpx;
+}

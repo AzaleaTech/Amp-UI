@@ -43,6 +43,7 @@ Page({
           { label: 'Audio 音频和录音组件', url: '../audio/index' },
           { label: 'Cropper 图片裁剪组件', url: '../cropper/index' },
           { label: 'Upload 上传图片或视频组件', url: '../upload/index' },
+          { label: 'DatePicker 日期选择组件', url: '../datePicker/index' },
         ],
       },
       {

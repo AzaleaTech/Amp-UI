@@ -1,0 +1,22 @@
+<template name="date-picker">
+  <view
+        class="a-class a-date-picker {{ show ? 'a-date-picker-animation' : '' }}"
+        catch:tap="handleDoNothing">
+    <a-picker-header
+                     type="{{ type }}"
+                     bind:click="handleClick"
+                     bind:remould="handleRemould"></a-picker-header>
+    <view class="a-date-picker-view {{ textStyle }} {{ type === 'time' ? 'a-date-picker-time' : '' }}">
+      <a-calendar
+                  a-class="a-calendar"
+                  default-value="{{ defaultValue }}"
+                  type="{{ type }}"
+                  markers="{{ markers }}" />
+      <a-time
+              a-class="a-time"
+              default-value="{{ defaultValue }}"
+              type="{{ type }}" />
+    </view>
+  </view>
+</template>
+

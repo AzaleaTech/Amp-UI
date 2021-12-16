@@ -1,0 +1,44 @@
+<wxs
+     src="../../utils/calendarTools.wxs"
+     module="calendarTools" />
+
+<view class="calendar a-class">
+  <!-- 日历部分 -->
+  <view class="calendar-week">
+    <view
+          wx:for="{{ weeklySchedule }}"
+          wx:key="*this"
+          class="weekday-label">{{ item }}
+    </view>
+  </view>
+  <scroll-view
+               scroll-y
+               scroll-top="{{  selectedIndex * 105 }}rpx"
+               class="calendar-panel">
+    <!-- 因为拿到的星期是按照星期排好的，所以第一行向后对齐就能保证日期和星期对上，默认向前对齐 -->
+    <view
+          wx:for="{{ dateList }}"
+          wx:key="index"
+          wx:for-item="week"
+          class="calendar-box"
+          style="{{ index === 0 ? 'justify-content: flex-end' : '' }}">
+      <!-- 此处view的data-不是为了向js传值，而只是自定义属性向css伪元素传attr() -->
+      <view
+            wx:for="{{ week }}"
+            wx:key="index"
+            class="weekday-label {{ calendarTools.getActivedDate(type, item.event, item.value, selectedDate, item.stamp, rangeDate[0].selectedDate, rangeDate[1].selectedDate, rangeDate[0].selectedStamp, rangeDate[1].selectedStamp) }} "
+            style="background-color:{{ item.bgColor ? item.bgColor : 'none' }}; {{ item.disabled ? 'color:rgba(0, 0, 0, 0.3)' : '' }}"
+            data-event="{{ item.event }}">
+        <!-- 默认特殊标记背景日期是今天，也可以去设置 -->
+        <view
+              class="weekday-label-text {{ calendarTools.changeWeekdayLabel(item.subValue, item.disabled, type, item.value, item.stamp, selectedDate, rangeDate[0].selectedDate, rangeDate[1].selectedDate, rangeDate[0].selectedStamp, rangeDate[1].selectedStamp) }}"
+              style="pointer-events:{{ item.disabled ? 'none' : 'auto' }};"
+              data-date="{{ item }}"
+              bind:tap="selectDate">
+          {{ item.subValue ? item.subValue : item.date }}
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>
+

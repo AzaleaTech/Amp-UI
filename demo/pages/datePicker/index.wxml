@@ -1,0 +1,45 @@
+<view class="example-box">
+  <view class="example-box-title">时间label值</view>
+  <view class="example-box-content show-time">
+    {{ label }}
+  </view>
+  <view class="example-box-title">date模式打开</view>
+  <view class="example-box-content">
+    <button
+            data-type="date"
+            bind:tap="handleBtnClick">date模式打开
+    </button>
+  </view>
+  <view class="example-box-title">range模式打开</view>
+  <view class="example-box-content">
+    <button
+            data-type="range"
+            bind:tap="handleBtnClick">range模式打开
+    </button>
+  </view>
+  <view class="example-box-title">time模式打开</view>
+  <view class="example-box-content">
+    <button
+            data-type="time"
+            bind:tap="handleBtnClick">time模式打开
+    </button>
+  </view>
+  <view class="example-box-title">datetime模式打开</view>
+  <view class="example-box-content">
+    <button
+            data-type="datetime"
+            bind:tap="handleBtnClick">datetime模式打开
+    </button>
+  </view>
+  <a-date-picker
+                 a-class="picker-text-color"
+                 default-value="{{ dateValue }}"
+                 markers="{{ markers }}"
+                 value-format="{{ valueFormat }}"
+                 format="{{ formatter }}"
+                 type="{{ type }}"
+                 show="{{ show }}"
+                 bind:confirm="handleConfirm"
+                 bind:cancel="handleCancel" />
+</view>
+
