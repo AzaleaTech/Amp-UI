@@ -84,6 +84,7 @@ npm run build / yarn build
 - [Record](./docs/record.md)
 - [Cropper](./docs/cropper.md)
 - [Upload](./docs/upload.md)
+- [DatePicker](./docs/datePicker.md)
 
 操作反馈
 

@@ -31,6 +31,10 @@ gulp.task('compile-json', () => {
   return gulp.src(['../lib/**/*.json']).pipe(gulp.dest(outputDir));
 });
 
+gulp.task('compile-wxs', () => {
+  return gulp.src(['../lib/**/*.wxs']).pipe(gulp.dest(outputDir));
+});
+
 gulp.task('compile-wxml', () => {
   return gulp.src(['../lib/**/*.wxml']).pipe(gulp.dest(outputDir));
 });
@@ -45,6 +49,7 @@ gulp.task('auto', () => {
   gulp.watch('../lib/**/*.js', gulp.series('compile-js'));
   gulp.watch('../lib/**/*.json', gulp.series('compile-json'));
   gulp.watch('../lib/**/*.wxml', gulp.series('compile-wxml'));
+  gulp.watch('../lib/**/*.wxs', gulp.series('compile-wxs'));
 });
 
 gulp.task(
@@ -57,6 +62,7 @@ gulp.task(
       'compile-js',
       'compile-json',
       'compile-wxml',
+      'compile-wxs',
       'auto',
     ),
   ),

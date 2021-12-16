@@ -1,0 +1,10 @@
+<import src="./date-picker.wxml" />
+
+<a-modal
+         wx:if="{{ show }}"
+         catch:tap="closeDialog">
+  <template
+            is="date-picker"
+            data="{{ type, show, markers, textStyle, defaultValue }}" />
+</a-modal>
+

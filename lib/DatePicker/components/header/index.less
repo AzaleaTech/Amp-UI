@@ -1,0 +1,55 @@
+@import '../../../styles/_index.less';
+
+.header {
+  height: 80rpx;
+  line-height: 80rpx;
+  padding: 0 30rpx;
+  background: @date-picker-header-bg-color;
+
+  .font-style(28rpx, @date-picker-font-color);
+  .flex-type(space-between);
+
+  &-right {
+
+    &-content {
+      color: @date-picker-header-silder-color;
+    }
+  }
+
+  &-text {
+    display: inline-block;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    margin-right: 40rpx;
+
+    &-range{
+      display: inline-block;
+      color: @date-picker-header-disable-color;
+
+      &-active{
+        color: @date-picker-font-color;
+      }
+    }
+
+    &-normal {
+      color: @date-picker-header-datetime-color;
+    }
+
+    &-active {
+      color: @date-picker-font-color;
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 60rpx;
+        height: 4rpx;
+        background: @date-picker-header-silder-color;
+        left:50%;
+        transform: translateX(-50%);
+        border-radius: 6rpx;
+      }
+    }
+  }
+}

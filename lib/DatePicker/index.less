@@ -1,0 +1,51 @@
+@import '../styles/_index.less';
+
+.slide-in(850rpx, 0, fadein);
+
+.a-date-picker {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: @dialog-z-index;
+  background: @white-color;
+  text-align: center;
+
+  .font-style(@date-picker-font-size, @date-picker-font-color);
+  
+  &-animation{
+  animation: fadein 0.3s forwards;
+  }
+
+  .leftDate{
+    transform: translate(0, 0);
+  }
+
+  .rightTime{
+    transform: translate(-750rpx, 0);
+  }
+
+  &-time {
+    transform: translate(-750rpx, 0);
+  }
+
+  &-view {
+    transition: 0.5s;
+
+    .a-calendar {
+      box-sizing: border-box;
+      width: 750rpx;
+      transform: translate(0rpx, 0);
+    }
+
+    .a-time {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(750rpx, 0);
+
+      .set-size(750rpx)
+    }
+  }
+}
