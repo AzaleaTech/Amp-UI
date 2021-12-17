@@ -9,13 +9,24 @@
           wx:if="{{ show }}"
           class="a-record-main">
       <block wx:if="{{ filePath }}">
-        <image src="./images/player1.png" />
-        <image
-               wx:if="{{ playIcon === 1 || playIcon === 2 }}"
-               src="./images/record2.png" />
-        <image
-               wx:if="{{ playIcon === 2 }}"
-               src="./images/record3.png" />
+        <a-icon
+                name="recording"
+                size="{{ iconSize }}"
+                color="#fff"></a-icon>
+        <a-icon
+                name="a-2"
+                size="{{ iconSize }}"
+                color="{{ iconColor }}"></a-icon>
+        <a-icon
+                wx:if="{{ playIcon === 1 || playIcon === 2 }}"
+                name="a-2"
+                size="{{ iconSize + 70 }}"
+                color="{{ iconColor }}"></a-icon>
+        <a-icon
+                wx:if="{{ playIcon === 2 }}"
+                name="a-2"
+                size="{{ iconSize + 140 }}"
+                color="{{ iconColor }}"></a-icon>
         <view
               wx:if="{{ !isPlaying }}"
               class="a-record-tips">
@@ -23,13 +34,24 @@
         </view>
       </block>
       <block wx:else>
-        <image src="./images/record1.png" />
-        <image
-               wx:if="{{ recordIcon === 1 || recordIcon === 2 }}"
-               src="./images/record2.png" />
-        <image
-               wx:if="{{ recordIcon === 2 }}"
-               src="./images/record3.png" />
+        <a-icon
+                name="play"
+                size="{{ iconSize }}"
+                color="#fff"></a-icon>
+        <a-icon
+                name="a-2"
+                size="{{ iconSize }}"
+                color="{{ iconColor }}"></a-icon>
+        <a-icon
+                wx:if="{{ recordIcon === 1 || recordIcon === 2 }}"
+                name="a-2"
+                size="{{ iconSize + 70 }}"
+                color="{{ iconColor }}"></a-icon>
+        <a-icon
+                wx:if="{{ recordIcon === 2 }}"
+                name="a-2"
+                size="{{ iconSize + 140 }}"
+                color="{{ iconColor }}"></a-icon>
         <view
               wx:if="{{ !isRecording }}"
               class="a-record-tips">
@@ -42,7 +64,9 @@
         wx:if="{{ filePath }}"
         class="a-record-btn"
         bind:tap="handleDelete">
-    <image src="./images/delete.png" />
+    <a-icon
+            name="delete_fill"
+            color="{{ iconColor }}"></a-icon>
     删除录音
   </view>
 </view>
