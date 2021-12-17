@@ -7,6 +7,14 @@ Component({
       type: String,
       value: '长按录入详细信息',
     },
+    iconColor: {
+      type: String,
+      value: '#3895f7',
+    },
+    iconSize: {
+      type: Number,
+      value: 160,
+    },
   },
 
   data: {
@@ -75,7 +83,7 @@ Component({
   },
 
   methods: {
-    recording(){
+    recording() {
       this.data.time = setInterval(() => {
         this.setData({
           recordIcon: this.data.recordIcon === 2 ? 0 : this.data.recordIcon + 1,
