@@ -32,19 +32,24 @@
     z-index: -1;
     overflow: hidden;
 
+    .flex-type(center);
     .set-size(300rpx);
 
-    & image {
+    & a-icon {
+      position: absolute;
+
       &:first-child {
         z-index: 3;
       }
 
-      &:nth-child(2) {
+      &:nth-child(3) {
         z-index: 2;
+        opacity: 40%;
       }
 
-      &:nth-child(3) {
+      &:nth-child(4) {
         z-index: 1;
+        opacity: 20%;
       }
     }
   }
@@ -61,16 +66,11 @@
 
   &-btn {
     display: flex;
+    align-items: center;
     margin: 60rpx 0 40rpx;
     height: 50rpx;
     color: @primary-color;
     font-size: 28rpx;
     line-height: 40rpx;
-
-    & image {
-      margin-right: 12rpx;
-
-      .set-size(38rpx, 36rpx);
-    }
   }
 }
