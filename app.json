@@ -4,6 +4,7 @@
     "demo/pages/icon/index",
     "demo/pages/button/index",
     "demo/pages/buttonGroup/index",
+    "demo/pages/layout/index",
 
     "demo/pages/header/index",
     "demo/pages/tabs/index/index",
@@ -19,7 +20,7 @@
     "demo/pages/divider/index",
     "demo/pages/parse/index",
     "demo/pages/webview/index",
-    
+
     "demo/pages/form/index",
     "demo/pages/input/index",
     "demo/pages/rate/index",

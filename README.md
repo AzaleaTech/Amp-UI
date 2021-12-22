@@ -52,6 +52,7 @@ npm run build / yarn build
 - [Icon](./docs/icon.md)
 - [Button](./docs/button.md)
 - [ButtonGroup](./docs/buttonGroup.md)
+- [Layout](./docs/layout.md)
 
 导航组件
 
@@ -90,10 +91,7 @@ npm run build / yarn build
 
 ## 开发中
 
-- Col \*
-- Row \*
 - Painter \*
-- Swiper \*
 - DatePicker \*
 - List \*
 
@@ -104,8 +102,6 @@ npm run build / yarn build
 
 ## TODO
 
-- [Toast](./docs/toast.md)&&[Dialog](./docs/dialog.md)支持函数调用
-- 全局图标替换
 - demo 的进一步完善
 
 ## 贡献代码
