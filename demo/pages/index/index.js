@@ -7,6 +7,7 @@ Page({
           { label: 'Icon 图标', url: '../icon/index' },
           { label: 'Button 按钮', url: '../button/index' },
           { label: 'ButtonGroup 按钮组', url: '../buttonGroup/index' },
+          { label: 'Layout 布局', url: '../layout/index' },
         ],
       },
       {

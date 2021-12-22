@@ -1,0 +1,4 @@
+<view class="a-class a-row">
+  <slot></slot>
+</view>
+
