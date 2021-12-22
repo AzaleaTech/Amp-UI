@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "Layout",
+  "usingComponents": {
+    "a-row": "../../components/Row/index",
+    "a-col": "../../components/Col/index"
+  }
+}

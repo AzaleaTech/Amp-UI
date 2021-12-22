@@ -1,0 +1,3 @@
+<view class="a-class a-col {{ span ? 'a-col-span-' + span : '' }} {{ offset ? 'a-col-offset-' + offset : '' }}" style="padding: 0 {{ gutter ? gutter / 2 : 0}}rpx; text-align: {{ align }}">
+  <slot></slot>
+</view>

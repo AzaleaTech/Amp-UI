@@ -1,0 +1,65 @@
+<view class="example-box">
+  <view class="example-box-title">基本使用</view>
+  <a-row a-class="row">
+    <a-col
+           span="24"
+           a-class="col col-light">col-24
+    </a-col>
+  </a-row>
+  <a-row a-class="row">
+    <a-col span="8">
+      <view class="col">col-8</view>
+    </a-col>
+    <a-col span="8">
+      <view class="col col-light">col-8</view>
+    </a-col>
+    <a-col span="8">
+      <view class="col">col-8</view>
+    </a-col>
+  </a-row>
+  <a-row a-class="row">
+    <a-col span="4">
+      <view class="col col-light">col-4</view>
+    </a-col>
+    <a-col span="6">
+      <view class="col">col-6</view>
+    </a-col>
+    <a-col span="14">
+      <view class="col col-light">col-14</view>
+    </a-col>
+  </a-row>
+  <view class="example-box-title">分栏间隔（20rpx）</view>
+  <a-row
+         a-class="row"
+         gutter="20"
+         align="center">
+    <a-col span="6">
+      <view class="col">col-6</view>
+    </a-col>
+    <a-col span="12">
+      <view class="col col-light">col-12</view>
+    </a-col>
+    <a-col span="6">
+      <view class="col">col-6</view>
+    </a-col>
+  </a-row>
+  <view class="example-box-title">左右偏移</view>
+  <a-row a-class="row">
+    <a-col
+           span="10"
+           offset="14">
+      <view class="col">col-10, offset-14</view>
+    </a-col>
+  </a-row>
+  <a-row a-class="row">
+    <a-col span="6">
+      <view class="col">col-6</view>
+    </a-col>
+    <a-col
+           span="12"
+           offset="6">
+      <view class="col col-light">col-12, offset-6</view>
+    </a-col>
+  </a-row>
+</view>
+
