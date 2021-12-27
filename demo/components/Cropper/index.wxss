@@ -17,8 +17,8 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: 400rpx !important;
-  height: 400rpx !important;
+  width: 200px !important;
+  height: 200px !important;
 }
 .a-cropper-box {
   padding: 80rpx 30rpx;

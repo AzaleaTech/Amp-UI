@@ -39,7 +39,7 @@ slot插槽
 | content    | 文本内容              | string  | -       | -      | 否   |
 | height     | 高度, 单位[`rpx`]     | number  | 48      | -      | 否   |
 | color      | 文本颜色              | string  | #2f2f2f | -      | 否   |
-| size       | 字体大小, 单位[`rpx`] | number  | 32      | -      | 否   |
+| size       | 字体大小, 单位[`rpx`] | number  | 24      | -      | 否   |
 | dashed     | 是否虚线              | boolean | false   | -      | 否   |
 | line-color | 线条颜色              | string  | #ccc    | -      | 否   |
 

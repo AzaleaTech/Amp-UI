@@ -1,37 +1,37 @@
 .a-btn {
   margin-bottom: 10px;
   border-radius: 2px;
-  height: 44px;
+  height: 36px;
   font-size: 16px;
-  line-height: 44px;
+  line-height: 36px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
 .a-btn-radius-large {
-  border-radius: 48px;
+  border-radius: 45px;
 }
 .a-btn-radius-default {
-  border-radius: 44px;
+  border-radius: 36px;
 }
 .a-btn-radius-small {
-  border-radius: 40px;
+  border-radius: 27px;
 }
 .a-btn-size-large {
-  height: 48px;
-  font-size: 18px;
-  line-height: 48px;
+  height: 45px;
+  font-size: 16px;
+  line-height: 45px;
 }
 .a-btn-size-default {
-  height: 44px;
+  height: 36px;
   font-size: 16px;
-  line-height: 44px;
+  line-height: 36px;
 }
 .a-btn-size-small {
-  height: 40px;
-  font-size: 14px;
-  line-height: 40px;
+  height: 27px;
+  font-size: 13px;
+  line-height: 27px;
 }
 .a-btn-type-default {
   border: 2rpx solid #3895f7;
