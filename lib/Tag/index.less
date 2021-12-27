@@ -1,8 +1,9 @@
 @import '../styles/_index.less';
 
-.tag-size(@padding, @height) {
+.tag-size(@font-size, @padding, @height) {
   padding: 0 @padding;
   height: @height;
+  font-size: @font-size;
   line-height: @height;
 }
 
@@ -25,16 +26,15 @@
   border-radius: 4rpx;
   background-color: @tag-base-color;
   text-align: center;
-  font-size: @tag-font-size;
 
-  .tag-size(12rpx, 36rpx);
+  .tag-size(@tag-font-size, 8px, 19px);
 
   &-small {
-    .tag-size(8rpx, 30rpx);
+    .tag-size(@tag-font-size-small, 8px, 16px);
   }
 
   &-large {
-    .tag-size(14rpx, 42rpx);
+    .tag-size(@tag-font-size-large, 10px, 22px);
   }
 
   &-primary {

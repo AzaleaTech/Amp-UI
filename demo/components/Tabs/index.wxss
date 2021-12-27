@@ -23,7 +23,7 @@
   padding: 24rpx 0;
   color: #868686;
   text-align: center;
-  font-size: 30rpx;
+  font-size: 15px;
   line-height: 42rpx;
   white-space: nowrap;
   word-wrap: normal;
@@ -32,7 +32,7 @@
   position: relative;
   box-sizing: border-box;
   color: #3895f7;
-  font-size: 34rpx;
+  font-size: 17px;
 }
 .a-tabs .a-tab-active::before {
   position: absolute;
