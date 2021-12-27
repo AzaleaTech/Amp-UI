@@ -21,7 +21,13 @@
 @grey-color: rgba(204, 204, 204, 1.0); // 灰色
 
 // 字体大小
-@text-size: 16px;
+@text-size-10: 10px; // 小标签/底部tab文字
+@text-size-12: 12px; // 用于分隔符/中标签/步骤条等辅助文字
+@text-size-13: 13px; // 用于卡片内容/步骤条选中样式/小按钮/大标签
+@text-size-14: 14px; // toast内容
+@text-size-15: 15px; // tab栏未选中样式/栏目标题
+@text-size-16: 16px; // 列表卡片标题/输入栏/列表栏/大按钮/中按钮
+@text-size-17: 17px; // 用于页面顶部栏标题/tab栏选中样式
 
 // 透明度
 @disabled-opacity: 0.4;
@@ -38,42 +44,40 @@
 @dialog-z-index: 10001; // 遮罩层内容高度(遮住导航栏)
 
 // Button
+@btn-font-size-small: 13px; //字体小
+@btn-font-size: @text-size-16; // 字体中
+@btn-font-size-large: @text-size-16; // 字体大
+@btn-border-radius: 2px; // 非圆角默认弧度
+@btn-circle-size-small: 27px; // 圆角弧度小
+@btn-circle-size: 36px; // 圆角弧度中
+@btn-circle-size-large: 45px; // 圆角弧度大
 @btn-active-hover: rgba(0, 0, 0, 0.1); // 激活遮罩
 @btn-disabled-hover: rgba(255, 255, 255, 0.35); //禁用遮罩
 @btn-inline-margin: 10px; // 行内相邻按钮间距
 
-@btn-border-radius: 2px; // 非圆角默认弧度
-@btn-circle-size-small: 40px; // 圆角弧度小
-@btn-circle-size: 44px; // 圆角弧度中
-@btn-circle-size-large: 48px; // 圆角弧度大
-
-@btn-font-size-small: 14px; //字体小
-@btn-font-size: @text-size; // 字体中
-@btn-font-size-large: 18px; // 字体大
-
 // Card
-@card-line-bg: rgba(132, 191, 247, 1); // 线条色
+@card-line-bg: @line-color; // 线条色
 @card-line-header: @card-line-bg; // 头部线条色
 @card-line-footer: @card-line-bg; // 底部线条色
 
 // Cropper
-@cropper-circle-size: 400rpx; // 圆形裁剪框大小
+@cropper-circle-size: 200px; // 圆形裁剪框大小
 
 // Avatar
 @avatar-border: 1px solid @primary-color; // 头像框边框
 @avatar-border-radius: 4px; // 头像框弧度
 
 // Divider
-@divider-font-size: @text-size; // 分割线字体默认大小
-@divider-font-color: @text-color; // 分割线字体默认颜色
-@divider-line-bg: rgba(204, 204, 204, 1.0); // 分割线默认颜色
+@divider-line-bg: @grey-color; // 分割线默认颜色
 
 // Switch
 @switch-color-base: @grey-color; // 默认底色
-@switch-with-base: 96rpx; // 默认宽度, 高度默认为1/2
+@switch-with-base: 48px; // 默认宽度, 高度默认为1/2
 
 // Tag
-@tag-font-size: 22rpx; // 字体大小
+@tag-font-size-small: @text-size-10; // 字体小
+@tag-font-size: @text-size-12; // 字体中
+@tag-font-size-large: @text-size-13; // 字体大
 @tag-base-color: @grey-color; // 默认底色
 @tag-primary-color: @primary-color;
 @tag-success-color: @success-color;
@@ -81,5 +85,5 @@
 @tag-error-color: @error-color;
 
 // Swiper
-@swiper-dot-color: rgba(216, 216, 216, 1); // 默认面板指示点的颜色
+@swiper-dot-color: @border-color; // 默认面板指示点的颜色
 @swiper-dot-active-color: @white-color; // 选中时面板指示点的颜色
