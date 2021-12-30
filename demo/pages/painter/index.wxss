@@ -1,0 +1,19 @@
+page {
+  padding-bottom: 30rpx;
+  background-color: #f4f5f6;
+}
+.example-box {
+  margin-bottom: 20rpx;
+}
+.example-box-title {
+  margin: 20rpx 30rpx;
+  color: #525252;
+  font-weight: 700;
+}
+.example-box-content {
+  padding: 20rpx 30rpx;
+  background-color: #ffffff;
+}
+.btn {
+  margin: 30rpx 50rpx;
+}
