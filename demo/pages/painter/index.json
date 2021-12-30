@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "Painter",
+  "usingComponents": {
+    "a-painter": "../../components/Painter/index",
+    "a-button": "../../components/Button/index"
+  }
+}

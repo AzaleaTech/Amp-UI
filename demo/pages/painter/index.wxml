@@ -1,0 +1,23 @@
+<view class="example-box">
+  <view class="example-box-title">基本使用</view>
+  <a-painter
+             palette="{{ palette1 }}"
+             data-index="1"
+             bind:imgOK="onImgOK"></a-painter>
+  <a-button
+            a-class="btn"
+            data-path="{{ imgUrl1 }}"
+            bind:click="handleSave">保存图片
+  </a-button>
+  <view class="example-box-title">自定义二维码内容</view>
+  <a-painter
+             palette="{{ palette2 }}"
+             data-index="2"
+             bind:imgOK="onImgOK"></a-painter>
+  <a-button
+            a-class="btn"
+            data-path="{{ imgUrl2 }}"
+            bind:click="handleSave">保存图片
+  </a-button>
+</view>
+
