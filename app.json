@@ -31,7 +31,9 @@
     "demo/pages/cropper/index",
     "demo/pages/upload/index",
 
-    "demo/pages/modal/index"
+    "demo/pages/modal/index",
+
+    "demo/pages/painter/index"
   ],
   "subpackages": [
     {

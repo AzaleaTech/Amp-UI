@@ -89,11 +89,13 @@ npm run build / yarn build
 
 - Modal ([Toast](./docs/toast.md)&&[Dialog](./docs/dialog.md))
 
+其他
+
+- [Painter](./docs/painter.md)
+
 ## 开发中
 
-- Painter \*
 - DatePicker \*
-- List \*
 
 ## 已移除
 
