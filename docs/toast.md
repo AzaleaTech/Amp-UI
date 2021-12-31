@@ -7,7 +7,9 @@
 ## 示例
 
 ```html
-基础用法 <a-toast toastData="{{ toastData }}"></a-toast>
+基础用法
+
+<a-toast toastData="{{ toastData }}"></a-toast>
 ```
 
 ```js
