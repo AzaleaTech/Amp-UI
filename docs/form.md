@@ -28,7 +28,7 @@ FormItem 标签对齐方式（left、right、justify）
 
 附加设置（图标、箭头）
 <a-form>
-  <a-form-item label="带图标表单项" icon-url="/demo/assets/images/test-avatar.jpg"></a-form-item>
+  <a-form-item label="带图标表单项" icon-url="/demo/assets/images/logo.png"></a-form-item>
   <a-form-item
     label="尾部信息及箭头"
     footer="详情"

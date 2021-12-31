@@ -1,7 +1,7 @@
 Page({
   data: {
     isCropper: false,
-    imgUrl: '/demo/assets/images/test-avatar.jpg',
+    imgUrl: 'https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg',
   },
 
   handleClick() {
