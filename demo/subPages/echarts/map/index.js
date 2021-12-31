@@ -3,8 +3,8 @@ import geoJson from './mapData.js';
 
 function initChart(canvas, width, height, dpr) {
   const chart = echarts.init(canvas, null, {
-    width: width,
-    height: height,
+    width,
+    height,
     devicePixelRatio: dpr, // new
   });
   canvas.setChart(chart);

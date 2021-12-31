@@ -92,6 +92,7 @@ npm run build / yarn build
 其他
 
 - [Painter](./docs/painter.md)
+- [Echarts](./docs/echarts.md)
 
 ## 开发中
 
@@ -100,7 +101,6 @@ npm run build / yarn build
 ## 已移除
 
 - ~~Verfication~~
-- ~~Echarts~~
 
 ## TODO
 
