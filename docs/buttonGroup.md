@@ -6,7 +6,7 @@
 
 ## 示例
 
-```
+```html
 默认按钮组
 <a-button-group>
   <a-button>left</a-button>
