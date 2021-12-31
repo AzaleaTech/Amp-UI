@@ -4,7 +4,7 @@ Page({
     staticTabs: ['标签1', '标签2', '标签3'],
     card: {
       title: '标题',
-      imgUrl: '/demo/assets/images/test-avatar.jpg',
+      imgUrl: 'https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg',
     },
   },
 
