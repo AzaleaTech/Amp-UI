@@ -3,6 +3,9 @@ module.exports = {
   description: '文档', //描述
   dest: './docs-dist', // 设置输出目录
   themeConfig: {
+    repo: 'http://server.azalea-tech.com:6777/frontend/wxcom',
+    repoLabel: '查看源码',
+    contributors: false,
     sidebar: {
       '/': [
         {
@@ -13,7 +16,7 @@ module.exports = {
         {
           text: '基础组件',
           collapsable: true,
-          children: ['/docs/icon', '/docs/button', '/docs/buttonGroup'],
+          children: ['/docs/icon', '/docs/button', '/docs/buttonGroup', '/docs/layout'],
         },
         {
           text: '导航组件',
@@ -30,6 +33,7 @@ module.exports = {
             '/docs/card',
             '/docs/collapse',
             '/docs/steps',
+            '/docs/swiper',
             '/docs/divider',
             '/docs/parse',
           ],
@@ -49,12 +53,18 @@ module.exports = {
             '/docs/record',
             '/docs/cropper',
             '/docs/upload',
+            '/docs/datePicker',
           ],
         },
         {
           text: '操作反馈',
           collapsable: true,
           children: ['/docs/toast', '/docs/dialog'],
+        },
+        {
+          text: '其他',
+          collapsable: true,
+          children: ['/docs/painter', '/docs/echarts'],
         },
       ],
     },
