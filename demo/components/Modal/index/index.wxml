@@ -1,6 +1,6 @@
 <view
       class="a-modal"
-      catchtouchmove="true">
+      catch:touchmove="true">
   <slot></slot>
 </view>
 
