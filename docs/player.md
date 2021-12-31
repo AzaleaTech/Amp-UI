@@ -7,7 +7,9 @@
 ## 示例
 
 ```html
-基础用法 <a-player url="{{ audioUrl }}"></a-player>
+基础用法
+
+<a-player url="{{ audioUrl }}"></a-player>
 ```
 
 ## API
