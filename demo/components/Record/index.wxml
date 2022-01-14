@@ -10,21 +10,21 @@
           class="a-record-main">
       <block wx:if="{{ filePath }}">
         <a-icon
-                name="recording"
-                size="{{ iconSize }}"
+                name="playing"
+                size="{{ iconSize - 70 }}"
                 color="#fff"></a-icon>
         <a-icon
-                name="a-2"
+                name="audio-bg"
                 size="{{ iconSize }}"
                 color="{{ iconColor }}"></a-icon>
         <a-icon
                 wx:if="{{ playIcon === 1 || playIcon === 2 }}"
-                name="a-2"
+                name="audio-bg"
                 size="{{ iconSize + 70 }}"
                 color="{{ iconColor }}"></a-icon>
         <a-icon
                 wx:if="{{ playIcon === 2 }}"
-                name="a-2"
+                name="audio-bg"
                 size="{{ iconSize + 140 }}"
                 color="{{ iconColor }}"></a-icon>
         <view
@@ -35,21 +35,21 @@
       </block>
       <block wx:else>
         <a-icon
-                name="play"
-                size="{{ iconSize }}"
+                name="recording"
+                size="{{ iconSize - 70 }}"
                 color="#fff"></a-icon>
         <a-icon
-                name="a-2"
+                name="audio-bg"
                 size="{{ iconSize }}"
                 color="{{ iconColor }}"></a-icon>
         <a-icon
                 wx:if="{{ recordIcon === 1 || recordIcon === 2 }}"
-                name="a-2"
+                name="audio-bg"
                 size="{{ iconSize + 70 }}"
                 color="{{ iconColor }}"></a-icon>
         <a-icon
                 wx:if="{{ recordIcon === 2 }}"
-                name="a-2"
+                name="audio-bg"
                 size="{{ iconSize + 140 }}"
                 color="{{ iconColor }}"></a-icon>
         <view
