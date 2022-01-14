@@ -2,17 +2,17 @@
       class="a-player"
       catch:tap="tapPlayer">
   <a-icon
-          name="a-01"
+          name="playing-1"
           color="{{ iconColor }}"
           size="{{ iconSize }}"></a-icon>
   <a-icon
           wx:if="{{ playIcon !== 0 }}"
-          name="a-02"
+          name="playing-2"
           color="{{ iconColor }}"
           size="{{ iconSize }}"></a-icon>
   <a-icon
           wx:if="{{ playIcon === 2 }}"
-          name="a-03"
+          name="playing-3"
           color="{{ iconColor }}"
           size="{{ iconSize }}"></a-icon>
   <view
