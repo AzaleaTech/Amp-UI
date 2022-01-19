@@ -1,0 +1,17 @@
+<view
+      class="a-class a-image"
+      style="width:{{ width }}rpx; height:{{ height }}rpx">
+  <image
+         class="a-image-container"
+         src="{{ src }}"
+         data-url="{{ src }}"
+         lazy-load="{{ lazyLoad }}"
+         mode="{{ mode }}"
+         webp="{{ webp }}"
+         show-menu-by-longpress="{{ showMenuByLongpress }}"
+         bind:tap="handleTap"
+         bind:error="handleError"
+         bind:load="handleLoad" />
+  <slot></slot>
+</view>
+
