@@ -49,7 +49,7 @@ Page({
 | current   | 当前步骤索引值                                                       | number                         | 0          | -                    | 否   |
 | direction | 显示方向                                                             | string                         | horizontal | horizontal、vertical | 否   |
 
-`step` object 字段说明
+`step` 字段说明
 | 参数 | 说明 | 类型 | 默认值 | 可选值 | 必填 |
 | -- | -- | -- | --- | --- | --- |
 | title | 标题 | string | - | - | 是 |
