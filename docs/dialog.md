@@ -29,20 +29,20 @@ Page({
 
 ### Props
 
-```ts
-declare dialogData {
-  content: String,
-  title?: String,
-  cancelText?: String,
-  confirmText?: String
+| 参数       | 说明         | 类型    | 默认值 | 必填 |
+| ---------- | ------------ | ------- | ------ | ---- |
+| dialogData | 弹框对象内容 | IDialog | -      | 是   |
+
+```js
+interface IDialog {
+  content: String, // 弹框文本内容
+  title?: String, // 弹框标题
+  cancelText?: String, // 取消按钮文本
+  confirmText?: String, // 确认按钮文本
   cancel?: Function  // 取消回调函数
   confirm?: Function // 确定回调函数
 }
 ```
-
-| 参数       | 说明         | 类型   | 默认值 | 必填 |
-| ---------- | ------------ | ------ | ------ | ---- |
-| dialogData | 弹框对象内容 | Object | -      | 是   |
 
 ### Events
 

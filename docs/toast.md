@@ -64,17 +64,17 @@ Page({
 
 ### Props
 
-```ts
-declare toastData {
-  content: string,
-  type?: string,
-  duration?: number
-}
-```
-
 | 参数      | 说明           | 类型   | 默认值 | 必填 |
 | --------- | -------------- | ------ | ------ | ---- |
-| toastData | 提示框对象内容 | Object | -      | 是   |
+| toastData | 提示框对象内容 | IToast | -      | 是   |
+
+```js
+interface IToast {
+  content: string; // 文本内容
+  type?: string; // 提示类型, 默认'success', 可选值'warning'、'success'、'error'
+  duration?: number; // 持续时间, 单位毫秒, 默认1500
+}
+```
 
 ### Events
 
