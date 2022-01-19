@@ -3,7 +3,7 @@
         wx:for="{{ count }}"
         wx:key="index"
         data-index="{{ index }}"
-        class="a-rate-item"
+        class="a-class-item a-rate-item"
         bind:tap="handleClick">
     <block wx:if="{{ value > index }}">
       <view class="a-rate-item-selected">
