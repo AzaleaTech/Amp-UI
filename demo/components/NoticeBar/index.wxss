@@ -1,0 +1,37 @@
+.a-notice-bar {
+  display: flex;
+  align-items: center;
+  height: 72rpx;
+  line-height: 72rpx;
+  font-size: 14px;
+  color: #f76a24;
+  background-color: #fefcec;
+  overflow: hidden;
+}
+.a-notice-bar-icon {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.a-notice-bar-icon image {
+  width: 60rpx;
+  height: 60rpx;
+  margin: 0 10rpx;
+}
+.a-notice-bar-wrap {
+  position: relative;
+  height: 100%;
+  flex: 1;
+  margin: 0 10rpx;
+  overflow: hidden;
+}
+.a-notice-bar-content {
+  position: absolute;
+  transition-duration: 20s;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.a-notice-bar-static {
+  max-width: 100%;
+}

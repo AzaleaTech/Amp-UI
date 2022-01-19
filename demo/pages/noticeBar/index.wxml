@@ -1,0 +1,18 @@
+<view class="example-box">
+  <view class="example-box-title">基础用法</view>
+  <view class="example-box-content">
+    <a-notice-bar
+                  left-src="https://profile.csdnimg.cn/9/0/A/2_swingdance"
+                  type="roll"
+                  swiper-arr="{{['1','2','3']}}"
+                  text="{{ text }}"
+                  bg-color="yellow"
+                  color="black"
+                  speed="{{ 100 }}"
+                  icon-color="blue"
+                  icon-size="{{ 60 }}"
+                  bind:click="handleClick">noticebar
+    </a-notice-bar>
+  </view>
+</view>
+
