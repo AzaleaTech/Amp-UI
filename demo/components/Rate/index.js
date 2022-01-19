@@ -1,5 +1,5 @@
 Component({
-  externalClasses: ['a-class'],
+  externalClasses: ['a-class', 'a-class-item'],
 
   properties: {
     // star数量, 默认5
