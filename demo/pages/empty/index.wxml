@@ -1,0 +1,17 @@
+<view class="example-box">
+  <view class="example-box-title">基础用法</view>
+  <view class="example-box-content">
+    <a-empty
+             url="{{ url }}"
+             desc="{{ description }}">
+      <a-button
+                a-class="bottom-button"
+                slot="footer"
+                type="primary"
+                circle
+                bind:click="handleBack">返回首页
+      </a-button>
+    </a-empty>
+  </view>
+</view>
+

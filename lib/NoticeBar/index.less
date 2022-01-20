@@ -1,40 +1,39 @@
 @import '../styles/_index.less';
+
 .a-notice-bar {
-  display: flex;
-  align-items: center;
-  height: 72rpx;
-  line-height: 72rpx;
-  font-size: 14px;
-  color: #f76a24;
-  background-color: #fefcec;
   overflow: hidden;
+  height: 72rpx;
+  background-color: #fefcec;
+  line-height: 72rpx;
+
+  .font-style(28rpx, @primary-color);
+  .flex-type();
 
   &-icon {
     height: 100%;
-    display: flex;
-    align-items: center;
+
+    .flex-type();
 
     image {
-      width: 60rpx;
-      height: 60rpx;
       margin: 0 10rpx;
+
+      .set-size(60rpx);
     }
   }
 
   &-wrap {
     position: relative;
-    height: 100%;
-    flex: 1;
-    margin: 0 10rpx;
     overflow: hidden;
+    flex: 1;
+    height: 100%;
+    margin: 0 10rpx;
   }
 
   &-content {
     position: absolute;
     transition-duration: 20s;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+
+    .text-truncate();
   }
 
   &-static {

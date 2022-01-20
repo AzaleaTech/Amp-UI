@@ -1,36 +1,40 @@
 .a-notice-bar {
-  display: flex;
-  align-items: center;
-  height: 72rpx;
-  line-height: 72rpx;
-  font-size: 14px;
-  color: #f76a24;
-  background-color: #fefcec;
   overflow: hidden;
+  height: 72rpx;
+  background-color: #fefcec;
+  line-height: 72rpx;
+  font-size: 28rpx;
+  color: #3895f7;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
 }
 .a-notice-bar-icon {
   height: 100%;
   display: flex;
+  flex-direction: row;
   align-items: center;
+  justify-content: flex-start;
 }
 .a-notice-bar-icon image {
+  margin: 0 10rpx;
   width: 60rpx;
   height: 60rpx;
-  margin: 0 10rpx;
 }
 .a-notice-bar-wrap {
   position: relative;
-  height: 100%;
-  flex: 1;
-  margin: 0 10rpx;
   overflow: hidden;
+  flex: 1;
+  height: 100%;
+  margin: 0 10rpx;
 }
 .a-notice-bar-content {
   position: absolute;
   transition-duration: 20s;
   overflow: hidden;
-  white-space: nowrap;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .a-notice-bar-static {
   max-width: 100%;

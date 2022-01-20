@@ -1,0 +1,28 @@
+@import '../styles/_index.less';
+
+.a-empty {
+  box-sizing: border-box;
+  padding: 64rpx 0;
+
+  .flex-type(center, column);
+
+  &-image {
+    .set-size(320rpx);
+
+    &-content {
+      .set-size(100%);
+    }
+  }
+
+  &-description {
+    margin-top: 32rpx;
+    padding: 0 120rpx;
+    line-height: 40rpx;
+
+    .font-style(28rpx, #969799);
+  }
+
+  &-footer {
+    margin-top: 48rpx;
+  }
+}
