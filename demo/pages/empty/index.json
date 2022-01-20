@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "a-empty": "../../components/Empty/index",
+    "a-button": "../../components/Button/index"
+  }
+}

@@ -1,9 +1,32 @@
+import { getRandomColor } from './utils/index.js';
+
 Page({
   data: {
-    leftIcon: 'trumpet_fill',
-    text: '大家好，我是xxx，今天来到我的家里做客须知:1、不要乱碰家里的花瓶。2、不能随意上二楼。3、不要随意在家里乱扔垃圾。'
+    iconName: 'trumpet_fill',
+    iconColor: 'red',
+    iconSize: 60,
+    text: 'NoticeBar组件常用于显示消息通知',
+    iconUrl: 'https://profile.csdnimg.cn/9/0/A/2_swingdance',
+    swiperArr: ['第一条通知', '第二条通知', '第三条通知'],
+    speed: 100,
+    delay: 400,
+    roll: true,
+    vertical: false,
   },
-  handleClick(e){
-    console.log(e.detail);
-  }
+
+  handleClick(e) {},
+
+  handleChangeColor() {
+    this.setData({
+      iconColor: getRandomColor(),
+    });
+  },
+
+  handleProperty(e) {
+    const { propertyName } = e.currentTarget.dataset;
+
+    this.setData({
+      [propertyName]: e.detail.value,
+    });
+  },
 });

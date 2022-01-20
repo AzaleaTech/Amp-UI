@@ -1,37 +1,36 @@
 <view
       class="a-class a-notice-bar"
-      style="background: {{ bgColor }}; color: {{ color }};"
       bind:tap="handleTap">
   <view class="a-notice-bar-icon">
     <a-icon
-            wx:if="{{ leftIcon }}"
-            name="{{ leftIcon }}"
+            wx:if="{{ iconName }}"
+            name="{{ iconName }}"
             color="{{ iconColor }}"
             size="{{ iconSize }}" />
     <image
-           wx:if="{{ leftSrc && !leftIcon}}"
-           src="{{ leftSrc }}"
+           wx:if="{{ iconUrl && !iconName}}"
+           src="{{ iconUrl }}"
            style="width: {{ iconSize }}rpx; height: {{ iconSize }}rpx;" />
   </view>
   <swiper
-          wx:if="{{ type === 'swiper' }}"
+          wx:if="{{ roll && vertical }}"
           autoplay
           vertical
           interval="{{ 300000 / speed }}"
           class="a-notice-bar-wrap">
     <block
            wx:for="{{ swiperArr }}"
-           wx:key="*this">
+           wx:key="index">
       <swiper-item>
         {{ item }}
       </swiper-item>
     </block>
   </swiper>
   <view
-        wx:else
+        wx:if="{{ roll && !vertical || !roll }}"
         class="a-notice-bar-wrap">
     <view
-          class="a-notice-bar-content {{ type === 'static' ? 'a-notice-bar-static' : '' }}"
+          class="a-notice-bar-content {{ !roll ? 'a-notice-bar-static' : '' }}"
           animation="{{ animationData }}">
       {{ text }}
       <slot wx:if="{{ !text }}"></slot>
