@@ -8,6 +8,8 @@
 2. `yarn dev` 预览查看效果
 3. `yarn build` 生成的 dist 包即为项目中所要导入的文件
 
+本地预览需保证微信开发者工具版本 1.05.2109101 以上, 支持原生 less 编译。[参考微信开发者文档](https://developers.weixin.qq.com/miniprogram/dev/devtools/compilets.html)
+
 ### 引入组件
 
 > 选择 dist 文件夹中项目中需要的组件导入
