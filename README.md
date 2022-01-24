@@ -95,17 +95,13 @@ npm run build / yarn build
 - [Painter](./docs/painter.md)
 - [Echarts](./docs/echarts.md)
 
-## 开发中
-
-- DatePicker \*
-
 ## 已移除
 
 - ~~Verfication~~
 
 ## TODO
 
-- demo 的进一步完善
+- demo UI 优化
 
 ## 贡献代码
 

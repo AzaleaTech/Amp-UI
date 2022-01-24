@@ -7,7 +7,6 @@
 
   .icon {
     &-box {
-      flex-direction: column;
       flex: 1 0 auto;
       margin: 0 2rpx 2rpx;
       max-width: calc(25% - 8rpx);
@@ -16,7 +15,7 @@
       background: @white-color;
       font-size: 22rpx;
 
-      .flex-type(center);
+      .flex-type(center, column);
       .set-size(160rpx);
     }
   }

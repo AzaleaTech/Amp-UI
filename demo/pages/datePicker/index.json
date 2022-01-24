@@ -1,4 +1,5 @@
 {
+  "navigationBarTitleText": "DatePicker",
   "usingComponents": {
     "a-date-picker": "../../components/DatePicker/index"
   }
