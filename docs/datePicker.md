@@ -111,7 +111,7 @@ Page({
 | date | 日期 | string | - | - | 否 |
 | text | 标记内容 | string | - | - | 否 |
 | disabled | 是否不可选 | boolean | false | true \| false | 否 |
-| bgColor | 日期背景色 | string | - | - | 否 |
+| bg-color | 日期背景色 | string | - | - | 否 |
 
 ### Events
 

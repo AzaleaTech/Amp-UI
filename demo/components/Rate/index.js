@@ -17,7 +17,7 @@ Component({
       value: 'star_fill',
     },
     // 指定图标大小，单位rpx
-    size: {
+    iconSize: {
       type: Number,
       value: 92,
     },

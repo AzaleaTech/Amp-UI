@@ -39,10 +39,10 @@
 | a-class-item | 自定义每项图标样式类，常用于设置图标间距 | string  | -         | 否   |
 | count        | star 总数                                | number  | 5         | 否   |
 | value        | 当前 star 数                             | number  | 0         | 否   |
-| iconName     | 图标名称，详见 Icon 组件                 | string  | star_fill | 否   |
-| size         | 图标大小，单位[`rpx`]                    | number  | 92        | 否   |
+| icon-name    | 图标名称，详见 Icon 组件                 | string  | star_fill | 否   |
+| icon-size    | 图标大小，单位[`rpx`]                    | number  | 92        | 否   |
 | color        | 图标未选中时颜色                         | string  | #d8d8d8   | 否   |
-| activeColor  | 图标选中时颜色                           | string  | #ffb500   | 否   |
+| active-color | 图标选中时颜色                           | string  | #ffb500   | 否   |
 | disabled     | 是否只读，无法进行交互                   | boolean | false     | 否   |
 
 ### Events
