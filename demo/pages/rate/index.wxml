@@ -5,8 +5,8 @@
   </view>
   <view class="example-box-title">不同大小</view>
   <view class="example-box-content">
-    <a-rate size="{{ 60 }}"></a-rate>
-    <a-rate size="{{ 80 }}"></a-rate>
+    <a-rate icon-size="{{ 60 }}"></a-rate>
+    <a-rate icon-size="{{ 80 }}"></a-rate>
   </view>
   <view class="example-box-title">不同数量</view>
   <view class="example-box-content">

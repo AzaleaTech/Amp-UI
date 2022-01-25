@@ -76,25 +76,25 @@ Page({
 
 #### Form
 
-| 参数       | 说明                                                  | 类型   | 默认值 | 可选值               | 必填 |
-| ---------- | ----------------------------------------------------- | ------ | ------ | -------------------- | ---- |
-| labelAlign | `label`标签的文本对齐方式, 需结合`labelWidth`一起使用 | string | left   | left、right、justify | 否   |
-| labelColor | `label`标签的文本颜色                                 | string | -      | -                    | 否   |
-| labelWidth | `label`标签的文本宽度, 单位[`rpx`]                    | string | -      | -                    | 否   |
+| 参数        | 说明                                                  | 类型   | 默认值 | 可选值               | 必填 |
+| ----------- | ----------------------------------------------------- | ------ | ------ | -------------------- | ---- |
+| label-align | `label`标签的文本对齐方式, 需结合`labelWidth`一起使用 | string | left   | left、right、justify | 否   |
+| label-color | `label`标签的文本颜色                                 | string | -      | -                    | 否   |
+| label-width | `label`标签的文本宽度, 单位[`rpx`]                    | string | -      | -                    | 否   |
 
 #### FormItem
 
-| 参数           | 说明                                                  | 类型    | 默认值 | 可选值               | 必填 |
-| -------------- | ----------------------------------------------------- | ------- | ------ | -------------------- | ---- |
-| label          | 标签名称                                              | string  | -      | -                    | 是   |
-| labelAlign     | `label`标签的文本对齐方式, 需结合`labelWidth`一起使用 | string  | -      | left、right、justify | 否   |
-| labelColor     | `label`标签的文本颜色                                 | string  | -      | -                    | 否   |
-| labelWidth     | `label`标签的文本宽度, 单位[`rpx`]                    | string  | -      | -                    | 否   |
-| required       | 是否必填                                              | boolean | false  | -                    | 否   |
-| warningMessage | 警告信息                                              | string  | -      | -                    | 否   |
-| iconUrl        | 表单项图标地址                                        | string  | -      | -                    | 否   |
-| footer         | 表单项尾部文字                                        | string  | -      | -                    | 否   |
-| footer-arrow   | 表单项尾部箭头                                        | boolean | false  | -                    | 否   |
+| 参数            | 说明                                                  | 类型    | 默认值 | 可选值               | 必填 |
+| --------------- | ----------------------------------------------------- | ------- | ------ | -------------------- | ---- |
+| label           | 标签名称                                              | string  | -      | -                    | 是   |
+| label-align     | `label`标签的文本对齐方式, 需结合`labelWidth`一起使用 | string  | -      | left、right、justify | 否   |
+| label-color     | `label`标签的文本颜色                                 | string  | -      | -                    | 否   |
+| label-width     | `label`标签的文本宽度, 单位[`rpx`]                    | string  | -      | -                    | 否   |
+| required        | 是否必填                                              | boolean | false  | -                    | 否   |
+| warning-message | 警告信息                                              | string  | -      | -                    | 否   |
+| iconUrl         | 表单项图标地址                                        | string  | -      | -                    | 否   |
+| footer          | 表单项尾部文字                                        | string  | -      | -                    | 否   |
+| footer-arrow    | 表单项尾部箭头                                        | boolean | false  | -                    | 否   |
 
 ### FormItem Slots
 

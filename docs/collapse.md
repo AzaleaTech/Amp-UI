@@ -91,14 +91,14 @@ Page({
 
 ### CollapseItem Props
 
-| 参数      | 说明                              | 类型             | 默认值 | 可选值 | 必填 |
-| --------- | --------------------------------- | ---------------- | ------ | ------ | ---- |
-| name      | 唯一标识符                        | string \| number | -      | -      | 是   |
-| title     | 标题栏左侧内容                    | string           | -      | -      | 否   |
-| value     | 标题栏右侧内容                    | string           | -      | -      | 否   |
-| disabled  | 是否禁用面板                      | boolean          | false  | -      | 否   |
-| content   | 内容列表[{ title: '', value: ''}] | array            |        | -      | 否   |
-| iconColor | 图标颜色                          | string           | -      | -      | 否   |
+| 参数       | 说明                              | 类型             | 默认值 | 可选值 | 必填 |
+| ---------- | --------------------------------- | ---------------- | ------ | ------ | ---- |
+| name       | 唯一标识符                        | string \| number | -      | -      | 是   |
+| title      | 标题栏左侧内容                    | string           | -      | -      | 否   |
+| value      | 标题栏右侧内容                    | string           | -      | -      | 否   |
+| disabled   | 是否禁用面板                      | boolean          | false  | -      | 否   |
+| content    | 内容列表[{ title: '', value: ''}] | array            |        | -      | 否   |
+| icon-color | 图标颜色                          | string           | -      | -      | 否   |
 
 ### CollapseItem Events
 
