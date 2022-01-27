@@ -1,9 +1,9 @@
 module.exports = {
-  title: 'wxcom 组件库', // 设置网站标题
+  title: 'Amp UI', // 设置网站标题
   description: '文档', //描述
   dest: './docs-dist', // 设置输出目录
   themeConfig: {
-    repo: 'http://server.azalea-tech.com:6777/frontend/wxcom',
+    repo: 'https://github.com/AzaleaTech/Amp-UI',
     repoLabel: '查看源码',
     contributors: false,
     sidebar: {
