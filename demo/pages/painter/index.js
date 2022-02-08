@@ -19,7 +19,7 @@ Page({
         },
         {
           type: 'text',
-          text: 'WXCOM组件库',
+          text: 'AmpUI组件库',
           css: {
             top: '40rpx',
             left: '100rpx',

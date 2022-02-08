@@ -11,12 +11,12 @@
         "value": ".vuepress"
       },
       {
-        "type": "suffix",
-        "value": ".less"
+        "type": "folder",
+        "value": "lib"
       },
       {
         "type": "folder",
-        "value": "lib"
+        "value": "docs-dist"
       },
       {
         "type": "suffix",
