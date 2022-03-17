@@ -9,7 +9,7 @@
 ```html
 基础用法
 
-<a-record tips="长按发表意见"></a-record>
+<a-record tip="长按发表意见"></a-record>
 ```
 
 ## API

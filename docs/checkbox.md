@@ -32,7 +32,7 @@
 | 参数     | 说明                                                                              | 类型    | 默认值  | 可选值      | 必填 |
 | -------- | --------------------------------------------------------------------------------- | ------- | ------- | ----------- | ---- |
 | a-class  | 自定义根节点样式类                                                                | string  | -       | -           | 否   |
-| value    | checkbox 标识，选中时触发 checkbox-group 的 change 事件，并携带 checkbox 的 value | string  | -       | -           | 否   |
+| value    | checkbox 标识，选中时触发 checkbox-group 的 change 事件，并携带 checkbox 的 value | string  | -       | -           | 是   |
 | checked  | 当前项是否选中                                                                    | boolean | false   | -           | 否   |
 | disabled | 当前项是否禁用                                                                    | boolean | false   | -           | 否   |
 | color    | 选中状态颜色                                                                      | string  | #3895f7 | -           | 否   |

@@ -39,8 +39,7 @@
 | disabled          | 是否禁用                                          | boolean | false  | -                                          | 否   |
 | clearable         | 是否可清空                                        | boolean | false  | -                                          | 否   |
 | focus             | 获取焦点                                          | boolean | false  | -                                          | 否   |
-| confirm-type      | 设置键盘右下角按钮的文字，仅在`type='text'`时生效 | string  | done   | `send`, `search`, `next`, `go`             | 否   |
-| style             | 设置输入框的样式，默认 width 为 90%               | string  | -      | -                                          | 否   |
+| confirm-type      | 设置键盘右下角按钮的文字，仅在`type='text'`时生效 | string  | done   | `send`, `search`, `next`, `go`, `done`             | 否   |
 | placeholder-style | 占位符的样式                                      | string  | -      | -                                          | 否   |
 
 ### Events

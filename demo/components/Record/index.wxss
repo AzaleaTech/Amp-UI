@@ -50,7 +50,7 @@
   z-index: 1;
   opacity: 20%;
 }
-.a-record-tips {
+.a-record-tip {
   position: absolute;
   bottom: 0;
   width: 100%;

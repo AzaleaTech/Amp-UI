@@ -1,6 +1,6 @@
 <view
       class="a-class a-image"
-      style="width: {{ width }}; height: {{ height }};">
+      style="width: {{ width }}rpx; height: {{ height }}rpx;">
   <image
          class="a-image-container"
          src="{{ src }}"

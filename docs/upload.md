@@ -35,7 +35,7 @@
 | limit       | 限制图片上传数量, 默认无限制                    | number        | -1                         | 否   |
 | size        | 上传图片的最大大小, 默认无限制, 单位[`mb`]      | number        | -1                         | 否   |
 | disabled    | 是否禁用                                        | boolean       | false                      | 否   |
-| is-cropped  | 是否需要裁剪图片                                | boolean       | false                      | 否   |
+| crop  | 是否需要裁剪图片                                | boolean       | false                      | 否   |
 
 #### 视频
 

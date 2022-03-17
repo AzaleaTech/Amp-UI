@@ -80,7 +80,7 @@ Page({
 | ----------- | ----------------------------------------------------- | ------ | ------ | -------------------- | ---- |
 | label-align | `label`标签的文本对齐方式, 需结合`labelWidth`一起使用 | string | left   | left、right、justify | 否   |
 | label-color | `label`标签的文本颜色                                 | string | -      | -                    | 否   |
-| label-width | `label`标签的文本宽度, 单位[`rpx`]                    | string | -      | -                    | 否   |
+| label-width | `label`标签的文本宽度, 单位[`rpx`]                    | string \| number | -      | -                    | 否   |
 
 #### FormItem
 
@@ -89,7 +89,7 @@ Page({
 | label           | 标签名称                                              | string  | -      | -                    | 是   |
 | label-align     | `label`标签的文本对齐方式, 需结合`labelWidth`一起使用 | string  | -      | left、right、justify | 否   |
 | label-color     | `label`标签的文本颜色                                 | string  | -      | -                    | 否   |
-| label-width     | `label`标签的文本宽度, 单位[`rpx`]                    | string  | -      | -                    | 否   |
+| label-width     | `label`标签的文本宽度, 单位[`rpx`]                    | string \| number | -      | -                    | 否   |
 | required        | 是否必填                                              | boolean | false  | -                    | 否   |
 | warning-message | 警告信息                                              | string  | -      | -                    | 否   |
 | iconUrl         | 表单项图标地址                                        | string  | -      | -                    | 否   |

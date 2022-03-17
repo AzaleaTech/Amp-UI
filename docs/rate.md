@@ -21,8 +21,8 @@
 <a-rate count="{{ 7 }}"></a-rate>
 
 不同图标
-<a-rate value="{{ 3 }}" icon-name="praise_fill" active-color="#3895f7"></a-rate>
-<a-rate value="{{ 5 }}" icon-name="love_fill" active-color="#ed4115"></a-rate>
+<a-rate value="{{ 3 }}" icon-name="praise_fill" icon-active-color="#3895f7"></a-rate>
+<a-rate value="{{ 5 }}" icon-name="love_fill" icon-active-color="#ed4115"></a-rate>
 
 只读
 <a-rate value="{{ 2.68 }}" disabled></a-rate>
@@ -41,8 +41,8 @@
 | value        | 当前 star 数                             | number  | 0         | 否   |
 | icon-name    | 图标名称，详见 Icon 组件                 | string  | star_fill | 否   |
 | icon-size    | 图标大小，单位[`rpx`]                    | number  | 92        | 否   |
-| color        | 图标未选中时颜色                         | string  | #d8d8d8   | 否   |
-| active-color | 图标选中时颜色                           | string  | #ffb500   | 否   |
+| icon-color   | 图标未选中时颜色                         | string  | #d8d8d8   | 否   |
+| icon-active-color | 图标选中时颜色                           | string  | #ffb500   | 否   |
 | disabled     | 是否只读，无法进行交互                   | boolean | false     | 否   |
 
 ### Events

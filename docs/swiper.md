@@ -13,15 +13,15 @@
 组合用法
 <a-swiper
   a-class="a-swiper-class"
-  autoplay="{{ autoplay }}"
-  circle="{{ circle }}"
+  img-urls="{{ imgUrls }}"
   current="{{ current }}"
+  autoplay="{{ autoplay }}"
+  circular="{{ circular }}"
+  duration="{{ duration }}"
   dots="{{ dots }}"
   dot-color="{{ dotColor }}"
   dot-active-color="{{ dotActiveColor }}"
-  duration="{{ duration }}"
   easing-function="{{ easingFunction }}"
-  img-urls="{{ imgUrls }}"
   interval="{{ interval }}"
   next-margin="{{ nextMargin }}"
   previous-margin="{{ previousMargin }}"
@@ -45,7 +45,7 @@ Page({
     dotColor: '#fff',
     dotActiveColor: '#f80',
     easingFunction: 'default',
-    circle: true,
+    circular: true,
     previousMargin: 10,
     nextMargin: 10,
     vertical: false,
@@ -66,10 +66,10 @@ Page({
 | dot-active-color | 当前选中的指示点颜色                        | string        | #FFFFFF | -      | 否   |
 | current          | 当前步骤索引值                              | number        | 0       | -      | 否   |
 | vertical         | 滑动方向是否为纵向                          | boolean       | false   | -      | 否   |
-| circle           | 是否采用衔接滑动                            | boolean       | false   | -      | 否   |
+| circular         | 是否采用衔接滑动                            | boolean       | false   | -      | 否   |
 | autoplay         | 是否自动切换                                | boolean       | false   | -      | 否   |
 | interval         | 自动切换时间间隔                            | number        | 5000    | -      | 否   |
-| duration         | 自动切换时间间隔                            | number        | 500     | -      | 否   |
+| duration         | 滑动动画时长                            | number        | 500     | -      | 否   |
 | previous-margin  | 前边距，可用于露出前一项的一小部分，单位 px | number        | 0       | -      | 否   |
 | next-margin      | 后边距，可用于露出后一项的一小部分，单位 px | number        | 0       | -      | 否   |
 | easing-function  | 指定 swiper 切换缓动动画类型                | string        | default | -      | 否   |
@@ -87,6 +87,6 @@ Page({
 
 | 事件名 | 说明                                                           | 参数 |
 | ------ | -------------------------------------------------------------- | ---- |
-| change | current 改变时会触发 change 事件，e.detail = {current, source} | e    |
+| change | current 改变时会触发 change 事件，e.detail.value = {current, source} | e    |
 
 ## 常见问题

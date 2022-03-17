@@ -3,7 +3,7 @@ Page({
     imgs: [],
     videos: [],
     // 是否裁剪图片
-    isCropped: true,
+    crop: true,
   },
 
   handleCropperImageChange(e) {

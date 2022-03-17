@@ -1,15 +1,15 @@
 <view class="a-class a-swiper">
   <swiper
-          autoplay="{{ autoplay }}"
-          interval="{{ interval }}"
-          duration="{{ duration }}"
           current="{{ current }}"
-          bindchange="swiperChange"
-          circular="{{ circle }}"
+          autoplay="{{ autoplay }}"
+          circular="{{ circular }}"
+          duration="{{ duration }}"
+          interval="{{ interval }}"
           easing-function="{{ easingFunction }}"
-          vertical="{{ vertical }}"
           previous-margin="{{ previousMargin }}px"
-          next-margin="{{ nextMargin }}px">
+          next-margin="{{ nextMargin }}px"
+          vertical="{{ vertical }}"
+          bindchange="handleChange">
     <block
            wx:for="{{ imgUrls }}"
            wx:key="index">

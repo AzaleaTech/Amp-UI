@@ -10,6 +10,18 @@ Component({
       type: Number,
       value: 0,
     },
+    autoplay: {
+      type: Boolean,
+      value: false,
+    },
+    circular: {
+      type: Boolean,
+      value: false,
+    },
+    duration: {
+      type: Number,
+      value: 500,
+    },
     dots: {
       type: Boolean,
       value: false,
@@ -22,29 +34,13 @@ Component({
       type: String,
       value: '',
     },
-    autoplay: {
-      type: Boolean,
-      value: false,
+    easingFunction: {
+      type: String,
+      value: 'default',
     },
     interval: {
       type: Number,
       value: 5000,
-    },
-    duration: {
-      type: Number,
-      value: 500,
-    },
-    vertical: {
-      type: Boolean,
-      value: false,
-    },
-    circle: {
-      type: Boolean,
-      value: false,
-    },
-    easingFunction: {
-      type: String,
-      value: 'default',
     },
     previousMargin: {
       type: Number,
@@ -54,10 +50,14 @@ Component({
       type: Number,
       value: 0,
     },
+    vertical: {
+      type: Boolean,
+      value: false,
+    },
   },
 
   methods: {
-    swiperChange(e) {
+    handleChange(e) {
       this.setData({
         current: e.detail.current,
       });

@@ -19,7 +19,7 @@ Component({
       value: '',
     },
     labelWidth: {
-      type: Number,
+      type: String | Number,
       value: undefined,
     },
     required: {

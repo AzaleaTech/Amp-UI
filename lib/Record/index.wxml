@@ -1,73 +1,29 @@
 <view class="a-record">
-  <view class="a-record-container">
-    <view
-          class="a-record-box"
-          bind:longpress="handleLongPress"
-          bind:tap="handleRecord"
-          bind:touchend="cancelTouch"></view>
-    <view
-          wx:if="{{ show }}"
-          class="a-record-main">
-      <block wx:if="{{ filePath }}">
-        <a-icon
-                name="playing"
-                size="{{ iconSize - 70 }}"
-                color="#fff"></a-icon>
-        <a-icon
-                name="audio-bg"
-                size="{{ iconSize }}"
-                color="{{ iconColor }}"></a-icon>
-        <a-icon
-                wx:if="{{ playIcon === 1 || playIcon === 2 }}"
-                name="audio-bg"
-                size="{{ iconSize + 70 }}"
-                color="{{ iconColor }}"></a-icon>
-        <a-icon
-                wx:if="{{ playIcon === 2 }}"
-                name="audio-bg"
-                size="{{ iconSize + 140 }}"
-                color="{{ iconColor }}"></a-icon>
-        <view
-              wx:if="{{ !isPlaying }}"
-              class="a-record-tips">
-          <text>点击播放</text>
+        <view class="a-record-container">
+                <view class="a-record-box" bind:longpress="handleLongPress" bind:tap="handleRecord" bind:touchend="cancelTouch"></view>
+                <view wx:if="{{ show }}" class="a-record-main">
+                        <block wx:if="{{ filePath }}">
+                                <a-icon name="playing" size="{{ iconSize - 70 }}" color="#fff"></a-icon>
+                                <a-icon name="audio-bg" size="{{ iconSize }}" color="{{ iconColor }}"></a-icon>
+                                <a-icon wx:if="{{ playIcon === 1 || playIcon === 2 }}" name="audio-bg" size="{{ iconSize + 70 }}" color="{{ iconColor }}"></a-icon>
+                                <a-icon wx:if="{{ playIcon === 2 }}" name="audio-bg" size="{{ iconSize + 140 }}" color="{{ iconColor }}"></a-icon>
+                                <view wx:if="{{ !isPlaying }}" class="a-record-tip">
+                                        <text>点击播放</text>
+                                </view>
+                        </block>
+                        <block wx:else>
+                                <a-icon name="recording" size="{{ iconSize - 70 }}" color="#fff"></a-icon>
+                                <a-icon name="audio-bg" size="{{ iconSize }}" color="{{ iconColor }}"></a-icon>
+                                <a-icon wx:if="{{ recordIcon === 1 || recordIcon === 2 }}" name="audio-bg" size="{{ iconSize + 70 }}" color="{{ iconColor }}"></a-icon>
+                                <a-icon wx:if="{{ recordIcon === 2 }}" name="audio-bg" size="{{ iconSize + 140 }}" color="{{ iconColor }}"></a-icon>
+                                <view wx:if="{{ !isRecording }}" class="a-record-tip">
+                                        <text>{{ tip }}</text>
+                                </view>
+                        </block>
+                </view>
         </view>
-      </block>
-      <block wx:else>
-        <a-icon
-                name="recording"
-                size="{{ iconSize - 70 }}"
-                color="#fff"></a-icon>
-        <a-icon
-                name="audio-bg"
-                size="{{ iconSize }}"
-                color="{{ iconColor }}"></a-icon>
-        <a-icon
-                wx:if="{{ recordIcon === 1 || recordIcon === 2 }}"
-                name="audio-bg"
-                size="{{ iconSize + 70 }}"
-                color="{{ iconColor }}"></a-icon>
-        <a-icon
-                wx:if="{{ recordIcon === 2 }}"
-                name="audio-bg"
-                size="{{ iconSize + 140 }}"
-                color="{{ iconColor }}"></a-icon>
-        <view
-              wx:if="{{ !isRecording }}"
-              class="a-record-tips">
-          <text>{{ tips }}</text>
+        <view wx:if="{{ filePath }}" class="a-record-btn" bind:tap="handleDelete">
+                <a-icon name="delete_fill" color="{{ iconColor }}"></a-icon>
+                删除录音
         </view>
-      </block>
-    </view>
-  </view>
-  <view
-        wx:if="{{ filePath }}"
-        class="a-record-btn"
-        bind:tap="handleDelete">
-    <a-icon
-            name="delete_fill"
-            color="{{ iconColor }}"></a-icon>
-    删除录音
-  </view>
 </view>
-

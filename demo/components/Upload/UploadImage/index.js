@@ -36,7 +36,7 @@ Component({
       type: Boolean,
       value: false,
     },
-    isCropped: {
+    crop: {
       type: Boolean,
       value: false,
     },
@@ -76,7 +76,7 @@ Component({
       wx.chooseImage({
         sizeType: this.properties.sizeType,
         sourceType: this.properties.sourceType,
-        count: this.properties.isCropped ? 1 : this.properties.count,
+        count: this.properties.crop ? 1 : this.properties.count,
         success: (res) => {
           // 判断上传图片大小
           if (this.properties.size > 0) {
@@ -95,7 +95,7 @@ Component({
             }
           }
           // 判断是否需要裁剪
-          if (this.properties.isCropped) {
+          if (this.properties.crop) {
             this.setData({
               imgUrl: res.tempFilePaths[0],
             });
