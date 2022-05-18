@@ -1,28 +1,29 @@
 {
-  "description": "项目配置文件",
+  "description": "项目配置文件，详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
   "packOptions": {
     "ignore": [
       {
-        "type": "folder",
-        "value": ".vscode"
+        "value": ".vscode",
+        "type": "folder"
       },
       {
-        "type": "folder",
-        "value": ".vuepress"
+        "value": ".vuepress",
+        "type": "folder"
       },
       {
-        "type": "folder",
-        "value": "lib"
+        "value": "lib",
+        "type": "folder"
       },
       {
-        "type": "folder",
-        "value": "docs-dist"
+        "value": "docs-dist",
+        "type": "folder"
       },
       {
-        "type": "suffix",
-        "value": ".md"
+        "value": ".md",
+        "type": "suffix"
       }
-    ]
+    ],
+    "include": []
   },
   "setting": {
     "urlCheck": false,
@@ -59,18 +60,17 @@
     "minifyWXSS": true,
     "disableUseStrict": false,
     "showES6CompileOption": false,
-    "useCompilerPlugins": ["less"],
-    "minifyWXML": true
+    "useCompilerPlugins": [
+      "less"
+    ],
+    "minifyWXML": true,
+    "ignoreUploadUnusedFiles": true,
+    "useStaticServer": true
   },
   "compileType": "miniprogram",
   "libVersion": "2.8.3",
   "appid": "wx1188a75907ee7a73",
   "projectname": "WXCOM",
-  "debugOptions": {
-    "hidedInDevtools": []
-  },
-  "scripts": {},
-  "isGameTourist": false,
   "condition": {
     "search": {
       "list": []
@@ -90,5 +90,9 @@
     "miniprogram": {
       "list": []
     }
+  },
+  "editorSetting": {
+    "tabIndent": "insertSpaces",
+    "tabSize": 2
   }
 }

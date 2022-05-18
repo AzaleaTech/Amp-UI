@@ -1,14 +1,31 @@
 <view class="a-class a-rate">
-  <view wx:for="{{ count }}" wx:key="index" data-index="{{ index }}" class="a-class-item a-rate-item" bind:tap="handleClick">
+  <view
+        wx:for="{{ count }}"
+        wx:key="index"
+        data-index="{{ index }}"
+        class="a-class-item a-rate-item"
+        bind:tap="handleClick">
     <block wx:if="{{ value > index }}">
-      <view class="a-rate-item-selected">
-        <a-icon name="{{ iconName }}" color="{{ activeColor }}" size="{{ iconSize }}"></a-icon>
+      <view
+            class="a-rate-item-selected"
+            style="width: {{ (value - index) * iconSize }}rpx">
+        <a-icon
+                name="{{ iconName }}"
+                color="{{ activeIconColor }}"
+                size="{{ iconSize }}"></a-icon>
       </view>
-      <a-icon name="{{ iconName }}" color="{{ color }}" size="{{ iconSize }}"></a-icon>
+      <a-icon
+              name="{{ iconName }}"
+              color="{{ iconColor }}"
+              size="{{ iconSize }}"></a-icon>
     </block>
     <block wx:else>
-      <a-icon name="{{ iconName }}" color="{{ color }}" size="{{ iconSize }}"></a-icon>
+      <a-icon
+              name="{{ iconName }}"
+              color="{{ iconColor }}"
+              size="{{ iconSize }}"></a-icon>
     </block>
   </view>
   <slot></slot>
 </view>
+

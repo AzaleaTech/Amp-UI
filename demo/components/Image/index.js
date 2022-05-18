@@ -7,11 +7,11 @@ Component({
       value: '',
     },
     width: {
-      type: String | number,
+      type: String | Number,
       value: 680,
     },
     height: {
-      type: String | number,
+      type: String | Number,
       value: 680,
     },
     fallback: {

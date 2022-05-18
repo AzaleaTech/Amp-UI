@@ -1,6 +1,5 @@
 .a-badge {
   position: relative;
-  display: inline-block;
 }
 .a-badge-number {
   position: absolute;
