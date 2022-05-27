@@ -15,6 +15,7 @@
     "demo/pages/tag/index",
     "demo/pages/card/index",
     "demo/pages/collapse/index",
+    "demo/pages/countDown/index",
     "demo/pages/image/index",
     "demo/pages/empty/index",
     "demo/pages/noticeBar/index",

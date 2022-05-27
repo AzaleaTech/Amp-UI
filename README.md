@@ -73,6 +73,7 @@ npm run build / yarn build
 - [Swiper](./docs/swiper.md)
 - [Divider](./docs/divider.md)
 - [Parse](./docs/parse.md)
+- [CountDown](./docs/countDown.md)
 
 表单组件
 

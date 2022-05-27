@@ -1,0 +1,4 @@
+<view class="a-class a-count-down">
+  <view>{{ showTime }}</view>
+</view>
+

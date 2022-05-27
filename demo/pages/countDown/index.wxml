@@ -1,0 +1,22 @@
+<view class="example-box">
+  <view class="example-box-title">基本使用</view>
+  <view class="example-box-content">
+    <a-count-down value="{{ 100 }}"></a-count-down>
+    <a-count-down value="{{ 60 }}"></a-count-down>
+    <a-count-down value="{{ 90000 }}"></a-count-down>
+  </view>
+  <view class="example-box-title">自定义格式化</view>
+  <view class="example-box-content">
+    <a-count-down
+                  value="{{ 90000 }}"
+                  format="{{ format }}"></a-count-down>
+  </view>
+  <view class="example-box-title">倒计时结束回调</view>
+  <view class="example-box-content">
+    <a-count-down
+                  value="{{ 10 }}"
+                  bind:end="handleEnd"></a-count-down>
+    <text>倒计时状态：{{ status }}</text>
+  </view>
+</view>
+

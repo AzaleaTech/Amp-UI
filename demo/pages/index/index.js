@@ -25,6 +25,7 @@ Page({
           { label: 'Tag 标签', url: '../tag/index' },
           { label: 'Card 卡片', url: '../card/index' },
           { label: 'Collapse 可折叠列表', url: '../collapse/index' },
+          { label: 'CountDown 倒计时', url: '../countDown/index' },
           { label: 'Image 图片', url: '../image/index' },
           { label: 'NoticeBar 消息通知栏', url: '../noticeBar/index' },
           { label: 'Empty 空状态', url: '../empty/index' },
