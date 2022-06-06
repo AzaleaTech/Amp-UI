@@ -1,0 +1,11 @@
+<view class="a-class a-water-mark">
+  <view
+        class="a-water-mark-bg"
+        style="background-image: url({{ imgUrl }}); background-size: {{ width + gapX }}rpx">
+    <slot></slot>
+  </view>
+</view>
+<canvas
+        canvas-id="wm-canvas"
+        style="position: fixed; left: 100%; width: {{ canvasWidth }}; height: {{ canvasHeight }};"></canvas>
+

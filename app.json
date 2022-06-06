@@ -22,6 +22,7 @@
     "demo/pages/steps/index",
     "demo/pages/swiper/index",
     "demo/pages/divider/index",
+    "demo/pages/waterMark/index",
     "demo/pages/parse/index",
     "demo/pages/webview/index",
 

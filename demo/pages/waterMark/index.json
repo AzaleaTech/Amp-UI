@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "WaterMark",
+  "usingComponents": {
+    "a-water-mark": "../../components/WaterMark/index"
+  }
+}

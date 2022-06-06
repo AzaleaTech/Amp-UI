@@ -66,14 +66,15 @@ npm run build / yarn build
 - [Tag](./docs/tag.md)
 - [Card](./docs/card.md)
 - [Collapse](./docs/collapse.md)
+- [CountDown](./docs/countDown.md)
 - [Empty](./docs/empty.md)
 - [Image](./docs/image.md)
 - [NoticeBar](./docs/noticeBar.md)
 - [Steps](./docs/steps.md)
 - [Swiper](./docs/swiper.md)
 - [Divider](./docs/divider.md)
+- [WaterMark](./docs/waterMark.md)
 - [Parse](./docs/parse.md)
-- [CountDown](./docs/countDown.md)
 
 表单组件
 

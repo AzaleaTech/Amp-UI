@@ -32,6 +32,7 @@ Page({
           { label: 'Steps 步骤条', url: '../steps/index' },
           { label: 'Swiper 轮播图', url: '../swiper/index' },
           { label: 'Divider 分割线', url: '../divider/index' },
+          { label: 'WaterMark 水印', url: '../waterMark/index' },
           { label: 'Parse 富文本解析', url: '../parse/index' },
         ],
       },
