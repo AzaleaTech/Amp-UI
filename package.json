@@ -1,6 +1,6 @@
 {
   "name": "amp-ui",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "微信小程序组件库",
   "main": "app.js",
   "devDependencies": {
