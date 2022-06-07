@@ -15,6 +15,10 @@
         "type": "folder"
       },
       {
+        "value": "dist",
+        "type": "folder"
+      },
+      {
         "value": "docs-dist",
         "type": "folder"
       },

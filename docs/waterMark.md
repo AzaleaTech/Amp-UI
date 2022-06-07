@@ -18,7 +18,7 @@
 
 图片水印
 <a-water-mark image="https://azalea-official.oss-cn-hangzhou.aliyuncs.com/lingshang.png"  width="{{ 220 }}">
-<view class="content"></view>
+  <view class="content"></view>
 </a-water-mark>
 
 ```
@@ -36,8 +36,8 @@
 | gapX   | 水印之间的水平间距            | number  | 100      | -      | 否   |
 | gapY   | 水印之间的垂直间距             | number  | 60      | -      | 否   |
 | font-color   | 水印文字颜色           | string  | rgba(0,0,0,.15)      | -      | 否   |
-| font-size   | 水印文字大小， 单位[`rpx`]           | string \| number  | 16      | -      | 否   |
-| rotate   | 水印绘制时，旋转的角度，单位 °            | number  | -20      | -      | 否   |
+| font-size   | 水印文字大小， 单位[`rpx`]           | string \| number  | 32      | -      | 否   |
+| rotate   | 水印绘制时，旋转的角度，单位 [`°`]            | number  | -20      | -      | 否   |
 | image   | 水印图片源, 和content同时存在时，优先使用图片          | string  | -      | -      | 否   |
 
 ### Events

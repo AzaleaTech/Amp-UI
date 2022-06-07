@@ -7,6 +7,12 @@ module.exports = {
     repo: 'https://github.com/AzaleaTech/Amp-UI',
     repoLabel: '查看源码',
     contributors: false,
+    navbar: [
+      {
+        text: '更新日志',
+        link: './CHANGELOG.md',
+      },
+    ],
     sidebar: {
       '/': [
         {
@@ -33,12 +39,14 @@ module.exports = {
             '/docs/tag',
             '/docs/card',
             '/docs/collapse',
+            '/docs/countDown',
             '/docs/empty',
             '/docs/image',
             '/docs/noticeBar',
             '/docs/steps',
             '/docs/swiper',
             '/docs/divider',
+            '/docs/waterMark',
             '/docs/parse',
           ],
         },
@@ -73,4 +81,5 @@ module.exports = {
       ],
     },
   },
+  plugins: [['@vuepress/plugin-back-to-top'], ['@vuepress/plugin-search']],
 };

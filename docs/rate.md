@@ -22,8 +22,8 @@
 <a-rate value="{{ 5 }}" icon-name="love_fill" active-icon-color="#ed4115"></a-rate>
 
 图标半边点击
-<a-rate showHalf></a-rate>
-<a-rate showHalf icon-name="love_fill" active-icon-color="#ed4115"></a-rate>
+<a-rate show-half></a-rate>
+<a-rate show-half icon-name="love_fill" active-icon-color="#ed4115"></a-rate>
 
 只读
 <a-rate value="{{ 2.68 }}" disabled></a-rate>
