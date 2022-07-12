@@ -15,6 +15,10 @@
 自定义格式化
 <a-count-down value="{{ 90000 }}" format="{{ format }}"></a-count-down>
 
+倒计时进行中回调
+<a-count-down value="{{ 100 }}" bind:start="handleStart"></a-count-down>
+ <text>剩余时间(秒): {{ time }}</text>
+
 倒计时结束回调
 <a-count-down value="{{ 10 }}" bind:end="handleEnd"></a-count-down>
 <text>倒计时状态：{{ status }}</text>
@@ -25,6 +29,13 @@ Page({
   data: {
     format: { day: 'Day', hour: ':', minute: ':', second: '' },
     status: '进行中...',
+    time: 0,
+  },
+
+  handleStart(e) {
+    this.setData({
+      time: e.detail.value,
+    });
   },
 
   handleEnd() {
@@ -53,6 +64,7 @@ Page({
 
 | 事件名 | 说明 | 参数 |
 | ------ | ---- | ---- |
+| start   | 倒计时开始，执行的回调函数    |  e   |
 | end   | 倒计时结束，执行的回调函数    | -    |
 
 ## 常见问题

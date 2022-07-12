@@ -11,6 +11,13 @@
                   value="{{ 90000 }}"
                   format="{{ format }}"></a-count-down>
   </view>
+  <view class="example-box-title">倒计时进行中回调</view>
+  <view class="example-box-content">
+    <a-count-down
+                  value="{{ 100 }}"
+                  bind:start="handleStart"></a-count-down>
+    <text>剩余时间(秒): {{ time }}</text>
+  </view>
   <view class="example-box-title">倒计时结束回调</view>
   <view class="example-box-content">
     <a-count-down
