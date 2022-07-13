@@ -16,7 +16,7 @@
             bind:tap="removeVideo"></a-icon>
   </view>
   <view
-        wx:if="{{ limit < 0 || videos.length < limit }}"
+        wx:if="{{ (limit > imgList.length || limit === -1) && !disabled  }}"
         class="a-upload-video-box"
         style="width: {{ width }}rpx; height: {{ height }}rpx"
         bind:tap="chooseVideo">

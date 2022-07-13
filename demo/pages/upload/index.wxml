@@ -1,13 +1,20 @@
 <view class="example-box">
-  <view class="example-box-title">上传图片,limit为2,size为500kb,可裁剪</view>
+  <view class="example-box-title">上传图片(单次最多上传3张，每张最大限制为0.5MB)</view>
   <view class="example-box-content">
     <a-upload-image
                     imgs="{{ imgs }}"
-                    limit="{{ 2 }}"
-                    size="{{ 500 }}"
-                    bind:change="handleCropperImageChange" />
+                    limit="{{ 3 }}"
+                    size="{{ 0.5 }}"
+                    bind:change="handleChooseImg" />
   </view>
-  <view class="example-box-title">上传视频</view>
+  <view class="example-box-title">上传图片(可裁剪，默认单次只能上传一张)</view>
+  <view class="example-box-content">
+    <a-upload-image
+                    crop
+                    imgs="{{ cropImgs }}"
+                    bind:change="handleCropImg" />
+  </view>
+  <view class="example-box-title">上传视频(单次只能上传一个，限制大小为30MB)</view>
   <view class="example-box-content">
     <a-upload-video
                     videos="{{ videos }}"

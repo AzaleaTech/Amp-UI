@@ -17,7 +17,7 @@
             bind:tap="removeImage"></a-icon>
   </view>
   <view
-        wx:if="{{ (limit > imgList.length || !limit) && !disabled }}"
+        wx:if="{{ (limit > imgList.length || limit === -1) && !disabled }}"
         class="a-upload-image-box"
         style="width: {{ width }}rpx; height: {{ height }}rpx"
         bind:tap="chooseImage">

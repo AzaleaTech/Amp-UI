@@ -1,15 +1,29 @@
 Page({
   data: {
     imgs: [],
+    cropImgs: [],
     videos: [],
-    // 是否裁剪图片
-    crop: true,
   },
 
-  handleCropperImageChange(e) {
+  handleChooseImg(e) {
     if (e.detail.status === 'success') {
       this.setData({
         imgs: e.detail.value,
+      });
+    } else {
+      this.setData({
+        toastData: {
+          content: e.detail.msg,
+          type: 'error',
+        },
+      });
+    }
+  },
+
+  handleCropImg(e) {
+    if (e.detail.status === 'success') {
+      this.setData({
+        cropImgs: e.detail.value,
       });
     } else {
       this.setData({
