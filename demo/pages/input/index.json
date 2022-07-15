@@ -1,5 +1,7 @@
 {
+  "navigationBarTitleText": "Input",
   "usingComponents": {
-    "a-input": "../../components/Input/index"
+    "a-input": "../../components/Input/index",
+    "a-icon": "../../components/Icon/Icon"
   }
 }

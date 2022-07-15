@@ -5,6 +5,10 @@
 Component({
   externalClasses: ['a-class'],
 
+  options: {
+    multipleSlots: true,
+  },
+
   properties: {
     name: {
       type: String,
@@ -20,27 +24,31 @@ Component({
     },
     placeholder: {
       type: String,
-      value: undefined,
+      value: '',
     },
     maxlength: {
       type: Number,
-      value: -1,
+      value: 140,
     },
     password: {
       type: Boolean,
       value: false,
     },
+    title: {
+      type: String,
+      value: '',
+    },
     disabled: {
       type: Boolean,
       value: false,
     },
-    allowClear: {
+    clearable: {
       type: Boolean,
-      value: true,
+      value: false,
     },
     focus: {
       type: Boolean,
-      value: true,
+      value: false,
     },
     confirmType: {
       type: String,

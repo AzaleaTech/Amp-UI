@@ -3,8 +3,16 @@
   align-items: center;
   justify-content: space-between;
 }
+.a-input-header {
+  margin-right: 20rpx;
+  width: 192rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
 .a-input input {
-  width: 90%;
+  flex: 1;
 }
 .a-input image {
   width: 28rpx;

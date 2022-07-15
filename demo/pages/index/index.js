@@ -40,7 +40,7 @@ Page({
         title: '表单',
         data: [
           { label: 'Form & FormItem 表单及表单项', url: '../form/index' },
-          { label: 'input 输入框', url: '../input/index' },
+          { label: 'Input 输入框', url: '../input/index' },
           { label: 'Rate 评分组件', url: '../rate/index' },
           { label: 'Radio 单选框', url: '../radio/index' },
           { label: 'Checkbox 多选框', url: '../checkbox/index' },

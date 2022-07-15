@@ -1,4 +1,30 @@
 <view class="a-class a-input">
-       <input confirm-type="{{ confirmType }}" disabled="{{ disabled }}" focus="{{ focus }}" maxlength="{{ maxlength }}" placeholder="{{ placeholder }}" placeholder-style="{{placeholderStyle}}" password="{{ password }}" name="{{ name }}" type="{{ type }}" value="{{ value }}" bind:blur="handleBlur" bind:focus="handleFocus" bind:input="handleChange" />
-       <a-icon wx:if="{{ allowClear && value  }}" name="error_fill" color="#b2b2b2" size="44" bind:tap="handleChange"></a-icon>
+  <slot name="prefix"></slot>
+  <view
+        wx:if="{{ title }}"
+        class="a-input-header">
+    <label>{{ title }}</label>
+  </view>
+  <input
+         confirm-type="{{ confirmType }}"
+         disabled="{{ disabled }}"
+         focus="{{ focus }}"
+         maxlength="{{ maxlength }}"
+         placeholder="{{ placeholder }}"
+         placeholder-style="{{placeholderStyle}}"
+         password="{{ password }}"
+         name="{{ name }}"
+         type="{{ type }}"
+         value="{{ value }}"
+         bind:blur="handleBlur"
+         bind:focus="handleFocus"
+         bind:input="handleChange" />
+  <a-icon
+          wx:if="{{ clearable && value  }}"
+          name="error_fill"
+          color="#b2b2b2"
+          size="44"
+          bind:tap="handleChange"></a-icon>
+  <slot name="suffix"></slot>
 </view>
+

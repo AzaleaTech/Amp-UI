@@ -8,43 +8,70 @@
   <view class="example-box-title">不同类型</view>
   <view class="example-box-content">
     <a-input
-             value="{{ phone }}"
-             type="number"
+             maxlength="{{ 11 }}"
              placeholder="请输入手机号"
-             maxlength="{{ 11 }}" />
+             type="number"
+             value="{{ phone }}" />
     <br/>
   </view>
   <view class="example-box-content">
     <a-input
-             value="{{ password }}"
-             type="safe-password"
+             focus
              password
              placeholder="请输入密码"
-             focus />
+             type="safe-password"
+             value="{{ password }}" />
   </view>
   <view class="example-box-title">禁用</view>
   <view class="example-box-content">
     <a-input
-             placeholder="禁用"
-             disabled />
+             disabled
+             placeholder="禁用" />
   </view>
   <view class="example-box-title">可清空</view>
   <view class="example-box-content">
     <a-input
-             placeholder="可清空"
-             clearable />
+             clearable
+             placeholder="可清空" />
   </view>
   <view class="example-box-title">绑定value</view>
   <view class="example-box-content">
-    <view class="example-box-content-text">
-      value值: {{ value }}
-    </view>
+    <view class="example-box-content-text">value值: {{ value }}</view>
   </view>
   <view class="example-box-content">
     <a-input
              placeholder="绑定value"
              value="{{ value }}"
-             bind:change="handleChange" />
+             bind:change="handleChange"></a-input>
+  </view>
+  <view class="example-box-title">自定义内容</view>
+  <view class="example-box-content">
+    <a-input
+             clearable
+             placeholder="请输入"
+             title="标题内容"
+             value="{{ customValue }}">
+      <view slot="prefix">
+        <a-icon
+                name="about_fill"
+                color="#b2b2b2"
+                size="44" />
+      </view>
+    </a-input>
+  </view>
+  <view class="example-box-content">
+    <a-input
+             clearable
+             placeholder="请输入手机号"
+             type="number"
+             value="{{ phone }}">
+      <view slot="suffix">
+        <view
+              bind:tap="sendCode"
+              class="send-code {{ disabled ? 'send-code--disabled': '' }}">{{ disabled ? second + 's' : '发送验证码'}}
+        </view>
+      </view>
+    </a-input>
   </view>
 </view>
 

@@ -19,6 +19,21 @@
 
 可清空
 <a-input value="{{ value }}" clearable />
+
+自定义内容
+<a-input 
+        clearable
+        placeholder="请输入"
+        title="标题内容"
+        value="{{ customValue }}">
+  <view slot="prefix">
+    <a-icon
+        name="about_fill"
+        color="#b2b2b2"
+        size="44"
+        bind:tap="handleChange" />
+  </view>
+</a-input>
 ```
 
 ## APIs
@@ -36,11 +51,19 @@
 | placeholder       | 占位文本                                          | string  | -      | -                                          | 否   |
 | maxlength         | 最大输入长度,设置为 -1 的时候不限制最大长度       | number  | 140    | -                                          | 否   |
 | password          | 是否是密码类型                                    | boolean | false  | -                                          | 否   |
+| title          | 输入框左侧标题，若传入为空，则不显示标题                   | string | -  | -                                          | 否   |
 | disabled          | 是否禁用                                          | boolean | false  | -                                          | 否   |
 | clearable         | 是否可清空                                        | boolean | false  | -                                          | 否   |
 | focus             | 获取焦点                                          | boolean | false  | -                                          | 否   |
 | confirm-type      | 设置键盘右下角按钮的文字，仅在`type='text'`时生效 | string  | done   | `send`, `search`, `next`, `go`, `done`             | 否   |
 | placeholder-style | 占位符的样式                                      | string  | -      | -                                          | 否   |
+
+### Slots
+
+| 插槽名    | 说明                                                 |
+| --------- | ---------------------------------------------------- |
+| prefix    | 内容前缀                               |
+| suffix   | 内容后缀                                             |
 
 ### Events
 
