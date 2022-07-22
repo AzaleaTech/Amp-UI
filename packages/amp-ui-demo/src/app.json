@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/icon/index",
+    "pages/button/index",
+    "pages/buttonGroup/index",
+    "pages/layout/index",
+    "pages/header/index",
+    "pages/tabs/index/index",
+    "pages/tabs/ceiling/index",
+    "pages/avatar/index",
+    "pages/badge/index",
+    "pages/tag/index",
+    "pages/card/index",
+    "pages/collapse/index",
+    "pages/countDown/index",
+    "pages/image/index",
+    "pages/empty/index",
+    "pages/noticeBar/index",
+    "pages/steps/index",
+    "pages/swiper/index",
+    "pages/divider/index",
+    "pages/waterMark/index",
+    "pages/parse/index",
+    "pages/webview/index",
+    "pages/form/index",
+    "pages/input/index",
+    "pages/rate/index",
+    "pages/radio/index",
+    "pages/checkbox/index",
+    "pages/switch/index",
+    "pages/audio/index",
+    "pages/cropper/index",
+    "pages/upload/index",
+    "pages/datePicker/index",
+    "pages/modal/index",
+    "pages/painter/index"
+  ],
+  "subpackages": [
+    {
+      "root": "subPages",
+      "pages": [
+        "echarts/index/index",
+        "echarts/line/index",
+        "echarts/bar/index",
+        "echarts/pie/index",
+        "echarts/map/index"
+      ]
+    }
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Amp UI",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

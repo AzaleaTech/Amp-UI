@@ -1,0 +1,21 @@
+{
+  "name": "amp-ui-docs",
+  "version": "3.0.0-alpha.0",
+  "description": "amp-ui组件库文档",
+  "author": "saxon",
+  "license": "MIT",
+  "devDependencies": {
+    "@vuepress/plugin-back-to-top": "2.0.0-beta.27",
+    "@vuepress/plugin-search": "2.0.0-beta.27",
+    "vuepress": "2.0.0-beta.27"
+  },
+  "scripts": {
+    "docs:dev": "vuepress dev -c vuepress.config.js",
+    "docs:build": "vuepress build -c vuepress.config.js",
+    "build": "vuepress build -c vuepress.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://server.azalea-tech.com:6777/frontend/wxcom.git"
+  }
+}

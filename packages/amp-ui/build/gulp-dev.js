@@ -4,7 +4,7 @@ const rename = require('gulp-rename');
 const del = require('del');
 
 // 输出目录
-const outputDir = '../demo/components/';
+const outputDir = '../../amp-ui-demo/src/components/';
 const pluginsDir = '../demo/plugins';
 
 gulp.task('compile-css', () => {

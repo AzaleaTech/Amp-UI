@@ -1,0 +1,9 @@
+{
+  "name": "amp-ui-demo",
+  "description": "微信小程序组件库示例",
+  "author": "saxon",
+  "license": "MIT",
+  "dependencies": {
+    "amp-ui": "file:../../amp-ui"
+  }
+}
