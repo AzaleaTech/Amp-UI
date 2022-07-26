@@ -1,5 +1,15 @@
 {
   "useNx": false,
   "version": "3.0.0-alpha.0",
-  "packages": ["packages/*"]
+  "command": {
+    "bootstrap": {
+      "hoist": true
+    },
+    "publish": {
+      "message": "chore(release): publish %s"
+    }
+  },
+  "packages": ["packages/amp-ui"],
+  "npmClient": "yarn",
+  "useWorkspaces": true
 }
