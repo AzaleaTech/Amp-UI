@@ -1,14 +1,18 @@
 <view class="example-box">
   <view class="example-box-title">基础用法</view>
   <view class="example-box-content">
-    <a-image src="{{ url }}" bind:click="handlePreview" />
+    <a-image src="{{ url }}" />
   </view>
   <view class="example-box-title">自定义预览</view>
   <view class="example-box-content">
-    <a-image src="{{ url }}" bind:click="handlePreviewImgs" />
+    <a-image
+             src="{{ url }}"
+             preview="{{ false }}"
+             bind:click="handlePreviewImgs" />
   </view>
-  <view class="example-box-title">容错处理</view>
+  <view class="example-box-title">加载失败显示图像占位符</view>
   <view class="example-box-content">
-    <a-image src="xxx" fallback="{{ defaultUrl }}" />
+    <a-image src="xxx" />
   </view>
 </view>
+
