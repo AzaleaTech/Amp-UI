@@ -69,7 +69,6 @@ Component({
           break;
         default:
           throw new Error('错误type');
-          break;
       }
 
       return template;
@@ -89,8 +88,6 @@ Component({
       this.triggerEvent('cancel');
     },
 
-    handleDoNothing() {},
-
     sendEvent(event, e) {
       this.triggerEvent(event, {
         value: this.getFormatTemplate(e),
@@ -102,6 +99,10 @@ Component({
     // 确定按钮
     handleClick(e) {
       this.sendEvent('confirm', e);
+      this.setData({
+        show: false,
+        textStyle: '',
+      });
     },
   },
 });

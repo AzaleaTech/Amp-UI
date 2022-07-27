@@ -1,7 +1,6 @@
 <wxs
      src="../../utils/calendarTools.wxs"
      module="calendarTools" />
-
 <view class="calendar a-class">
   <!-- 日历部分 -->
   <view class="calendar-week">
@@ -13,7 +12,7 @@
   </view>
   <scroll-view
                scroll-y
-               scroll-top="{{  selectedIndex * 105 }}rpx"
+               scroll-top="{{ selectedIndex * 105 }}rpx"
                class="calendar-panel">
     <!-- 因为拿到的星期是按照星期排好的，所以第一行向后对齐就能保证日期和星期对上，默认向前对齐 -->
     <view

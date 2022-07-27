@@ -76,13 +76,11 @@ Component({
           break;
         default:
           throw new Error('错误信息');
-          break;
       }
     },
 
     handleChange(e) {
       const { type } = e.currentTarget.dataset;
-
       this.setData({
         textStyle: type,
       });

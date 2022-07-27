@@ -1,7 +1,7 @@
 <template name="date-picker">
   <view
         class="a-class a-date-picker {{ show ? 'a-date-picker-animation' : '' }}"
-        catch:tap="handleDoNothing">
+        catch:tap>
     <a-picker-header
                      type="{{ type }}"
                      bind:click="handleClick"
