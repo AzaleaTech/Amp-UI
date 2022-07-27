@@ -14,6 +14,10 @@ Page({
         name: '饼图',
       },
       {
+        id: 'radar',
+        name: '雷达图',
+      },
+      {
         id: 'map',
         name: '地图',
       },

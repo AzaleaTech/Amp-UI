@@ -1,5 +1,5 @@
 .echarts-container {
-  height: 800rpx;
+  height: 90vh;
 }
 
 a-echart {

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "echarts-radar",
+  "usingComponents": {
+    "a-echart": "../../components/Echarts/index"
+  }
+}

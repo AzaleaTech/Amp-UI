@@ -44,6 +44,7 @@
         "echarts/line/index",
         "echarts/bar/index",
         "echarts/pie/index",
+        "echarts/radar/index",
         "echarts/map/index"
       ]
     }

@@ -59,7 +59,7 @@ Page({
         title: '其他',
         data: [
           { label: 'Painter 画图', url: '../painter/index' },
-          { label: 'Echarts 图表', url: '/demo/subPages/echarts/index/index' },
+          { label: 'Echarts 图表', url: '../../subPages/echarts/index/index' },
         ],
       },
     ],
