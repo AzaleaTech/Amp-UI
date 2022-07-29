@@ -1,6 +1,6 @@
 {
   "name": "amp-ui",
-  "version": "3.0.0-alpha.0",
+  "version": "2.2.0",
   "description": "微信小程序组件库",
   "main": "app.js",
   "private": true,
@@ -35,9 +35,7 @@
   ],
   "author": "saxon",
   "license": "MIT",
-  "workspaces": {
-    "packages": [
-      "packages/*"
-    ]
-  }
+  "workspaces": [
+    "packages/*"
+  ]
 }

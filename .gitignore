@@ -12,8 +12,6 @@ $RECYCLE.BIN/
 
 # Node.js
 node_modules/
-package-lock.json
-yarn.lock
 
 project.private.config.json
 lib/**/*.wxss
@@ -23,5 +21,6 @@ dist
 
 # docs
 .vuepress
-docs-dist
 
+# lerna
+lerna-debug.log
