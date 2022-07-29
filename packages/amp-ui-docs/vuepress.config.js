@@ -1,5 +1,5 @@
 module.exports = {
-  base: '/amp-ui/v2',
+  base: '/amp-ui/v2/',
   title: 'Amp UI', // 设置网站标题
   description: '文档', //描述
   dest: './dist', // 设置输出目录
