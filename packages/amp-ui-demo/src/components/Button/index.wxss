@@ -34,12 +34,12 @@
   line-height: 27px;
 }
 .a-btn-type-default {
-  border: 2rpx solid #3895f7;
+  border: 2rpx solid #009ca5;
   background: #ffffff;
-  color: #3895f7;
+  color: #009ca5;
 }
 .a-btn-type-primary {
-  background: #3895f7;
+  background: #009ca5;
   color: #ffffff;
 }
 .a-btn-type-success {
@@ -55,7 +55,7 @@
   color: #ffffff;
 }
 .a-btn-hover.btn-type-default {
-  background: #3895f7;
+  background: #009ca5;
   color: #ffffff;
 }
 .a-btn-hover::after {

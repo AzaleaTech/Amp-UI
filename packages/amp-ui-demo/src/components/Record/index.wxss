@@ -54,7 +54,7 @@
   position: absolute;
   bottom: 0;
   width: 100%;
-  color: #929292;
+  color: #cccccc;
   text-align: center;
   font-size: 14px;
   line-height: 40rpx;
@@ -64,7 +64,7 @@
   align-items: center;
   margin: 60rpx 0 40rpx;
   height: 50rpx;
-  color: #3895f7;
+  color: #009ca5;
   font-size: 14px;
   line-height: 40rpx;
 }

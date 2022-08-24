@@ -22,8 +22,8 @@
   left: 50rpx;
 }
 .a-switch-checked {
-  border-color: #3895f7;
-  background-color: #3895f7;
+  border-color: #009ca5;
+  background-color: #009ca5;
 }
 .a-switch-disabled {
   opacity: 0.4;

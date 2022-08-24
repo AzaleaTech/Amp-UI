@@ -13,7 +13,7 @@
 .a-tag-small {
   padding: 0 8px;
   height: 16px;
-  font-size: 10px;
+  font-size: 11px;
   line-height: 16px;
 }
 .a-tag-large {
@@ -23,8 +23,8 @@
   line-height: 22px;
 }
 .a-tag-primary {
-  border: 1rpx solid #3895f7;
-  background-color: #3895f7;
+  border: 1rpx solid #009ca5;
+  background-color: #009ca5;
   color: #ffffff;
 }
 .a-tag-success {
@@ -49,9 +49,9 @@
   background-color: #ffffff;
 }
 .a-tag-plain.a-tag-primary {
-  border: 1rpx solid #3895f7;
+  border: 1rpx solid #009ca5;
   background-color: #ffffff;
-  color: #3895f7;
+  color: #009ca5;
 }
 .a-tag-plain.a-tag-success {
   border: 1rpx solid #19be6b;

@@ -9,7 +9,7 @@
   box-sizing: border-box;
   margin-bottom: 30rpx;
   padding-bottom: 12rpx;
-  border-bottom: 2rpx solid #eeeeee;
+  border-bottom: 2rpx solid #e5e5e5;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -27,7 +27,7 @@
 }
 .a-card-title {
   margin-bottom: 28rpx;
-  color: #525252;
+  color: #3f3f3f;
   font-weight: 700;
   font-size: 32rpx;
   display: -webkit-box;
@@ -57,7 +57,7 @@
   position: relative;
   box-sizing: border-box;
   padding-top: 30rpx;
-  border-top: 2rpx solid #eeeeee;
+  border-top: 2rpx solid #e5e5e5;
   display: flex;
   align-items: center;
   justify-content: flex-start;

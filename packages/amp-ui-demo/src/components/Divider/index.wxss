@@ -1,7 +1,7 @@
 .a-divider {
   position: relative;
   width: 100%;
-  color: #868686;
+  color: #8c8c8c;
   text-align: center;
   display: flex;
   flex-direction: row;

@@ -1,7 +1,7 @@
 .a-collapse-item {
   padding-left: 30rpx;
   background-color: #ffffff;
-  color: #525252;
+  color: #3f3f3f;
   font-size: 32rpx;
   line-height: 44rpx;
 }
@@ -38,7 +38,7 @@
   justify-content: flex-start;
 }
 .a-collapse-item-border {
-  border-bottom: 2rpx solid #eeeeee;
+  border-bottom: 2rpx solid #e5e5e5;
 }
 .a-collapse-item-disabled {
   opacity: 0.4;

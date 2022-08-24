@@ -83,11 +83,11 @@
   right: -10rpx;
 }
 .calendar .calendar-panel .calendar-box .weekday-label .sub-color {
-  color: #3895f7;
+  color: #009ca5;
 }
 .calendar .calendar-panel .calendar-box .weekday-label .active-date,
 .calendar .calendar-panel .calendar-box .weekday-label .round-range-mark {
-  background: #3895f7;
+  background: #009ca5;
   /* 选中后的日期数字本身颜色 */
   color: #ffffff;
   font-weight: bold;
@@ -96,7 +96,7 @@
 }
 .calendar .calendar-panel .calendar-box .weekday-label .block-range-mark {
   border-radius: 0;
-  background: #3895f7;
+  background: #009ca5;
   /* 选中后的日期数字本身颜色 */
   color: #ffffff;
   font-weight: bold;

@@ -1,36 +1,46 @@
+// 固定颜色
+@black-color: rgba(0, 0, 0, 1); // 黑色
+@white-color: rgba(255, 255, 255, 1); // 白色
+@grey-color: rgba(204, 204, 204, 1); // 灰色
+
 // 主题配色
-@primary-color: rgba(56, 149, 247, 1); // 主题
+@primary-color: rgba(0, 156, 165, 1); // 主题
 @success-color: rgba(25, 190, 107, 1); // 成功
 @warning-color: rgba(255, 181, 0, 1); // 警告
 @error-color: rgba(237, 65, 20, 1); // 失败
 @tip-color: rgba(224, 116, 119, 1); // 错误提示
 
 // 文本颜色
-@title-color: rgba(37, 37, 37, 1); // 标题
-@text-color: rgba(82, 82, 82, 1); // 正文
-@sub-text-color: rgba(134, 134, 134, 1); // 辅助色
-@tip-text-color: rgba(146, 146, 146, 1); // 提示文字
+@title-color: rgba(37, 37, 37, 1); // 标题/主文案
+@text-color: rgba(63, 63, 63, 1); // 营销/内容
+@sub-text-color: rgba(140, 140, 140, 1); // 副文案
+@tip-text-color: rgba(204, 204, 204, 1); // 提示文字/不可点击
 
 // 其他
 @border-color: rgba(216, 216, 216, 1); // 边框色
-@line-color: rgba(238, 238, 238, 1); // 分割线
-@bg-color: rgba(244, 245, 246, 1); // 背景色
+@line-color: rgba(229, 229, 229, 1); // 分割线
+@bg-color: rgba(245, 245, 245, 1); // 背景色
+@mask-color: rgba(114, 114, 114, 1); // 基础蒙版
 
-// 固定颜色
-@white-color: rgba(255, 255, 255, 1); // 白色
-@grey-color: rgba(204, 204, 204, 1); // 灰色
+// 渐变色
+@primary-linear-color: linear-gradient(225deg, #04a8b2 0%, #007a96 100%); // 主题渐变色
 
 // 字体大小
-@text-size-10: 10px; // 小标签/底部tab文字
+@text-size-11: 11px; // 小标签/角标
 @text-size-12: 12px; // 用于分隔符/中标签/步骤条等辅助文字
 @text-size-13: 13px; // 用于卡片内容/步骤条选中样式/小按钮/大标签
 @text-size-14: 14px; // toast内容
-@text-size-15: 15px; // tab栏未选中样式/栏目标题
-@text-size-16: 16px; // 列表卡片标题/输入栏/列表栏/大按钮/中按钮
-@text-size-17: 17px; // 用于页面顶部栏标题/tab栏选中样式
+@text-size-15: 15px; // 主要内容/提示文字/卡片按钮
+@text-size-16: 16px; // 二级标题/列表/输入框文案
+@text-size-17: 18px; // 用于页面顶部栏标题/一级标题/正常按钮
+@text-size-27: 27px; // 核心内容
 
 // 透明度
 @disabled-opacity: 0.4;
+
+// 间距
+@h-base-spacing: 16px; // 水平基准间距
+@v-base-spacing: 24px; // 竖直基准间距
 
 // 各层次组件高度
 @background-z-index: -1; // 背景图片z轴高度
@@ -75,7 +85,7 @@
 @switch-with-base: 48px; // 默认宽度, 高度默认为1/2
 
 // Tag
-@tag-font-size-small: @text-size-10; // 字体小
+@tag-font-size-small: @text-size-11; // 字体小
 @tag-font-size: @text-size-12; // 字体中
 @tag-font-size-large: @text-size-13; // 字体大
 @tag-base-color: @grey-color; // 默认底色

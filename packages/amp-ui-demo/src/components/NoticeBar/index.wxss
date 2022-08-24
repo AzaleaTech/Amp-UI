@@ -4,7 +4,7 @@
   background-color: #fefcec;
   line-height: 72rpx;
   font-size: 28rpx;
-  color: #3895f7;
+  color: #009ca5;
   display: flex;
   flex-direction: row;
   align-items: center;

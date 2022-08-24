@@ -2,7 +2,7 @@
   height: 80rpx;
   line-height: 80rpx;
   padding: 0 30rpx;
-  background: #f4f5f6;
+  background: #f5f5f5;
   font-size: 28rpx;
   color: #252525;
   display: flex;
@@ -11,7 +11,7 @@
   justify-content: space-between;
 }
 .header-right-content {
-  color: #3895f7;
+  color: #009ca5;
 }
 .header-text {
   display: inline-block;
@@ -27,7 +27,7 @@
   color: #252525;
 }
 .header-text-normal {
-  color: #868686;
+  color: #8c8c8c;
 }
 .header-text-active {
   color: #252525;
@@ -39,7 +39,7 @@
   bottom: 0;
   width: 60rpx;
   height: 4rpx;
-  background: #3895f7;
+  background: #009ca5;
   left: 50%;
   transform: translateX(-50%);
   border-radius: 6rpx;
