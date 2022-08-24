@@ -2,9 +2,10 @@ const data = {
   background: 'white',
   color: 'black',
   iconColor: 'black',
-  title: '标题栏',
+  title: '标题',
   hasReturn: false,
   hasHome: false,
+  subTitle: '',
 };
 
 Page({
@@ -12,7 +13,10 @@ Page({
 
   handleBackground() {
     this.setData({
-      background: this.data.background === 'white' ? 'gray' : 'white',
+      background:
+        this.data.background === 'white'
+          ? 'linear-gradient(225deg, #04A8B2 0%, #007A96 100%);'
+          : 'white',
     });
   },
 
@@ -51,7 +55,13 @@ Page({
 
   handleTitle() {
     this.setData({
-      title: this.data.title === '标题栏' ? '标题栏1' : '标题栏',
+      title: this.data.title === '标题' ? '页面一' : '标题',
+    });
+  },
+
+  handleSubTitle() {
+    this.setData({
+      subTitle: this.data.subTitle === '' ? '副标题' : '',
     });
   },
 

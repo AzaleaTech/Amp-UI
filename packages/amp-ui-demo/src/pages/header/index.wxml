@@ -3,6 +3,7 @@
           color="{{ color }}"
           has-return="{{ hasReturn }}"
           title="{{ title }}"
+          sub-title="{{ subTitle }}"
           has-home="{{ hasHome }}"
           icon-color="{{ iconColor }}"
           navigator="navigateBack"
@@ -28,6 +29,9 @@
   </view>
   <view class="example-box-content">
     <button bind:tap="handleTitle">点击改变标题</button>
+  </view>
+  <view class="example-box-content">
+    <button bind:tap="handleSubTitle">副标题</button>
   </view>
   <view class="example-box-content">
     <button bind:tap="handleReset">重置</button>

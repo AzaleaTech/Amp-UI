@@ -18,7 +18,7 @@
 .a-header-titles {
   position: relative;
   font-weight: 700;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 48rpx;
   display: flex;
   align-items: center;
@@ -65,4 +65,9 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+.a-header-title text:nth-child(2) {
+  color: #252525;
+  font-weight: normal;
+  font-size: 13px;
 }

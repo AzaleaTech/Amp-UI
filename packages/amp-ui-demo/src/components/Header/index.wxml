@@ -53,7 +53,8 @@
       <view
             style="color: {{ color }}"
             class="a-header-title">
-        <text>{{ title }}</text>
+        <text>{{ title }}\n</text>
+        <text style="color: {{ subColor }}">{{ subTitle }}</text>
       </view>
     </view>
   </view>

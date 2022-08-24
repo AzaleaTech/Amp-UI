@@ -8,14 +8,16 @@
 
 ```html
 基础用法
-<a-header title="{{ title }}"></a-header>
+<a-header title="标题"></a-header>
 
 返回上一页
-<a-header title="{{ title }}" has-return></a-header>
-<a-header title="{{ title }}" has-return navigator="switchTab"></a-header>
+<a-header title="标题" has-return ></a-header>
 
-返回主页
-<a-header title="{{ title }}" has-home></a-header>
+返回首页
+<a-header title="标题" has-home bind:backHome="goHome"></a-header>
+
+副标题
+<a-header title="标题" subTitle="副标题"></a-header>
 ```
 
 ## API
@@ -26,7 +28,9 @@
 | ---------- | ----------------------------------------------------------------------------------------------------------------------- | ------- | -------------- | --------------------------------------------------- | ---- |
 | a-class    | 自定义根节点样式类                                                                                                      | string  | -              | -                                                   | 否   |
 | title      | 标题                                                                                                                    | string  | -              | -                                                   | 否   |
-| color      | 字体颜色                                                                                                                | string  | #000           | -                                                   | 否   |
+| color      | 标题字体颜色                                                                                                                | string  | #000           | -                                                   | 否   |
+| subTitle   | 副标题                                                                                                                    | string  | -              | -                                                   | 否   |
+| subColor   | 副标题字体颜色                                                                                                                | string  | #252525           | -                                                   | 否   |
 | background | 背景颜色                                                                                                                | string  | #fff           | -                                                   | 否   |
 | icon-color | 图标颜色                                                                                                                | string  | #000           | -                                                   | 否   |
 | has-return | 是否需要返回按钮, 默认返回上一页                                                                                        | boolean | false          | -                                                   | 否   |

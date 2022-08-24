@@ -10,6 +10,14 @@ Component({
       type: String,
       value: '#000',
     },
+    subTitle: {
+      type: String,
+      value: '',
+    },
+    subColor: {
+      type: String,
+      value: '#252525',
+    },
     background: {
       type: String,
       value: '#fff',
