@@ -50,6 +50,34 @@
   </view>
 </view>
 <view class="example-box">
+  <view class="example-box-title">图标按钮，对应icon组件图标</view>
+  <view class="example-box-content icons">
+    <a-button
+              type="icon"
+              icon="praise_fill"
+              iconColor="#cc003b"
+              iconLabel="点赞"
+              bind:tap="handleTapIcon"></a-button>
+    <a-button
+              type="icon"
+              icon="star_line"
+              iconColor="#0052cc"
+              iconLabel="收藏"
+              bind:tap="handleTapIcon"></a-button>
+    <a-button
+              type="icon"
+              icon="share_line"
+              iconColor="#009CA5"
+              iconLabel="分享"
+              bind:tap="handleTapIcon"></a-button>
+    <a-button
+              type="icon"
+              icon="service_line"
+              iconLabel="其他操作"
+              bind:tap="handleTapIcon"></a-button>
+  </view>
+</view>
+<view class="example-box">
   <view class="example-box-title">按钮状态</view>
   <view class="example-box-content">
     <a-button

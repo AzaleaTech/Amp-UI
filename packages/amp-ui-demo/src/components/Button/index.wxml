@@ -1,16 +1,38 @@
-<button
-        loading="{{ loading }}"
-        open-type="{{ openType }}"
-        form-type="{{ formType }}"
-        hover-class="a-btn-hover"
-        class="a-class a-btn a-btn-type-{{ type }} a-btn-size-{{ size }} {{ circle ? 'a-btn-radius-' + size : '' }} {{ disabled ? 'a-btn-disabled' : '' }} {{ inline ? 'a-btn-inline' : '' }} {{ childType ? 'a-btn-child-' + childType : '' }}"
-        bind:tap="handleTap"
-        bind:contact="handleContact"
-        bind:getuserinfo="handleGetUserInfo"
-        bind:opensetting="handleOpenSetting"
-        bind:launchapp="handleLaunchApp"
-        bind:getphonenumber="handleGetPhoneNumber"
-        bind:error="handleError">
-  <slot></slot>
-</button>
+<template
+          is="{{ type === 'icon' ? 'icon': 'default' }}"
+          data="{{ loading, type, size, openType, formType, inline, circle, disabled, icon, iconLabel, iconColor, iconSize }}"></template>
+<!-- 普通按钮 -->
+<template name="default">
+  <button
+          loading="{{ loading }}"
+          open-type="{{ openType }}"
+          form-type="{{ formType }}"
+          hover-class="a-btn-hover"
+          class="a-class a-btn a-btn-type-{{ type }} a-btn-size-{{ size }} {{ circle ? 'a-btn-radius-' + size : '' }} {{ disabled ? 'a-btn-disabled' : '' }} {{ inline ? 'a-btn-inline' : '' }} {{ childType ? 'a-btn-child-' + childType : '' }}"
+          bind:tap="handleTap"
+          bind:contact="handleContact"
+          bind:getuserinfo="handleGetUserInfo"
+          bind:opensetting="handleOpenSetting"
+          bind:launchapp="handleLaunchApp"
+          bind:getphonenumber="handleGetPhoneNumber"
+          bind:error="handleError">
+    <slot></slot>
+  </button>
+</template>
+<!-- 图标按钮 -->
+<template name="icon">
+  <view
+        class="a-class icon-btn"
+        bind:tap="handleTap">
+    <a-icon
+            name="{{ icon }}"
+            color="{{ iconColor }}"
+            size="{{ iconSize }}" />
+    <view
+          wx:if="{{ iconLabel }}"
+          class="icon-btn-label">{{ iconLabel }}
+    </view>
+    <slot wx:else></slot>
+  </view>
+</template>
 

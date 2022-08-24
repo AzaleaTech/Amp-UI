@@ -34,4 +34,10 @@ Page({
       content: 'APP内打开的小程序，才能返回打开APP',
     });
   },
+
+  handleTapIcon() {
+    wx.showToast({
+      title: '点击了图标按钮',
+    });
+  },
 });

@@ -124,8 +124,21 @@
   }
 }
 
-
-
 button::after {
   border: none;
+}
+
+.icon-btn {
+  width: 120rpx;
+
+  .flex-type(center, column);
+
+  &-label {
+    width: 100%;
+    color: @text-color;
+    text-align: center;
+    font-size: @text-size-13;
+
+    .text-truncate();
+  }
 }

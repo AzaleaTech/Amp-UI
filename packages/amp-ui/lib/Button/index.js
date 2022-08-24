@@ -76,6 +76,22 @@ Component({
       type: String,
       value: '',
     },
+    icon: {
+      type: String,
+      value: '',
+    },
+    iconSize: {
+      type: Number,
+      value: 60,
+    },
+    iconColor: {
+      type: String,
+      value: '',
+    },
+    iconLabel: {
+      type: String,
+      value: '',
+    },
   },
 
   data: {

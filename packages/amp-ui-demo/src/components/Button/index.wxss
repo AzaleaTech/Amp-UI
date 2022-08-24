@@ -99,3 +99,19 @@
 button::after {
   border: none;
 }
+.icon-btn {
+  width: 120rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.icon-btn-label {
+  width: 100%;
+  color: #3f3f3f;
+  text-align: center;
+  font-size: 13px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

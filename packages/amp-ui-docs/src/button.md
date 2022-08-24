@@ -7,6 +7,19 @@
 ## 示例
 
 ```html
+按钮形状
+<a-button circle>圆角</a-button>
+<a-button circle="{{ false }}">无圆角</a-button>
+
+行内按钮
+<a-button inline>按钮1</a-button>
+<a-button inline type="primary" a-class="btn">按钮2</a-button>
+
+按钮尺寸
+<a-button size="large">大尺寸</a-button>
+<a-button size="default">默认尺寸</a-button>
+<a-button size="small">小尺寸</a-button>
+
 按钮类型
 <a-button type="default">default</a-button>
 <a-button type="primary">primary</a-button>
@@ -14,18 +27,22 @@
 <a-button type="warning">warning</a-button>
 <a-button type="error">error</a-button>
 
-行内按钮
-<a-button inline>按钮1</a-button>
-<a-button inline type="primary" a-class="btn">按钮2</a-button>
-
-按钮形状
-<a-button circle>圆角</a-button>
-<a-button circle="{{ false }}">无圆角</a-button>
-
-按钮尺寸
-<a-button size="large">大尺寸</a-button>
-<a-button size="default">默认尺寸</a-button>
-<a-button size="small">小尺寸</a-button>
+图标按钮, 对应icon组件图标
+<a-button type="icon"
+          icon="praise_fill"
+          iconColor="#cc003b"
+          iconLabel="点赞"></a-button>
+<a-button type="icon"
+          icon="star_line"
+          iconColor="#0052cc"
+          iconLabel="收藏"></a-button>
+<a-button type="icon"
+          icon="share_line"
+          iconColor="#009CA5"
+          iconLabel="分享"></a-button>
+<a-button type="icon"
+          icon="service_line"
+          iconLabel="其他操作"></a-button>
 
 按钮状态
 <a-button disabled>禁用</a-button>
@@ -46,7 +63,7 @@
 | 参数      | 说明                                                                                                             | 必填 | 类型    | 默认值  | 可选值                                    |
 | --------- | ---------------------------------------------------------------------------------------------------------------- | ---- | ------- | ------- | ----------------------------------------- |
 | a-class   | 自定义根节点样式类，常用于指定按钮宽度                                                                           | 否   | string  | -       |                                           |
-| type      | 按钮类型 (颜色，边框，字体)                                                                                      | 否   | string  | default | default、primary、success、warning、error |
+| type      | 按钮类型 (颜色，边框，字体)                                                                                      | 否   | string  | default | default、primary、success、warning、error、icon |
 | inline    | 是否为行内元素，开启后宽度为自适应型                                                                             | 否   | boolean | false   |                                           |
 | circle    | 按钮圆角                                                                                                         | 否   | boolean | false   |                                           |
 | size      | 按钮尺寸                                                                                                         | 否   | string  | default | large、default、small                     |
@@ -54,6 +71,14 @@
 | loading   | 设置按钮为加载中状态                                                                                             | 否   | boolean | false   |                                           |
 | open-type | 微信开放能力, 参考[微信 button 文档](https://developers.weixin.qq.com/miniprogram/dev/component/button.html)     | 否   | string  | -       |                                           |
 | form-type | 用于 `form` 组件, 参考[微信 button 文档](https://developers.weixin.qq.com/miniprogram/dev/component/button.html) | 否   | string  | -       |                                           |
+
+`type === icon` 时
+| 参数      | 说明                           | 类型    | 默认值 | 可选值 | 必填 |
+| --------- | ------------------------------ | ------- | ------ | ------ | ---- |
+| icon   | 图标名称            | string  | -      | -      | 是   |
+| iconLabel   | 图标下标文案           | string  | -      | -      | 否   |
+| iconColor   | 图标颜色            | string  | -      | -      | 否   |
+| iconSize   | 图标大小            | string \| number  | 60      | -      | 否   |
 
 ### Events
 
