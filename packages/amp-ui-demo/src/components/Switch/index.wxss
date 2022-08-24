@@ -15,11 +15,11 @@
   border-radius: 100%;
   background-color: #ffffff;
   transition: left 0.3s ease-in-out;
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
 }
 .a-switch-inner-checked {
-  left: 50rpx;
+  left: calc(48px / 2 + 2px);
 }
 .a-switch-checked {
   border-color: #009ca5;

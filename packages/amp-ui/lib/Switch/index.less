@@ -18,10 +18,10 @@
     background-color: @white-color;
     transition: left 0.3s ease-in-out;
 
-    .set-size((@switch-with-base / 2) - 4);
+    .set-size((@switch-with-base / 2) - 2);
 
     &-checked {
-      left: 50rpx;
+      left: calc(@switch-with-base / 2 + 2px);
     }
   }
 
