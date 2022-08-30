@@ -63,6 +63,14 @@ Component({
       type: Array,
       value: [],
     },
+    current: {
+      type: Number,
+      value: 0,
+    },
+    clearable: {
+      type: Boolean,
+      value: false,
+    },
   },
 
   lifetimes: {
@@ -165,6 +173,17 @@ Component({
       type === 'swiper' &&
         swiperArr.length !== 0 &&
         this.triggerEvent('click', { value: swiperArr });
+    },
+
+    handleChange(e) {
+      this.setData({
+        current: e.detail.current,
+      });
+      this.triggerEvent('change', { value: e.detail });
+    },
+
+    handleClear() {
+      this.triggerEvent('clear', { value: this.data.current });
     },
   },
 });

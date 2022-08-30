@@ -12,6 +12,7 @@ Page({
     delay: 400,
     roll: true,
     vertical: false,
+    clearable: false,
   },
 
   handleClick(e) {},

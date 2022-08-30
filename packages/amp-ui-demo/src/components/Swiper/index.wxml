@@ -1,26 +1,52 @@
 <view class="a-class a-swiper">
-  <swiper current="{{ current }}" autoplay="{{ autoplay }}" circular="{{ circular }}" duration="{{ duration }}" interval="{{ interval }}" easing-function="{{ easingFunction }}" previous-margin="{{ previousMargin }}px" next-margin="{{ nextMargin }}px" vertical="{{ vertical }}" bindchange="handleChange">
-    <block wx:for="{{ imgUrls }}" wx:key="index">
+  <swiper
+          current="{{ current }}"
+          autoplay="{{ autoplay }}"
+          circular="{{ circular }}"
+          duration="{{ duration }}"
+          interval="{{ interval }}"
+          easing-function="{{ easingFunction }}"
+          previous-margin="{{ previousMargin }}px"
+          next-margin="{{ nextMargin }}px"
+          vertical="{{ vertical }}"
+          bind:change="handleChange">
+    <block
+           wx:for="{{ imgUrls }}"
+           wx:key="index">
       <swiper-item>
-        <image src="{{ item }}" class="a-swiper-slide-image" />
+        <image
+               src="{{ item }}"
+               class="a-swiper-slide-image" />
       </swiper-item>
     </block>
   </swiper>
-  <template wx:if="{{ dots }}" is="{{ dotCircle ? 'circle-dot' : 'default-dot' }}" data="{{ imgUrls, current, vertical, dotActiveColor }}"></template>
+  <template
+            wx:if="{{ dots }}"
+            is="{{ dotCircle ? 'circle-dot' : 'default-dot' }}"
+            data="{{ imgUrls, current, vertical, dotActiveColor }}"></template>
 </view>
 <!-- 默认指示点 -->
 <template name="default-dot">
   <view class="a-swiper-dots {{ vertical ? 'a-swiper-dots-vertical' : 'a-swiper-dots-horizontal' }}">
-    <block wx:for="{{ imgUrls }}" wx:key="index">
-      <view class="{{ vertical ? 'a-swiper-dot-vertical' : 'a-swiper-dot-horizontal' }} {{ index === current ? 'a-swiper-dot-active' : 'a-swiper-dot' }}" style="background: {{ index === current ? dotActiveColor : dotColor }};"></view>
+    <block
+           wx:for="{{ imgUrls }}"
+           wx:key="index">
+      <view
+            class="{{ vertical ? 'a-swiper-dot-vertical' : 'a-swiper-dot-horizontal' }} {{ index === current ? 'a-swiper-dot-active' : 'a-swiper-dot' }}"
+            style="background: {{ index === current ? dotActiveColor : dotColor }};"></view>
     </block>
   </view>
 </template>
 <!-- 圆弧形指示点 -->
 <template name="circle-dot">
   <view class="a-swiper-dots {{ vertical ? 'a-swiper-dots-vertical' : 'a-swiper-dots-horizontal' }}">
-    <block wx:for="{{ imgUrls }}" wx:key="index">
-      <view class="{{ vertical ? 'a-swiper-dot-vertical' : 'a-swiper-dot-horizontal' }} {{ index === current ? 'a-swiper-circle-dot-active' : 'a-swiper-dot' }}" style="border-color: {{ index === current ? dotActiveColor : '' }};"></view>
+    <block
+           wx:for="{{ imgUrls }}"
+           wx:key="index">
+      <view
+            class="{{ vertical ? 'a-swiper-dot-vertical' : 'a-swiper-dot-horizontal' }} {{ index === current ? 'a-swiper-circle-dot-active' : 'a-swiper-dot' }}"
+            style="border-color: {{ index === current ? dotActiveColor : '' }};"></view>
     </block>
   </view>
 </template>
+

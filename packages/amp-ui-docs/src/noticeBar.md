@@ -39,11 +39,14 @@ Page({
 | icon-url   | 图片链接，若已经有 icon-name 属性则该属性失效  | string  | -      | -      | 否   |
 | delay      | 动画延迟时间, 单位[`ms`]                       | number  | 400    | -      | 否   |
 | speed      | 滚动速率, 单位[`rpx/s`]                        | number  | 100    | -      | 否   |
+| clearable  | 是否可删除                                 | boolean | false  | -      | 否   |
 
 ### Events
 
 | 事件名 | 说明                          | 参数 |
 | ------ | ----------------------------- | ---- |
 | click  | 点击 NoticeBar 组件触发的事件 | e    |
+| change | 轮播内容切换时触发 | e    |
+| clear  | 点击删除按钮触发, `e.detail.value`当前选项下标 | e    |
 
 ## 常见问题

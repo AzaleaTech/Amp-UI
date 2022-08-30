@@ -14,15 +14,17 @@
   </view>
   <swiper
           wx:if="{{ roll && vertical }}"
+          current="{{ current }}"
           autoplay
-          vertical
+          vertical="{{ vertical }}"
           interval="{{ 300000 / speed }}"
-          class="a-notice-bar-wrap">
+          class="a-notice-bar-wrap"
+          bind:change="handleChange">
     <block
            wx:for="{{ swiperArr }}"
            wx:key="index">
       <swiper-item>
-        {{ item }}
+        <view>{{ item }}</view>
       </swiper-item>
     </block>
   </swiper>
@@ -35,6 +37,14 @@
       {{ text }}
       <slot wx:if="{{ !text }}"></slot>
     </view>
+  </view>
+  <view
+        wx:if="{{ clearable }}"
+        bind:tap="handleClear">
+    <a-icon
+            name="error_fill"
+            color="{{ iconColor }}"
+            size="{{ iconSize }}" />
   </view>
 </view>
 
