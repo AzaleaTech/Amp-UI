@@ -8,21 +8,20 @@
 
 ```html
 不同状态
-<a-checkbox-group>
-  <a-checkbox value="{{ value1 }}"></a-checkbox>
-  <a-checkbox value="{{ value2 }}" checked></a-checkbox>
-  <a-checkbox value="{{ value3 }}" checked disabled></a-checkbox>
-</a-checkbox-group>
+<a-checkbox value="{{ value1 }}"></a-checkbox>
+<a-checkbox value="{{ value2 }}" checked disabled></a-checkbox>
+
+不同类型
+<a-checkbox value="{{ value1 }}" type="dot"></a-checkbox>
+<a-checkbox value="{{ value2 }}" checked disabled type="dot"></a-checkbox>
 
 按钮位置
-<a-checkbox-group>
-  <a-checkbox value="{{ value1 }}" checked position="right"></a-checkbox>
-</a-checkbox-group>
+<a-checkbox value="left" checked position="left"></a-checkbox>
+<a-checkbox value="right" checked position="right"></a-checkbox>
 
 按钮颜色
-<a-checkbox-group>
-  <a-checkbox value="{{ value1 }}" checked color="#3e04df"></a-checkbox>
-</a-checkbox-group>
+<a-checkbox value="#3e04df" checked color="#3e04df" data-index="1"></a-checkbox>
+<a-checkbox value="#cf2828" checked color="#cf2828" data-index="2"></a-checkbox>
 ```
 
 ## API
@@ -33,6 +32,7 @@
 | -------- | --------------------------------------------------------------------------------- | ------- | ------- | ----------- | ---- |
 | a-class  | 自定义根节点样式类                                                                | string  | -       | -           | 否   |
 | value    | checkbox 标识，选中时触发 checkbox-group 的 change 事件，并携带 checkbox 的 value | string  | -       | -           | 是   |
+| type     | 复选框样式类型 | string  | default      | default、dot           | 否   |
 | checked  | 当前项是否选中                                                                    | boolean | false   | -           | 否   |
 | disabled | 当前项是否禁用                                                                    | boolean | false   | -           | 否   |
 | color    | 选中状态颜色                                                                      | string  | #3895f7 | -           | 否   |

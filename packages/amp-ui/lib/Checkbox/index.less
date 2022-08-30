@@ -1,16 +1,51 @@
+@import '../styles/_index.less';
+
 .a-checkbox {
+  display: flex;
+  align-items: center;
   height: 80rpx;
-  vertical-align: middle;
-  line-height: 80rpx;
 
-  &-radio {
-    &-left {
-      float: left;
-    }
+  &-circle {
+    position: relative;
+    border: 2rpx solid @grey-color;
+    border-radius: 50%;
 
-    &-right {
-      float: right;
+    .set-size(20px);
+  }
+
+  &-left {
+    margin-right: 15px;
+  }
+
+  &-right {
+    position: absolute;
+    right: 15px;
+  }
+
+  &-checked {
+    border-color: @primary-color;
+  }
+
+  &-disabled {
+    opacity: @disabled-opacity;
+  }
+
+  &-dot {
+    &-checked {
+      position: absolute;
+      top: 6px;
+      left: 6px;
+      border-radius: 50%;
+      background-color: @primary-color;
+      content: '';
+
+      .flex-type(center);
+      .set-size(8px);
     }
+  }
+
+  &-disabled {
+    opacity: @disabled-opacity;
   }
 
   &-title {

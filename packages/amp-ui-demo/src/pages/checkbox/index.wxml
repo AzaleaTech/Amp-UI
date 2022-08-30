@@ -1,5 +1,5 @@
 <view class="example-box">
-  <view class="example-box-title">checkbox不同状态</view>
+  <view class="example-box-title">不同状态</view>
   <view class="example-box-content">
     <a-checkbox
                 value="{{ value1 }}"
@@ -11,6 +11,22 @@
                 checked="{{ checked2 }}"
                 data-index="2"
                 disabled
+                bind:change="handleChange"></a-checkbox>
+  </view>
+  <view class="example-box-title">不同类型</view>
+  <view class="example-box-content">
+    <a-checkbox
+                value="{{ value1 }}"
+                type="dot"
+                checked="{{ checked1 }}"
+                data-index="1"
+                bind:change="handleChange"></a-checkbox>
+    <a-checkbox
+                value="{{ value2 }}"
+                type="dot"
+                checked="{{ checked2 }}"
+                disabled
+                data-index="2"
                 bind:change="handleChange"></a-checkbox>
   </view>
   <view class="example-box-title">按钮位置</view>

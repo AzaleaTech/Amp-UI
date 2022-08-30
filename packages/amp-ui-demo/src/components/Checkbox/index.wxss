@@ -1,13 +1,44 @@
 .a-checkbox {
+  display: flex;
+  align-items: center;
   height: 80rpx;
-  vertical-align: middle;
-  line-height: 80rpx;
 }
-.a-checkbox-radio-left {
-  float: left;
+.a-checkbox-circle {
+  position: relative;
+  border: 2rpx solid #cccccc;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
 }
-.a-checkbox-radio-right {
-  float: right;
+.a-checkbox-left {
+  margin-right: 15px;
+}
+.a-checkbox-right {
+  position: absolute;
+  right: 15px;
+}
+.a-checkbox-checked {
+  border-color: #009ca5;
+}
+.a-checkbox-disabled {
+  opacity: 0.4;
+}
+.a-checkbox-dot-checked {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  border-radius: 50%;
+  background-color: #009ca5;
+  content: '';
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 8px;
+  height: 8px;
+}
+.a-checkbox-disabled {
+  opacity: 0.4;
 }
 .a-checkbox-title {
   display: inline-block;

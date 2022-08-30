@@ -29,6 +29,7 @@
 | --------- | ------------------------ | ------- | -------- | -------------------- | ---- |
 | a-class   | 自定义根节点样式类       | string  | -        | -                    | 否   |
 | current   | 指定当前选中的项目 value | array   | []       | -                    | 否   |
+| type     | 复选框样式类型 | string  | default      | default、dot           | 否   |
 | disabled  | 是否禁用所有单选框       | boolean | false    | -                    | 否   |
 | direction | 排列方向，默认竖直方向   | string  | vertical | vertical、horizontal | 否   |
 

@@ -8,6 +8,9 @@ Component({
         if (!this.properties.disabled && target.data.disabled) {
           this.setData({ disabled: target.data.disabled });
         }
+        if (target.data.type) {
+          this.setData({ type: target.data.type });
+        }
       },
     },
   },
@@ -16,6 +19,10 @@ Component({
     value: {
       type: String,
       value: '',
+    },
+    type: {
+      type: String,
+      value: 'default',
     },
     checked: {
       type: Boolean,

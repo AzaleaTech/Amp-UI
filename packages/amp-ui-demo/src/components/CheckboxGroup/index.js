@@ -22,6 +22,10 @@ Component({
       value: [],
       observer: 'changeCurrent',
     },
+    type: {
+      type: String,
+      value: 'default',
+    },
     disabled: {
       type: Boolean,
       value: false,

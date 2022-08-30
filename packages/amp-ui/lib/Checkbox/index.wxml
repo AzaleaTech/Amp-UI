@@ -1,14 +1,29 @@
 <view
       class="a-class a-checkbox"
       catch:tap="handleChange">
+  <template
+            is="{{ type }}"
+            data="{{ checked, color, position, value, disabled }}"></template>
+</view>
+<template name="default">
   <label>
-    <radio
-           value="{{ value }}"
-           checked="{{ checked }}"
-           color="{{ checked ? color : ''}}"
-           disabled="{{ disabled }}"
-           class="a-checkbox-radio a-checkbox-radio-{{ position }}" />
+    <checkbox
+              value="{{ value }}"
+              checked="{{ checked }}"
+              color="{{ checked ? color : ''}}"
+              disabled="{{ disabled }}"
+              class="a-checkbox-{{ position }}" />
     <view class="a-checkbox-title">{{ value }}</view>
   </label>
-</view>
+</template>
+<template name="dot">
+  <view
+        class="a-checkbox-circle {{ checked ? 'a-checkbox-checked' : '' }}  {{ disabled ? 'a-checkbox-disabled': '' }} a-checkbox-{{ position }} "
+        style="{{ color ? 'border-color:' + color : '' }}">
+    <view
+          class="{{ checked ? 'a-checkbox-dot-checked' : '' }}"
+          style="{{ color ? 'background-color:' + color : '' }}"></view>
+  </view>
+  <view class="a-checkbox-title">{{ value }}</view>
+</template>
 
