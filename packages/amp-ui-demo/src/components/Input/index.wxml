@@ -11,7 +11,7 @@
          focus="{{ focus }}"
          maxlength="{{ maxlength }}"
          placeholder="{{ placeholder }}"
-         placeholder-style="{{placeholderStyle}}"
+         placeholder-style="{{ placeholderStyle }}"
          password="{{ password }}"
          name="{{ name }}"
          type="{{ type }}"

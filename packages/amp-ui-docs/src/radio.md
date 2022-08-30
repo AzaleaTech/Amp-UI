@@ -8,21 +8,20 @@
 
 ```html
 不同状态
-<a-radio-group>
-  <a-radio value="{{ value1 }}"></a-radio>
-  <a-radio value="{{ value2 }}" checked></a-radio>
-  <a-radio value="{{ value3 }}" checked disabled></a-radio>
-</a-radio-group>
+<a-radio value="{{ value1 }}"></a-radio>
+<a-radio value="{{ value2 }}" checked disabled></a-radio>
+
+不同类型
+<a-radio value="{{ value1 }}" type="dot"></a-radio>
+<a-radio value="{{ value2 }}" checked disabled type="dot"></a-radio>
 
 按钮位置
-<a-radio-group>
-  <a-radio value="{{ value1 }}" checked position="right"></a-radio>
-</a-radio-group>
+<a-radio value="left" checked position="left"></a-radio>
+<a-radio value="right" checked position="right"></a-radio>
 
 按钮颜色
-<a-radio-group>
-  <a-radio value="{{ value1 }}" checked color="#3e04df"></a-radio>
-</a-radio-group>
+<a-radio value="#3e04df" checked color="#3e04df" data-index="1"></a-radio>
+<a-radio value="#cf2828" checked color="#cf2828" data-index="2"></a-radio>
 ```
 
 ## API
@@ -33,6 +32,7 @@
 | -------- | ------------------------ | ------- | ------ | ----------- | ---- |
 | a-class  | 自定义根节点样式类       | string  | -      | -           | 否   |
 | value    | 选项标识符，必须保证唯一 | string  | -      | -           | 否   |
+| type     | 单选框样式类型 | string  | default      | default、dot           | 否   |
 | checked  | 当前项是否选中           | boolean | false  | -           | 否   |
 | disabled | 当前项是否禁用           | boolean | false  | -           | 否   |
 | color    | 选中状态颜色             | string  | -      | -           | 否   |

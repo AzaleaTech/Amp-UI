@@ -1,5 +1,5 @@
 <view class="example-box">
-  <view class="example-box-title">radio不同状态</view>
+  <view class="example-box-title">不同状态</view>
   <view class="example-box-content">
     <a-radio
              value="{{ value1 }}"
@@ -8,6 +8,22 @@
              bind:change="handleChange"></a-radio>
     <a-radio
              value="{{ value2 }}"
+             checked="{{ checked2 }}"
+             disabled
+             data-index="2"
+             bind:change="handleChange"></a-radio>
+  </view>
+  <view class="example-box-title">不同类型</view>
+  <view class="example-box-content">
+    <a-radio
+             value="{{ value1 }}"
+             type="dot"
+             checked="{{ checked1 }}"
+             data-index="1"
+             bind:change="handleChange"></a-radio>
+    <a-radio
+             value="{{ value2 }}"
+             type="dot"
              checked="{{ checked2 }}"
              disabled
              data-index="2"

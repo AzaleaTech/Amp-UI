@@ -10,17 +10,17 @@
   width: 20px;
   height: 20px;
 }
-.a-radio-circle-left {
+.a-radio-left {
   margin-right: 15px;
 }
-.a-radio-circle-right {
+.a-radio-right {
   position: absolute;
   right: 15px;
 }
-.a-radio-circle-checked {
+.a-radio-checked {
   border-color: #009ca5;
 }
-.a-radio-circle-dot-checked {
+.a-radio-dot-checked {
   position: absolute;
   top: 6px;
   left: 6px;
@@ -34,7 +34,7 @@
   width: 8px;
   height: 8px;
 }
-.a-radio-circle-disabled {
+.a-radio-disabled {
   opacity: 0.4;
 }
 .a-radio-title {
