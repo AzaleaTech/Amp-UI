@@ -1,4 +1,5 @@
 {
+  "navigationBarTitleText": "Swiper",
   "usingComponents": {
     "a-swiper": "../../components/Swiper/index"
   }

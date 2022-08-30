@@ -26,6 +26,10 @@ Component({
       type: Boolean,
       value: false,
     },
+    dotCircle: {
+      type: Boolean,
+      value: true,
+    },
     dotColor: {
       type: String,
       value: '',

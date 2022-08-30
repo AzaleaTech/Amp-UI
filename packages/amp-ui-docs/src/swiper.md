@@ -19,6 +19,7 @@
   circular="{{ circular }}"
   duration="{{ duration }}"
   dots="{{ dots }}"
+  dot-circle="{{ dotCircle }}"
   dot-color="{{ dotColor }}"
   dot-active-color="{{ dotActiveColor }}"
   easing-function="{{ easingFunction }}"
@@ -42,6 +43,7 @@ Page({
     current: 0,
     interval: 5000,
     duration: 500,
+    dotCircle: true,
     dotColor: '#fff',
     dotActiveColor: '#f80',
     easingFunction: 'default',
@@ -62,6 +64,7 @@ Page({
 | a-class          | 自定义根节点样式类                          | string        | -       | -      | 否   |
 | img-urls         | 轮播图数据列表, 传 url 地址                 | Array[string] | -       | -      | 是   |
 | dots             | 是否显示面板指示点                          | boolean       | false   | -      | 否   |
+| dotCircle        | 面板指示点是否圆弧形                       | boolean       | true   | -      | 否   |
 | dot-color        | 指示点颜色                                  | string        | #D8D8D8 | -      | 否   |
 | dot-active-color | 当前选中的指示点颜色                        | string        | #FFFFFF | -      | 否   |
 | current          | 当前步骤索引值                              | number        | 0       | -      | 否   |

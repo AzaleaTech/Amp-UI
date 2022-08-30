@@ -11,8 +11,9 @@ Page({
     interval: 5000,
     duration: 500,
     easingFunction: 'default',
+    dotCircle: true, // 指示点是否圆弧形
     dotColor: '#B8B8B8',
-    dotActiveColor: '#FFFFFF',
+    dotActiveColor: '#009ca5',
     circle: true,
     previousMargin: 0,
     nextMargin: 0,

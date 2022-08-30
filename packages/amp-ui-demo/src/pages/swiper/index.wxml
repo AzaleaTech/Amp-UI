@@ -11,6 +11,7 @@
               circle="{{ circle }}"
               current="{{ current }}"
               dots="{{ dots }}"
+              dot-circle="{{ dotCircle }}"
               dot-color="{{ dotColor }}"
               dot-active-color="{{ dotActiveColor }}"
               duration="{{ duration }}"
@@ -28,6 +29,15 @@
             <switch
                     data-property-name="dots"
                     checked="{{ dots }}"
+                    bind:change="handleProperty" />
+          </view>
+        </view>
+        <view class="section-cell section-cell-switch">
+          <view class="section-cell-bd">指示点圆弧形</view>
+          <view class="section-cell-ft">
+            <switch
+                    data-property-name="dotCircle"
+                    checked="{{ dotCircle }}"
                     bind:change="handleProperty" />
           </view>
         </view>
