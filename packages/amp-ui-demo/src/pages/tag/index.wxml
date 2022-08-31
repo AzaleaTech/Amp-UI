@@ -53,6 +53,18 @@
            type="{{ item }}"
            class="tag-box"></a-tag>
   </view>
+  <view class="example-box-title">气泡标签</view>
+  <view class="example-box-content">
+    <a-tag
+           wx:for="{{ tagList4 }}"
+           wx:key="index"
+           circle
+           bubble
+           bubble-position="{{ item[1] }}"
+           name="气泡标签{{ index + 1 }}"
+           type="{{ item[0] }}"
+           class="tag-box"></a-tag>
+  </view>
   <view class="example-box-title">禁用标签</view>
   <view class="example-box-content">
     <a-tag

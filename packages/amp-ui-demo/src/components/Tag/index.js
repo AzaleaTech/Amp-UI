@@ -24,6 +24,14 @@ Component({
       type: Boolean,
       value: false,
     },
+    bubble: {
+      type: Boolean,
+      value: false,
+    },
+    bubblePosition: {
+      type: String,
+      value: 'bottom-left',
+    },
     disabled: {
       type: Boolean,
       value: false,

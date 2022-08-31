@@ -18,5 +18,11 @@ Page({
         color: '#fff',
       },
     ],
+    tagList4: [
+      ['default', 'top-left'],
+      ['primary', 'top-right'],
+      ['success', 'bottom-left'],
+      ['error', 'bottom-right'],
+    ],
   },
 });

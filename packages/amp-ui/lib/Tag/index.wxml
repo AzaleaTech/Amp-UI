@@ -1,5 +1,5 @@
 <view
-      class="a-class a-tag a-tag-{{ size }} a-tag-{{ type }} {{ circle ? 'a-tag-circle' : '' }} {{ plain ? 'a-tag-plain' : '' }} {{ disabled ? 'a-tag-disabled' : '' }}"
+      class="a-class a-tag a-tag-{{ size }} a-tag-{{ type }} {{ circle ? 'a-tag-circle' : '' }} {{ plain ? 'a-tag-plain' : '' }} {{ bubble ? 'a-tag-' + type + '-'+bubblePosition : '' }}  {{ disabled ? 'a-tag-disabled' : '' }}"
       bind:tap="handleTap">
   <block wx:if="{{ name }}">{{ name }}</block>
   <slot wx:else></slot>

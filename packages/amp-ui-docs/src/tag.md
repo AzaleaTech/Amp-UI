@@ -34,6 +34,9 @@
 圆角标签
 <a-tag name="标签" circle></a-tag>
 
+气泡标签
+<a-tag name="气泡标签" circle bubble></a-tag>
+
 禁用标签
 <a-tag name="标签" disabled></a-tag>
 ```
@@ -50,6 +53,8 @@
 | type     | 标签类型           | string  | default | default、primary、success、warning、error | 否   |
 | circle   | 标签是否圆角       | boolean | false   | -                                         | 否   |
 | plain    | 标签是否镂空       | boolean | false   | -                                         | 否   |
+| bubble    | 是否为气泡标签(推荐和`circle`同时使用)       | boolean | false   | -                                         | 否   |
+| bubblePosition    | 气泡标签位置       | string | bottom-left  |    top-left、top-right、bottom-left、bottom-right                                     | 否   |
 | disabled | 标签是否禁用       | boolean | false   | -                                         | 否   |
 
 ### Events

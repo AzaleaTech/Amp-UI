@@ -1,5 +1,10 @@
 @import '../styles/_index.less';
 
+@top-left: top-left;
+@top-right: top-right;
+@bottom-left: bottom-left;
+@bottom-right: bottom-right;
+
 .tag-size(@font-size, @padding, @height) {
   padding: 0 @padding;
   height: @height;
@@ -7,10 +12,67 @@
   line-height: @height;
 }
 
+.bubble-position(@position, @color) when(@position=@top-left) {
+  top: -16rpx;
+  left: 8%;
+  border-bottom-color: @color;
+  border-left-color: @color;
+  transform: skewY(-16deg);
+}
+
+.bubble-position(@position, @color) when(@position=@top-right) {
+  top: -16rpx;
+  right: 8%;
+  border-bottom-color: @color;
+  border-right-color: @color;
+  transform: skewY(16deg);
+}
+
+.bubble-position(@position, @color) when(@position=@bottom-left) {
+  top: 100%;
+  left: 8%;
+  border-top-color: @color;
+  border-left-color: @color;
+  transform: skewY(16deg);
+}
+
+.bubble-position(@position, @color) when(@position=@bottom-right) {
+  top: 100%;
+  right: 8%;
+  border-top-color: @color;
+  border-right-color: @color;
+  transform: skewY(-16deg);
+}
+
+.tag-bubble(@bubble-position, @color) {
+  &::after {
+    position: absolute;
+    border: 8rpx solid transparent;
+    content: '';
+    .bubble-position(@bubble-position, @color);
+  }
+}
+
 .tag-type(@color) {
   border: 1rpx solid @color;
   background-color: @color;
   color: @white-color;
+
+  &-@{top-left} {
+    .tag-bubble(@top-left, @color)
+  }
+
+  &-@{top-right} {
+    .tag-bubble(@top-right, @color)
+  }
+
+  &-@{bottom-left} {
+    .tag-bubble(@bottom-left, @color)
+  }
+
+  &-@{bottom-right} {
+    .tag-bubble(@bottom-right, @color)
+  }
 }
 
 .tag-plain(@color) {
@@ -20,11 +82,11 @@
 }
 
 .a-tag {
+  position: relative;
   display: inline-block;
   min-width: 40rpx;
-  border: 2rpx solid @tag-base-color;
+
   border-radius: 4rpx;
-  background-color: @tag-base-color;
   text-align: center;
 
   .tag-size(@tag-font-size, 8px, 19px);
@@ -35,6 +97,13 @@
 
   &-large {
     .tag-size(@tag-font-size-large, 10px, 22px);
+  }
+
+  &-default {
+    .tag-type(@tag-base-color);
+    background-color: @tag-base-color;
+    border: 2rpx solid @tag-base-color;
+    color: @title-color;
   }
 
   &-primary {
@@ -59,7 +128,6 @@
 
   &-plain {
     background-color: @white-color;
-
 
     &.a-tag-primary {
       .tag-plain(@tag-primary-color);
