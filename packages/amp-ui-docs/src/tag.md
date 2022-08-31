@@ -19,6 +19,15 @@
 <a-tag name="标签" type="warning"></a-tag>
 <a-tag name="标签" type="error"></a-tag>
 
+
+带图标标签
+<a-tag>
+  <view>
+    <a-icon name="home_line"/>
+   <text>图标标签</text>
+  </view>
+</a-tag>
+
 镂空标签
 <a-tag name="标签" plain></a-tag>
 

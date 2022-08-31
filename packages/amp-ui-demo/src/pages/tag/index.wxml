@@ -17,6 +17,22 @@
            type="{{ item }}"
            class="tag-box"></a-tag>
   </view>
+  <view class="example-box-title">带图标标签</view>
+  <view class="example-box-content">
+    <a-tag
+           wx:for="{{ tagList3 }}"
+           wx:key="index"
+           type="{{ item.type }}"
+           class="tag-box">
+      <view class="tag-box-icon">
+        <a-icon
+                name="{{ item.icon }}"
+                size="{{ 36 }}"
+                color="{{ item.color }}" />
+        <text>图标{{ index + 1 }}</text>
+      </view>
+    </a-tag>
+  </view>
   <view class="example-box-title">镂空标签</view>
   <view class="example-box-content">
     <a-tag

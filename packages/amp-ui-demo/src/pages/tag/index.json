@@ -1,6 +1,7 @@
 {
   "navigationBarTitleText": "Tag",
   "usingComponents": {
-    "a-tag": "../../components/Tag/index"
+    "a-tag": "../../components/Tag/index",
+    "a-icon": "../../components/Icon/Icon"
   }
 }
