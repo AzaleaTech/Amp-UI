@@ -4,10 +4,10 @@
     <a-badge value="{{ 2 }}">
       <view class="badge-box"></view>
     </a-badge>
-    <a-badge value="{{ 99 }}">
+    <a-badge value="{{ 999 }}">
       <view class="badge-box"></view>
     </a-badge>
-    <a-badge value="{{ 100 }}">
+    <a-badge value="{{ 1000 }}">
       <view class="badge-box"></view>
     </a-badge>
   </view>

@@ -8,7 +8,7 @@ Component({
     },
     maxValue: {
       type: Number,
-      value: 99,
+      value: 999,
     },
     dot: {
       type: Boolean,

@@ -11,10 +11,10 @@
 <a-badge value="{{ 2 }}">
   <view class="badge-box"></view>
 </a-badge>
-<a-badge value="{{ 99 }}">
+<a-badge value="{{ 999 }}">
   <view class="badge-box"></view>
 </a-badge>
-<a-badge value="{{ 100 }}">
+<a-badge value="{{ 1000 }}">
   <view class="badge-box"></view>
 </a-badge>
 
@@ -35,7 +35,7 @@
 | --------- | ------------------------------ | ------- | ------ | ------ | ---- |
 | a-class   | 自定义根节点样式类             | string  | -      | -      | 否   |
 | value     | 角标内容                       | number  | 0      | -      | 否   |
-| max-value | 角标最大值                     | number  | 99     | -      | 否   |
+| max-value | 角标最大值                     | number  | 999     | -      | 否   |
 | dot       | 是否不展示角标内容, 只展示红点 | boolean | false  | -      | 否   |
 
 ### Events
