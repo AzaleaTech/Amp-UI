@@ -36,27 +36,30 @@
   justify-content: center;
 }
 .a-swiper-dot {
-  border-radius: 8rpx;
+  border-radius: 2rpx;
   background: #d8d8d8;
-  transition: all 0.6s;
+  transition: width 0.6s;
 }
 .a-swiper-dot-active {
   background: #ffffff;
 }
 .a-swiper-dot-horizontal {
-  margin: 0 8rpx;
-  width: 24rpx;
-  height: 4rpx;
+  margin: 0 4rpx;
+  width: 9rpx;
+  height: 6rpx;
 }
 .a-swiper-dot-vertical {
-  margin: 8rpx 0;
-  width: 4rpx;
-  height: 24rpx;
+  margin: 4rpx 0;
+  width: 6rpx;
+  height: 9rpx;
+}
+.a-swiper-dot-vertical.a-swiper-circle-dot-active {
+  width: 6rpx;
+  height: 18rpx;
 }
 .a-swiper-circle-dot-active {
-  border: 4rpx solid #009ca5;
-  border-top: none;
-  border-radius: 0 0 50% 50%/0 0 100% 100%;
-  width: 40rpx;
-  height: 8rpx;
+  border-radius: 2rpx;
+  background-color: #009ca5;
+  width: 18rpx;
+  height: 6rpx;
 }

@@ -32,7 +32,7 @@
 @text-size-14: 14px; // toast内容
 @text-size-15: 15px; // 主要内容/提示文字/卡片按钮
 @text-size-16: 16px; // 二级标题/列表/输入框文案
-@text-size-17: 18px; // 用于页面顶部栏标题/一级标题/正常按钮
+@text-size-18: 18px; // 用于页面顶部栏标题/一级标题/大按钮
 @text-size-27: 27px; // 核心内容
 
 // 透明度
@@ -56,11 +56,11 @@
 // Button
 @btn-font-size-small: 13px; //字体小
 @btn-font-size: @text-size-16; // 字体中
-@btn-font-size-large: @text-size-16; // 字体大
-@btn-border-radius: 2px; // 非圆角默认弧度
-@btn-circle-size-small: 27px; // 圆角弧度小
-@btn-circle-size: 36px; // 圆角弧度中
-@btn-circle-size-large: 45px; // 圆角弧度大
+@btn-font-size-large: @text-size-18; // 字体大
+@btn-border-radius: 4px; // 非圆角默认弧度
+@btn-circle-size-small: 28px; // 圆形按钮高度（小）
+@btn-circle-size: 36px; // 圆形按钮高度（默认）
+@btn-circle-size-large: 45px; // 圆形按钮高度（大）
 @btn-active-hover: rgba(0, 0, 0, 0.1); // 激活遮罩
 @btn-disabled-hover: rgba(255, 255, 255, 0.35); //禁用遮罩
 @btn-inline-margin: 10px; // 行内相邻按钮间距
@@ -81,8 +81,10 @@
 @divider-line-bg: @grey-color; // 分割线默认颜色
 
 // Switch
-@switch-color-base: @grey-color; // 默认底色
-@switch-with-base: 48px; // 默认宽度, 高度默认为1/2
+@switch-base-color: @grey-color; // 默认底色
+@switch-base-width: 60px; // 默认宽度
+@switch-base-height: 32px; // 默认高度
+@switch-base-radius: 28px; // 默认圆弧
 
 // Tag
 @tag-font-size-small: @text-size-11; // 字体小

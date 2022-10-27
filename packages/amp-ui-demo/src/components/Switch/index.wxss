@@ -3,11 +3,11 @@
   display: flex;
   align-items: center;
   border: 2rpx solid #cccccc;
-  border-radius: 24px;
+  border-radius: 28px;
   background-color: #cccccc;
   transition: all 0.3s ease-in-out;
-  width: 48px;
-  height: 24px;
+  width: 60px;
+  height: 32px;
 }
 .a-switch-inner {
   position: absolute;
@@ -15,11 +15,11 @@
   border-radius: 100%;
   background-color: #ffffff;
   transition: left 0.3s ease-in-out;
-  width: 22px;
-  height: 22px;
+  width: 28px;
+  height: 28px;
 }
 .a-switch-inner-checked {
-  left: calc(48px / 2 + 2px);
+  left: 32px;
 }
 .a-switch-checked {
   border-color: #009ca5;

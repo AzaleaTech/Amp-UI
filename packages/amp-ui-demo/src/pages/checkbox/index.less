@@ -1,1 +1,27 @@
 @import '../../assets/styles/base.less';
+
+/* 未选中的背景样式 */
+// checkbox .wx-checkbox-input {
+//   width: 40rpx;
+//   height: 40rpx;
+//   border-radius: 50%;
+// }
+
+/* 选中后的背景样式 */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked {
+  background: #37c674;
+}
+
+/* 选中后的勾子样式 */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  background: transparent;
+  color: #fff;
+  text-align: center;
+  font-size: 32rpx;
+  line-height: 40rpx;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
+}

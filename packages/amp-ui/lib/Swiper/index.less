@@ -1,7 +1,9 @@
 @import '../styles/_index.less';
 @circle-dot-color: @primary-color;
-@circle-dot-width: 40rpx;
-@circle-dot-height: 8rpx;
+@circle-dot-width: 9rpx;
+@circle-dot-height: 6rpx;
+@circle-dot-active-width: 18rpx;
+@circle-dot-radius: 2rpx;
 
 .a-swiper {
   position: relative;
@@ -42,34 +44,37 @@
   }
 
   &-dot {
-    border-radius: 8rpx;
+    border-radius: @circle-dot-radius;
     background: @swiper-dot-color;
-    transition: all 0.6s;
+    transition: width 0.6s;
 
     &-active {
       background: @swiper-dot-active-color;
     }
 
     &-horizontal {
-      margin: 0 8rpx;
+      margin: 0 4rpx;
 
-      .set-size(24rpx, 4rpx);
+      .set-size(@circle-dot-width, @circle-dot-height);
     }
 
     &-vertical {
-      margin: 8rpx 0;
+      margin: 4rpx 0;
 
-      .set-size(4rpx, 24rpx);
+      .set-size(@circle-dot-height, @circle-dot-width);
+
+      &.a-swiper-circle-dot-active {
+        .set-size(@circle-dot-height, @circle-dot-active-width);
+      }
     }
   }
 
   &-circle-dot {
     &-active {
-      border: 4rpx solid @circle-dot-color;
-      border-top: none;
-      border-radius: 0 0 50% 50%/0 0 100% 100%;
+      border-radius: @circle-dot-radius;
+      background-color: @circle-dot-color;
 
-      .set-size(@circle-dot-width, @circle-dot-height);
+      .set-size(@circle-dot-active-width, @circle-dot-height);
     }
   }
 }

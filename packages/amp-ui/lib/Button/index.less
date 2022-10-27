@@ -19,16 +19,17 @@
   .flex-type(center);
 
   &-radius {
+    /** 圆角默认为高度大小一半 */
     &-large {
-      border-radius: @btn-circle-size-large;
+      border-radius: calc(@btn-circle-size-large / 2);
     }
 
     &-default {
-      border-radius: @btn-circle-size;
+      border-radius: calc(@btn-circle-size / 2);
     }
 
     &-small {
-      border-radius: @btn-circle-size-small;
+      border-radius: calc(@btn-circle-size-small / 2);
     }
   }
 

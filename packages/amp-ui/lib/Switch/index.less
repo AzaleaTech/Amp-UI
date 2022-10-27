@@ -4,12 +4,12 @@
   position: relative;
   display: flex;
   align-items: center;
-  border: 2rpx solid @switch-color-base;
-  border-radius: (@switch-with-base / 2);
-  background-color: @switch-color-base;
+  border: 2rpx solid @switch-base-color;
+  border-radius: @switch-base-radius;
+  background-color: @switch-base-color;
   transition: all 0.3s ease-in-out;
 
-  .set-size(@switch-with-base, (@switch-with-base / 2));
+  .set-size(@switch-base-width, @switch-base-height);
 
   &-inner {
     position: absolute;
@@ -18,10 +18,10 @@
     background-color: @white-color;
     transition: left 0.3s ease-in-out;
 
-    .set-size((@switch-with-base / 2) - 2);
+    .set-size(@switch-base-radius);
 
     &-checked {
-      left: calc(@switch-with-base / 2 + 2px);
+      left: @switch-base-height;
     }
   }
 

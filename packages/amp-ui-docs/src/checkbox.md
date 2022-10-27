@@ -45,3 +45,7 @@
 | change | 切换选中状态 | e    |
 
 ## 常见问题
+  
+1. 如何自定义小程序组件checkbox样式
+
+   [参考链接](https://developers.weixin.qq.com/community/develop/doc/0002248876cbe090bf9db071d5b400)

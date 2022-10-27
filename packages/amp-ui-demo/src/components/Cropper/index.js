@@ -143,27 +143,31 @@ Component({
         x = this.data.x,
         y = this.data.y;
       wx.showLoading({ title: '裁剪中' });
-      const canvas = wx.createCanvasContext('canvas', this);
-
-      canvas.drawImage(img, 0, 0, width, height);
-      canvas.draw(
-        setTimeout(() => {
-          wx.hideLoading();
-          wx.canvasToTempFilePath(
-            {
-              x,
-              y,
-              width: crop,
-              height: crop / this.properties.ratio,
-              canvasId: 'canvas',
-              success: (res) => {
-                this.setData({ croppedPic: res.tempFilePath });
-              },
-            },
-            this,
+      wx.getImageInfo({
+        src: img,
+        success: (res) => {
+          const canvas = wx.createCanvasContext('canvas', this);
+          canvas.drawImage(res.path, 0, 0, width, height);
+          canvas.draw(
+            setTimeout(() => {
+              wx.hideLoading();
+              wx.canvasToTempFilePath(
+                {
+                  x,
+                  y,
+                  width: crop,
+                  height: crop / this.properties.ratio,
+                  canvasId: 'canvas',
+                  success: (re) => {
+                    this.setData({ croppedPic: re.tempFilePath });
+                  },
+                },
+                this,
+              );
+            }, 1000),
           );
-        }, 1000),
-      );
+        },
+      });
     },
 
     handleSave() {

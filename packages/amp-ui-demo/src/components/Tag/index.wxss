@@ -30,9 +30,9 @@
 }
 .a-tag-default-top-left::after {
   position: absolute;
-  border: 8rpx solid transparent;
+  border: 4px solid transparent;
   content: '';
-  top: -16rpx;
+  top: -8px;
   left: 8%;
   border-bottom-color: #cccccc;
   border-left-color: #cccccc;
@@ -40,9 +40,9 @@
 }
 .a-tag-default-top-right::after {
   position: absolute;
-  border: 8rpx solid transparent;
+  border: 4px solid transparent;
   content: '';
-  top: -16rpx;
+  top: -8px;
   right: 8%;
   border-bottom-color: #cccccc;
   border-right-color: #cccccc;
@@ -50,7 +50,7 @@
 }
 .a-tag-default-bottom-left::after {
   position: absolute;
-  border: 8rpx solid transparent;
+  border: 4px solid transparent;
   content: '';
   top: 100%;
   left: 8%;
@@ -60,7 +60,7 @@
 }
 .a-tag-default-bottom-right::after {
   position: absolute;
-  border: 8rpx solid transparent;
+  border: 4px solid transparent;
   content: '';
   top: 100%;
   right: 8%;
@@ -75,9 +75,9 @@
 }
 .a-tag-primary-top-left::after {
   position: absolute;
-  border: 8rpx solid transparent;
+  border: 4px solid transparent;
   content: '';
-  top: -16rpx;
+  top: -8px;
   left: 8%;
   border-bottom-color: #009ca5;
   border-left-color: #009ca5;
@@ -85,9 +85,9 @@
 }
 .a-tag-primary-top-right::after {
   position: absolute;
-  border: 8rpx solid transparent;
+  border: 4px solid transparent;
   content: '';
-  top: -16rpx;
+  top: -8px;
   right: 8%;
   border-bottom-color: #009ca5;
   border-right-color: #009ca5;
@@ -95,7 +95,7 @@
 }
 .a-tag-primary-bottom-left::after {
   position: absolute;
-  border: 8rpx solid transparent;
+  border: 4px solid transparent;
   content: '';
   top: 100%;
   left: 8%;
@@ -105,7 +105,7 @@
 }
 .a-tag-primary-bottom-right::after {
   position: absolute;
-  border: 8rpx solid transparent;
+  border: 4px solid transparent;
   content: '';
   top: 100%;
   right: 8%;
@@ -120,9 +120,9 @@
 }
 .a-tag-success-top-left::after {
   position: absolute;
-  border: 8rpx solid transparent;
+  border: 4px solid transparent;
   content: '';
-  top: -16rpx;
+  top: -8px;
   left: 8%;
   border-bottom-color: #19be6b;
   border-left-color: #19be6b;
@@ -130,9 +130,9 @@
 }
 .a-tag-success-top-right::after {
   position: absolute;
-  border: 8rpx solid transparent;
+  border: 4px solid transparent;
   content: '';
-  top: -16rpx;
+  top: -8px;
   right: 8%;
   border-bottom-color: #19be6b;
   border-right-color: #19be6b;
@@ -140,7 +140,7 @@
 }
 .a-tag-success-bottom-left::after {
   position: absolute;
-  border: 8rpx solid transparent;
+  border: 4px solid transparent;
   content: '';
   top: 100%;
   left: 8%;
@@ -150,7 +150,7 @@
 }
 .a-tag-success-bottom-right::after {
   position: absolute;
-  border: 8rpx solid transparent;
+  border: 4px solid transparent;
   content: '';
   top: 100%;
   right: 8%;
@@ -165,9 +165,9 @@
 }
 .a-tag-warning-top-left::after {
   position: absolute;
-  border: 8rpx solid transparent;
+  border: 4px solid transparent;
   content: '';
-  top: -16rpx;
+  top: -8px;
   left: 8%;
   border-bottom-color: #ffb500;
   border-left-color: #ffb500;
@@ -175,9 +175,9 @@
 }
 .a-tag-warning-top-right::after {
   position: absolute;
-  border: 8rpx solid transparent;
+  border: 4px solid transparent;
   content: '';
-  top: -16rpx;
+  top: -8px;
   right: 8%;
   border-bottom-color: #ffb500;
   border-right-color: #ffb500;
@@ -185,7 +185,7 @@
 }
 .a-tag-warning-bottom-left::after {
   position: absolute;
-  border: 8rpx solid transparent;
+  border: 4px solid transparent;
   content: '';
   top: 100%;
   left: 8%;
@@ -195,7 +195,7 @@
 }
 .a-tag-warning-bottom-right::after {
   position: absolute;
-  border: 8rpx solid transparent;
+  border: 4px solid transparent;
   content: '';
   top: 100%;
   right: 8%;
@@ -210,9 +210,9 @@
 }
 .a-tag-error-top-left::after {
   position: absolute;
-  border: 8rpx solid transparent;
+  border: 4px solid transparent;
   content: '';
-  top: -16rpx;
+  top: -8px;
   left: 8%;
   border-bottom-color: #ed4114;
   border-left-color: #ed4114;
@@ -220,9 +220,9 @@
 }
 .a-tag-error-top-right::after {
   position: absolute;
-  border: 8rpx solid transparent;
+  border: 4px solid transparent;
   content: '';
-  top: -16rpx;
+  top: -8px;
   right: 8%;
   border-bottom-color: #ed4114;
   border-right-color: #ed4114;
@@ -230,7 +230,7 @@
 }
 .a-tag-error-bottom-left::after {
   position: absolute;
-  border: 8rpx solid transparent;
+  border: 4px solid transparent;
   content: '';
   top: 100%;
   left: 8%;
@@ -240,7 +240,7 @@
 }
 .a-tag-error-bottom-right::after {
   position: absolute;
-  border: 8rpx solid transparent;
+  border: 4px solid transparent;
   content: '';
   top: 100%;
   right: 8%;

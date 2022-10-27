@@ -13,7 +13,7 @@
 }
 
 .bubble-position(@position, @color) when(@position=@top-left) {
-  top: -16rpx;
+  top: -8px;
   left: 8%;
   border-bottom-color: @color;
   border-left-color: @color;
@@ -21,7 +21,7 @@
 }
 
 .bubble-position(@position, @color) when(@position=@top-right) {
-  top: -16rpx;
+  top: -8px;
   right: 8%;
   border-bottom-color: @color;
   border-right-color: @color;
@@ -47,7 +47,7 @@
 .tag-bubble(@bubble-position, @color) {
   &::after {
     position: absolute;
-    border: 8rpx solid transparent;
+    border: 4px solid transparent;
     content: '';
     .bubble-position(@bubble-position, @color);
   }

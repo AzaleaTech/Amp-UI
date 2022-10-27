@@ -1,6 +1,6 @@
 .a-btn {
   margin-bottom: 10px;
-  border-radius: 2px;
+  border-radius: 4px;
   height: 36px;
   font-size: 16px;
   line-height: 36px;
@@ -9,18 +9,21 @@
   align-items: center;
   justify-content: center;
 }
+.a-btn-radius {
+  /** 圆角默认为高度大小一半 */
+}
 .a-btn-radius-large {
-  border-radius: 45px;
+  border-radius: calc(45px / 2);
 }
 .a-btn-radius-default {
-  border-radius: 36px;
+  border-radius: calc(36px / 2);
 }
 .a-btn-radius-small {
-  border-radius: 27px;
+  border-radius: calc(28px / 2);
 }
 .a-btn-size-large {
   height: 45px;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 45px;
 }
 .a-btn-size-default {
@@ -29,9 +32,9 @@
   line-height: 36px;
 }
 .a-btn-size-small {
-  height: 27px;
+  height: 28px;
   font-size: 13px;
-  line-height: 27px;
+  line-height: 28px;
 }
 .a-btn-type-default {
   border: 2rpx solid #009ca5;
