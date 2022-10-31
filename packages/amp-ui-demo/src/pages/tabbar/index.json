@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "Tabbar",
+  "usingComponents": {
+    "a-switch": "../../components/Switch/index"
+  }
+}

@@ -1,0 +1,28 @@
+.tabbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  padding: 18rpx 0 12rpx 0;
+  padding-bottom: env(safe-area-inset-bottom);
+  width: 100%;
+  height: 100rpx;
+  border: 0;
+  background: #ffffff;
+}
+.tabbar-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+  font-size: 22rpx;
+  line-height: 22rpx;
+}
+.tabbar-item::after {
+  border: 0;
+}
+.tabbar-item-img {
+  width: 50rpx;
+  height: 50rpx;
+}

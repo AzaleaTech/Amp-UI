@@ -8,6 +8,7 @@
     "pages/header/index",
     "pages/tabs/index/index",
     "pages/tabs/ceiling/index",
+    "pages/tabbar/index",
     "pages/avatar/index",
     "pages/badge/index",
     "pages/tag/index",
@@ -54,6 +55,19 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "Amp UI",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "custom": true,
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/tabbar/index",
+        "text": "tabbar"
+      }
+    ]
   },
   "sitemapLocation": "sitemap.json"
 }

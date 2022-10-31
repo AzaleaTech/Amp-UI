@@ -1,0 +1,18 @@
+<view class="example-box">
+  <view class="example-box-content">
+    <view>字体颜色修改</view>
+    <a-switch checked="{{ checked1 }}" bind:change="handleChangeColor"></a-switch>
+  </view>
+  <view class="example-box-content">
+    <view>背景颜色修改</view>
+    <a-switch checked="{{ checked2 }}" bind:change="handleChangeBgColor"></a-switch>
+  </view>
+  <view class="example-box-content">
+    <view>数字标记</view>
+    <a-switch checked="{{ checked3 }}" bind:change="handleChangeBadge"></a-switch>
+  </view>
+  <view class="example-box-content">
+    <view>红点标记</view>
+    <a-switch checked="{{ checked4 }}" bind:change="handleChangeDot"></a-switch>
+  </view>
+</view>

@@ -1,0 +1,4 @@
+<a-tabbar
+          tabbar="{{ tabbar }}"
+          customFn="customFn"></a-tabbar>
+

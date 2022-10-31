@@ -15,6 +15,7 @@ Page({
         data: [
           { label: 'Header 顶部栏', url: '../header/index' },
           { label: 'Tabs 标签页', url: '../tabs/index/index' },
+          { label: 'Tabbar 底部标签栏', url: '../tabbar/index' },
         ],
       },
       {
@@ -65,8 +66,22 @@ Page({
     ],
   },
 
+  onLoad() {
+    this.getTabBar().setData({
+      tabbar: {
+        show: false,
+      },
+    });
+  },
+
   handleClickFormItem(e) {
     const { url } = e.currentTarget.dataset;
-    wx.navigateTo({ url });
+    if (url.includes('tabbar')) {
+      wx.switchTab({
+        url,
+      });
+    } else {
+      wx.navigateTo({ url });
+    }
   },
 });

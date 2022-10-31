@@ -21,7 +21,7 @@ Component({
       if (this.data.disabled) return;
       const value = this.data.checked ? false : true;
       this.triggerEvent('change', {
-        value
+        value,
       });
     },
   },

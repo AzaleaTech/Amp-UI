@@ -1,0 +1,36 @@
+<view
+      wx:if="{{ tabbar.show }}"
+      class="tabbar"
+      style="background-color: {{ tabbar.backgroundColor }}">
+  <button
+          wx:for="{{ tabbar.list }}"
+          wx:key="index"
+          open-type="{{ item.openType }}"
+          data-url="{{ item.pagePath }}"
+          data-index="{{ index }}"
+          hover-class="none"
+          class="tabbar-item"
+          style="background-color: {{ tabbar.backgroundColor }}"
+          bind:tap="handleTap">
+    <a-badge
+             wx:if="{{ item.badge }}"
+             dot="{{ item.dot }}"
+             value="{{ item.value }}"
+             max-value="{{ item.maxValue }}">
+      <image
+             src="{{ tabbar.selected === index ? item.selectedIconPath : item.iconPath }}"
+             class="tabbar-item-img" />
+    </a-badge>
+    <image
+           wx:else
+           src="{{ tabbar.selected === index ? item.selectedIconPath : item.iconPath }}"
+           class="tabbar-item-img" />
+    <view
+          style="color: {{ tabbar.selected === index ? item.selectedColor : item.color }}"
+          class="tabbar-item-text"
+          style="color: {{ tabbar.selected === index ? tabbar.selectedColor : tabbar.color }}">
+      {{ item.text }}
+    </view>
+  </button>
+</view>
+
