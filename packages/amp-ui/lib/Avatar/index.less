@@ -1,7 +1,16 @@
 @import '../styles/_index.less';
+@avatar-size-small: 72rpx; // 小头像
+@avatar-size: 104rpx; // 默认头像
+@avatar-size-large: 120rpx; // 大头像
 
 .a-avatar {
-  border-radius: @avatar-border-radius;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+
+  &-img {
+    border-radius: @avatar-border-radius;
+  }
 
   &-border {
     border: @avatar-border;
@@ -9,5 +18,63 @@
 
   &-circle {
     border-radius: 50%;
+  }
+
+  &-small {
+    image {
+      .set-size(@avatar-size-small);
+    }
+    .a-avatar {
+      &-content {
+        margin-left: 13rpx;
+        font-size: 32rpx;
+      }
+
+      &-info {
+        font-size: 26rpx;
+      }
+    }
+  }
+
+  &-default {
+    image {
+      .set-size(@avatar-size);
+    }
+    .a-avatar {
+      &-content {
+        margin-left: 21rpx;
+        font-size: 34rpx;
+      }
+
+      &-info {
+        font-size: 28rpx;
+      }
+    }
+  }
+
+  &-large {
+    image {
+      .set-size(@avatar-size-large);
+    }
+    .a-avatar {
+      &-content {
+        margin-left: 31rpx;
+        font-size: 36rpx;
+      }
+
+      &-info {
+        font-size: 30rpx;
+      }
+    }
+  }
+
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  &-info {
+    color: rgba(153, 153, 153, 1);
   }
 }

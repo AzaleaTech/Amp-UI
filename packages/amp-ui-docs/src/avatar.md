@@ -14,12 +14,12 @@
 头像边框
 <a-avatar border src="{{ imgUrl }}"></a-avatar>
 <a-avatar circle border src="{{ imgUrl }}"></a-avatar>
-<a-avatar circle border border-color="#009BA4" src="{{ imgUrl }}"></a-avatar>
+<a-avatar circle border border-color="#d54848" src="{{ imgUrl }}"></a-avatar>
 
 头像大小
-<a-avatar src="{{ imgUrl }}" size="{{ 100 }}"></a-avatar>
-<a-avatar src="{{ imgUrl }}" size="{{ 120 }}"></a-avatar>
-<a-avatar src="{{ imgUrl }}" size="{{ 140 }}"></a-avatar>
+<a-avatar src="{{ imgUrl }}" size="small"></a-avatar>
+<a-avatar src="{{ imgUrl }}" ></a-avatar>
+<a-avatar src="{{ imgUrl }}" size="large"></a-avatar>
 ```
 
 ## API
@@ -34,6 +34,8 @@
 | circle       | 头像是否圆形          | boolean | false  | -      | 否   |
 | border       | 头像是否带边框        | boolean | false  | -      | 否   |
 | border-color | 头像边框颜色          | String  | -      | -      | 否   |
+| name         | 名称         | String  | -      | -      | 否   |
+| desc         | 描述信息         | String  | -      | -      | 否   |
 
 ### Events
 

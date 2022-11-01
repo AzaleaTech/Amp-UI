@@ -2,13 +2,14 @@ Component({
   externalClasses: ['a-class'],
 
   properties: {
-    size: {
-      type: Number,
-      value: 120,
-    },
     src: {
       type: String,
       value: '',
+    },
+    // large、default、small
+    size: {
+      type: String,
+      value: 'default',
     },
     circle: {
       type: Boolean,
@@ -19,6 +20,14 @@ Component({
       value: false,
     },
     borderColor: {
+      type: String,
+      value: '',
+    },
+    name: {
+      type: String,
+      value: '',
+    },
+    desc: {
       type: String,
       value: '',
     },

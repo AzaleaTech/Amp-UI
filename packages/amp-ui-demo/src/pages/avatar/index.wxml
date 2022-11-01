@@ -3,10 +3,14 @@
   <view class="example-box-content">
     <a-avatar
               src="{{ imgUrl }}"
+              name="姓名"
+              desc="描述信息"
               bind:click="handleClick"></a-avatar>
     <a-avatar
               circle
               src="{{ imgUrl }}"
+              name="姓名"
+              desc="描述信息"
               bind:click="handleClick"></a-avatar>
   </view>
   <view class="example-box-title">头像边框</view>
@@ -23,7 +27,7 @@
     <a-avatar
               circle
               border
-              border-color="#009BA4"
+              border-color="#d54848"
               src="{{ imgUrl }}"
               bind:click="handleClick"></a-avatar>
   </view>
@@ -31,16 +35,22 @@
   <view class="example-box-content">
     <a-avatar
               circle
-              size="{{ 100 }}"
+              size="small"
+              name="姓名"
+              desc="小图"
               src="{{ imgUrl }}"
               bind:click="handleClick"></a-avatar>
     <a-avatar
               circle
+              name="姓名"
+              desc="默认大小"
               src="{{ imgUrl }}"
               bind:click="handleClick"></a-avatar>
     <a-avatar
               circle
-              size="{{ 140 }}"
+              size="large"
+              name="姓名"
+              desc="大图"
               src="{{ imgUrl }}"
               bind:click="handleClick"></a-avatar>
   </view>

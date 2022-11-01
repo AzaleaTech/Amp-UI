@@ -1,6 +1,16 @@
-<image
-       src="{{ src }}"
-       class="a-class a-avatar {{ circle ? 'a-avatar-circle' : '' }} {{ border ? 'a-avatar-border': '' }}"
-       style="width: {{ size }}rpx; height: {{ size }}rpx; border-color: {{ borderColor }}"
-       bind:tap="handleClick"></image>
+<view class="a-class a-avatar a-avatar-{{ size }}">
+  <image
+         src="{{ src }}"
+         class="a-avatar-img {{ circle ? 'a-avatar-circle' : '' }} {{ border ? 'a-avatar-border': '' }}"
+         style="border-color: {{ borderColor }}"
+         bind:tap="handleClick"></image>
+  <view class="a-avatar-content">
+    <view wx:if="{{ name }}">{{ name }}</view>
+    <view
+          wx:if="{{ desc }}"
+          class="a-avatar-info">{{ desc }}
+    </view>
+    <slot></slot>
+  </view>
+</view>
 
