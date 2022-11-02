@@ -8,20 +8,9 @@
 
 ```html
 基本使用
-<a-empty url="{{ url }}" desc="{{ description }}">
-  <view slot="footer">
-    <a-button type="primary"> 点击 </a-button>
-  </view>
+<a-empty url="{{ url }}" content="{{ content }}" desc="{{ desc }}">
+  <a-button circle bind:click="handleBack">返回首页</a-button>
 </a-empty>
-```
-
-```js
-Page({
-  data: {
-    url: 'https://gw.alipayobjects.com/mdn/miniapp_social/afts/img/A*pevERLJC9v0AAAAAAAAAAABjAQAAAQ/original',
-    description: '这是描述',
-  },
-});
 ```
 
 ## API
@@ -31,8 +20,10 @@ Page({
 | 参数    | 说明                                | 类型   | 默认值 | 可选值 | 必填 |
 | ------- | ----------------------------------- | ------ | ------ | ------ | ---- |
 | a-class | 自定义根节点样式类                  | string | -      | -      | 否   |
-| url     | 设置显示图片,加载错误时显示默认图片 | string | -      | -      | 否   |
-| desc    | 自定义描述内容                      | string | -      | -      | 否   |
+| content | 文本内容                      | string | -      | -      | 否   |
+| desc    | 描述内容                      | string | -      | -      | 否   |
+| url     | 设置显示图片,加载错误时显示默认错误图片 | string | -      | -      | 否   |
+| fallbackUrl    | 加载错误时显示图片 | string | `https://wpw-dt.oss-cn-hangzhou.aliyuncs.com/material/default/observer-default.png`     | -      | 否   |
 
 ### Slots
 

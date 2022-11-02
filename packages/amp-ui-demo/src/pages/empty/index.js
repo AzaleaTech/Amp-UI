@@ -1,19 +1,12 @@
 Page({
   data: {
-    description: '这是描述',
+    content: '这里什么都没有呢',
+    desc: '有什么意见或建议都可以提哦！',
     url: 'error',
   },
 
-  handleProperty(e) {
-    const { propertyName } = e.currentTarget.dataset;
-
-    this.setData({
-      [propertyName]: e.detail.value,
-    });
-  },
-
   handleBack() {
-    wx.navigateTo({
+    wx.switchTab({
       url: '../index/index',
     });
   },

@@ -1,18 +1,21 @@
 <view class="a-class a-empty">
   <view class="a-empty-image">
     <a-image
-             a-class="a-empty-image-content"
-             width="100%"
-             height="100%"
              src="{{ url }}"
-             fallback="https://wpw-dt.oss-cn-hangzhou.aliyuncs.com/material/default/observer-default.png" />
+             width="{{ size }}"
+             height="{{ size }}"
+             fallback="{{ fallbackUrl }}" />
   </view>
-  <view class="a-empty-description">
-    {{ desc }}
-    <slot wx:if="{{ !desc }}"></slot>
+  <view
+        wx:if="{{ content }}"
+        class="a-empty-content">{{ content }}
+  </view>
+  <view
+        wx:if="{{ desc }}"
+        class="a-empty-desc">{{ desc }}
   </view>
   <view class="a-empty-footer">
-    <slot name="footer"></slot>
+    <slot></slot>
   </view>
 </view>
 
