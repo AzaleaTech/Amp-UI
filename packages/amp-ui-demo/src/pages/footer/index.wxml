@@ -1,0 +1,42 @@
+<view class="example-box">
+  <view class="example-box-title">基础用法</view>
+  <view class="example-box-content">
+    <a-footer content="{{ content }}"></a-footer>
+  </view>
+  <view class="example-box-title">文案加引导</view>
+  <view class="example-box-content">
+    <a-footer
+              content="没找到需要的？搜一下试试"
+              background-color="#fff">
+      <view
+            slot="after"
+            class="footer-after">
+        <view>参加活动</view>
+        <view>评一评</view>
+        <view>我的积分</view>
+      </view>
+    </a-footer>
+  </view>
+  <view class="example-box-title">文案带品牌</view>
+  <view class="example-box-content">
+    <a-footer
+              content="{{ content }}"
+              background-color="#fff">
+      <view slot="before">
+        <image
+               src="./images/logo-union.jpg"
+               class="logo-union" />
+      </view>
+    </a-footer>
+    <a-footer
+              content="{{ content }}"
+              background-color="#fff">
+      <view slot="before">
+        <image
+               src="./images/logo.jpg"
+               class="logo" />
+      </view>
+    </a-footer>
+  </view>
+</view>
+

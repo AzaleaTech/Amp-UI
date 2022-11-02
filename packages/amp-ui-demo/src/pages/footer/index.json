@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "Footer",
+  "usingComponents": {
+    "a-footer": "../../components/Footer/index"
+  }
+}

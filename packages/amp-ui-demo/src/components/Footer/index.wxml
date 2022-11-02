@@ -1,0 +1,8 @@
+<view
+      class="a-class a-footer"
+      style="background-color: {{ backgroundColor }}">
+  <slot name="before"></slot>
+  <view>{{ content }}</view>
+  <slot name="after"></slot>
+</view>
+
