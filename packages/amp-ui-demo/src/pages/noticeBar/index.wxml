@@ -1,9 +1,26 @@
 <view class="example-box">
   <view class="example-box-title">基础用法</view>
   <view class="example-box-content">
-    <a-notice-bar a-class="notice-bar-content" icon-url="{{ iconUrl }}" roll="{{ roll }}" vertical="{{ vertical }}" swiper-arr="{{ swiperArr }}" clearable="{{ clearable }}" text="{{ text }}" speed="{{ speed }}" delay="{{ delay }}" icon-name="{{ iconName }}" icon-color="{{ iconColor }}" icon-size="{{ iconSize }}" bind:click="handleClick"></a-notice-bar>
+    <a-notice-bar
+                  a-class="notice-bar-content"
+                  icon-url="{{ iconUrl }}"
+                  roll="{{ roll }}"
+                  vertical="{{ vertical }}"
+                  swiper-arr="{{ swiperArr }}"
+                  clearable="{{ clearable }}"
+                  text="{{ text }}"
+                  speed="{{ speed }}"
+                  delay="{{ delay }}"
+                  icon-name="{{ iconName }}"
+                  icon-color="{{ iconColor }}"
+                  icon-size="{{ iconSize }}"
+                  bind:click="handleClick"
+                  bind:clear="handleClear"></a-notice-bar>
     <view class="notice-buttons">
-      <button class="notice-button" bindtap="handleChangeColor">改变图标颜色</button>
+      <button
+              class="notice-button"
+              bindtap="handleChangeColor">改变图标颜色
+      </button>
     </view>
   </view>
   <view class="example-box-section">
@@ -11,19 +28,28 @@
       <view class="section-cell section-cell-switch">
         <view class="section-cell-bd">滚动</view>
         <view class="section-cell-ft">
-          <switch data-property-name="roll" checked="{{ roll }}" bind:change="handleProperty" />
+          <switch
+                  data-property-name="roll"
+                  checked="{{ roll }}"
+                  bind:change="handleProperty" />
         </view>
       </view>
       <view class="section-cell section-cell-switch">
         <view class="section-cell-bd">竖向</view>
         <view class="section-cell-ft">
-          <switch data-property-name="vertical" checked="{{ vertical }}" bind:change="handleProperty" />
+          <switch
+                  data-property-name="vertical"
+                  checked="{{ vertical }}"
+                  bind:change="handleProperty" />
         </view>
       </view>
       <view class="section-cell section-cell-switch">
         <view class="section-cell-bd">删除按钮</view>
         <view class="section-cell-ft">
-          <switch data-property-name="clearable" checked="{{ clearable }}" bind:change="handleProperty" />
+          <switch
+                  data-property-name="clearable"
+                  checked="{{ clearable }}"
+                  bind:change="handleProperty" />
         </view>
       </view>
     </view>
@@ -33,11 +59,22 @@
       <text>播放速度 (rpx/s)</text>
       <text class="info">{{ speed }}</text>
     </view>
-    <slider data-property-name="speed" min="10" max="1000" value="{{ speed }}" bind:change="handleProperty" />
+    <slider
+            data-property-name="speed"
+            min="10"
+            max="1000"
+            value="{{ speed }}"
+            bind:change="handleProperty" />
     <view class="example-box-section-title">
       <text>延迟时间 (ms)</text>
       <text class="info">{{ delay }}</text>
     </view>
-    <slider data-property-name="delay" min="100" max="5000" value="{{ delay }}" bind:change="handleProperty" />
+    <slider
+            data-property-name="delay"
+            min="100"
+            max="5000"
+            value="{{ delay }}"
+            bind:change="handleProperty" />
   </view>
 </view>
+

@@ -42,9 +42,9 @@
         wx:if="{{ clearable }}"
         bind:tap="handleClear">
     <a-icon
-            name="error_fill"
+            name="close"
             color="{{ iconColor }}"
-            size="{{ iconSize }}" />
+            size="{{ 40 }}" />
   </view>
 </view>
 

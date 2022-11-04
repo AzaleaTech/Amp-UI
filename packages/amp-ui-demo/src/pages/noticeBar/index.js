@@ -30,4 +30,13 @@ Page({
       [propertyName]: e.detail.value,
     });
   },
+
+  handleClear(e) {
+    console.log('e: ', e);
+    const { value } = e.detail;
+    wx.showToast({
+      title: `点击删除第${value + 1}条通知`,
+      icon: 'none',
+    });
+  },
 });
