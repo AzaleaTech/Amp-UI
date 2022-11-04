@@ -1,0 +1,22 @@
+.a-result {
+  box-sizing: border-box;
+  padding: 60rpx 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.a-result-content {
+  margin-top: 40rpx;
+  font-size: 40rpx;
+  color: #333333;
+}
+.a-result-desc {
+  margin-top: 24rpx;
+  font-size: 28rpx;
+  color: #969799;
+}
+.a-result-footer {
+  margin-top: 60rpx;
+  padding: 0 32rpx;
+}

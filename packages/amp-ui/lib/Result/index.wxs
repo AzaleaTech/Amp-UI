@@ -1,0 +1,36 @@
+/**
+ * 获取不同类型默认图标名称
+ * @param type 'success' | 'error' | 'warning' | 'pending' | 'info'
+ * @returns
+ */
+function getTypeName(type) {
+  var nameMap = {
+    success: 'success',
+    error: 'error',
+    warning: 'error',
+    pending: 'pending',
+    info: 'info',
+  };
+  return nameMap[type];
+}
+
+/**
+ * 获取不同类型默认图标颜色
+ * @param type 'success' | 'error' | 'warning' | 'pending' | 'info'
+ * @returns
+ */
+function getTypeColor(type) {
+  var colorMap = {
+    success: '#53C31B',
+    error: '#FF4D4F',
+    warning: '#FAAD14',
+    pending: '#919399',
+    info: '#1990FF',
+  };
+  return colorMap[type];
+}
+
+module.exports = {
+  getTypeName: getTypeName,
+  getTypeColor: getTypeColor,
+};

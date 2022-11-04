@@ -30,6 +30,7 @@ Page({
           { label: 'Image 图片', url: '../image/index' },
           { label: 'NoticeBar 消息通知栏', url: '../noticeBar/index' },
           { label: 'Empty 空状态', url: '../empty/index' },
+          { label: 'Result 结果页', url: '../result/index' },
           { label: 'Footer 页脚', url: '../footer/index' },
           { label: 'Steps 步骤条', url: '../steps/index' },
           { label: 'Swiper 轮播图', url: '../swiper/index' },

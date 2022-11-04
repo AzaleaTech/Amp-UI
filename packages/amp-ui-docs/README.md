@@ -58,6 +58,7 @@ npm run build / yarn build
 
 - [Header](./src/header.md)
 - [Tabs](./src/tabs.md)
+- [Tabbar](./src/tabbar.md)
 
 视图组件
 
@@ -67,9 +68,11 @@ npm run build / yarn build
 - [Card](./src/card.md)
 - [Collapse](./src/collapse.md)
 - [CountDown](./src/countDown.md)
-- [Empty](./src/empty.md)
 - [Image](./src/image.md)
 - [NoticeBar](./src/noticeBar.md)
+- [Empty](./src/empty.md)
+- [Result](./src/result.md)
+- [Footer](./src/footer.md)
 - [Steps](./src/steps.md)
 - [Swiper](./src/swiper.md)
 - [Divider](./src/divider.md)

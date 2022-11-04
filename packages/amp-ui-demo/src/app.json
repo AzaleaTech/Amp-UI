@@ -17,6 +17,7 @@
     "pages/countDown/index",
     "pages/image/index",
     "pages/empty/index",
+    "pages/result/index",
     "pages/footer/index",
     "pages/noticeBar/index",
     "pages/steps/index",

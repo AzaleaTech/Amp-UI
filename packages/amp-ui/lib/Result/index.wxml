@@ -1,0 +1,36 @@
+<wxs
+     src="./index.wxs"
+     module="fn" />
+<view
+      class="a-class a-result"
+      style="background-color: {{ backgroundColor }}">
+  <a-icon
+          name="{{ fn.getTypeName(type) }}"
+          size="{{ 130 }}"
+          color="{{ iconColor ? iconColor : fn.getTypeColor(type)  }}" />
+  <view
+        wx:if="{{ content }}"
+        class="a-result-content">{{ content }}
+  </view>
+  <view
+        wx:if="{{ desc }}"
+        class="a-result-desc">{{ desc }}
+  </view>
+</view>
+<view class="a-result-footer">
+  <block wx:if="{{ confirmBtn || cancelBtn }}">
+    <a-button
+              wx:if="{{ confirmBtn }}"
+              size="large"
+              type="primary"
+              bind:click="handleConfirm">{{ confirmBtn }}
+    </a-button>
+    <a-button
+              wx:if="{{ cancelBtn }}"
+              size="large"
+              bind:click="handleCancel">{{ cancelBtn }}
+    </a-button>
+  </block>
+  <slot></slot>
+</view>
+

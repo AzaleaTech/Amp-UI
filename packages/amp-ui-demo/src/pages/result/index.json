@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "Result",
+  "usingComponents": {
+    "a-result": "../../components/Result/index"
+  }
+}
