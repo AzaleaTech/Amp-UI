@@ -1,0 +1,29 @@
+@import '../styles/_index.less';
+
+.a-grid-item {
+  box-sizing: border-box;
+  padding: 40rpx 0;
+
+  .flex-type(center, column);
+
+  &-border {
+    border: 1rpx solid rgba(238, 238, 238, 1);
+  }
+
+  &-row {
+    flex-direction: row;
+
+    .content {
+      margin-left: 24rpx;
+    }
+  }
+}
+
+.title {
+  font-size: @text-size-14;
+}
+
+.desc {
+  color: rgba(153, 153, 153, 1);
+  font-size: @text-size-12;;
+}

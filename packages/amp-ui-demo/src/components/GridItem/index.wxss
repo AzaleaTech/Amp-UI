@@ -1,0 +1,24 @@
+.a-grid-item {
+  box-sizing: border-box;
+  padding: 40rpx 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.a-grid-item-border {
+  border: 1rpx solid #eeeeee;
+}
+.a-grid-item-row {
+  flex-direction: row;
+}
+.a-grid-item-row .content {
+  margin-left: 24rpx;
+}
+.title {
+  font-size: 14px;
+}
+.desc {
+  color: #999999;
+  font-size: 12px;
+}

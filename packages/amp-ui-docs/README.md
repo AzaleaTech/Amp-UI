@@ -75,6 +75,7 @@ npm run build / yarn build
 - [Footer](./src/footer.md)
 - [Steps](./src/steps.md)
 - [Swiper](./src/swiper.md)
+- [Grid](./src/grid.md)
 - [Divider](./src/divider.md)
 - [WaterMark](./src/waterMark.md)
 - [Parse](./src/parse.md)

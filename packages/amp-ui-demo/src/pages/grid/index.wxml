@@ -1,0 +1,23 @@
+<view class="example-box">
+  <view class="example-box-title">水平方向（不带边框）</view>
+  <view class="example-box-content">
+    <a-grid direction="horizontal">
+      <a-grid-item
+                   wx:for="{{ 2 }}"
+                   iconName="visible"
+                   title="{{ title }}"
+                   desc="{{ desc }}"></a-grid-item>
+    </a-grid>
+  </view>
+  <view class="example-box-title">竖直方向（带边框）</view>
+  <view class="example-box-content">
+    <a-grid border>
+      <a-grid-item
+                   wx:for="{{ 6 }}"
+                   iconName="visible"
+                   title="{{ title }}"
+                   desc="{{ desc }}"></a-grid-item>
+    </a-grid>
+  </view>
+</view>
+

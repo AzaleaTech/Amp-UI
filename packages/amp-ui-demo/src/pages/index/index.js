@@ -34,6 +34,7 @@ Page({
           { label: 'Footer 页脚', url: '../footer/index' },
           { label: 'Steps 步骤条', url: '../steps/index' },
           { label: 'Swiper 轮播图', url: '../swiper/index' },
+          { label: 'Grid 宫格', url: '../grid/index' },
           { label: 'Divider 分割线', url: '../divider/index' },
           { label: 'WaterMark 水印', url: '../waterMark/index' },
           { label: 'Parse 富文本解析', url: '../parse/index' },

@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "Grid",
+  "usingComponents": {
+    "a-grid": "../../components/Grid/index",
+    "a-grid-item": "../../components/GridItem/index"
+  }
+}

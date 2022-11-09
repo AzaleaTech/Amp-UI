@@ -1,0 +1,6 @@
+<view
+      class="a-class a-grid"
+      style="background-color: {{ backgroundColor }}">
+  <slot></slot>
+</view>
+

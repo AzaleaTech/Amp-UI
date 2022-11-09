@@ -1,0 +1,19 @@
+<view
+      wx:if="{{ width }}"
+      class="a-class a-grid-item {{ border ? 'a-grid-item-border' : '' }} {{ direction === 'horizontal' ? 'a-grid-item-row': ''  }}"
+      style="width: {{ width }}px"
+      bind:tap="handleClick">
+  <a-icon
+          wx:if="{{ iconName }}"
+          name="{{ iconName }}"
+          color="{{ iconColor }}"
+          size="{{ iconSize }}" />
+  <slot
+        wx:else
+        name="icon"></slot>
+  <view class="content">
+    <view class="title">{{ title }}</view>
+    <view class="desc">{{ desc }}</view>
+  </view>
+</view>
+
