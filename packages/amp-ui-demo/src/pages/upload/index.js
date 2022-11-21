@@ -3,6 +3,7 @@ Page({
     imgs: [],
     cropImgs: [],
     videos: [],
+    medias: [],
   },
 
   handleChooseImg(e) {
@@ -39,6 +40,21 @@ Page({
     if (e.detail.status === 'success') {
       this.setData({
         videos: this.data.videos.concat(e.detail.value),
+      });
+    } else {
+      this.setData({
+        toastData: {
+          content: e.detail.msg,
+          type: 'error',
+        },
+      });
+    }
+  },
+
+  handleChooseMedia(e) {
+    if (e.detail.status === 'success') {
+      this.setData({
+        medias: this.data.medias.concat(e.detail.value),
       });
     } else {
       this.setData({

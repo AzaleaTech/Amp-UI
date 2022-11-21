@@ -1,24 +1,25 @@
 Component({
   properties: {
+    // Array<string>
     imgs: {
       type: Array,
       value: [],
     },
     width: {
       type: Number,
-      value: 140,
+      value: 150,
     },
     height: {
       type: Number,
-      value: 140,
-    },
-    sourceType: {
-      type: Array,
-      value: ['album', 'camera'],
+      value: 150,
     },
     count: {
       type: Number,
       value: 9,
+    },
+    sourceType: {
+      type: Array,
+      value: ['album', 'camera'],
     },
     sizeType: {
       type: Array,
@@ -73,10 +74,13 @@ Component({
     },
 
     chooseImage() {
-      wx.chooseImage({
-        sizeType: this.properties.sizeType,
-        sourceType: this.properties.sourceType,
-        count: this.properties.crop ? 1 : this.properties.count,
+      const { sizeType, sourceType, count, camera } = this.properties;
+      wx.chooseMedia({
+        sizeType,
+        sourceType,
+        count,
+        mediaType: ['image'],
+        camera,
         success: (res) => {
           // 判断上传图片大小
           if (this.properties.size > 0) {
@@ -85,23 +89,24 @@ Component({
               if (item.size > this.properties.size * 1024 * 1024) {
                 overLimit = true;
               }
+              if (overLimit) {
+                this.triggerEvent('change', {
+                  status: 'error',
+                  msg: `上传的图片大小不得超过${this.properties.size}MB`,
+                });
+                return;
+              }
             });
-            if (overLimit) {
-              this.triggerEvent('change', {
-                status: 'error',
-                msg: `上传的图片大小不得超过${this.properties.size}MB`,
-              });
-              return;
-            }
           }
           // 判断是否需要裁剪
           if (this.properties.crop) {
             this.setData({
-              imgUrl: res.tempFilePaths[0],
+              imgUrl: res.tempFiles[0].tempFilePath,
             });
             this.setData({ showCropper: true });
           } else {
-            this.data.imgList = this.data.imgList.concat(res.tempFilePaths);
+            const urls = res.tempFiles.map((item) => item.tempFilePath);
+            this.data.imgList = this.data.imgList.concat(urls);
             this.setData({
               imgList: this.data.imgList,
             });
@@ -109,7 +114,7 @@ Component({
           }
         },
         fail: (err) => {
-          console.warn('ChooseImage error', err);
+          console.warn('ChooseVideo error', err);
         },
       });
     },

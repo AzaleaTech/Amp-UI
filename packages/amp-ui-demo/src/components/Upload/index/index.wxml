@@ -1,11 +1,11 @@
-<view class="a-upload-video">
+<view class="a-upload">
   <view
-        wx:for="{{ videos }}"
+        wx:for="{{ mediaList }}"
         wx:key="index"
-        class="a-upload-video-box"
+        class="a-upload-box"
         style="width: {{ width }}rpx; height: {{ height }}rpx">
     <image
-           src="{{ item.poster  }}"
+           src="{{ item.poster || item.url }}"
            data-index="{{ index }}"
            bind:tap="handlePreview" />
     <a-icon
@@ -13,19 +13,19 @@
             name="error_fill"
             color="#929292"
             data-index="{{ index }}"
-            class="a-upload-video-del"
-            bind:tap="removeVideo"></a-icon>
+            class="a-upload-del"
+            bind:tap="removeMedia"></a-icon>
   </view>
   <view
-        wx:if="{{ (limit > imgList.length || limit === -1) && !disabled  }}"
-        class="a-upload-video-box"
+        wx:if="{{ (limit > mediaList.length || limit === -1) && !disabled }}"
+        class="a-upload-box"
         style="width: {{ width }}rpx; height: {{ height }}rpx"
-        bind:tap="chooseVideo">
+        bind:tap="chooseMedia">
     <a-icon
-            name="upload-video"
+            name="media_line"
             size="80"
             color="#000"></a-icon>
-    上传视频
+    上传图片/视频
   </view>
 </view>
 

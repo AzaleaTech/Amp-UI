@@ -1,10 +1,10 @@
-.a-upload-image {
+.a-upload {
   display: flex;
   flex-direction: row;
   width: 100%;
   flex-wrap: wrap;
 }
-.a-upload-image-box {
+.a-upload-box {
   position: relative;
   margin: 30rpx 30rpx 0 0;
   border: 2rpx dotted #cecece;
@@ -16,15 +16,15 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 140rpx;
-  height: 140rpx;
+  width: 180rpx;
+  height: 180rpx;
 }
-.a-upload-image-box image:first-child {
+.a-upload-box image:first-child {
   border-radius: 8rpx;
   width: 100%;
   height: 100%;
 }
-.a-upload-image-del {
+.a-upload-del {
   position: absolute;
   top: 0;
   right: 0;

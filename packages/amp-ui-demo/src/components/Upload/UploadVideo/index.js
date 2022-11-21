@@ -1,16 +1,29 @@
 Component({
   properties: {
+    /**
+     * declare Obj {
+     *    url: string,   // 视频/图片链接
+     *    type: 'image' | 'video', // 类型
+     *    size?: number, // 视频/图片大小
+     *    poster?: string, // 视频封面图
+     *    duration?: number  // 视频时长
+     * }
+     */
     videos: {
       type: Array,
       value: [],
     },
     width: {
       type: Number,
-      value: 200,
+      value: 150,
     },
     height: {
       type: Number,
-      value: 180,
+      value: 150,
+    },
+    count: {
+      type: Number,
+      value: 9,
     },
     sourceType: {
       type: Array,
@@ -20,9 +33,9 @@ Component({
       type: Number,
       value: 60,
     },
-    compressed: {
-      type: Boolean,
-      value: false,
+    sizeType: {
+      type: Array,
+      value: ['original', 'compressed'],
     },
     camera: {
       type: String,
@@ -53,6 +66,14 @@ Component({
   },
 
   methods: {
+    handlePreview(e) {
+      const { index } = e.currentTarget.dataset;
+      wx.previewMedia({
+        sources: this.data.videoList,
+        current: index,
+      });
+    },
+
     removeVideo(e) {
       this.data.videoList.splice(e.currentTarget.dataset.index, 1);
       this.setData({
@@ -62,25 +83,43 @@ Component({
     },
 
     chooseVideo() {
-      wx.chooseVideo({
-        sourceType: this.properties.sourceType,
-        compressed: this.properties.compressed,
-        maxDuration: this.properties.maxDuration,
-        camera: this.properties.camera,
+      const { sizeType, sourceType, count, maxDuration, camera } = this.properties;
+      wx.chooseMedia({
+        sizeType,
+        sourceType,
+        count,
+        mediaType: ['video'],
+        maxDuration,
+        camera,
         success: (res) => {
           // 判断上传视频大小
           if (this.properties.size > 0) {
-            if (res.size > this.properties.size * 1024 * 1024) {
-              this.triggerEvent('change', {
-                status: 'error',
-                msg: `上传的视频大小不得超过${this.properties.size}MB`,
-              });
-              return;
-            }
+            let overLimit = false;
+            res.tempFiles.forEach((item) => {
+              if (item.size > this.properties.size * 1024 * 1024) {
+                overLimit = true;
+              }
+              if (overLimit) {
+                this.triggerEvent('change', {
+                  status: 'error',
+                  msg: `上传的视频大小不得超过${this.properties.size}MB`,
+                });
+                return;
+              }
+            });
           }
-          this.data.videoList = this.data.videoList.concat(res.tempFilePath);
+          // 对象映射
+          const arr = res.tempFiles.map((item) => {
+            return {
+              url: item.tempFilePath,
+              type: item.fileType,
+              size: item.size,
+              poster: item.thumbTempFilePath,
+              duration: item.duration,
+            };
+          });
           this.setData({
-            videoList: this.data.videoList,
+            videoList: [...this.data.videoList, ...arr],
           });
           this.triggerEvent('change', { status: 'success', value: this.data.videoList });
         },

@@ -1,12 +1,13 @@
 <view class="a-upload-video">
   <view
         wx:for="{{ videos }}"
-        wx:key="id"
+        wx:key="index"
         class="a-upload-video-box"
         style="width: {{ width }}rpx; height: {{ height }}rpx">
-    <video
-           show-center-play-btn="{{ false }}"
-           src="{{ item }}" />
+    <image
+           src="{{ item.poster  }}"
+           data-index="{{ index }}"
+           bind:tap="handlePreview" />
     <a-icon
             wx:if="{{ !disabled }}"
             name="error_fill"
@@ -21,9 +22,9 @@
         style="width: {{ width }}rpx; height: {{ height }}rpx"
         bind:tap="chooseVideo">
     <a-icon
-            name="video_line"
-            size="100"
-            color="#929292"></a-icon>
+            name="upload-video"
+            size="80"
+            color="#000"></a-icon>
     上传视频
   </view>
 </view>

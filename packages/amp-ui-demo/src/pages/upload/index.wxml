@@ -21,6 +21,13 @@
                     size="{{ 30 }}"
                     bind:change="handleChooseVideo" />
   </view>
+  <view class="example-box-title">同时可上传图片/视频</view>
+  <view class="example-box-content">
+    <a-upload
+              value="{{ medias }}"
+              size="{{ 30 }}"
+              bind:change="handleChooseMedia" />
+  </view>
 </view>
 <a-toast toastData="{{ toastData }}" />
 

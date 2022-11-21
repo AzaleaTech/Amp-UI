@@ -9,17 +9,17 @@ Component({
      *    duration?: number  // 视频时长
      * }
      */
-    videos: {
+    value: {
       type: Array,
       value: [],
     },
     width: {
       type: Number,
-      value: 150,
+      value: 180,
     },
     height: {
       type: Number,
-      value: 150,
+      value: 180,
     },
     count: {
       type: Number,
@@ -29,9 +29,13 @@ Component({
       type: Array,
       value: ['album', 'camera'],
     },
+    mediaType: {
+      type: Array,
+      value: ['image', 'video'],
+    },
     maxDuration: {
       type: Number,
-      value: 60,
+      value: 10,
     },
     sizeType: {
       type: Array,
@@ -45,7 +49,11 @@ Component({
       type: Number,
       value: -1,
     },
-    size: {
+    imgSize: {
+      type: Number,
+      value: -1,
+    },
+    videoSize: {
       type: Number,
       value: -1,
     },
@@ -56,12 +64,12 @@ Component({
   },
 
   data: {
-    videoList: [],
+    mediaList: [],
   },
 
   lifetimes: {
     attached() {
-      this.setData({ videoList: this.properties.videos });
+      this.setData({ mediaList: this.properties.value });
     },
   },
 
@@ -69,44 +77,49 @@ Component({
     handlePreview(e) {
       const { index } = e.currentTarget.dataset;
       wx.previewMedia({
-        sources: this.data.videoList,
+        sources: this.data.mediaList,
         current: index,
       });
     },
 
-    removeVideo(e) {
-      this.data.videoList.splice(e.currentTarget.dataset.index, 1);
+    removeMedia(e) {
+      this.data.mediaList.splice(e.currentTarget.dataset.index, 1);
       this.setData({
-        videoList: this.data.videoList,
+        mediaList: this.data.mediaList,
       });
-      this.triggerEvent('change', { status: 'success', value: this.data.videoList });
+      this.triggerEvent('change', { status: 'success', value: this.data.mediaList });
     },
 
-    chooseVideo() {
-      const { sizeType, sourceType, count, maxDuration, camera } = this.properties;
+    chooseMedia() {
+      const { sizeType, sourceType, count, mediaType, maxDuration, camera } = this.properties;
       wx.chooseMedia({
         sizeType,
         sourceType,
         count,
-        mediaType: ['video'],
+        mediaType,
         maxDuration,
         camera,
         success: (res) => {
-          // 判断上传视频大小
+          // 判断上传图片/视频大小
           if (this.properties.size > 0) {
             let overLimit = false;
             res.tempFiles.forEach((item) => {
-              if (item.size > this.properties.size * 1024 * 1024) {
+              if (item.fileType === 'image' && item.size > this.properties.imgSize * 1024 * 1024) {
+                overLimit = true;
+              } else if (
+                item.fileType === 'video' &&
+                item.size > this.properties.videoSize * 1024 * 1024
+              ) {
                 overLimit = true;
               }
-              if (overLimit) {
-                this.triggerEvent('change', {
-                  status: 'error',
-                  msg: `上传的视频大小不得超过${this.properties.size}MB`,
-                });
-                return;
-              }
             });
+            if (overLimit) {
+              this.triggerEvent('change', {
+                status: 'error',
+                msg: `上传的图片/视频大小不得超过${this.properties.size}MB`,
+              });
+              return;
+            }
           }
           // 对象映射
           const arr = res.tempFiles.map((item) => {
@@ -114,17 +127,17 @@ Component({
               url: item.tempFilePath,
               type: item.fileType,
               size: item.size,
-              poster: item.thumbTempFilePath,
-              duration: item.duration,
+              poster: item.thumbTempFilePath || '',
+              duration: item.duration || '',
             };
           });
           this.setData({
-            videoList: [...this.data.videoList, ...arr],
+            mediaList: [...this.data.mediaList, ...arr],
           });
-          this.triggerEvent('change', { status: 'success', value: this.data.videoList });
+          this.triggerEvent('change', { status: 'success', value: this.data.mediaList });
         },
         fail: (err) => {
-          console.warn('ChooseVideo error', err);
+          console.warn('chooseMedia error', err);
         },
       });
     },

@@ -1,7 +1,7 @@
 <view class="a-upload-image">
   <view
         wx:for="{{ imgList }}"
-        wx:key="id"
+        wx:key="index"
         class="a-upload-image-box"
         style="width: {{ width }}rpx; height: {{ height }}rpx">
     <image
@@ -22,9 +22,9 @@
         style="width: {{ width }}rpx; height: {{ height }}rpx"
         bind:tap="chooseImage">
     <a-icon
-            name="photograph_line"
+            name="upload-image"
             size="80"
-            color="#929292"></a-icon>
+            color="#000"></a-icon>
     上传图片
   </view>
 </view>
