@@ -58,7 +58,7 @@ Component({
     // large、default、small
     size: {
       type: String,
-      value: '',
+      value: 'default',
     },
     disabled: {
       type: Boolean,
@@ -103,7 +103,7 @@ Component({
     ready() {
       if (!this.data.size) {
         this.setData({
-          size: 'default ',
+          size: 'default',
         });
       }
     },

@@ -55,6 +55,7 @@
 | disabled          | 是否禁用                                          | boolean | false  | -                                          | 否   |
 | clearable         | 是否可清空                                        | boolean | false  | -                                          | 否   |
 | focus             | 获取焦点                                          | boolean | false  | -                                          | 否   |
+| cursorSpacing     | 指定光标与键盘的距离，取 input 距离底部的距离和 cursor-spacing 指定的距离的最小值作为光标与键盘的距离                                          | number | 20  | -                                          | 否   |
 | confirm-type      | 设置键盘右下角按钮的文字，仅在`type='text'`时生效 | string  | done   | `send`, `search`, `next`, `go`, `done`             | 否   |
 | placeholder-style | 占位符的样式                                      | string  | -      | -                                          | 否   |
 

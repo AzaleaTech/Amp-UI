@@ -17,7 +17,9 @@
       <view class="badge-box"></view>
     </a-badge>
     <a-badge dot>
-      <image src="{{ imgUrl }}"></image>
+      <image
+             mode="aspectFill"
+             src="{{ imgUrl }}"></image>
     </a-badge>
   </view>
 </view>

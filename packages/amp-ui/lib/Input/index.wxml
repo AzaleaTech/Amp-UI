@@ -7,18 +7,25 @@
   </view>
   <input
          confirm-type="{{ confirmType }}"
+         cursor-spacing="{{ cursorSpacing }}"
          disabled="{{ disabled }}"
          focus="{{ focus }}"
          maxlength="{{ maxlength }}"
          placeholder="{{ placeholder }}"
          placeholder-style="{{ placeholderStyle }}"
-         password="{{ password }}"
+         password="{{ password && passwordVisible }}"
          name="{{ name }}"
          type="{{ type }}"
          value="{{ value }}"
          bind:blur="handleBlur"
          bind:focus="handleFocus"
          bind:input="handleChange" />
+  <a-icon
+          wx:if="{{ password && value  }}"
+          name="{{ passwordVisible ? 'visible' : 'invisible' }}"
+          color="#b2b2b2"
+          size="44"
+          bind:tap="handlePassword"></a-icon>
   <a-icon
           wx:if="{{ clearable && value  }}"
           name="error_fill"

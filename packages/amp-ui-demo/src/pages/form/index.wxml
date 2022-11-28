@@ -44,7 +44,7 @@
   <a-form>
     <a-form-item
                  label="带图标表单项"
-                 icon-url="/demo/assets/images/logo.png"></a-form-item>
+                 icon-url="/assets/images/logo.png"></a-form-item>
     <a-form-item
                  label="尾部信息及箭头"
                  footer="详情"
@@ -58,7 +58,7 @@
           labelWidth="160"
           labelAlign="left">
     <a-form-item label="Input">
-      <input placeholder="请输入文字" />
+      <a-input placeholder="请输入文字" />
     </a-form-item>
     <a-form-item label="Picker">
       <picker

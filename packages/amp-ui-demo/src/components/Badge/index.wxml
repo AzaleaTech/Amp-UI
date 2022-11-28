@@ -5,7 +5,8 @@
         class="a-badge-dot"></view>
   <view
         wx:elif="{{ value !== 0 }}"
-        class="a-badge-number">{{ value > maxValue ? '···' : value }}
+        class="a-badge-number {{ value < 10 ? 'a-badge-number-single' : '' }}">
+    {{ value > maxValue ? '···' : value }}
   </view>
 </view>
 

@@ -3,7 +3,7 @@ import { getRandomColor } from './utils/index.js';
 Page({
   data: {
     iconName: 'trumpet_fill',
-    iconColor: 'red',
+    iconColor: 'rgba(255, 143, 31, 1)',
     iconSize: 60,
     text: 'NoticeBar组件常用于显示消息通知',
     iconUrl: 'https://profile.csdnimg.cn/9/0/A/2_swingdance',

@@ -17,7 +17,7 @@
   left: 8%;
   border-bottom-color: @color;
   border-left-color: @color;
-  transform: skewY(-16deg);
+  transform: skewY(-8deg);
 }
 
 .bubble-position(@position, @color) when(@position=@top-right) {
@@ -25,7 +25,7 @@
   right: 8%;
   border-bottom-color: @color;
   border-right-color: @color;
-  transform: skewY(16deg);
+  transform: skewY(8deg);
 }
 
 .bubble-position(@position, @color) when(@position=@bottom-left) {
@@ -33,7 +33,7 @@
   left: 8%;
   border-top-color: @color;
   border-left-color: @color;
-  transform: skewY(16deg);
+  transform: skewY(8deg);
 }
 
 .bubble-position(@position, @color) when(@position=@bottom-right) {
@@ -41,7 +41,7 @@
   right: 8%;
   border-top-color: @color;
   border-right-color: @color;
-  transform: skewY(-16deg);
+  transform: skewY(-8deg);
 }
 
 .tag-bubble(@bubble-position, @color) {

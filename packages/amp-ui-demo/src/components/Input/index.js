@@ -50,6 +50,10 @@ Component({
       type: Boolean,
       value: false,
     },
+    cursorSpacing: {
+      type: Number,
+      value: 20,
+    },
     confirmType: {
       type: String,
       value: 'done',
@@ -60,14 +64,16 @@ Component({
     },
   },
 
+  data: {
+    passwordVisible: false, // 展示密码图标
+  },
+
   methods: {
     handleChange(e) {
       const value = e.detail.value ? e.detail.value : '';
-
       this.setData({
         value,
       });
-
       this.triggerEvent('change', {
         value,
       });
@@ -75,7 +81,6 @@ Component({
 
     handleBlur(e) {
       const value = e.detail.value ? e.detail.value : '';
-
       this.triggerEvent('blur', {
         value,
       });
@@ -83,9 +88,14 @@ Component({
 
     handleFocus(e) {
       const value = e.detail.value ? e.detail.value : '';
-
       this.triggerEvent('focus', {
         value,
+      });
+    },
+
+    handlePassword() {
+      this.setData({
+        passwordVisible: !this.data.passwordVisible,
       });
     },
   },

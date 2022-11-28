@@ -2,7 +2,9 @@
   <view class="example-box-title">基础用法</view>
   <view class="example-box-content">
     <view class="img">
-      <image src="{{ imgUrl }}" />
+      <image
+             mode="aspectFill"
+             src="{{ imgUrl }}" />
     </view>
     <button
             wx:if="{{ !isCropper }}"

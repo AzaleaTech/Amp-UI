@@ -2,12 +2,13 @@
 
 .a-notice-bar {
   overflow: hidden;
+  padding: 0 24rpx;
   height: 72rpx;
-  background-color: #fefcec;
+  background-color: rgba(254, 252, 235, 1);
   line-height: 72rpx;
 
-  .font-style(28rpx, @primary-color);
   .flex-type();
+  .font-style(28rpx, rgba(255, 143, 31, 1));
 
   &-icon {
     height: 100%;
@@ -23,10 +24,10 @@
 
   &-wrap {
     position: relative;
-    overflow: hidden;
     flex: 1;
-    height: 100%;
+    overflow: hidden;
     margin: 0 10rpx;
+    height: 100%;
   }
 
   &-content {

@@ -24,6 +24,6 @@ Page({
   },
 
   handleCeiling() {
-    wx.navigateTo({ url: '/demo/pages/tabs/ceiling/index' });
+    wx.navigateTo({ url: '/pages/tabs/ceiling/index' });
   },
 });

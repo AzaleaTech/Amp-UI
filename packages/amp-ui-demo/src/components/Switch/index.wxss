@@ -19,7 +19,8 @@
   height: 28px;
 }
 .a-switch-inner-checked {
-  left: 32px;
+  right: 2rpx;
+  left: initial;
 }
 .a-switch-checked {
   border-color: #009ca5;

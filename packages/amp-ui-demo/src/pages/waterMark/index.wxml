@@ -13,7 +13,9 @@
   <view class="example-box-content">
     <a-water-mark
                   image="https://azalea-official.oss-cn-hangzhou.aliyuncs.com/lingshang.png"
-                  width="{{ 220 }}">
+                  width="{{ 260 }}"
+                  gapX="{{ 0 }}"
+                  gapY="{{ 6 }}">
       <view class="content"></view>
     </a-water-mark>
   </view>

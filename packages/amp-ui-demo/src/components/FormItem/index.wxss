@@ -29,6 +29,10 @@
   font-weight: 700;
   font-size: 32rpx;
 }
+.a-form-item-label:after {
+  content: '';
+  display: inline-block;
+}
 .a-form-item-panel {
   flex: 1;
   padding-bottom: 24rpx;

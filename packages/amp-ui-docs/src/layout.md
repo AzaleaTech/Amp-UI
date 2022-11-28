@@ -8,19 +8,18 @@
 
 ```html
 基本使用
-<a-row a-class="row">
-  <a-col span="24" a-class="col col-light">col-24</a-col>
+<a-row a-class="row" gutter="16">
+  <a-col wx:for="{{ 12 }}" span="2">
+    <view class="col"></view>
+  </a-col>
+</a-row>
+<a-row a-class="row" gutter="16">
+  <a-col wx:for="{{ 6 }}" span="4">
+    <view class="col"></view>
+  </a-col>
 </a-row>
 <a-row a-class="row">
-  <a-col span="8">
-    <view class="col">col-8</view>
-  </a-col>
-  <a-col span="8">
-    <view class="col col-light">col-8</view>
-  </a-col>
-  <a-col span="8">
-    <view class="col">col-8</view>
-  </a-col>
+  <a-col span="24" a-class="col col-light">col-24</a-col>
 </a-row>
 ```
 

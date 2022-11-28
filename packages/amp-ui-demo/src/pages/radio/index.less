@@ -1,1 +1,24 @@
 @import '../../assets/styles/base.less';
+
+/* 选中后的背景样式 */
+radio .wx-radio-input.wx-radio-input-checked {
+  border-color: transparent;
+  background: #37c674;
+}
+
+/* 选中后的勾子样式 */
+radio .wx-radio-input.wx-radio-input-checked {
+  &::before {
+    position: absolute;
+    top: 12rpx;
+    left: 10rpx;
+    width: 50%;
+    height: 22%;
+    border: 4rpx solid #fff;
+    border-top: none;
+    border-right: none;
+    background: transparent;
+    content: '';
+    transform: rotate(-45deg);
+  }
+}

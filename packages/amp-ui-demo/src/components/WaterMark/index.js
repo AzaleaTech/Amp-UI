@@ -62,7 +62,7 @@ Component({
     let fontWidth = ctx.measureText(content).width; // 获取字符宽度
     ctx.rotate((Math.PI / 180) * Number(rotate));
     if (image) {
-      ctx.translate((((width + gapX) / 2) * ratio) / 2, ((height + gapY) / 2) * ratio);
+      ctx.translate(0, ((height + gapY) / 2) * ratio);
       wx.getImageInfo({
         src: image,
         success: (imgInfo) => {

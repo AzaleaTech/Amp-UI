@@ -2,7 +2,8 @@
 
 .a-badge {
   position: relative;
-  display: inline-block;
+  display: flex;
+  width: fit-content;
 
   &-number {
     position: absolute;
@@ -11,26 +12,30 @@
     z-index: @z-index-dot;
     box-sizing: border-box;
     padding: 0 10rpx;
-    min-width: 36rpx;
-    height: 36rpx;
+    height: 32rpx;
     border: 2rpx solid transparent;
-    border-radius: 18rpx;
+    border-radius: 32rpx;
     background: @error-color;
     color: @white-color;
-    font-size: @text-size-12;
-    line-height: 35rpx;
+    font-size: @text-size-11;
     transform: translateX(50%);
+
+    .flex-type(center);
+
+    &-single {
+      .set-size(32rpx);
+    }
   }
 
   &-dot {
     position: absolute;
-    top: -8rpx;
-    right: -16rpx;
+    top: -10rpx;
+    right: -20rpx;
     z-index: @z-index-dot;
     border-radius: 100%;
     background: @error-color;
     transform: translateX(-50%);
 
-    .set-size(16rpx);
+    .set-size(20rpx);
   }
 }

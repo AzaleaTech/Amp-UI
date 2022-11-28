@@ -22,3 +22,6 @@
   color: #999999;
   font-size: 12px;
 }
+.desc-horizontal {
+  text-align: center;
+}

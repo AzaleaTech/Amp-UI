@@ -1,6 +1,6 @@
 .a-btn {
   margin-bottom: 10px;
-  border-radius: 4px;
+  border-radius: 2px;
   height: 36px;
   font-size: 16px;
   line-height: 36px;

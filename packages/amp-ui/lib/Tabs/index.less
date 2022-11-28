@@ -26,6 +26,8 @@
     justify-content: center;
     flex: 1;
     padding: 24rpx 0;
+    min-width: 150rpx;
+    background: inherit;
     color: @sub-text-color;
     text-align: center;
     font-size: @text-size-15;
@@ -37,6 +39,7 @@
       position: relative;
       box-sizing: border-box;
       color: @primary-color;
+      font-weight: bold;
       font-size: @text-size-18;
 
       &::before {
@@ -47,29 +50,5 @@
         content: '';
       }
     }
-  }
-
-  &-scroll {
-    display: inline-flex;
-    padding: 0 30rpx;
-
-    .a-tab {
-      flex: 0;
-      margin-right: 64rpx;
-
-      &:last-child {
-        margin-right: 0;
-      }
-    }
-  }
-
-  &-gradient {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: @z-index-mask;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), @bg-color, @bg-color);
-
-    .set-size(30rpx, 90rpx);
   }
 }

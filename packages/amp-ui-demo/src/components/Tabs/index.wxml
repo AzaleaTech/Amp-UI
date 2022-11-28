@@ -1,6 +1,6 @@
 <view class="a-tabs-container {{ ceiling ? 'a-tabs-container-fixed-top' : ''}}">
-  <scroll-view scroll-x="{{ scroll }}">
-    <view class="a-tabs {{ scroll ? 'a-tabs-scroll' : '' }}">
+  <scroll-view scroll-x>
+    <view class="a-tabs">
       <view
             wx:for="{{ tabList }}"
             wx:key="index"
@@ -12,9 +12,6 @@
       </view>
     </view>
   </scroll-view>
-  <view
-        wx:if="{{ scroll }}"
-        class="a-tabs-gradient"></view>
 </view>
 <view class="{{ ceiling ? 'a-tabs-container-ceiling' : ''}}">
   <slot></slot>

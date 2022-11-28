@@ -1,6 +1,6 @@
 <template
           is="{{ type === 'icon' ? 'icon': 'default' }}"
-          data="{{ loading, type, size, openType, formType, inline, circle, disabled, icon, iconLabel, iconColor, iconSize }}"></template>
+          data="{{ loading, type, size, openType, formType, inline, circle, disabled, icon, iconLabel, iconColor, iconSize, childType }}"></template>
 <!-- 普通按钮 -->
 <template name="default">
   <button

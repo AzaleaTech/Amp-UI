@@ -1,27 +1,25 @@
 <view class="example-box">
   <view class="example-box-title">基础用法</view>
-  <view class="example-box-content">
-    <a-notice-bar
-                  a-class="notice-bar-content"
-                  icon-url="{{ iconUrl }}"
-                  roll="{{ roll }}"
-                  vertical="{{ vertical }}"
-                  swiper-arr="{{ swiperArr }}"
-                  clearable="{{ clearable }}"
-                  text="{{ text }}"
-                  speed="{{ speed }}"
-                  delay="{{ delay }}"
-                  icon-name="{{ iconName }}"
-                  icon-color="{{ iconColor }}"
-                  icon-size="{{ iconSize }}"
-                  bind:click="handleClick"
-                  bind:clear="handleClear"></a-notice-bar>
-    <view class="notice-buttons">
-      <button
-              class="notice-button"
-              bindtap="handleChangeColor">改变图标颜色
-      </button>
-    </view>
+  <a-notice-bar
+                a-class="notice-bar-content"
+                icon-url="{{ iconUrl }}"
+                roll="{{ roll }}"
+                vertical="{{ vertical }}"
+                swiper-arr="{{ swiperArr }}"
+                clearable="{{ clearable }}"
+                text="{{ text }}"
+                speed="{{ speed }}"
+                delay="{{ delay }}"
+                icon-name="{{ iconName }}"
+                icon-color="{{ iconColor }}"
+                icon-size="{{ iconSize }}"
+                bind:click="handleClick"
+                bind:clear="handleClear"></a-notice-bar>
+  <view class="notice-buttons">
+    <button
+            class="notice-button"
+            bindtap="handleChangeColor">改变图标颜色
+    </button>
   </view>
   <view class="example-box-section">
     <view class="section-cells section-cells-after-title">

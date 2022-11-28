@@ -2,6 +2,7 @@
   "navigationBarTitleText": "Form",
   "usingComponents": {
     "a-form": "../../components/Form/index",
-    "a-form-item": "../../components/FormItem/index"
+    "a-form-item": "../../components/FormItem/index",
+    "a-input": "../../components/Input/index"
   }
 }

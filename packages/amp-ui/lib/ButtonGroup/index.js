@@ -21,7 +21,6 @@ Component({
   lifetimes: {
     ready() {
       const targets = this.getRelationNodes('../Button/index');
-
       if (targets.length === 2 && this.properties.entire) {
         targets[0].setData({
           childType: 'left',
