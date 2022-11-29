@@ -31,7 +31,8 @@
       <a-icon
               wx:if="{{ footerArrow }}"
               name="arrow-right"
-              color="#b2b2b2"></a-icon>
+              color="#b2b2b2"
+              size="30"></a-icon>
     </view>
   </view>
 </view>

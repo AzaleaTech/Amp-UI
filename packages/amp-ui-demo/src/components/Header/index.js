@@ -55,7 +55,7 @@ Component({
       wx.getSystemInfo({
         success: (res) => {
           const { windowWidth, statusBarHeight } = res;
-          const leftMargin = windowWidth - right;
+          const leftMargin = (windowWidth - right) * 2; // 默认两倍间距
           this.setData({
             statusBarHeight,
             leftMargin,

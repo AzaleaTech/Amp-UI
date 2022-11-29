@@ -7,8 +7,7 @@
             data-current="{{ index }}"
             class="a-tab {{ index === currentIndex ? 'a-tab-active' : '' }}"
             catch:tap="switchTab">
-        <!-- 该类用于js中计算元素宽度 -->
-        <span class="a-tab-{{ index }}">{{ item }}</span>
+        <span>{{ item }}</span>
       </view>
     </view>
   </scroll-view>

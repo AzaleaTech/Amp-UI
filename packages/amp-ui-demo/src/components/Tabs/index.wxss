@@ -1,6 +1,8 @@
 .a-tabs-container {
   position: relative;
+  display: inline-flex;
   width: 100%;
+  background-color: #f5f5f5;
 }
 .a-tabs-container-fixed-top {
   position: sticky;
@@ -10,11 +12,18 @@
 .a-tabs-container-ceiling {
   padding-top: 90rpx;
 }
+.a-tabs-container::after {
+  position: absolute;
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.2), #f5f5f5);
+  content: '';
+  width: 32rpx;
+  height: 100%;
+}
 .a-tabs {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #f5f5f5;
 }
 .a-tabs .a-tab {
   display: inline-flex;
@@ -22,7 +31,6 @@
   flex: 1;
   padding: 24rpx 0;
   min-width: 150rpx;
-  background: inherit;
   color: #8c8c8c;
   text-align: center;
   font-size: 15px;
