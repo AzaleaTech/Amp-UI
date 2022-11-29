@@ -2,24 +2,24 @@
   position: relative;
   display: flex;
   align-items: center;
-  border: 2rpx solid #cccccc;
-  border-radius: 28px;
+  border-radius: 36rpx;
   background-color: #cccccc;
   transition: all 0.3s ease-in-out;
-  width: 60px;
-  height: 32px;
+  width: 102rpx;
+  height: 62rpx;
 }
 .a-switch-inner {
   position: absolute;
-  left: 2rpx;
+  left: 3rpx;
   border-radius: 100%;
   background-color: #ffffff;
+  box-shadow: 0 3rpx 4rpx rgba(0, 0, 0, 0.3), 0 10rpx 20rpx 0 rgba(0, 0, 0, 0.1);
   transition: left 0.3s ease-in-out;
-  width: 28px;
-  height: 28px;
+  width: 56rpx;
+  height: 56rpx;
 }
 .a-switch-inner-checked {
-  right: 2rpx;
+  right: 3rpx;
   left: initial;
 }
 .a-switch-checked {

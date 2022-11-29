@@ -1,5 +1,13 @@
 <view class="a-tabs-container {{ ceiling ? 'a-tabs-container-fixed-top' : ''}}">
-  <scroll-view scroll-x>
+  <view
+        wx:if="{{ showPrevModal }}"
+        class="modal modal-prev"></view>
+  <view
+        wx:if="{{ showLastModal }}"
+        class="modal modal-last"></view>
+  <scroll-view
+               scroll-x
+               bind:scroll="handleScroll">
     <view class="a-tabs">
       <view
             wx:for="{{ tabList }}"

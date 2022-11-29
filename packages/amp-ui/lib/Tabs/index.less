@@ -2,6 +2,7 @@
 
 .a-tabs-container {
   position: relative;
+  z-index: 1;
   display: inline-flex;
   width: 100%;
   background-color: @bg-color;
@@ -16,13 +17,22 @@
     padding-top: 90rpx;
   }
 
-  &::after {
+  .modal {
     position: absolute;
-    right: 0;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.2), @bg-color);
+    z-index: 9;
     content: '';
 
-    .set-size(32rpx, 100%);
+    .set-size(32px, 100%);
+
+    &-prev {
+      left: 0;
+      background: linear-gradient(to left, rgba(255, 255, 255, 0.3), @bg-color, @bg-color);
+    }
+
+    &-last {
+      right: 0;
+      background: linear-gradient(to right, rgba(255, 255, 255, 0.3), @bg-color, @bg-color);
+    }
   }
 }
 
